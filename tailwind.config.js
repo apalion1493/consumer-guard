@@ -51,7 +51,7 @@ module.exports = {
     },
     screens: {
       '2xl': { max: '1549px' },
-      xl: { max: '1344px' },
+      xl: { max: '1328px' },
       lg: { max: '1023px' },
       md: { max: '767px' },
       sm: { max: '639px' },
@@ -62,7 +62,6 @@ module.exports = {
       minmd: { min: '768px' },
       minlg: { min: '1024px' },
       minxl: { min: '1345px' },
-      min2xl: { min: '1550px' },
     },
     container: {
       center: true,

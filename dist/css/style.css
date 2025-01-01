@@ -637,11 +637,6 @@ html {
     max-width: 1345px;
   }
 }
-@media (min-width: 1550px){
-  .container{
-    max-width: 1550px;
-  }
-}
 .container {
     width: 100%;
     padding-left: 1rem;
@@ -664,12 +659,7 @@ html {
 }
 @media (min-width: 1345px){
   .container{
-    max-width: 1344px;
-  }
-}
-@media (min-width: 1550px){
-  .container{
-    max-width: 1549px;
+    max-width: 1328px;
   }
 }
 .w-full {
@@ -713,17 +703,11 @@ html {
 .inset-0{
   inset: 0px;
 }
-.bottom-0{
-  bottom: 0px;
-}
 .left-0{
   left: 0px;
 }
 .left-1\/2{
   left: 50%;
-}
-.right-0{
-  right: 0px;
 }
 .right-3{
   right: 0.75rem;
@@ -761,14 +745,8 @@ html {
 .col-span-12{
   grid-column: span 12 / span 12;
 }
-.col-span-4{
-  grid-column: span 4 / span 4;
-}
 .col-span-6{
   grid-column: span 6 / span 6;
-}
-.col-span-8{
-  grid-column: span 8 / span 8;
 }
 .mx-auto{
   margin-left: auto;
@@ -823,9 +801,6 @@ html {
 .mt-6{
   margin-top: 1.5rem;
 }
-.mt-8{
-  margin-top: 2rem;
-}
 .mt-auto{
   margin-top: auto;
 }
@@ -854,9 +829,6 @@ html {
 .size-8{
   width: 2rem;
   height: 2rem;
-}
-.h-10{
-  height: 2.5rem;
 }
 .h-14{
   height: 3.5rem;
@@ -891,9 +863,6 @@ html {
 }
 .min-h-screen{
   min-height: 100vh;
-}
-.w-10{
-  width: 2.5rem;
 }
 .w-14{
   width: 3.5rem;
@@ -935,17 +904,11 @@ html {
 .min-w-\[1204px\]{
   min-width: 1204px;
 }
-.max-w-\[265px\]{
-  max-width: 265px;
-}
 .max-w-\[561px\]{
   max-width: 561px;
 }
 .max-w-xs{
   max-width: 20rem;
-}
-.flex-1{
-  flex: 1 1 0%;
 }
 .flex-shrink-0{
   flex-shrink: 0;
@@ -1029,10 +992,6 @@ html {
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
 }
-.gap-x-4{
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
-}
 .gap-x-6{
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
@@ -1043,9 +1002,6 @@ html {
 }
 .gap-y-1{
   row-gap: 0.25rem;
-}
-.gap-y-3{
-  row-gap: 0.75rem;
 }
 .gap-y-4{
   row-gap: 1rem;
@@ -1097,9 +1053,6 @@ html {
 .border-b-2{
   border-bottom-width: 2px;
 }
-.border-t{
-  border-top-width: 1px;
-}
 .border-solid{
   border-style: solid;
 }
@@ -1118,9 +1071,9 @@ html {
   --tw-border-opacity: 1;
   border-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
 }
-.border-white{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+.bg-Blue100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(48 54 122 / var(--tw-bg-opacity, 1));
 }
 .bg-DarkBlue{
   --tw-bg-opacity: 1;
@@ -1176,10 +1129,6 @@ html {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1200,20 +1149,14 @@ html {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.pb-10{
-  padding-bottom: 2.5rem;
-}
-.pb-12{
-  padding-bottom: 3rem;
+.pb-8{
+  padding-bottom: 2rem;
 }
 .pr-16{
   padding-right: 4rem;
 }
 .pt-16{
   padding-top: 4rem;
-}
-.pt-5{
-  padding-top: 1.25rem;
 }
 .pt-6{
   padding-top: 1.5rem;
@@ -1666,13 +1609,13 @@ p{
 .text-block a{
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(248 248 255 / var(--tw-text-opacity, 1));
+  color: rgb(68 182 75 / var(--tw-text-opacity, 1));
   text-decoration-line: underline;
 }
 
 a{
   --tw-text-opacity: 1;
-  color: rgb(248 248 255 / var(--tw-text-opacity, 1));
+  color: rgb(68 182 75 / var(--tw-text-opacity, 1));
 }
 
 .button{
@@ -2311,11 +2254,6 @@ a{
   background: white !important;
 }
 
-.hover\:border-Yellow:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 167 41 / var(--tw-border-opacity, 1));
-}
-
 .hover\:bg-gray-200:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
@@ -2329,11 +2267,6 @@ a{
 .hover\:text-LightBlue:hover{
   --tw-text-opacity: 1;
   color: rgb(248 248 255 / var(--tw-text-opacity, 1));
-}
-
-.hover\:text-Yellow:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 167 41 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-gray-700:hover{
@@ -2397,10 +2330,6 @@ a{
 
 .group:hover .group-hover\:fill-DarkBlue{
   fill: #262C73;
-}
-
-.group:hover .group-hover\:fill-Yellow{
-  fill: #FFA729;
 }
 
 .group:hover .group-hover\:fill-white{
