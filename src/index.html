@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Home'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen">
+  @@include('components/Header.html', {
+  'commonStyle': ' ',
+  })
+
+  <section class="my-20 hidden">
+    <div class="container">
+      <div class="row">
+        <div class="col-span-12">
+          <div class="flex flex-col gap-y-5">
+            @@include('components/button.html', {
+            'style': '',
+            'type': 'button',
+            'ariaLabel': 'Button',
+            'title': 'Button',
+            })
+
+            @@include('components/button.html', {
+            'style': 'btn-medium',
+            'type': 'button',
+            'ariaLabel': 'Button',
+            'title': 'Button',
+            })
+
+            @@include('components/button.html', {
+            'style': 'categories',
+            'type': 'button',
+            'ariaLabel': 'Button',
+            'title': 'Button',
+            })
+
+            @@include('components/Add-btn.html', {
+            'style': '',
+            'title': 'Add to wishlist',
+            })
+
+
+            @@include('components/input.html', {
+            'common-style': '',
+            'StyleLabel': '',
+            'idInput': 'Text1',
+            'label': '',
+            'styleInput': '',
+            'type': 'text',
+            'placeholder': 'Your Name',
+            'errorStyle': 'block',
+            })
+
+            @@include('components/textarea.html', {
+            'common-style': '',
+            'StyleLabel': '',
+            'idInput': 'Text1',
+            'label': '',
+            'styleTextarea': '',
+            'placeholder': 'Message',
+            'rows': '3',
+            })
+
+            @@include('components/Tabs.html')
+
+            @@include('components/Category-card.html', {
+            'common-style': '',
+            'icon': '',
+            'title': 'Cardiology',
+            'text': 'Medications that lower blood pressure and improve heart function',
+            'url': '#',
+            })
+
+            @@include('components/Shop-card.html', {
+            'URL': '#',
+            })
+
+            <!--                                                @@include('components/About-Cards.html', {-->
+            <!--                                                'common-style': '',-->
+            <!--                                                'num': '01',-->
+            <!--                                                'title': 'Who we are?',-->
+            <!--                                                'text': 'As a certified facility in Europe, Profarma Direct proudly imports products from-->
+            <!--                                                countries with government-regulated price controls. This enables us to offer attractive pricing-->
+            <!--                                                to both small and large-scale businesses.',-->
+            <!--                                                })-->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10 gradient-css">
+    <div class="container relative">
+      <div class="absolute bottom-[10%] left-[40%]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="177" height="167" viewBox="0 0 177 167" fill="none">
+          <mask id="mask0_2_2352" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="177"
+                height="167">
+            <path d="M176.088 85.1807L58.7451 0L-0.000219345 80.9258L117.342 166.107L176.088 85.1807Z" fill="white" />
+          </mask>
+          <g mask="url(#mask0_2_2352)">
+            <path
+              d="M40.6981 24.8907C42.7254 21.8342 45.5539 19.5169 48.7173 17.9804C54.495 15.1727 62.2156 15.3043 67.4339 21.2801C70.4775 24.7663 73.385 28.4032 75.0557 32.8625C75.8657 35.0252 77.0046 37.0755 78.1185 39.11C80.8956 44.1786 82.54 49.709 84.0469 55.1953C85.3919 60.0966 86.9555 64.9772 87.8859 69.9723C88.5037 73.2845 88.3939 76.7444 88.4706 80.1411C88.5079 81.7623 87.5889 82.6143 85.9261 82.9651C85.7752 82.996 85.6208 83.0318 85.4683 83.0349C79.1192 83.1407 73.4863 85.9492 67.5792 87.7398C64.3284 88.7258 61.0456 89.6256 57.7364 90.3948C55.5634 90.901 54.2231 90.0564 53.3973 87.9088C51.6208 83.288 49.9439 78.6303 48.1425 74.0205C46.7368 70.4247 45.3161 66.8664 44.3095 63.1049C43.5634 60.3198 41.931 57.7442 40.5117 55.1755C39.5144 53.3709 38.9229 51.5582 38.7522 49.4864C38.4582 45.9417 38.1476 42.3631 37.3878 38.8994C36.2296 33.6105 37.812 29.1336 40.6981 24.8907ZM58.5372 83.9332C61.1531 84.376 63.1312 84.0482 65.0404 83.3579C69.4085 81.7777 73.7613 80.155 78.1003 78.498C78.8073 78.2286 79.3803 77.6295 80.0693 77.2913C82.7369 75.9837 83.4546 73.6895 82.9368 71.0508C82.0469 66.5041 81.2996 61.8745 79.8257 57.5048C76.9645 49.0196 74.442 40.3418 69.2086 32.8578C68.8558 32.3521 68.5196 31.8004 68.3358 31.2188C67.0657 27.2126 63.9199 24.9823 60.5864 22.9138C58.3261 21.5104 55.9462 21.4134 53.4248 22.0857C50.9143 22.7563 49.1799 24.5112 47.2335 26.054C43.4553 29.0485 42.0186 33.0376 42.454 37.5692C43.0453 43.7258 43.8993 49.8211 46.6815 55.567C49.5112 61.4079 52.3187 67.2859 54.368 73.4907C55.5264 77.0063 57.1 80.3775 58.5372 83.9332Z"
+              fill="#2490EB" fill-opacity="0.2" />
+            <path
+              d="M94.9032 85.506C100.314 82.4322 105.973 79.7923 112.25 78.2027C117.375 76.9054 122.514 76.0593 127.708 75.3042C135.707 74.1406 143.773 73.5659 151.818 73.8089C157.379 73.9769 162.874 75.4822 167.479 78.9341C169.86 80.7184 171.582 83.1578 172.456 86.0742C173.14 88.3566 172.474 90.4221 170.997 92.1432C166.935 96.8843 162.518 101.29 156.571 103.58C153.264 104.853 149.752 105.624 146.295 106.471C139.222 108.202 132.153 109.963 125.027 111.456C119.738 112.563 114.538 114.116 109.081 114.499C106.538 114.678 104.817 113.887 103.617 111.867C102.034 109.207 100.529 106.493 99.1498 103.721C97.7011 100.809 96.5074 97.7691 95.0833 94.8432C93.0117 90.5823 92.9661 90.6049 94.9032 85.506ZM163.734 91.2006C166.21 87.6798 165.676 84.1592 162.755 82.0632C161.883 81.4377 160.911 80.9138 159.919 80.5082C156.435 79.0868 152.836 78.4124 149.033 78.6535C141.464 79.1338 133.906 79.6238 126.386 80.7015C120.082 81.606 113.93 83.0972 107.848 84.9042C105.79 85.5157 103.789 86.4495 101.91 87.4986C99.8548 88.6474 99.5154 90.0097 100.444 92.2C101.225 94.0444 102.313 95.7785 102.917 97.6734C103.979 100.995 105.898 103.76 107.96 106.485C109.217 108.146 110.73 108.646 112.816 108.355C118.193 107.609 123.452 106.375 128.695 105.018C134.534 103.505 140.353 101.886 146.254 100.658C150.894 99.6914 155.144 97.9769 158.991 95.3113C160.88 94.0007 162.495 92.29 163.734 91.2006Z"
+              fill="#2490EB" fill-opacity="0.2" />
+            <path
+              d="M68.8083 122.485C70.0894 123.381 70.4687 125.246 69.6536 126.646C68.7451 128.208 65.6985 128.739 64.278 127.584C63.0362 126.574 62.8494 124.728 63.8563 123.404C65.0842 121.793 67.2443 121.391 68.8083 122.485Z"
+              fill="#2490EB" fill-opacity="0.2" />
+            <path
+              d="M59.7475 102.609C61.1329 103.578 61.4673 105.258 60.5651 106.701C59.5473 108.327 57.2823 108.696 55.6747 107.495C54.6269 106.715 54.6197 104.788 55.6561 103.254C56.57 101.901 58.3382 101.622 59.7475 102.609Z"
+              fill="#2490EB" fill-opacity="0.2" />
+            <path
+              d="M84.8174 120.086C83.0985 118.865 82.602 117.332 83.2804 116.22C84.0397 114.974 85.4183 114.461 86.8975 114.907C87.337 115.039 87.7742 115.228 88.1624 115.471C89.1445 116.085 89.752 116.921 89.5812 118.161C89.41 119.415 88.4312 120.43 87.0674 120.462C86.1875 120.482 85.2989 120.174 84.8174 120.086Z"
+              fill="#2490EB" fill-opacity="0.2" />
+            <path
+              d="M73.5364 111.361C74.7653 112.256 74.9111 114.135 73.8571 115.48C72.8473 116.768 71.1413 116.988 69.7424 116.014C68.334 115.032 67.98 113.203 68.9639 111.991C70.0412 110.661 72.1694 110.367 73.5364 111.361Z"
+              fill="#2490EB" fill-opacity="0.2" />
+            <path
+              d="M84.5918 102.251C85.9951 100.568 88.1114 100.227 89.3652 101.481C90.3688 102.486 90.2416 104.397 89.0885 105.622C87.8114 106.977 85.9907 107.085 84.5914 105.887C83.4812 104.936 83.4811 103.584 84.5918 102.251Z"
+              fill="#2490EB" fill-opacity="0.2" />
+            <path
+              d="M86.3548 94.8208C85.4442 96.132 83.7555 96.3016 82.3166 95.2255C80.9908 94.2341 80.5713 92.6552 81.3712 91.6634C82.6212 90.1117 84.909 89.6478 86.2662 90.6693C87.3619 91.4938 87.4016 93.3154 86.3548 94.8208Z"
+              fill="#2490EB" fill-opacity="0.2" />
+            <path
+              d="M72.8392 100.539C71.9412 101.753 69.9356 102.032 68.6868 101.118C67.6411 100.352 67.2875 98.3481 68.0219 97.3598C68.8367 96.2674 71.0816 95.7723 72.23 96.4339C73.4821 97.1563 73.7929 99.2522 72.8392 100.539Z"
+              fill="#2490EB" fill-opacity="0.2" />
+            <path
+              d="M81.371 131.895C80.5639 133.054 78.8505 133.501 77.7559 132.842C76.4423 132.051 76.0437 130.056 76.9628 128.86C77.9203 127.614 79.6797 127.351 81.0381 128.247C82.1191 128.962 82.2686 130.609 81.371 131.895Z"
+              fill="#2490EB" fill-opacity="0.2" />
+          </g>
+        </svg>
+      </div>
+      <div class="row gap-x-6 relative z-[1]">
+        <div class="col-span-6 flex items-center">
+          <div class="flex flex-col">
+            <h1 class="text-h1 text-DarkBlue100 font-semibold capitalize -tracking-[0.72px] mb-6">Your
+              Trusted Path to Recovery</h1>
+            <p class="max-w-[514px] text-Top3 mb-10">As a certified facility in Europe, Profarma Direct
+              proudly imports products from countries with government-regulated price controls. This
+              enables us to offer attractive pricing to both small and large-scale businesses.</p>
+            @@include('components/Link.html', {
+            'style': '',
+            'url': 'Categories-Shop-Page.html',
+            'title': 'Go to Catalog',
+            })
+          </div>
+        </div>
+        <div class="col-span-6 flex justify-end">
+          <div
+            class="p-3 bg-white overflow-hidden flex justify-center items-center h-full ml-2 rounded-2xl max-w-[554px]">
+            <img class="object-cover w-full h-full" src="img/hero-img-home.png"
+                 alt="Your Trusted Path to Recovery">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container">
+      <div class="row">
+        <div class="col-span-12 mb-10">
+          @@include('components/Title-category-component.html', {
+          'style': 'items-start',
+          'category': 'Our Categories',
+          'style-title': '',
+          'title': 'Categories for Your Health',
+          })
+        </div>
+        <div class="col-span-12">
+          <div class="swiper swiper-container-categories pb-2">
+            <div class="swiper-wrapper py-2">
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Cardiology-40',
+                'title': 'Cardiology',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Urology-40',
+                'title': 'Urology',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Neurology-40',
+                'title': 'Neurology',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Oncology-40',
+                'title': 'Oncology',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Hematology-40',
+                'title': 'Hematology',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Obgyn-40',
+                'title': 'Obgyn',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Fertility-40',
+                'title': 'Fertility',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Erectile-Disfunction-40',
+                'title': 'Erectile Disfunction',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Gastroenterology-40',
+                'title': 'Gastroenterology',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Pulmonology-40',
+                'title': 'Pulmonology',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Endochrinology-40',
+                'title': 'Endochrinology',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Rheymatology-40',
+                'title': 'Rheymatology',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Infection-40',
+                'title': 'Infection',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Allergy-40',
+                'title': 'Allergy',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Dermatology-40',
+                'title': 'Dermatology',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Weight-Loss-40',
+                'title': 'Weight Loss',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Sugar-Control-40',
+                'title': 'Sugar Control',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Category-card.html', {
+                'common-style': '',
+                'icon': 'Ophtalmology-40',
+                'title': 'Ophtalmology',
+                'text': 'Medications that lower blood pressure and improve heart function',
+                'url': '#',
+                })
+              </div>
+            </div>
+            <div class="flex items-center justify-between mt-10 md:mt-8">
+              @@include('components/Link.html', {
+              'style': '',
+              'url': 'Our-Category.html',
+              'title': 'More Categories',
+              })
+              <div class="swiper-custom relative h-12 w-[128px]">
+                <div class="swiper-button-arrow swiper-button-next">
+                  <svg class="swiper-button-icon swiper-button-icon--white"
+                       xmlns="http://www.w3.org/2000/svg"
+                       width="20" height="20" viewBox="0 0 20 20"
+                       fill="none">
+                    <path
+                      d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
+                      fill="white" />
+                  </svg>
+                  <svg class="swiper-button-icon swiper-button-icon--grey"
+                       xmlns="http://www.w3.org/2000/svg"
+                       width="20" height="20" viewBox="0 0 20 20"
+                       fill="none">
+                    <path
+                      d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
+                      fill="#BFC6D6" />
+                  </svg>
+                </div>
+                <div class="swiper-button-arrow swiper-button-prev">
+                  <svg class="swiper-button-icon rotate-180 swiper-button-icon--white"
+                       xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                       fill="none">
+                    <path
+                      d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
+                      fill="white" />
+                  </svg>
+                  <svg class="swiper-button-icon rotate-180 swiper-button-icon--grey"
+                       xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                       fill="none">
+                    <path
+                      d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
+                      fill="#BFC6D6" />
+                  </svg>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 gradient-css">
+    <div class="container">
+      <div class="row gap-x-6">
+        <div class="col-span-6">
+          <div class="p-3 bg-white overflow-hidden flex justify-center items-center h-full">
+            <img class="object-cover w-full h-full" src="img/about-faq-image.png"
+                 alt="Choose your medication with Profarma Direct">
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex flex-col gap-y-10 pl-6">
+            @@include('components/Title-category-component.html', {
+            'style': 'items-start',
+            'category': 'Why Choose Us',
+            'style-title': '',
+            'title': 'Choose your medication with Profarma Direct',
+            })
+            <div class="row gap-12">
+              <div class="col-span-6">
+                <div class="flex flex-col">
+                  <div
+                    class="bg-white rounded-full overflow-hidden w-14 h-14 min-w-14 flex justify-center items-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                         viewBox="0 0 20 21" fill="none">
+                      <path
+                        d="M6.03918 7.1132C6.41418 7.51167 6.97667 7.5585 7.44542 7.30066C7.99526 6.8059 9.06289 6.39836 10 6.39836C10.6915 6.39836 11.3478 6.57411 11.9219 6.87879C11.9219 6.72465 12.126 6.1356 12.5664 5.69521C12.8477 5.42572 13.1875 5.22651 13.5625 5.121C13.0374 4.7769 12.4547 4.50796 11.8351 4.32456C12.1489 3.92589 12.3438 3.3904 12.3438 2.84372C12.3438 1.54929 11.2945 0.5 10 0.5C8.70564 0.5 7.65635 1.54929 7.65635 2.84372C7.65635 3.39082 7.85155 3.92667 8.16576 4.3255C7.36425 4.56932 6.71409 4.88139 6.08601 5.42568C5.56137 5.90477 5.60524 6.67926 6.03918 7.1132Z"
+                        fill="#2490EB" />
+                      <path
+                        d="M3.82552 12.3343C4.1109 13.2723 4.46594 13.8836 4.9257 14.414C5.40687 14.941 6.18175 14.8922 6.61319 14.4609C7.01166 14.0859 7.0585 13.5233 6.80073 13.0547C6.25678 12.4503 5.89838 11.3508 5.89838 10.5234C5.93972 10.201 5.86534 9.53805 6.37881 8.58986C6.07011 8.48674 5.6878 8.42623 5.19531 7.93362C4.92574 7.65237 4.72652 7.3125 4.62102 6.9375C4.27691 7.46269 4.00805 8.04534 3.82465 8.66498C3.42599 8.35119 2.92954 8.15628 2.38279 8.15628C1.08839 8.15628 0 9.20556 0 10.5C0 11.7944 1.08839 12.8437 2.38279 12.8437C2.9299 12.8437 3.42669 12.6485 3.82552 12.3343Z"
+                        fill="#2490EB" />
+                      <path
+                        d="M11.8343 16.6745C12.835 16.37 13.4359 15.9886 13.914 15.5743C14.4399 15.0941 14.3934 14.3193 13.9609 13.8869C13.5741 13.4884 12.9999 13.4416 12.5312 13.7111C11.866 14.1296 11.299 14.6016 10.0234 14.6016C9.32648 14.6016 8.67556 14.4381 8.07807 14.1211C8.07807 14.2752 7.87401 14.8643 7.43354 15.3047C7.15229 15.5742 6.8125 15.7735 6.4375 15.879C6.96269 16.223 7.54542 16.4919 8.16499 16.6754C7.85116 17.074 7.65624 17.5705 7.65624 18.1173C7.65624 19.4117 8.70556 20.5001 9.99997 20.5001C11.2944 20.5001 12.3437 19.4117 12.3437 18.1173C12.3437 17.5701 12.1485 17.0734 11.8343 16.6745Z"
+                        fill="#2490EB" />
+                      <path
+                        d="M17.6172 8.15622C17.07 8.15622 16.5733 8.35142 16.1745 8.66563C15.9435 7.90618 15.5961 7.18807 15.0743 6.58589C14.5938 6.05976 13.8192 6.1066 13.3868 6.53906C12.9883 6.91405 12.9415 7.47655 13.1992 7.94529C13.7437 8.54989 14.1016 9.65642 14.1016 10.4765V10.4999C14.1016 11.1913 13.9257 11.8359 13.6095 12.4101C14.0547 12.5038 14.4767 12.7265 14.8047 13.0663C15.0743 13.3475 15.2735 13.6874 15.379 14.0624C15.7231 13.5372 15.992 12.9545 16.1754 12.3349C16.574 12.6487 17.0705 12.8436 17.6172 12.8436C18.9116 12.8436 20 11.7943 20 10.4999C20 9.20551 18.9116 8.15622 17.6172 8.15622Z"
+                        fill="#2490EB" />
+                    </svg>
+                  </div>
+                  <span class="text-Top3 font-semibold block mb-2 text-DarkBlue100">100% Authentic Products</span>
+                  <p class="text-base">Get original products directly from themanufacturer.</p>
+                </div>
+              </div>
+              <div class="col-span-6">
+                <div class="flex flex-col">
+                  <div
+                    class="bg-white rounded-full overflow-hidden w-14 h-14 min-w-14 flex justify-center items-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                         viewBox="0 0 20 21" fill="none">
+                      <path
+                        d="M13.4863 16.8562C12.0897 16.984 10.9544 17.117 10.0004 17.2774C7.10297 17.7643 5.93206 18.593 4.59783 20.2823C4.37516 20.5599 3.96494 20.572 3.7306 20.3185L0.174164 16.6175C-0.0254148 16.412 -0.059088 16.0858 0.102364 15.8473C0.549687 15.1864 1.04541 14.577 1.5834 14.0282C2.64786 12.7982 3.75537 11.9219 4.79838 11.3278C5.45645 10.953 6.1989 10.7636 6.95093 10.7636H10.4302C11.4937 10.7636 12.3918 11.4931 12.6783 12.4928C12.7708 12.8151 12.5585 13.1553 12.2329 13.1763C12.2203 13.1772 12.2074 13.1776 12.1945 13.1776H7.08413C6.76541 13.1776 6.49427 13.4339 6.48493 13.7621C6.47505 14.109 6.73631 14.3846 7.07062 14.3846H12.9303C13.1061 14.3846 13.2701 14.3 13.3872 14.1673C13.5372 14.0074 14.2515 12.916 15.613 11.736C16.4952 10.9712 18.6138 9.55664 19.4148 9.55664C19.9188 9.55664 20.1883 10.1722 19.8484 10.5583L14.5358 16.5933C14.4419 16.7141 14.2896 16.7864 14.1373 16.7985C13.9142 16.8178 13.6973 16.8369 13.4863 16.8562Z"
+                        fill="#FFA729" />
+                      <path
+                        d="M13.5163 1.75905C15.2463 -0.629259 18.79 0.616474 18.79 3.52676C18.79 5.51278 16.8567 6.90814 15.0928 8.32353C13.2322 9.81648 13.7948 9.81185 11.9399 8.32353C9.99792 6.76527 8.24268 5.44411 8.24268 3.52676C8.24268 0.618083 11.7849 -0.631351 13.5163 1.75905Z"
+                        fill="#FFA729" />
+                    </svg>
+                  </div>
+                  <span class="text-Top3 font-semibold block mb-2 text-DarkBlue100">Special offers</span>
+                  <p class="text-base">Our qualified doctors are board-certified in their
+                    specialty.</p>
+                </div>
+              </div>
+              <div class="col-span-6">
+                <div class="flex flex-col">
+                  <div
+                    class="bg-white rounded-full overflow-hidden w-14 h-14 min-w-14 flex justify-center items-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                         viewBox="0 0 20 21" fill="none">
+                      <path
+                        d="M10 0.5C4.486 0.5 0 4.986 0 10.5V14.643C0 15.667 0.897 16.5 2 16.5H3C3.26522 16.5 3.51957 16.3946 3.70711 16.2071C3.89464 16.0196 4 15.7652 4 15.5V10.357C4 10.0918 3.89464 9.83743 3.70711 9.64989C3.51957 9.46236 3.26522 9.357 3 9.357H2.092C2.648 5.487 5.978 2.5 10 2.5C14.022 2.5 17.352 5.487 17.908 9.357H17C16.7348 9.357 16.4804 9.46236 16.2929 9.64989C16.1054 9.83743 16 10.0918 16 10.357V16.5C16 17.603 15.103 18.5 14 18.5H12V17.5H8V20.5H14C16.206 20.5 18 18.706 18 16.5C19.103 16.5 20 15.667 20 14.643V10.5C20 4.986 15.514 0.5 10 0.5Z"
+                        fill="#2490EB" />
+                    </svg>
+                  </div>
+                  <span class="text-Top3 font-semibold block mb-2 text-DarkBlue100">Customer Support</span>
+                  <p class="text-base">Get original products directly from themanufacturer.</p>
+                </div>
+              </div>
+              <div class="col-span-6">
+                <div class="flex flex-col">
+                  <div
+                    class="bg-white rounded-full overflow-hidden w-14 h-14 min-w-14 flex justify-center items-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                         viewBox="0 0 20 21" fill="none">
+                      <path
+                        d="M6.7724 0.704344C6.49994 0.431885 6.0582 0.431885 5.78574 0.704344C5.51328 0.976803 5.51328 1.41855 5.78574 1.691L8.31567 4.22093H0.697674C0.312359 4.22093 0 4.53329 0 4.9186V8.63953C0 9.02485 0.312359 9.33721 0.697674 9.33721H1.39535V19.8023C1.39535 20.1876 1.70771 20.5 2.09302 20.5H17.907C18.2923 20.5 18.6047 20.1876 18.6047 19.8023V9.33721H19.3023C19.6876 9.33721 20 9.02485 20 8.63953V4.9186C20 4.53329 19.6876 4.22093 19.3023 4.22093H11.6843L14.2143 1.691C14.4867 1.41855 14.4867 0.976803 14.2143 0.704344C13.9418 0.431885 13.5001 0.431885 13.2276 0.704344L10 3.93194L6.7724 0.704344ZM10.6977 19.1047H9.30233V9.33721H10.6977V19.1047Z"
+                        fill="#FFA729" />
+                    </svg>
+                  </div>
+                  <span class="text-Top3 font-semibold block mb-2 text-DarkBlue100">Fast Delivery</span>
+                  <p class="text-base">Get original products directly from themanufacturer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container">
+      <div class="row">
+        <div class="col-span-12 mb-10">
+          @@include('components/Title-category-component.html', {
+          'style': 'items-start',
+          'category': 'Our Products',
+          'style-title': '',
+          'title': 'Best Sellers',
+          })
+        </div>
+        <div class="col-span-12">
+          <div class="swiper swiper-container-sellers pb-2">
+            <div class="swiper-wrapper py-2">
+              <div class="swiper-slide">
+                @@include('components/Shop-card.html', {
+                'URL': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Shop-card.html', {
+                'URL': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Shop-card.html', {
+                'URL': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Shop-card.html', {
+                'URL': '#',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Shop-card.html', {
+                'URL': '#',
+                })
+              </div>
+            </div>
+            <div class="flex items-center justify-between mt-10 md:mt-8">
+              @@include('components/Link.html', {
+              'style': '',
+              'url': 'Our-Category.html',
+              'title': 'Show More',
+              })
+              <div class="swiper-custom relative h-12 w-[128px]">
+                <div class="swiper-button-arrow swiper-button-next">
+                  <svg class="swiper-button-icon swiper-button-icon--white"
+                       xmlns="http://www.w3.org/2000/svg"
+                       width="20" height="20" viewBox="0 0 20 20"
+                       fill="none">
+                    <path
+                      d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
+                      fill="white" />
+                  </svg>
+                  <svg class="swiper-button-icon swiper-button-icon--grey"
+                       xmlns="http://www.w3.org/2000/svg"
+                       width="20" height="20" viewBox="0 0 20 20"
+                       fill="none">
+                    <path
+                      d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
+                      fill="#BFC6D6" />
+                  </svg>
+                </div>
+                <div class="swiper-button-arrow swiper-button-prev">
+                  <svg class="swiper-button-icon rotate-180 swiper-button-icon--white"
+                       xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                       fill="none">
+                    <path
+                      d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
+                      fill="white" />
+                  </svg>
+                  <svg class="swiper-button-icon rotate-180 swiper-button-icon--grey"
+                       xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                       fill="none">
+                    <path
+                      d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
+                      fill="#BFC6D6" />
+                  </svg>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container">
+      <div class="row gap-6">
+        <div class="col-span-6">
+          <div class="flex flex-col max-w-[588px] sticky top-6">
+            @@include('components/Title-category-component.html', {
+            'style': 'items-start',
+            'category': 'About Us',
+            'style-title': '',
+            'title': 'We are an Online Pharmacy you can Trust!',
+            })
+            <p class="mt-4 text-Top3">At ProfarmaDirect we believe that healthcare should be more than just
+              a service. It must be a compassionate and collaborative path to health.</p>
+
+            @@include('components/Link.html', {
+            'style': 'mt-10',
+            'url': 'About-us.html',
+            'title': 'More About Us',
+            })
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex flex-col gap-y-6">
+            @@include('components/About-Cards.html', {
+            'common-style': '',
+            'num': '01',
+            'title': 'Who we are?',
+            'text': 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod, tortor quis',
+            })
+            @@include('components/About-Cards.html', {
+            'common-style': '',
+            'num': '02',
+            'title': 'License',
+            'text': 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod, tortor quis',
+            })
+            @@include('components/About-Cards.html', {
+            'common-style': '',
+            'num': '03',
+            'title': 'Сustomer-oriented',
+            'text': 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod, tortor quis',
+            })
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-16 relative">
+    <span class="absolute top-0 left-0 right-0 w-full h-[546px] gradient-css"></span>
+    <div class="container relative z-[1]">
+      <div class="row">
+        <div class="col-span-12">
+          @@include('components/Form-section.html')
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('components/modal-window.html')
+  @@include('components/wishlistBlock.html')
+  @@include('components/Footer.html')
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>

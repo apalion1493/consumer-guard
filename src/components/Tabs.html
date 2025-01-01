@@ -1,0 +1,35 @@
+<div x-data="{ selectedTab: 'tab1' }" class="w-full">
+  <div @keydown.right.prevent="$focus.wrap().next()" @keydown.left.prevent="$focus.wrap().previous()"
+       class="flex gap-2 overflow-x-auto" role="tablist" aria-label="tab options">
+    <button @click="selectedTab = 'tab1'" :aria-selected="selectedTab === 'tab1'"
+            :tabindex="selectedTab === 'tab1' ? '0' : '-1'"
+            :class="selectedTab === 'tab1' ? 'text-DarkBlue100 border-b-2 border-LightBlue100' : 'text-LightBlue100'"
+            class="h-min px-3 py-2 text-Top1 font-medium" type="button" role="tab" aria-controls="tabPanel1">
+      Description
+    </button>
+    <button @click="selectedTab = 'tab2'" :aria-selected="selectedTab === 'tab2'"
+            :tabindex="selectedTab === 'tab2' ? '0' : '-1'"
+            :class="selectedTab === 'tab2' ? 'text-DarkBlue100 border-b-2 border-LightBlue100' : 'text-LightBlue100'"
+            class="h-min px-3 py-2 text-Top1 font-medium" type="button" role="tab" aria-controls="tabPanel2">
+      Information
+    </button>
+  </div>
+  <div class="pt-6 text-Text-color text-content">
+    <div x-show="selectedTab === 'tab1'" id="tabPanel1" role="tabpanel" aria-label="tab1">
+      <p>Cardura is a medication used to treat high blood pressure, benign prostatic hyperplasia (BPH), and other
+        conditions. It belongs to a class of drugs called alpha-adrenergic blockers, which work by relaxing the
+        muscles in the bladder and prostate. This helps to reduce symptoms of BPH such as difficulty urinating,
+        weak stream, and the need to urinate frequently or urgently. Cardura helps to lower high blood pressure
+        by relaxing the blood vessels, allowing blood to flow more easily. It can also be used to treat
+        Raynaud’s phenomenon, a condition in which certain areas of the body, usually the fingers and toes,
+        become cold and numb due to a decrease in blood flow. Cardura is available as a tablet and should be
+        taken with meals.
+        Common side effects include dizziness, headache, tiredness, and diarrhea. Make sure to talk to your
+        doctor or pharmacist before taking Cardura.</p>
+    </div>
+    <div x-show="selectedTab === 'tab2'" id="tabPanel2" role="tabpanel" aria-label="tab2">
+      <p>Cardura is used to treat hypertension (high blood pressure) and to improve symptoms of benign prostatic
+        hyperplasia (enlarged prostate).</p>
+    </div>
+  </div>
+</div>

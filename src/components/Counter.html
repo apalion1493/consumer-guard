@@ -1,0 +1,27 @@
+<div x-data="{ currentVal: 1, minVal: 0, maxVal: 100, decimalPoints: 0, incrementAmount: 1 }" class="flex">
+  <label for="counterInput" class="text-none">Items(s)</label>
+  <div @dblclick.prevent class="flex items-center rounded overflow-hidden border border-DarkBlue30 w-fit">
+    <button @click="currentVal = Math.max(minVal, currentVal - incrementAmount)"
+            class="flex h-[40px] lg:h-[36px] items-center justify-center  px-3 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0"
+            aria-label="subtract">
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2" fill="none">
+        <path
+          d="M12 1.00253C12 0.529142 11.6162 0.145386 11.1429 0.145386H6.85714L5.14286 0.140381L0.856727 0.144552C0.383436 0.145013 0 0.52882 0 1.00211C0 1.47573 0.383943 1.85967 0.85756 1.85967H5.14286L6.85714 1.85969L11.1429 1.85967C11.6162 1.85967 12 1.47592 12 1.00253Z"
+          fill="#1B3C74" />
+      </svg>
+    </button>
+    <input x-model="currentVal.toFixed(decimalPoints)" size="2" oninput="this.size=Math.max(this.value.length, 10)"
+           id="counterInput" type="text"
+           class="border-x-none h-[40px] lg:h-[36px] w-fit text-base bg-inherit text-DarkBlue100 font-medium rounded-none px-0 border-none text-center focus-visible:z-10 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0"
+           readonly />
+    <button @click="currentVal = Math.min(maxVal, currentVal + incrementAmount)"
+            class="flex h-[40px] lg:h-[36px] items-center justify-center  px-3 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0"
+            aria-label="add">
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+        <path
+          d="M12 6C12 5.52661 11.6162 5.14286 11.1429 5.14286H6.85714V0.857144C6.85714 0.383757 6.47339 0 6 0C5.52661 0 5.14286 0.383756 5.14286 0.857143V5.14286H0.857144C0.383757 5.14286 0 5.52661 0 6C0 6.47339 0.383756 6.85714 0.857143 6.85714H5.14286V11.1429C5.14286 11.6162 5.52661 12 6 12C6.47339 12 6.85714 11.6162 6.85714 11.1429V6.85714H11.1429C11.6162 6.85714 12 6.47339 12 6Z"
+          fill="#1B3C74" />
+      </svg>
+    </button>
+  </div>
+</div>

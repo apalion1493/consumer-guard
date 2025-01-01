@@ -1,0 +1,90 @@
+<nav x-data="{
+       totalPages: 100,
+        currentPage: 1,
+        range() {
+            const pages = [];
+
+            // Первая страница
+            pages.push(1);
+
+            // Страницы вокруг текущей
+            for (let i = Math.max(2, this.currentPage - 1); i <= Math.min(this.currentPage + 1, this.totalPages - 1); i++) {
+                pages.push(i);
+            }
+
+            // Последняя страница
+            if (this.totalPages > 1) {
+                pages.push(this.totalPages);
+            }
+
+            return pages;
+        },
+        prevPage() {
+            if (this.currentPage > 1) {
+                this.currentPage--;
+            }
+        },
+        nextPage() {
+            if (this.currentPage < this.totalPages) {
+                this.currentPage++;
+            }
+        }
+    }" class="w-full flex justify-between" aria-label="pagination">
+
+  <!-- Кнопка Назад -->
+  <button
+    @click="prevPage"
+    :disabled="currentPage === 1"
+    aria-label="previous page"
+    class="pagination-button">
+    Previous
+    <svg class="pagination-button--icon hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="14"
+         viewBox="0 0 22 14" fill="none">
+      <path
+        d="M10.6926 2.1355C10.475 1.84818 10.0384 1.26433 9.83034 0.975586C6.49764 1.55211 3.13224 2.8772 0.722342 5.27288C-0.204258 6.3253 0.858543 7.53036 1.94694 7.87499C4.64914 9.03117 6.93514 10.8335 9.23464 12.5963C10.1953 13.6379 12.3487 12.6269 11.6493 11.1977C10.6669 9.75459 8.86664 9.0558 7.56024 7.90619C10.8924 7.5839 14.2302 7.29844 17.5813 7.35925C19.003 7.40899 20.402 7.11386 21.6316 6.40179C21.5764 6.09946 21.4728 5.47496 21.4176 5.17262C16.2705 4.5065 11.0644 4.79999 5.93154 5.51547C5.68874 5.76849 5.19354 6.27596 4.95214 6.53819C4.78484 6.32801 4.45034 5.90766 4.28314 5.69748C6.35144 4.37921 8.68264 3.52029 10.6926 2.1355Z"
+        fill="#2490EB" />
+    </svg>
+    <svg class="pagination-button--icon" xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14"
+         fill="none">
+      <path
+        d="M10.6926 2.1355C10.475 1.84818 10.0384 1.26433 9.83034 0.975586C6.49764 1.55211 3.13224 2.8772 0.722342 5.27288C-0.204258 6.3253 0.858543 7.53036 1.94694 7.87499C4.64914 9.03117 6.93514 10.8335 9.23464 12.5963C10.1953 13.6379 12.3487 12.6269 11.6493 11.1977C10.6669 9.75459 8.86664 9.0558 7.56024 7.90619C10.8924 7.5839 14.2302 7.29844 17.5813 7.35925C19.003 7.40899 20.402 7.11386 21.6316 6.40179C21.5764 6.09946 21.4728 5.47496 21.4176 5.17262C16.2705 4.5065 11.0644 4.79999 5.93154 5.51547C5.68874 5.76849 5.19354 6.27596 4.95214 6.53819C4.78484 6.32801 4.45034 5.90766 4.28314 5.69748C6.35144 4.37921 8.68264 3.52029 10.6926 2.1355Z"
+        fill="#1B3C74" fill-opacity="0.2" />
+    </svg>
+  </button>
+
+  <!-- Пагинация -->
+  <div class="flex flex-shrink-0 items-center gap-x-2 text-body leading-100 font-medium">
+    <template x-for="page in range()" :key="page">
+      <template x-if="typeof page === 'number'">
+        <button
+          @click="currentPage = page"
+          :class="page === currentPage ? 'bg-LightBlue100 border-LightBlue100 text-white font-semibold' : 'bg-white text-DarkBlue50 border-DarkBlue20'"
+          class="flex size-8 items-center justify-center rounded-full border p-1 "
+          x-text="page">
+        </button>
+      </template>
+    </template>
+  </div>
+
+
+  <!-- Кнопка Вперед -->
+  <button
+    @click="nextPage"
+    :disabled="currentPage === totalPages"
+    aria-label="next page"
+    class="pagination-button">
+    Next
+    <svg class="pagination-button--icon" xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14"
+         fill="none">
+      <path
+        d="M11.3071 2.1355C11.5247 1.84818 11.9613 1.26433 12.1694 0.975586C15.5021 1.55211 18.8675 2.8772 21.2774 5.27288C22.204 6.3253 21.1412 7.53036 20.0528 7.87499C17.3506 9.03117 15.0646 10.8335 12.7651 12.5963C11.8044 13.6379 9.65101 12.6269 10.3504 11.1977C11.3328 9.75459 13.1331 9.0558 14.4395 7.90619C11.1073 7.5839 7.76956 7.29844 4.41847 7.35925C2.99672 7.40899 1.59779 7.11386 0.368164 6.40179C0.423342 6.09946 0.527003 5.47496 0.582173 5.17262C5.72922 4.5065 10.9353 4.79999 16.0682 5.51547C16.311 5.76849 16.8062 6.27596 17.0476 6.53819C17.2149 6.32801 17.5494 5.90766 17.7166 5.69748C15.6483 4.37921 13.3171 3.52029 11.3071 2.1355Z"
+        fill="#2490EB" />
+    </svg>
+    <svg class="pagination-button--icon hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="14"
+         viewBox="0 0 22 14" fill="none">
+      <path
+        d="M11.3071 2.1355C11.5247 1.84818 11.9613 1.26433 12.1694 0.975586C15.5021 1.55211 18.8675 2.8772 21.2774 5.27288C22.204 6.3253 21.1412 7.53036 20.0528 7.87499C17.3506 9.03117 15.0646 10.8335 12.7651 12.5963C11.8044 13.6379 9.65101 12.6269 10.3504 11.1977C11.3328 9.75459 13.1331 9.0558 14.4395 7.90619C11.1073 7.5839 7.76956 7.29844 4.41847 7.35925C2.99672 7.40899 1.59779 7.11386 0.368164 6.40179C0.423342 6.09946 0.527003 5.47496 0.582173 5.17262C5.72922 4.5065 10.9353 4.79999 16.0682 5.51547C16.311 5.76849 16.8062 6.27596 17.0476 6.53819C17.2149 6.32801 17.5494 5.90766 17.7166 5.69748C15.6483 4.37921 13.3171 3.52029 11.3071 2.1355Z"
+        fill="#1B3C74" fill-opacity="0.2" />
+    </svg>
+  </button>
+</nav>
