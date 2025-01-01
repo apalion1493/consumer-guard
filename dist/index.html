@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen">
+  <header class="flex flex-col w-full relative z-10  ">
+  <div x-data="{dropdownOpen: false}" class="w-full flex flex-col">
+    <div class="bg-white shadow-3xl py-8">
+      <div class="container flex items-center w-full">
+        <a class="lg:max-w-[171x] minlg:min-w-[200px] mr-10" href="index.html">
+          <img src="img/profarma-logo.svg" alt="Logo">
+        </a>
+        <div class="flex items-center w-full">
+          <div class="ml-auto w-full lg:hidden">
+            <div class="items-center minlg:h-14 flex justify-end relative">
+              <nav class="mx-auto lg:hidden">
+                <div class="container px-0 mx-auto flex justify-center items-center gap-x-8 w-full text-h8">
+                  <a href="Brand-Shop-Page.html"
+                     class="py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2">Brands</a>
+                  <!--                                <a href="#" class="py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2">Manufacturers</a>-->
+                  <button @click="dropdownOpen = !dropdownOpen"
+                          class="inline-flex items-center py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2"
+                          :class="dropdownOpen ? 'text-LightBlue' : ''"
+                          data-menu-target="menu1">Categories <span
+                    :class="dropdownOpen ? 'rotate-180' : ''"
+                    class="check-icon-menu transition-all ml-2"></span></button>
+                  <a href="About-us.html"
+                     class="py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2">About
+                    Us</a>
+                  <a href="contact-us.html"
+                     class="py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2">Contacts</a>
+                </div>
+              </nav>
+              <div class="flex items-center gap-2 md:w-max">
+                <div class="searchContainer ">
+  <form class="searchForm flex items-center relative overflow-hidden">
+    <label class='absolute opacity-0 -z-10' for='search-dp'>Search</label>
+    <input id='search-dp' type="text" placeholder="Search..."
+           class="searchInput bg-white relative w-full rounded-lg border border-DarkBlue py-2 px-5 pr-16 min-h-[56px] focus:outline-none focus:ring-inherit focus:shadow-none">
+    <button class="text-none absolute right-4 top-4 block" aria-label="Search" type="submit">
+      Search
+      <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M0 10.9072C0 4.88334 4.88334 0 10.9072 0C16.931 0 21.8144 4.88334 21.8144 10.9072C21.8144 16.931 16.931 21.8144 10.9072 21.8144C4.88334 21.8144 0 16.931 0 10.9072ZM10.9072 1.76873C5.86018 1.76873 1.76873 5.86018 1.76873 10.9072C1.76873 15.9542 5.86018 20.0456 10.9072 20.0456C15.9542 20.0456 20.0456 15.9542 20.0456 10.9072C20.0456 5.86018 15.9542 1.76873 10.9072 1.76873Z"
+          fill="#2490EB" />
+        <path
+          d="M17.4875 17.4875C17.8329 17.1422 18.3929 17.1422 18.7382 17.4875L23.741 22.4903C24.0863 22.8357 24.0863 23.3956 23.741 23.741C23.3956 24.0863 22.8357 24.0863 22.4903 23.741L17.4875 18.7382C17.1422 18.3929 17.1422 17.8329 17.4875 17.4875Z"
+          fill="#2490EB" />
+      </svg>
+    </button>
+  </form>
+</div>
+
+                <button id="search-button"
+                        class="relative w-14 min-w-14 h-14 rounded-full flex items-center justify-center bg-LightBlue">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M0 10.9072C0 4.88334 4.88334 0 10.9072 0C16.931 0 21.8144 4.88334 21.8144 10.9072C21.8144 16.931 16.931 21.8144 10.9072 21.8144C4.88334 21.8144 0 16.931 0 10.9072ZM10.9072 1.76873C5.86018 1.76873 1.76873 5.86018 1.76873 10.9072C1.76873 15.9542 5.86018 20.0456 10.9072 20.0456C15.9542 20.0456 20.0456 15.9542 20.0456 10.9072C20.0456 5.86018 15.9542 1.76873 10.9072 1.76873Z"
+                      fill="white" />
+                    <path
+                      d="M17.4875 17.4875C17.8329 17.1422 18.3929 17.1422 18.7382 17.4875L23.741 22.4903C24.0863 22.8357 24.0863 23.3956 23.741 23.741C23.3956 24.0863 22.8357 24.0863 22.4903 23.741L17.4875 18.7382C17.1422 18.3929 17.1422 17.8329 17.4875 17.4875Z"
+                      fill="white" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-x-3 ml-3 lg:ml-auto">
+            <button id="wishlist-open"
+                    class="relative w-14 min-w-14 h-14 rounded-full flex items-center justify-center bg-DarkBlue">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                <path
+                  d="M17.6004 0.00120421C14.784 0.00120421 12.924 1.54261 12 2.56379C11.076 1.54381 9.216 0.00120421 6.3996 0.00120421C2.5596 0.00120421 0 3.58617 0 7.60225C0 10.6068 1.5096 16.4605 11.622 21.9048C11.7383 21.9673 11.8681 22 12 22C12.1319 22 12.2617 21.9673 12.378 21.9048C22.4904 16.4605 24 10.6068 24 7.60225C24 3.49224 21.366 0.00120421 17.6004 0.00120421ZM12 20.2839C7.1424 17.6033 1.5996 13.1381 1.5996 7.60225C1.5996 4.52185 3.4428 1.60643 6.3996 1.60643C8.6436 1.60643 10.4988 2.98647 11.3196 4.28703C11.634 4.7928 12.3684 4.7916 12.6804 4.28462C12.6972 4.25813 14.3652 1.60643 17.6004 1.60643C20.5788 1.60643 22.4004 4.55075 22.4004 7.60104C22.4004 13.1381 16.8564 17.6033 12 20.2839Z"
+                  fill="white" />
+              </svg>
+              <span
+                class="rounded-full bg-LightBlue absolute top-4 right-3 flex justify-center content-center align-middle w-3 min-w-3 h-3 ">
+                          <span
+                            class="text-body3 text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">2</span>
+                        </span>
+            </button>
+            <div class="flex items-center lg:hidden">
+              <div class="flex flex-col gap-y-1">
+                <span class="font-medium text-DarkBlue text-base">Support</span>
+                <a class="hover:underline text-body whitespace-nowrap" href="tel:+16467559735">+1 646 755
+                  9735</a>
+              </div>
+            </div>
+          </div>
+          <button id="burger-button" class="minlg:hidden ml-5 flex items-center justify-center p-2"
+                  aria-label="Mobile Burger Button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container md:hidden">
+      <!-- Mega Menus -->
+      <div style="display: none" x-cloak x-show="dropdownOpen" @click.outside="dropdownOpen = false"
+           x-transition.opacity.duration.200ms
+           x-trap.inert.noscroll="dropdownOpen" class="relative">
+        <div x-show="dropdownOpen"
+             x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity"
+             x-transition:enter-start="opacity-0 scale-50" x-transition:enter-end="opacity-100 scale-100"
+             id="menu1"
+             class="mega-menu min-w-[1204px] rounded-xl border border-primary border-solid absolute top-3 left-1/2 -translate-x-1/2 bg-white z-50 p-8">
+          <div class="grid grid-cols-3 minxl:grid-cols-5 gap-x-12 gap-y-4">
+            <div class="flex flex-col gap-4">
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Neurology-40 mr-3 min-w-10"></i>
+                Neurology
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Oncology-40 mr-3 min-w-10"></i>
+                Oncology
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Cardiology-40 mr-3 min-w-10"></i>
+                Cardiology
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Hematology-40 mr-3 min-w-10"></i>
+                Hematology
+              </a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Fertility-40 mr-3 min-w-10"></i>
+                Fertility
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Urology-40 mr-3 min-w-10"></i>
+                Urology
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Obgyn-40 mr-3 min-w-10"></i>
+                Obgyn
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Erectile-Disfunction-40 mr-3 min-w-10"></i>
+                Erectile Disfunction
+              </a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Pulmonology-40 mr-3 min-w-10"></i>
+                Pulmonology
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Endochrinology-40 mr-3 min-w-10"></i>
+                Endocrinology
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Rheymatology-40 mr-3 min-w-10"></i>
+                Rheymotology
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Gastroenterology-40 mr-3 min-w-10"></i>
+                Gastroenterology
+              </a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Allergy-40 mr-3 min-w-10"></i>
+                Allergy
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Infection-40 mr-3 min-w-10"></i>
+                Infection
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Weight-Loss-40 mr-3 min-w-10"></i>
+                Weight Loss
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Dermatology-40 mr-3 min-w-10"></i>
+                Dermatology
+              </a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Sugar-Control-40 mr-3 min-w-10"></i>
+                Sugar Control
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Ophtalmology-40 mr-3 min-w-10"></i>
+                Ophtalmology
+              </a>
+            </div>
+          </div>
+          <a href="#" class="text-body block mt-6 text-DarkBlue underline font-semibold md:text-body4">Show All</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu hidden">
+    <div class="flex flex-col container py-6 gap-y-6">
+
+      <div class="items-center gap-x-2 lg:flex">
+        <div class="relative flex w-full">
+
+        </div>
+      </div>
+      <nav class="bg-white shadow-md p-4 w-full mb-20">
+        <ul class="flex flex-col gap-y-6">
+          <li>
+            <button
+              class="menu-btn flex justify-between items-center w-full px-4 text-left text-gray-700 focus:outline-none">
+              All Categories
+              <span class='menu-btn--icon'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                  <path d="M8.88715 0.511963L5 4.4881L1.11285 0.511963" stroke="#333333" stroke-linecap="round" />
+                </svg>
+              </span>
+            </button>
+            <ul class="hidden space-y-1 mt-2">
+              <li class="flex flex-col px-4">
+                <ul class="py-5 flex flex-col gap-5">
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="botulinum-icon mr-2"></i>
+                      Botulinum
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="mesotherapy-icon mr-2"></i>
+                      Mesotherapy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="dermal-fillers-icon mr-2"></i>
+                      Dermal Fillers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="lipolitics-icon mr-2"></i>
+                      Lipolitics
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="placental-extract-icon mr-2"></i>
+                      Placental Extract
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="creams-serum-icon mr-2"></i>
+                      Creams & Serum
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="Rheumatology-icon mr-2"></i>
+                      Rheumatology
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="ortophedics-icon mr-2"></i>
+                      Ortophedics
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="ginecology-icon mr-2"></i>
+                      Ginecology
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+               class="menu-btn block w-full text-left px-4 text-gray-700 hover:bg-gray-200 focus:outline-none">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="#"
+               class="menu-btn block w-full text-left px-4 text-gray-700 hover:bg-gray-200 focus:outline-none">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flex items-center mx-auto mt-auto">
+        <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+             fill="none">
+          <path
+            d="M18.3077 19.7436L18.0965 20.7995C18.5728 20.8949 19.0538 20.6595 19.2709 20.2252L18.3077 19.7436ZM8.25641 9.69231L7.7748 8.72908C7.34042 8.94626 7.10517 9.4273 7.20039 9.90351L8.25641 9.69231ZM20.1026 12.5641C20.1026 13.1589 20.5847 13.641 21.1795 13.641C21.7742 13.641 22.2564 13.1589 22.2564 12.5641H20.1026ZM15.4359 5.74359C14.8411 5.74359 14.359 6.22575 14.359 6.82051C14.359 7.41528 14.8411 7.89744 15.4359 7.89744V5.74359ZM25.8462 12.5641C25.8462 13.1589 26.3283 13.641 26.9231 13.641C27.5178 13.641 28 13.1589 28 12.5641H25.8462ZM15.4359 0C14.8411 0 14.359 0.48216 14.359 1.07692C14.359 1.67169 14.8411 2.15385 15.4359 2.15385V0ZM25.8462 21.6879V24.0513H28V21.6879H25.8462ZM3.94872 2.15385H6.3121V0H3.94872V2.15385ZM18.3077 19.7436C18.5189 18.6876 18.5192 18.6876 18.5195 18.6876C18.5162 18.6869 18.5087 18.6855 18.4988 18.6832C18.479 18.6789 18.4465 18.6714 18.4023 18.6608C18.314 18.6392 18.179 18.6043 18.0059 18.5534C17.659 18.4513 17.1613 18.2857 16.578 18.0357C15.4066 17.5337 13.9194 16.7042 12.6076 15.3924L11.0847 16.9153C12.6447 18.4753 14.3883 19.4406 15.7297 20.0155C16.4028 20.304 16.9821 20.4974 17.3981 20.6196C17.6063 20.6809 17.7743 20.7246 17.8933 20.7536C17.9529 20.7681 18.0003 20.7789 18.0344 20.7865C18.0517 20.7902 18.0655 20.7931 18.0758 20.7954C18.081 20.7964 18.0853 20.7974 18.0887 20.798C18.0904 20.7984 18.092 20.7987 18.0933 20.799C18.0939 20.7991 18.0945 20.7993 18.095 20.7993C18.0953 20.7994 18.0963 20.7995 18.0965 20.7995C18.0969 20.7997 18.0965 20.7995 18.3077 19.7436ZM12.6076 15.3924C11.2958 14.0806 10.4663 12.5934 9.96421 11.422C9.71423 10.8387 9.54866 10.3411 9.44663 9.99421C9.39568 9.82099 9.36079 9.68606 9.33928 9.59762C9.32854 9.55344 9.32114 9.52093 9.31678 9.50115C9.3146 9.49127 9.31316 9.48456 9.31246 9.48117C9.3121 9.47948 9.31192 9.47862 9.31191 9.4786C9.31182 9.47819 9.31191 9.47859 9.31191 9.4786C9.31192 9.47862 9.3121 9.47948 9.31246 9.48117C9.31244 9.48109 9.31248 9.48133 9.31246 9.48117C9.31251 9.48146 9.31243 9.4811 8.25641 9.69231C7.20039 9.90351 7.20032 9.90317 7.20039 9.90351C7.20042 9.90364 7.20064 9.90468 7.2007 9.90495C7.2008 9.90548 7.20091 9.90607 7.20104 9.90672C7.20131 9.90801 7.20161 9.90952 7.20197 9.91124C7.20268 9.9147 7.20357 9.91902 7.20466 9.92421C7.20684 9.93459 7.2098 9.94839 7.21358 9.9655C7.22113 9.9997 7.23197 10.0471 7.24646 10.1067C7.27543 10.2258 7.31907 10.3938 7.3803 10.6019C7.50262 11.0179 7.69602 11.5972 7.98451 12.2703C8.55937 13.6117 9.52467 15.3553 11.0847 16.9153L12.6076 15.3924ZM8.73802 10.6555L9.24636 10.4014L8.28313 8.47491L7.7748 8.72908L8.73802 10.6555ZM11.1467 5.40301L9.97841 2.48221L7.97861 3.28212L9.14693 6.20293L11.1467 5.40301ZM25.5178 18.0217L22.597 16.8533L21.7971 18.853L24.7178 20.0214L25.5178 18.0217ZM17.5986 18.7537L17.3445 19.262L19.2709 20.2252L19.525 19.7169L17.5986 18.7537ZM22.597 16.8533C20.6901 16.0905 18.517 16.9167 17.5986 18.7537L19.525 19.7169C19.9426 18.8819 20.9304 18.5064 21.7971 18.853L22.597 16.8533ZM9.24636 10.4014C11.0832 9.48294 11.9095 7.30981 11.1467 5.40301L9.14693 6.20293C9.49362 7.06966 9.11806 8.05744 8.28313 8.47491L9.24636 10.4014ZM6.3121 2.15385C7.04603 2.15385 7.70603 2.60068 7.97861 3.28212L9.97841 2.48221C9.37874 0.983044 7.92676 0 6.3121 0V2.15385ZM28 21.6879C28 20.0733 27.017 18.6213 25.5178 18.0217L24.7178 20.0214C25.3993 20.294 25.8462 20.9539 25.8462 21.6879H28ZM24.0513 25.8462C11.9577 25.8462 2.15385 16.0423 2.15385 3.94872H0C0 17.2319 10.7681 28 24.0513 28V25.8462ZM24.0513 28C26.2321 28 28 26.2321 28 24.0513H25.8462C25.8462 25.0426 25.0426 25.8462 24.0513 25.8462V28ZM2.15385 3.94872C2.15385 2.95743 2.95743 2.15385 3.94872 2.15385V0C1.76791 0 0 1.76791 0 3.94872H2.15385ZM22.2564 12.5641C22.2564 11.6684 22.0799 10.7815 21.7372 9.954L19.7473 10.7782C19.9818 11.3445 20.1026 11.9513 20.1026 12.5641H22.2564ZM21.7372 9.954C21.3944 9.12651 20.892 8.37461 20.2588 7.74127L18.7357 9.26427C19.1691 9.69761 19.5128 10.2121 19.7473 10.7782L21.7372 9.954ZM20.2588 7.74127C19.6254 7.10792 18.8734 6.60553 18.0459 6.26277L17.2217 8.25266C17.7879 8.48719 18.3024 8.83093 18.7357 9.26427L20.2588 7.74127ZM18.0459 6.26277C17.2186 5.92 16.3316 5.74359 15.4359 5.74359V7.89744C16.0487 7.89744 16.6555 8.01814 17.2217 8.25266L18.0459 6.26277ZM28 12.5641C28 10.9142 27.6751 9.28038 27.0436 7.75603L25.0537 8.58026C25.5769 9.84331 25.8462 11.197 25.8462 12.5641H28ZM27.0436 7.75603C26.4122 6.23168 25.4867 4.84663 24.3201 3.67995L22.797 5.20295C23.7637 6.16962 24.5306 7.31723 25.0537 8.58026L27.0436 7.75603ZM24.3201 3.67995C23.1534 2.51325 21.7683 1.58779 20.244 0.956379L19.4198 2.94627C20.6828 3.46944 21.8304 4.23626 22.797 5.20295L24.3201 3.67995ZM20.244 0.956379C18.7197 0.324987 17.0859 0 15.4359 0V2.15385C16.803 2.15385 18.1566 2.42312 19.4198 2.94627L20.244 0.956379Z"
+            fill="#007F84" />
+        </svg>
+        <div class="flex flex-col">
+          <span>Support</span>
+          <a class="hover:underline font-semibold" href="tel:+19298104787">(929) 810 4787</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <section class="my-20 hidden">
+    <div class="container">
+      <div class="row">
+
+      </div>
+    </div>
+  </section>
+
+
+  <div id="modal" class="fixed inset-0 z-[10000] bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+  <div class="bg-white rounded-lg shadow-lg py-8 px-6 w-full max-w-[561px] max-h-screen md:overflow-y-scroll relative">
+    <div class="flex justify-between items-center mb-5">
+      <span class="text-Top5 text-DarkBlue font-semibold">Make a Request</span>
+      <button class="close-modal text-gray-500 ml-auto hover:text-gray-700 focus:outline-none text-2xl transition">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+          <path d="M17.3998 1.11339C17.2765 0.989783 17.1299 0.891719 16.9686 0.824811C16.8073 0.757902 16.6344 0.723462 16.4598 0.723462C16.2852 0.723462 16.1123 0.757902 15.951 0.824811C15.7897 0.891719 15.6432 0.989783 15.5198 1.11339L8.99981 7.62005L2.47981 1.10005C2.35637 0.976611 2.20982 0.878691 2.04853 0.811885C1.88725 0.745078 1.71438 0.710693 1.53981 0.710693C1.36524 0.710693 1.19237 0.745078 1.03109 0.811885C0.8698 0.878691 0.723252 0.976611 0.59981 1.10005C0.476367 1.2235 0.378447 1.37004 0.31164 1.53133C0.244834 1.69261 0.210449 1.86548 0.210449 2.04005C0.210449 2.21463 0.244834 2.38749 0.31164 2.54878C0.378447 2.71006 0.476367 2.85661 0.59981 2.98005L7.11981 9.50005L0.59981 16.0201C0.476367 16.1435 0.378447 16.29 0.31164 16.4513C0.244834 16.6126 0.210449 16.7855 0.210449 16.9601C0.210449 17.1346 0.244834 17.3075 0.31164 17.4688C0.378447 17.6301 0.476367 17.7766 0.59981 17.9001C0.723252 18.0235 0.8698 18.1214 1.03109 18.1882C1.19237 18.255 1.36524 18.2894 1.53981 18.2894C1.71438 18.2894 1.88725 18.255 2.04853 18.1882C2.20982 18.1214 2.35637 18.0235 2.47981 17.9001L8.99981 11.3801L15.5198 17.9001C15.6433 18.0235 15.7898 18.1214 15.9511 18.1882C16.1124 18.255 16.2852 18.2894 16.4598 18.2894C16.6344 18.2894 16.8072 18.255 16.9685 18.1882C17.1298 18.1214 17.2764 18.0235 17.3998 17.9001C17.5233 17.7766 17.6212 17.6301 17.688 17.4688C17.7548 17.3075 17.7892 17.1346 17.7892 16.9601C17.7892 16.7855 17.7548 16.6126 17.688 16.4513C17.6212 16.29 17.5233 16.1435 17.3998 16.0201L10.8798 9.50005L17.3998 2.98005C17.9065 2.47339 17.9065 1.62005 17.3998 1.11339Z" fill="#1B3C74"/>
+        </svg>
+      </button>
+    </div>
+    <div class="flex flex-col">
+      <p class="mb-2 text-Top3 text-BlackText">Our professional team will assist you from the moment you place the
+        order till the moment you receive it.</p>
+      <p class="text-base text-DarkBlue font-medium">We sell to the certified doctors and companies only.</p>
+      <form class="row gap-y-5 gap-x-6 mt-10">
+        <div class="col-span-6">
+          <div class="form-group flex flex-col items-start ">
+  <label class="mb-3 font-semibold text-body md:text-body2 hidden" for="TextId1"></label>
+  <input
+    class="input  "
+    type="text" id="TextId1" placeholder="Your Name" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required</small>
+</div>
+        </div>
+        <div class="col-span-6">
+          <div class="form-group flex flex-col items-start ">
+  <label class="mb-3 font-semibold text-body md:text-body2 hidden" for="EmailId1"></label>
+  <input
+    class="input  "
+    type="email" id="EmailId1" placeholder="Email" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required</small>
+</div>
+        </div>
+        <div class="col-span-6">
+          <div class="form-group flex flex-col items-start relative ">
+  <label class="mb-3 font-semibold text-body md:text-body2 hidden" for="selectId1"></label>
+  <svg class="absolute pointer-events-none right-4 top-6 h-[6px] w-[12px]" xmlns="http://www.w3.org/2000/svg" width="14"
+       height="8" viewBox="0 0 14 8" fill="none">
+    <path d="M1 1L7 7L13 1" stroke="#646E8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+  <select id="selectId1" required name="" class="select w-full input">
+    <option value="" selected disabled>Choose State</option>
+    <option value="AL">Alabama</option>
+    <option value="AK">Alaska</option>
+    <option value="AZ">Arizona</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+    <option value="DE">Delaware</option>
+    <option value="FL">Florida</option>
+    <option value="GA">Georgia</option>
+    <option value="HI">Hawaii</option>
+    <option value="ID">Idaho</option>
+    <option value="IL">Illinois</option>
+    <option value="IN">Indiana</option>
+    <option value="IA">Iowa</option>
+    <option value="KS">Kansas</option>
+    <option value="KY">Kentucky</option>
+    <option value="LA">Louisiana</option>
+    <option value="ME">Maine</option>
+    <option value="MD">Maryland</option>
+    <option value="MA">Massachusetts</option>
+    <option value="MI">Michigan</option>
+    <option value="MN">Minnesota</option>
+    <option value="MS">Mississippi</option>
+    <option value="MO">Missouri</option>
+    <option value="MT">Montana</option>
+    <option value="NE">Nebraska</option>
+    <option value="NV">Nevada</option>
+    <option value="NH">New Hampshire</option>
+    <option value="NJ">New Jersey</option>
+    <option value="NM">New Mexico</option>
+    <option value="NY">New York</option>
+    <option value="NC">North Carolina</option>
+    <option value="ND">North Dakota</option>
+    <option value="OH">Ohio</option>
+    <option value="OK">Oklahoma</option>
+    <option value="OR">Oregon</option>
+    <option value="PA">Pennsylvania</option>
+    <option value="RI">Rhode Island</option>
+    <option value="SC">South Carolina</option>
+    <option value="SD">South Dakota</option>
+    <option value="TN">Tennessee</option>
+    <option value="TX">Texas</option>
+    <option value="UT">Utah</option>
+    <option value="VT">Vermont</option>
+    <option value="VA">Virginia</option>
+    <option value="WA">Washington</option>
+    <option value="WV">West Virginia</option>
+    <option value="WI">Wisconsin</option>
+    <option value="WY">Wyoming</option>
+  </select>
+</div>
+
+        </div>
+        <div class="col-span-6">
+          <div class="form-group flex flex-col items-start ">
+  <label class="mb-3 font-semibold text-body md:text-body2 hidden" for="PhoneId1"></label>
+  <input
+    class="input  "
+    type="text" id="PhoneId1" placeholder="Phone" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required</small>
+</div>
+        </div>
+        <div class="col-span-12">
+          <div class="form-group flex flex-col items-start overflow-hidden @@commonStyle">
+  <label class="mb-3 font-semibold text-body" for="@@idTextarea"></label>
+  <textarea
+    class="input "
+    id="@@idTextarea" placeholder="Message" rows="3"></textarea>
+</div>
+        </div>
+        <div class="col-span-12">
+          <button class="button w-full" type="submit" aria-label="Send Button">
+  <span>Send</span>
+</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <footer class="w-full mt-auto overflow-hidden bg-DarkBlue pt-16 pb-10 text-white shadow-3xl">
+  <div class="container">
+    <div class="row gap-x-6 pb-12 relative">
+      <div class="col-span-4 relative z-1">
+        <div class="flex flex-col max-w-[265px]">
+          <a href="index.html">
+            <img width="227" src="img/profarma-logo-white.svg" alt="Profarma + Direct Logo" class="block mb-5">
+          </a>
+          <p class="text-body text-white">From wellness tips to expert advice,
+            we're here to support your journey to
+            a healthier you.</p>
+          <ul class="flex items-center gap-x-4 mt-8">
+            <li class="flex items-center justify-center">
+              <a
+                class="text-none flex items-center justify-center w-10 h-10 min-w-10 rounded-full border border-white transition-all hover:border-Yellow group"
+                href="#" target="blank">
+                Facebook
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <mask id="mask0_313_1035" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                        width="16" height="16">
+                    <path d="M16 0H0V16H16V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_313_1035)">
+                    <path class="group-hover:fill-Yellow transition-all" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5.92101 15.7984C5.92101 15.9097 6.01132 16 6.12257 16H8.99538C9.10663 16 9.19667 15.9097 9.19667 15.7984V7.93688H11.2795C11.3839 7.93688 11.471 7.85656 11.4801 7.7525L11.6804 5.38375C11.6901 5.26625 11.5976 5.16531 11.4795 5.16531H9.19667V3.485C9.19667 3.09094 9.51597 2.77156 9.90977 2.77156H11.5148C11.6264 2.77156 11.7164 2.68125 11.7164 2.57V0.201562C11.7164 0.090312 11.6264 0 11.5148 0H8.80289C7.21132 0 5.92101 1.29 5.92101 2.88156V5.16531H4.48476C4.37351 5.16531 4.2832 5.25563 4.2832 5.36688V7.73531C4.2832 7.84688 4.37351 7.93688 4.48476 7.93688H5.92101V15.7984Z"
+                          fill="white" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="flex items-center justify-center">
+              <a
+                class="text-none flex items-center justify-center w-10 h-10 min-w-10 rounded-full border border-white transition-all hover:border-Yellow group"
+                href="#" target="blank">
+                Twitter
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <mask id="mask0_313_1042" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                        width="16" height="16">
+                    <path d="M16 0H0V16H16V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_313_1042)">
+                    <path class="group-hover:fill-Yellow transition-all"
+                          d="M5.21202 14.007C10.8727 14.007 13.9683 9.31732 13.9683 5.25075C13.9683 5.11755 13.9655 4.98491 13.9596 4.853C14.5604 4.41856 15.0826 3.87642 15.4947 3.25935C14.9433 3.50454 14.3498 3.66938 13.7274 3.74396C14.3627 3.36282 14.8505 2.76014 15.0806 2.0417C14.486 2.39422 13.8275 2.65034 13.1264 2.78867C12.5649 2.19049 11.7653 1.81641 10.8799 1.81641C9.18056 1.81641 7.80226 3.19458 7.80226 4.89346C7.80226 5.13507 7.82931 5.36991 7.88206 5.5952C5.3243 5.4665 3.05614 4.24197 1.53844 2.37982C1.27426 2.83454 1.12179 3.36291 1.12179 3.92669C1.12179 4.99426 1.66513 5.93699 2.49126 6.4883C1.98637 6.4728 1.51211 6.33419 1.09749 6.10349C1.09703 6.11642 1.09703 6.12898 1.09703 6.14274C1.09703 7.63321 2.15781 8.87768 3.56618 9.15963C3.30749 9.22994 3.03532 9.2679 2.75462 9.2679C2.55666 9.2679 2.36366 9.24843 2.17616 9.21234C2.56794 10.4352 3.70414 11.325 5.05113 11.3499C3.99777 12.1755 2.67087 12.6673 1.22875 12.6673C0.980709 12.6673 0.735518 12.6531 0.494629 12.6246C1.85666 13.4976 3.47389 14.007 5.21202 14.007Z"
+                          fill="white" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="flex items-center justify-center">
+              <a
+                class="text-none flex items-center justify-center w-10 h-10 min-w-10 rounded-full border border-white transition-all hover:border-Yellow group"
+                href="#" target="blank">
+                Linkedin
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <mask id="mask0_313_1049" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                        width="16" height="16">
+                    <path d="M16 0H0V16H16V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_313_1049)">
+                    <path class="group-hover:fill-Yellow transition-all"
+                          d="M2.31076 0.8125C1.21085 0.8125 0.491699 1.53476 0.491699 2.48407C0.491699 3.41242 1.18943 4.15527 2.26856 4.15527H2.28943C3.41086 4.15527 4.10877 3.41242 4.10877 2.48407C4.0878 1.53476 3.41086 0.8125 2.31076 0.8125Z"
+                          fill="white" />
+                    <path class="group-hover:fill-Yellow transition-all"
+                          d="M0.682617 5.47607H3.89814V15.1501H0.682617V5.47607Z" fill="white" />
+                    <path class="group-hover:fill-Yellow transition-all"
+                          d="M11.7902 5.24951C10.0556 5.24951 8.89237 6.87952 8.89237 6.87952V5.47656H5.67676V15.1506H8.89219V9.74829C8.89219 9.45902 8.91315 9.17027 8.99811 8.96345C9.23058 8.38593 9.75958 7.78763 10.6479 7.78763C11.8115 7.78763 12.2768 8.67478 12.2768 9.97529V15.1506H15.4921V9.60368C15.4921 6.63224 13.9056 5.24951 11.7902 5.24951Z"
+                          fill="white" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="flex items-center justify-center">
+              <a
+                class="text-none flex items-center justify-center w-10 h-10 min-w-10 rounded-full border border-white transition-all hover:border-Yellow group"
+                href="#" target="blank">
+                Instagram
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <mask id="mask0_313_1058" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="1" y="1"
+                        width="16" height="16">
+                    <path d="M17 1H1V17H17V1Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_313_1058)">
+                    <path class="group-hover:fill-Yellow transition-all"
+                          d="M16.9836 5.70405C16.9461 4.8539 16.8086 4.26944 16.6117 3.76299C16.4085 3.22541 16.096 2.74412 15.6865 2.34401C15.2864 1.93768 14.8019 1.62195 14.2706 1.42196C13.7612 1.22502 13.1798 1.08754 12.3296 1.05006C11.4731 1.0094 11.2012 1 9.0289 1C6.8566 1 6.5847 1.0094 5.73138 1.04688C4.88124 1.08437 4.29678 1.22197 3.79046 1.41878C3.25275 1.62195 2.77146 1.93451 2.37136 2.34401C1.96503 2.74412 1.64942 3.22859 1.4493 3.75994C1.25237 4.26944 1.11489 4.85073 1.0774 5.70087C1.03674 6.55736 1.02734 6.82927 1.02734 9.00156C1.02734 11.1739 1.03674 11.4458 1.07423 12.2991C1.11171 13.1492 1.24931 13.7337 1.44625 14.2401C1.64942 14.7777 1.96503 15.259 2.37136 15.6591C2.77146 16.0655 3.25593 16.3812 3.78728 16.5812C4.29678 16.7781 4.87807 16.9156 5.72833 16.9531C6.58152 16.9907 6.85355 17 9.02585 17C11.1982 17 11.4701 16.9907 12.3234 16.9531C13.1735 16.9156 13.758 16.7781 14.2643 16.5812C15.3396 16.1654 16.1898 15.3153 16.6055 14.2401C16.8023 13.7306 16.9399 13.1492 16.9774 12.2991C17.0149 11.4458 17.0243 11.1739 17.0243 9.00156C17.0243 6.82927 17.0211 6.55736 16.9836 5.70405ZM15.5428 12.2366C15.5083 13.018 15.3771 13.4399 15.2677 13.7212C14.9988 14.4183 14.4456 14.9715 13.7486 15.2403C13.4673 15.3497 13.0423 15.481 12.2639 15.5153C11.42 15.5529 11.1669 15.5622 9.03207 15.5622C6.89726 15.5622 6.64098 15.5529 5.80012 15.5153C5.01872 15.481 4.59676 15.3497 4.31546 15.2403C3.96859 15.1121 3.65286 14.909 3.39658 14.6433C3.1309 14.3839 2.92774 14.0713 2.79954 13.7244C2.69015 13.4431 2.55889 13.018 2.52459 12.2398C2.48698 11.3958 2.4777 11.1426 2.4777 9.00779C2.4777 6.87298 2.48698 6.6167 2.52459 5.77596C2.55889 4.99456 2.69015 4.5726 2.79954 4.29129C2.92774 3.9443 3.1309 3.62869 3.39976 3.37229C3.65908 3.10661 3.97164 2.90345 4.31863 2.77537C4.59994 2.66598 5.02507 2.53473 5.8033 2.50029C6.64721 2.46281 6.90043 2.45341 9.03513 2.45341C11.1732 2.45341 11.4263 2.46281 12.2671 2.50029C13.0485 2.53473 13.4705 2.66598 13.7518 2.77537C14.0986 2.90345 14.4144 3.10661 14.6707 3.37229C14.9363 3.63174 15.1395 3.9443 15.2677 4.29129C15.3771 4.5726 15.5083 4.99761 15.5428 5.77596C15.5803 6.61987 15.5897 6.87298 15.5897 9.00779C15.5897 11.1426 15.5803 11.3927 15.5428 12.2366Z"
+                          fill="white" />
+                    <path class="group-hover:fill-Yellow transition-all"
+                          d="M9.02913 4.89111C6.76001 4.89111 4.91895 6.73205 4.91895 9.00129C4.91895 11.2705 6.76001 13.1115 9.02913 13.1115C11.2984 13.1115 13.1393 11.2705 13.1393 9.00129C13.1393 6.73205 11.2984 4.89111 9.02913 4.89111ZM9.02913 11.6675C7.55704 11.6675 6.36296 10.4735 6.36296 9.00129C6.36296 7.52908 7.55704 6.33512 9.02913 6.33512C10.5014 6.33512 11.6953 7.52908 11.6953 9.00129C11.6953 10.4735 10.5014 11.6675 9.02913 11.6675Z"
+                          fill="white" />
+                    <path class="group-hover:fill-Yellow transition-all"
+                          d="M14.2615 4.72907C14.2615 5.25896 13.8319 5.68861 13.3019 5.68861C12.772 5.68861 12.3423 5.25896 12.3423 4.72907C12.3423 4.19906 12.772 3.76953 13.3019 3.76953C13.8319 3.76953 14.2615 4.19906 14.2615 4.72907Z"
+                          fill="white" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-span-8 relative z-1">
+        <div class="flex items-start justify-between gap-x-3">
+          <div class="flex flex-col flex-1">
+            <span class="mb-5 block font-semibold text-Top1">Navigate</span>
+            <ul class="flex flex-col gap-y-3">
+              <li class="flex items-center">
+                <a class="text-white text-base hover:text-Yellow transition-colors"
+                   href="Brand-Shop-Page.html">Brands</a>
+              </li>
+              <!--              <li class="flex items-center">-->
+              <!--                <a class="text-white text-base hover:text-Yellow transition-colors" href="#">Manufacturers</a>-->
+              <!--              </li>-->
+              <li class="flex items-center">
+                <a class="text-white text-base hover:text-Yellow transition-colors" href="Categories-Shop-Page.html">Categories</a>
+              </li>
+              <li class="flex items-center">
+                <a class="text-white text-base hover:text-Yellow transition-colors" href="About-us.html">About Us</a>
+              </li>
+              <li class="flex items-center">
+                <a class="text-white text-base hover:text-Yellow transition-colors" href="contact-us.html">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col flex-1">
+            <span class="mb-5 block font-semibold text-Top1">Legal</span>
+            <ul class="flex flex-col gap-y-3">
+              <li class="flex items-center">
+                <a class="text-white text-base hover:text-Yellow transition-colors" href="#">Shipping</a>
+              </li>
+              <li class="flex items-center">
+                <a class="text-white text-base hover:text-Yellow transition-colors"
+                   href="Terms&Conditions.html">Terms</a>
+              </li>
+              <li class="flex items-center">
+                <a class="text-white text-base hover:text-Yellow transition-colors" href="#">Privacy</a>
+              </li>
+              <li class="flex items-center">
+                <a class="text-white text-base hover:text-Yellow transition-colors" href="#">Policy</a>
+              </li>
+              <li class="flex items-center">
+                <a class="text-white text-base hover:text-Yellow transition-colors" href="FAQs.html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col flex-1">
+            <span class="mb-5 block font-semibold text-Top1">Contact</span>
+            <ul class="flex flex-col gap-y-3">
+              <li class="flex items-center gap-x-3 py-1">
+                <i class="calling-small-white"></i>
+                <a class="text-white text-base hover:text-Yellow transition-colors" href="tel:+16467559735">+1 646 755
+                  9735</a>
+              </li>
+              <li class="flex items-center gap-x-3 py-1">
+                <i class="Mail-white-icon-2"></i>
+                <a class="text-white text-base hover:text-Yellow transition-colors"
+                   href="mailto:info@profarma-direct.com">info@profarma-direct.com</a>
+              </li>
+              <li class="flex items-center gap-x-3 py-1">
+                <i class="Clock-white-icon"></i>
+                <span class="text-white text-base">9:00 - 18:00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <i class="absolute bottom-0 right-0 highlighter-shape"></i>
+    </div>
+    <div class="flex items-center justify-center mt-8 pt-5 border-t border-white w-full">
+      <span>© 2023 All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+</main>
+
+<script src="./js/scripts.js"></script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('data', () => ({
+        }))
+    })
+</script>
+</body>
+
+</html>

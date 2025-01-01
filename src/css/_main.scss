@@ -13,7 +13,7 @@
 .button {
 
   &.categories {
-    @apply h-10 min-h-10 min-w-fit bg-LightBlue10 border-LightBlue10 text-body px-4 text-LightBlue100 hover:border-LightBlue100
+    @apply h-10 min-h-10 min-w-fit bg-LightBlue border-LightBlue text-body px-4 text-LightBlue hover:border-LightBlue
   }
 
   &.btn-small {
@@ -37,11 +37,11 @@
   }
 
   &.btn-icons {
-    @apply bg-Yellow text-DarkBlue100 hover:bg-DarkBlue100 hover:text-white
+    @apply bg-Yellow text-DarkBlue hover:bg-DarkBlue hover:text-white
   }
 
   &.btn-icons-blue {
-    @apply bg-DarkBlue100 text-white hover:bg-white hover:text-DarkBlue100
+    @apply bg-DarkBlue text-white hover:bg-white hover:text-DarkBlue
   }
 
   &.width-auto {
@@ -52,7 +52,7 @@
     @apply max-w-[475px] w-full
   }
 
-  @apply h-12 min-h-12 px-6 min-w-[102px] w-fit flex items-center justify-center rounded-lg text-white text-base text-center font-semibold bg-LightBlue100 border border-LightBlue100 transition-all hover:bg-DarkBlue100 hover:text-white hover:border-DarkBlue100 focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit;
+  @apply h-12 min-h-12 px-6 min-w-[102px] w-fit flex items-center justify-center rounded-lg text-white text-base text-center font-semibold bg-LightBlue border border-LightBlue transition-all hover:bg-DarkBlue hover:text-white hover:border-DarkBlue focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit;
 }
 
 // Button with arrow Style End
@@ -65,7 +65,7 @@
     @apply h-10 min-h-10 text-base
   }
 
-  @apply p-2 border border-DarkBlue30 rounded-lg flex items-center justify-center text-body2 font-medium
+  @apply p-2 border border-DarkBlue rounded-lg flex items-center justify-center text-body2 font-medium
 }
 
 // Info Elem Style End
@@ -124,15 +124,15 @@
 .text-content {
 
   p {
-    @apply text-base md:text-body -tracking-018 text-DarkBlue50
+    @apply text-base md:text-body -tracking-018 text-DarkBlue
   }
 
   ol {
-    @apply list-decimal text-base -tracking-018 text-DarkBlue50 font-medium pl-6
+    @apply list-decimal text-base -tracking-018 text-DarkBlue font-medium pl-6
   }
 
   ul {
-    @apply list-disc text-base -tracking-018 text-DarkBlue50 font-medium pl-6
+    @apply list-disc text-base -tracking-018 text-DarkBlue font-medium pl-6
   }
 
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -142,7 +142,7 @@
 
 .text-content--tou {
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    @apply text-DarkBlue100 font-semibold
+    @apply text-DarkBlue font-semibold
   }
 }
 
@@ -152,10 +152,10 @@
 .active-tag {
 
   span {
-    @apply text-DarkBlue100 font-semibold
+    @apply text-DarkBlue font-semibold
   }
 
-  @apply border-DarkBlue100
+  @apply border-DarkBlue
 }
 
 //
@@ -185,7 +185,7 @@
   }
 
   label {
-    @apply w-10 min-w-10 h-10 flex items-center justify-center border border-DarkBlue30 rounded-full overflow-hidden bg-pageBg cursor-pointer
+    @apply w-10 min-w-10 h-10 flex items-center justify-center border border-DarkBlue rounded-full overflow-hidden bg-pageBg cursor-pointer
   }
 
   .swiper-slide {
@@ -221,24 +221,24 @@
     @apply bg-transparent
   }
 
-  @apply w-[42px] h-[42px] min-w-[42px] flex items-center justify-center rounded-full overflow-hidden border border-DarkBlue20 text-none bg-White2 hover:cursor-pointer
+  @apply w-[42px] h-[42px] min-w-[42px] flex items-center justify-center rounded-full overflow-hidden border border-DarkBlue text-none bg-White2 hover:cursor-pointer
 }
 
 // Pagination End
 
 .inactive-tag {
   span {
-    @apply text-DarkBlue50 font-medium
+    @apply text-DarkBlue font-medium
   }
 
-  @apply border-DarkBlue10
+  @apply border-DarkBlue
 }
 
 // swiper Start
 
 .swiper-custom {
   .swiper-pagination-bullet {
-    @apply w-6 h-6 lg:w-[18px] lg:h-[18px] opacity-100 bg-DarkBlue10
+    @apply w-6 h-6 lg:w-[18px] lg:h-[18px] opacity-100 bg-DarkBlue
   }
 
   .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next,
@@ -249,7 +249,7 @@
   }
 
   .swiper-pagination-bullet-active {
-    @apply bg-DarkBlue100
+    @apply bg-DarkBlue
   }
 
   .swiper-button-prev:after, .swiper-button-next:after {
@@ -270,7 +270,7 @@
       height: auto;
     }
 
-    .swiper-button-icon--Text-color {
+    .swiper-button-icon--BlackText {
       @apply hidden
     }
 
@@ -279,14 +279,14 @@
     }
 
     &.swiper-button-disabled {
-      @apply opacity-100 border border-Text-color bg-transparent
+      @apply opacity-100 border border-BlackText bg-transparent
     }
 
-    @apply w-12 h-12 rounded-full flex justify-center items-center overflow-hidden bg-DarkBlue100
+    @apply w-12 h-12 rounded-full flex justify-center items-center overflow-hidden bg-DarkBlue
   }
 
   .swiper-button-arrow.swiper-button-disabled {
-    .swiper-button-icon--Text-color {
+    .swiper-button-icon--BlackText {
       @apply block
     }
 
@@ -319,7 +319,7 @@
 .gallery-swiper-big {
 
   .swiper-slide {
-    @apply rounded-6xl overflow-hidden border border-DarkBlue10 flex justify-center items-center
+    @apply rounded-6xl overflow-hidden border border-DarkBlue flex justify-center items-center
   }
 
   img {
@@ -329,7 +329,7 @@
 
 .gallery-swiper {
   .swiper-slide {
-    @apply rounded-2xl overflow-hidden border border-DarkBlue10 flex justify-center items-center cursor-pointer
+    @apply rounded-2xl overflow-hidden border border-DarkBlue flex justify-center items-center cursor-pointer
   }
 
   img {
@@ -395,7 +395,7 @@
   @apply lg:-right-2
 }
 
-.w-Text-color {
+.w-BlackText {
   max-width: calc(100% - 40px);
 }
 

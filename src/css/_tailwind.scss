@@ -31,7 +31,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     scroll-behavior: smooth;
-    @apply text-DarkBlue100;
+    @apply text-DarkBlue;
   }
 }
 
@@ -52,12 +52,12 @@ section {
 }
 
 .input::placeholder {
-  @apply text-Text-color md:text-body2
+  @apply text-BlackText md:text-body2
 }
 
 .input {
   &.active {
-    @apply border-DarkBlue100
+    @apply border-DarkBlue
   }
 
   &.input-icon {
@@ -69,12 +69,12 @@ section {
       @apply ml-2
     }
 
-    @apply text-DarkBlue50
+    @apply text-DarkBlue
   }
 
   @apply px-4 py-[14px] bg-White2 flex items-center rounded-lg text-base
-  h-[52px] md:text-body2 w-full text-DarkBlue100 border border-DarkBlue20
-  transition-all focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit focus:border-DarkBlue80
+  h-[52px] md:text-body2 w-full text-DarkBlue border border-DarkBlue
+  transition-all focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit focus:border-DarkBlue
 }
 
 .input-radio-block {
@@ -82,7 +82,7 @@ section {
     //background-image: url("../img/icons/Check-box-active-icon20.svg");
   }
 
-  @apply relative h-5 w-5 appearance-none rounded-full border border-DarkBlue100 bg-white disabled:cursor-not-allowed focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit
+  @apply relative h-5 w-5 appearance-none rounded-full border border-DarkBlue bg-white disabled:cursor-not-allowed focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit
 }
 
 .radio-filter {
@@ -102,7 +102,7 @@ select.select {
   -moz-appearance: none !important;
   appearance: none !important;
   //background-image: url("../img/Dropdown-icon.svg");
-  @apply text-DarkBlue50
+  @apply text-DarkBlue
 }
 
 .select option:first-child {

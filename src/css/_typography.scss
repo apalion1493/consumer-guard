@@ -23,16 +23,16 @@ h6, .h6 {
 }
 
 p {
-  @apply text-base md:text-body text-Text-color
+  @apply text-base md:text-body text-BlackText
 }
 
 .text-block {
 
   a {
-    @apply font-bold underline text-LightBlue100
+    @apply font-bold underline text-LightBlue
   }
 }
 
 a {
-  @apply text-LightBlue100
+  @apply text-LightBlue
 }
