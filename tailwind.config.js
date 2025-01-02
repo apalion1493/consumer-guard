@@ -99,6 +99,8 @@ module.exports = {
         BlackText: '#000000',
         Blue100: '#30367A',
         Green: '#44B64B',
+        LightGreen: '#69C56F',
+        green600: '#31A438',
         Grey: '#D5D5DD',
         LightBlue: '#F8F8FF',
         LightBlue2: '#E7E9FC',

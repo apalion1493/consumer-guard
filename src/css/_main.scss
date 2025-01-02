@@ -52,7 +52,7 @@
     @apply max-w-[475px] w-full
   }
 
-  @apply h-12 min-h-12 px-6 min-w-[102px] w-fit flex items-center justify-center rounded-lg text-white text-base text-center font-semibold bg-LightBlue border border-LightBlue transition-all hover:bg-DarkBlue hover:text-white hover:border-DarkBlue focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit;
+  @apply h-16 min-h-16 px-16 min-w-[102px] w-fit flex items-center justify-center rounded-5xl text-white text-Top3 text-center font-medium bg-Green border border-Green transition-all hover:bg-LightGreen hover:text-white hover:border-LightGreen active:bg-green600 focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit;
 }
 
 // Button with arrow Style End

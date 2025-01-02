@@ -605,7 +605,7 @@ select{
   outline: 1px auto -webkit-focus-ring-color;
 }
 html {
-    font-family: "Outfit", system-ui, sans-serif;
+    font-family: "Poppins", system-ui, sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     scroll-behavior: smooth;
@@ -1620,25 +1620,25 @@ a{
 
 .button{
   display: flex;
-  height: 3rem;
-  min-height: 3rem;
+  height: 4rem;
+  min-height: 4rem;
   width: -moz-fit-content;
   width: fit-content;
   min-width: 102px;
   align-items: center;
   justify-content: center;
-  border-radius: 0.5rem;
+  border-radius: 40px;
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(248 248 255 / var(--tw-border-opacity, 1));
+  border-color: rgb(68 182 75 / var(--tw-border-opacity, 1));
   --tw-bg-opacity: 1;
-  background-color: rgb(248 248 255 / var(--tw-bg-opacity, 1));
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  background-color: rgb(68 182 75 / var(--tw-bg-opacity, 1));
+  padding-left: 4rem;
+  padding-right: 4rem;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 130%;
-  font-weight: 600;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
   outline-width: 0px;
@@ -1649,9 +1649,9 @@ a{
 
 .button:hover{
   --tw-border-opacity: 1;
-  border-color: rgb(38 44 115 / var(--tw-border-opacity, 1));
+  border-color: rgb(105 197 111 / var(--tw-border-opacity, 1));
   --tw-bg-opacity: 1;
-  background-color: rgb(38 44 115 / var(--tw-bg-opacity, 1));
+  background-color: rgb(105 197 111 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
@@ -1662,6 +1662,11 @@ a{
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.button:active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 164 56 / var(--tw-bg-opacity, 1));
 }
 .button.categories{
   height: 2.5rem;
