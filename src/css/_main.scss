@@ -18,7 +18,7 @@
 
   &.btn-link {
     border: 0 !important;
-    @apply bg-transparent p-0 min-w-0 h-auto min-h-0 hover:bg-transparent focus:bg-transparent text-Green hover:text-LightGreen active:text-green600 disabled:text-Grey;
+    @apply bg-transparent p-0 min-w-0 h-auto min-h-0 hover:bg-transparent focus:bg-transparent text-Green hover:text-LightGreen active:text-green600 disabled:text-Grey font-normal text-body2;
   }
 
   &.btn-icons {
