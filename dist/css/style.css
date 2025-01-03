@@ -715,6 +715,9 @@ html {
 .right-4{
   right: 1rem;
 }
+.right-5{
+  right: 1.25rem;
+}
 .top-1\/2{
   top: 50%;
 }
@@ -1668,112 +1671,69 @@ a{
   --tw-bg-opacity: 1;
   background-color: rgb(49 164 56 / var(--tw-bg-opacity, 1));
 }
-.button.categories{
-  height: 2.5rem;
-  min-height: 2.5rem;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
+
+.button:disabled{
   --tw-border-opacity: 1;
-  border-color: rgb(248 248 255 / var(--tw-border-opacity, 1));
+  border-color: rgb(213 213 221 / var(--tw-border-opacity, 1));
   --tw-bg-opacity: 1;
-  background-color: rgb(248 248 255 / var(--tw-bg-opacity, 1));
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 16px;
-  line-height: 130%;
+  background-color: rgb(213 213 221 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
-  color: rgb(248 248 255 / var(--tw-text-opacity, 1));
-}
-.button.categories:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(248 248 255 / var(--tw-border-opacity, 1));
-}
-.button.btn-small{
-  height: 33px;
-  min-height: 33px;
-  min-width: 0;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  font-size: 14px;
-  line-height: 120%;
-}
-@media (max-width: 767px){
-  .button.btn-small{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-}
-.button.btn-medium{
-  height: 2.5rem;
-  min-height: 2.5rem;
-  min-width: 96px;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  font-size: 16px;
-  line-height: 130%;
-}
-.button.hoverColor:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 167 41 / var(--tw-border-opacity, 1));
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 167 41 / var(--tw-bg-opacity, 1));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: rgb(154 154 162 / var(--tw-text-opacity, 1));
 }
 .button.width-full {
     width: 100%;
   }
-.button.db-btn{
-  height: 3rem;
-  min-height: 3rem;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  border-radius: 0.75rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  font-size: 14px;
-  line-height: 120%;
-  font-weight: 600;
+.button.btn-link {
+  border: 0 !important;
+  height: auto;
+  min-height: 0px;
+  min-width: 0px;
+  background-color: transparent;
+  padding: 0px;
+  --tw-text-opacity: 1;
+  color: rgb(68 182 75 / var(--tw-text-opacity, 1));
 }
-@media (max-width: 767px){
-  .button.db-btn{
-    height: 2.75rem;
-    min-height: 2.75rem;
-    font-size: 16px;
-    line-height: 130%;
-  }
+.button.btn-link:hover{
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(105 197 111 / var(--tw-text-opacity, 1));
+}
+.button.btn-link:focus{
+  background-color: transparent;
+}
+.button.btn-link:active{
+  --tw-text-opacity: 1;
+  color: rgb(49 164 56 / var(--tw-text-opacity, 1));
+}
+.button.btn-link:disabled{
+  --tw-text-opacity: 1;
+  color: rgb(213 213 221 / var(--tw-text-opacity, 1));
 }
 .button.btn-icons{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 167 41 / var(--tw-bg-opacity, 1));
+  position: relative;
+  min-width: 415px;
+}
+.button.btn-outline{
+  background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgb(38 44 115 / var(--tw-text-opacity, 1));
+  color: rgb(68 182 75 / var(--tw-text-opacity, 1));
 }
-.button.btn-icons:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 44 115 / var(--tw-bg-opacity, 1));
+.button.btn-outline:hover{
+  background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: rgb(105 197 111 / var(--tw-text-opacity, 1));
 }
-.button.btn-icons-blue{
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 44 115 / var(--tw-bg-opacity, 1));
+.button.btn-outline:focus{
+  background-color: transparent;
+}
+.button.btn-outline:active{
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: rgb(49 164 56 / var(--tw-text-opacity, 1));
 }
-.button.btn-icons-blue:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+.button.btn-outline:disabled{
   --tw-text-opacity: 1;
-  color: rgb(38 44 115 / var(--tw-text-opacity, 1));
+  color: rgb(213 213 221 / var(--tw-text-opacity, 1));
 }
-.button.width-auto{
-  min-width: 0px;
-}
-.button.big-btn-1 {
-    width: 100%;
-    max-width: 475px;
-  }
 
 .info-item{
   display: flex;
@@ -2339,6 +2299,18 @@ a{
 
 .group:hover .group-hover\:fill-white{
   fill: #fff;
+}
+
+.group:hover .group-hover\:fill-LightGreen{
+  fill: #69C56F;
+}
+
+.group:active .group-active\:fill-green600{
+  fill: #31A438;
+}
+
+.group:disabled .group-disabled\:fill-DarkGrey{
+  fill: #9A9AA2;
 }
 
 @media (prefers-reduced-motion: reduce){

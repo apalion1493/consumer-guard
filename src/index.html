@@ -16,10 +16,28 @@
       <div class="row">
         <div class="col-span-12">
           @@include('components/button.html', {
+          'style': 'btn-outline',
+          'type': 'button',
+          'ariaLabel': 'Button',
+          'title': 'Button',
+          })
+          <br>
+          <br>
+          <br>
+          @@include('components/button-icon.html', {
           'style': '',
           'type': 'button',
           'ariaLabel': 'Button',
           'title': 'Button',
+          })
+
+          <br>
+          <br>
+          <br>
+          @@include('components/Button-link.html', {
+          'style': '',
+          'URL': '#',
+          'title': 'All PRACTICE AREAS',
           })
         </div>
       </div>
