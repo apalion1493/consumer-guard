@@ -4,6 +4,7 @@ const allPlugins = {
   typography: require('@tailwindcss/typography'),
   forms: require('@tailwindcss/forms'),
   containerQueries: require('@tailwindcss/container-queries'),
+  "line-clamp": require('@tailwindcss/line-clamp'),
 };
 
 const plugins = Object.keys(allPlugins)
@@ -77,17 +78,14 @@ module.exports = {
         '100': '100%',
       },
       boxShadow: {
-        '3xl': '0px 2px 12px 0px rgba(27, 60, 116, 0.08)',
-        '4xl': '0px 0px 10px 0px rgba(27, 60, 116, 0.08)',
-        '5xl': '0px 0px 15px 0px rgba(27, 60, 116, 0.15)',
-        '6xl': '0px 8px 124px -40px rgba(27, 60, 116, 0.15)',
-        '7xl': '0px 0px 20px 8px rgba(27, 60, 116, 0.10);',
+        'v1': '0px 0px 25px 0px rgba(42, 43, 63, 0.15);',
       },
       borderRadius: {
         '4xl': '32px',
         '5xl': '40px',
         '6xl': '20px',
         '7xl': '8px',
+        '8xl': '10px',
       },
       colors: {
         transparent: 'transparent',
@@ -106,6 +104,7 @@ module.exports = {
         LightBlue: '#F8F8FF',
         LightBlue2: '#E7E9FC',
         LightBlue3: '#B5B8D0',
+        LightBlue4: '#B4B7CF',
         SecondaryBlue: '#2F3579',
 
       },
