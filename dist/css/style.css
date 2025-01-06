@@ -831,8 +831,14 @@ html {
 .mt-6{
   margin-top: 1.5rem;
 }
+.mt-\[29px\]{
+  margin-top: 29px;
+}
 .mt-auto{
   margin-top: auto;
+}
+.mb-4{
+  margin-bottom: 1rem;
 }
 .block{
   display: block;
@@ -872,6 +878,9 @@ html {
 .h-6{
   height: 1.5rem;
 }
+.h-\[196px\]{
+  height: 196px;
+}
 .h-\[306px\]{
   height: 306px;
 }
@@ -893,9 +902,6 @@ html {
 .h-min{
   height: -moz-min-content;
   height: min-content;
-}
-.h-\[196px\]{
-  height: 196px;
 }
 .max-h-44{
   max-height: 11rem;
@@ -955,11 +961,11 @@ html {
 .min-w-\[1204px\]{
   min-width: 1204px;
 }
-.min-w-\[306px\]{
-  min-width: 306px;
-}
 .min-w-\[196px\]{
   min-width: 196px;
+}
+.min-w-\[306px\]{
+  min-width: 306px;
 }
 .max-w-\[194px\]{
   max-width: 194px;
@@ -1180,6 +1186,9 @@ html {
 .p-2{
   padding: 0.5rem;
 }
+.p-3{
+  padding: 0.75rem;
+}
 .p-4{
   padding: 1rem;
 }
@@ -1191,9 +1200,6 @@ html {
 }
 .p-8{
   padding: 2rem;
-}
-.p-3{
-  padding: 0.75rem;
 }
 .px-0{
   padding-left: 0px;
@@ -1215,6 +1221,10 @@ html {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1234,10 +1244,6 @@ html {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 .pb-8{
   padding-bottom: 2rem;
@@ -1720,6 +1726,12 @@ a{
 
 .Quick-solutions {
   background: url("../img/icons/Quick-solutions-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Identity-Theft {
+  background: url("../img/icons/Identity-Theft-60.svg") no-repeat center center;
   background-size: 100% auto;
   display: block;
 }
