@@ -95,14 +95,54 @@
           <br>
 
           @@include('components/input.html', {
-          'common-style': '',
+          'common-style': 'input-icon',
           'StyleLabel': '',
           'idInput': 'TextId1',
           'label': 'First name',
-          'styleInput': '',
+          'styleInput': 'user-icon input-icon',
           'type': 'text',
           'errorStyle': '',
           'placeholder': '',
+          })
+          <br>
+          <br>
+          <br>
+
+          @@include('components/input.html', {
+          'common-style': 'input-icon',
+          'StyleLabel': '',
+          'idInput': 'TextId1',
+          'label': 'First name',
+          'styleInput': 'message-icon input-icon',
+          'type': 'text',
+          'errorStyle': '',
+          'placeholder': '',
+          })
+          <br>
+          <br>
+          <br>
+
+          @@include('components/input.html', {
+          'common-style': 'input-icon',
+          'StyleLabel': 'hidden',
+          'idInput': 'TextId1',
+          'label': 'First name',
+          'styleInput': 'phone-call-icon input-icon',
+          'type': 'text',
+          'errorStyle': 'hidden',
+          'placeholder': '',
+          })
+
+          <br>
+          <br>
+          <br>
+          @@include('components/textarea.html', {
+          'commonStyle': '',
+          'idTextarea': 'CommentId',
+          'label': '',
+          'styleTextarea': '',
+          'placeholder': 'Text message...',
+          'rows': '',
           })
         </div>
       </div>

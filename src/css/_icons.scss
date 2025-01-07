@@ -21,3 +21,18 @@
   background-size: 100% auto;
   @apply block w-[100px] h-10
 }
+
+.user-icon {
+  background: url("../img/icons/user.svg") no-repeat calc(100% - 16px) center;
+  background-size: 20px 20px;
+}
+
+.message-icon {
+  background: url("../img/icons/message.svg") no-repeat calc(100% - 16px) center;
+  background-size: 20px 20px;
+}
+
+.phone-call-icon {
+  background: url("../img/icons/phone-call.svg") no-repeat calc(100% - 16px) center;
+  background-size: 20px 20px;
+}

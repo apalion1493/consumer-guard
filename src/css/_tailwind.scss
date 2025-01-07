@@ -52,16 +52,12 @@ section {
 }
 
 .input::placeholder {
-  @apply text-BlackText md:text-body2
+  @apply text-LightBlue3 text-body2
 }
 
 .input {
-  &.active {
-    @apply border-DarkBlue
-  }
-
   &.input-icon {
-    @apply pl-[44px]
+    @apply pr-[44px]
   }
 
   &--radio {
@@ -94,7 +90,7 @@ section {
 }
 
 textarea.input {
-  @apply h-[181px] px-4 py-4 resize-none
+  @apply h-[150px] px-4 py-4 resize-none
 }
 
 select.select {
