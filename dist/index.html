@@ -14,38 +14,44 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
-  <header class="flex flex-col w-full relative z-10  ">
+  <section class="">
+    <header class="flex flex-col w-full relative z-10  ">
   <div x-data="{dropdownOpen: false}" class="w-full flex flex-col">
-    <div class="bg-white shadow-3xl py-8">
+    <div class="bg-white shadow-3xl py-6">
       <div class="container flex items-center w-full">
-        <a class="lg:max-w-[171x] minlg:min-w-[200px] mr-10" href="index.html">
-          <img src="img/profarma-logo.svg" alt="Logo">
+        <a class="lg:max-w-[171x] minlg:min-w-[140px] mr-3" href="index.html">
+          <img width="140" height="48" src="img/Logo-header.svg" alt="Logo">
         </a>
         <div class="flex items-center w-full">
           <div class="ml-auto w-full lg:hidden">
             <div class="items-center minlg:h-14 flex justify-end relative">
               <nav class="mx-auto lg:hidden">
-                <div class="container px-0 mx-auto flex justify-center items-center gap-x-8 w-full text-h8">
-                  <a href="Brand-Shop-Page.html"
-                     class="py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2">Brands</a>
-                  <!--                                <a href="#" class="py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2">Manufacturers</a>-->
-                  <button @click="dropdownOpen = !dropdownOpen"
-                          class="inline-flex items-center py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2"
-                          :class="dropdownOpen ? 'text-LightBlue' : ''"
-                          data-menu-target="menu1">Categories <span
-                    :class="dropdownOpen ? 'rotate-180' : ''"
-                    class="check-icon-menu transition-all ml-2"></span></button>
+                <div class="container px-0 mx-auto flex justify-center items-center gap-x-5 w-full">
+                  <!--                  <button @click="dropdownOpen = !dropdownOpen"-->
+                  <!--                          class="inline-flex items-center py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2"-->
+                  <!--                          :class="dropdownOpen ? 'text-LightBlue' : ''"-->
+                  <!--                          data-menu-target="menu1">Services <span-->
+                  <!--                    :class="dropdownOpen ? 'rotate-180' : ''"-->
+                  <!--                    class="check-icon-menu transition-all ml-2"></span></button>-->
+                  <a href="#"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Services</a>
+                  <a href="#"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Locations</a>
+                  <a href="#"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Partners</a>
                   <a href="About-us.html"
-                     class="py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2">About
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">About
                     Us</a>
                   <a href="contact-us.html"
-                     class="py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2">Contacts</a>
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Contacts</a>
                 </div>
               </nav>
             </div>
           </div>
           <div class="flex items-center gap-x-3 ml-3 lg:ml-auto">
-            <button>Test</button>
+            <button class="button " type="button" aria-label="Button">
+  <span>Button</span>
+</button>
           </div>
           <button id="burger-button" class="minlg:hidden ml-5 flex items-center justify-center p-2"
                   aria-label="Mobile Burger Button">
@@ -279,6 +285,29 @@
     </div>
   </div>
 </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-span-5 flex items-center">
+          <div class="flex flex-col max-w-[486px]">
+            <h1 class="text-h1 font-semibold text-Blue100 mb-8">Headline with a <span class="text-Green">catchy slogan</span>.</h1>
+            <p class="text-base text-BlackText">Additional text describing the service in <br> general and why it is the best on the market.</p>
+            <a class="button group relative mt-20 btn-icons" href="@@url">
+  <span class="">Button</span>
+  <svg class="absolute right-5 top-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 35 30" fill="none">
+    <path class="group-disabled:fill-DarkGrey" fill-rule="evenodd" clip-rule="evenodd" d="M20.3602 1.33758C13.9099 1.33758 8.52797 6.0309 7.29254 12.2668C7.22083 12.6288 6.8763 12.8627 6.52301 12.7892C6.16972 12.7157 5.94146 12.3627 6.01317 12.0007C7.36967 5.15371 13.2768 0 20.3602 0C28.4455 0 35 6.71573 35 15C35 23.2843 28.4455 30 20.3602 30C13.2768 30 7.36967 24.8463 6.01317 17.9993C5.94146 17.6373 6.16972 17.2843 6.52301 17.2108C6.8763 17.1373 7.22083 17.3712 7.29254 17.7332C8.52797 23.9691 13.9099 28.6624 20.3602 28.6624C27.7245 28.6624 33.6945 22.5455 33.6945 15C33.6945 7.45445 27.7245 1.33758 20.3602 1.33758Z" fill="white"/>
+    <path class="group-disabled:fill-DarkGrey" fill-rule="evenodd" clip-rule="evenodd" d="M20.5873 10.1989L24.8058 14.5199C25.0647 14.785 25.0647 15.215 24.8058 15.4801L20.5873 19.8011C20.3284 20.0663 19.9087 20.0663 19.6499 19.8011C19.391 19.536 19.391 19.1061 19.6499 18.8409L22.7368 15.679H0.662879C0.296781 15.679 0 15.375 0 15C0 14.625 0.296781 14.321 0.662879 14.321H22.7368L19.6499 11.1591C19.391 10.8939 19.391 10.464 19.6499 10.1989C19.9087 9.93371 20.3284 9.93371 20.5873 10.1989Z" fill="white"/>
+  </svg>
+</a>
+          </div>
+        </div>
+        <div class="col-span-7 flex">
+          <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="530" height="693" viewBox="0 0 530 693" fill="none">
+            <path d="M2 203.605V66.113C57.9763 27.554 153.543 2 264.985 2C376.427 2 472.024 27.554 528 66.113V418.474C528 439.838 520.92 459.784 513.238 479.418C504.393 499.103 493.323 516.883 480.577 533.15M2 255.113V253.452M2 309.945V418.474C2 439.838 9.08022 459.784 16.7618 479.418C56.6792 568.254 141.935 618.324 222.117 665.414C236.684 673.969 251.085 682.427 265.015 691C278.936 682.433 293.325 673.982 307.88 665.433C342.34 645.193 377.734 624.404 410.065 600.225M446.213 570.259C446.808 569.707 447.4 569.153 447.99 568.597" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="my-20">
     <div class="container">
@@ -683,7 +712,7 @@
       <div class="col-span-12 flex justify-between gap-x-8">
         <div class="flex flex-col">
           <a class="mb-8 block" href="index.html">
-            <img width="196" height="69" src="../img/Logo-footer.svg" alt="Consumer Guard Footer Logo">
+            <img width="196" height="69" src="img/Logo-footer.svg" alt="Consumer Guard Footer Logo">
           </a>
           <p class="text-white text-body">&#169; 2024 Consumer Guard. <br>
             All Rights Reserved.</p>

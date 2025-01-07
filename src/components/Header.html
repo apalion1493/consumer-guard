@@ -1,35 +1,43 @@
 <header class="flex flex-col w-full relative z-10 @@commonStyle">
   <div x-data="{dropdownOpen: false}" class="w-full flex flex-col">
-    <div class="bg-white shadow-3xl py-8">
+    <div class="bg-white shadow-3xl py-6">
       <div class="container flex items-center w-full">
-        <a class="lg:max-w-[171x] minlg:min-w-[200px] mr-10" href="index.html">
-          <img src="img/profarma-logo.svg" alt="Logo">
+        <a class="lg:max-w-[171x] minlg:min-w-[140px] mr-3" href="index.html">
+          <img width="140" height="48" src="img/Logo-header.svg" alt="Logo">
         </a>
         <div class="flex items-center w-full">
           <div class="ml-auto w-full lg:hidden">
             <div class="items-center minlg:h-14 flex justify-end relative">
               <nav class="mx-auto lg:hidden">
-                <div class="container px-0 mx-auto flex justify-center items-center gap-x-8 w-full text-h8">
-                  <a href="Brand-Shop-Page.html"
-                     class="py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2">Brands</a>
-                  <!--                                <a href="#" class="py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2">Manufacturers</a>-->
-                  <button @click="dropdownOpen = !dropdownOpen"
-                          class="inline-flex items-center py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2"
-                          :class="dropdownOpen ? 'text-LightBlue' : ''"
-                          data-menu-target="menu1">Categories <span
-                    :class="dropdownOpen ? 'rotate-180' : ''"
-                    class="check-icon-menu transition-all ml-2"></span></button>
+                <div class="container px-0 mx-auto flex justify-center items-center gap-x-5 w-full">
+                  <!--                  <button @click="dropdownOpen = !dropdownOpen"-->
+                  <!--                          class="inline-flex items-center py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2"-->
+                  <!--                          :class="dropdownOpen ? 'text-LightBlue' : ''"-->
+                  <!--                          data-menu-target="menu1">Services <span-->
+                  <!--                    :class="dropdownOpen ? 'rotate-180' : ''"-->
+                  <!--                    class="check-icon-menu transition-all ml-2"></span></button>-->
+                  <a href="#"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Services</a>
+                  <a href="#"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Locations</a>
+                  <a href="#"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Partners</a>
                   <a href="About-us.html"
-                     class="py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2">About
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">About
                     Us</a>
                   <a href="contact-us.html"
-                     class="py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2">Contacts</a>
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Contacts</a>
                 </div>
               </nav>
             </div>
           </div>
           <div class="flex items-center gap-x-3 ml-3 lg:ml-auto">
-            <button>Test</button>
+            @@include('button.html', {
+            'style': '',
+            'type': 'button',
+            'ariaLabel': 'Button',
+            'title': 'Button',
+            })
           </div>
           <button id="burger-button" class="minlg:hidden ml-5 flex items-center justify-center p-2"
                   aria-label="Mobile Burger Button">
