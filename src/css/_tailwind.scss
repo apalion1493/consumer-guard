@@ -72,9 +72,9 @@ section {
     @apply text-DarkBlue
   }
 
-  @apply px-4 py-[14px] bg-White2 flex items-center rounded-lg text-base
-  h-[52px] md:text-body2 w-full text-DarkBlue border border-DarkBlue
-  transition-all focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit focus:border-DarkBlue
+  @apply p-4 bg-white flex items-center rounded
+  h-[52px] text-body2 w-full text-DarkBlue border border-LightBlue2
+  transition-all focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit focus:border-LightBlue2
 }
 
 .input-radio-block {
