@@ -71,6 +71,7 @@ section {
   @apply p-4 bg-white flex items-center rounded
   h-[52px] text-body2 w-full text-DarkBlue border border-LightBlue2
   transition-all focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit focus:border-LightBlue2
+  focus:shadow-v2
 }
 
 .input-radio-block {
@@ -156,6 +157,8 @@ input[type='search']::-webkit-search-results-decoration {
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  width: 20px;
+  height: 20px;
 }
 
 .gradient-css {
