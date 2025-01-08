@@ -14,10 +14,10 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
-  <section class="">
+  <section class="pb-[59px] hero-section relative overflow-hidden" style="background-image: url(img/Hero-img-1.png)">
     <header class="flex flex-col w-full relative z-10  ">
   <div x-data="{dropdownOpen: false}" class="w-full flex flex-col">
-    <div class="bg-white shadow-3xl py-6">
+    <div class="py-6">
       <div class="container flex items-center w-full">
         <a class="lg:max-w-[171x] minlg:min-w-[140px] mr-3" href="index.html">
           <img width="140" height="48" src="img/Logo-header.svg" alt="Logo">
@@ -49,7 +49,7 @@
             </div>
           </div>
           <div class="flex items-center gap-x-3 ml-3 lg:ml-auto">
-            <button class="button " type="button" aria-label="Button">
+            <button class="button shadow-v3" type="button" aria-label="Button">
   <span>Button</span>
 </button>
           </div>
@@ -285,13 +285,15 @@
     </div>
   </div>
 </header>
+    <span class="shadow-elem-hero-block-1 absolute -left-[280px] -bottom-[260px]"></span>
+    <span class="shadow-elem-hero-block-2 absolute -right-[390px] -top-[237px]"></span>
     <div class="container">
       <div class="row">
         <div class="col-span-5 flex items-center">
           <div class="flex flex-col max-w-[486px]">
-            <h1 class="text-h1 font-semibold text-Blue100 mb-8">Headline with a <span class="text-Green">catchy slogan</span>.</h1>
+            <h1 class="text-h1 font-semibold text-Blue100 mb-8">Headline with a <span class="text-Green">catchy slogan.</span></h1>
             <p class="text-base text-BlackText">Additional text describing the service in <br> general and why it is the best on the market.</p>
-            <a class="button group relative mt-20 btn-icons" href="@@url">
+            <a class="button group relative mt-20 btn-icons" href="#">
   <span class="">Button</span>
   <svg class="absolute right-5 top-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 35 30" fill="none">
     <path class="group-disabled:fill-DarkGrey" fill-rule="evenodd" clip-rule="evenodd" d="M20.3602 1.33758C13.9099 1.33758 8.52797 6.0309 7.29254 12.2668C7.22083 12.6288 6.8763 12.8627 6.52301 12.7892C6.16972 12.7157 5.94146 12.3627 6.01317 12.0007C7.36967 5.15371 13.2768 0 20.3602 0C28.4455 0 35 6.71573 35 15C35 23.2843 28.4455 30 20.3602 30C13.2768 30 7.36967 24.8463 6.01317 17.9993C5.94146 17.6373 6.16972 17.2843 6.52301 17.2108C6.8763 17.1373 7.22083 17.3712 7.29254 17.7332C8.52797 23.9691 13.9099 28.6624 20.3602 28.6624C27.7245 28.6624 33.6945 22.5455 33.6945 15C33.6945 7.45445 27.7245 1.33758 20.3602 1.33758Z" fill="white"/>
@@ -302,8 +304,156 @@
         </div>
         <div class="col-span-7 flex">
           <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="530" height="693" viewBox="0 0 530 693" fill="none">
-            <path d="M2 203.605V66.113C57.9763 27.554 153.543 2 264.985 2C376.427 2 472.024 27.554 528 66.113V418.474C528 439.838 520.92 459.784 513.238 479.418C504.393 499.103 493.323 516.883 480.577 533.15M2 255.113V253.452M2 309.945V418.474C2 439.838 9.08022 459.784 16.7618 479.418C56.6792 568.254 141.935 618.324 222.117 665.414C236.684 673.969 251.085 682.427 265.015 691C278.936 682.433 293.325 673.982 307.88 665.433C342.34 645.193 377.734 624.404 410.065 600.225M446.213 570.259C446.808 569.707 447.4 569.153 447.99 568.597" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 203.605V66.113C57.9763 27.554 153.543 2 264.985 2C376.427 2 472.024 27.554 528 66.113V418.474C528 439.838 520.92 459.784 513.238 479.418C504.393 499.103 493.323 516.883 480.577 533.15M2 255.113V253.452M2 309.945V418.474C2 439.838 9.08022 459.784 16.7618 479.418C56.6792 568.254 141.935 618.324 222.117 665.414C236.684 673.969 251.085 682.427 265.015 691C278.936 682.433 293.325 673.982 307.88 665.433C342.34 645.193 377.734 624.404 410.065 600.225M446.213 570.259C446.808 569.707 447.4 569.153 447.99 568.597" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pt-[100px]">
+    <div class="container">
+      <div class="row">
+        <div class="col-span-12 flex items-end justify-between mb-14">
+          <div class="flex flex-col ">
+  <span class="uppercase text-body2 text-LightBlue3 block mb-3">PRACTICE AREAS</span>
+  <h3 class="text-h3 font-semibold text-Blue100">We can help you with...</h3>
+  <span class="border-0 border-b-4 border-Green w-[86px] my-8 hidden"></span>
+</div>
+          <a href="#" class="button btn-link group ">
+  <span>All PRACTICE AREAS</span>
+  <svg class="ml-5" xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 35 30" fill="none">
+    <path class="group-hover:fill-LightGreen group-active:fill-green600" fill-rule="evenodd" clip-rule="evenodd" d="M20.3602 1.33758C13.9099 1.33758 8.52797 6.0309 7.29254 12.2668C7.22083 12.6288 6.8763 12.8627 6.52301 12.7892C6.16972 12.7157 5.94146 12.3627 6.01317 12.0007C7.36967 5.15371 13.2768 0 20.3602 0C28.4455 0 35 6.71573 35 15C35 23.2843 28.4455 30 20.3602 30C13.2768 30 7.36967 24.8463 6.01317 17.9993C5.94146 17.6373 6.16972 17.2843 6.52301 17.2108C6.8763 17.1373 7.22083 17.3712 7.29254 17.7332C8.52797 23.9691 13.9099 28.6624 20.3602 28.6624C27.7245 28.6624 33.6945 22.5455 33.6945 15C33.6945 7.45445 27.7245 1.33758 20.3602 1.33758Z" fill="#44B64B"/>
+    <path class="group-hover:fill-LightGreen group-active:fill-green600" fill-rule="evenodd" clip-rule="evenodd" d="M20.5873 10.1989L24.8058 14.5199C25.0647 14.785 25.0647 15.215 24.8058 15.4801L20.5873 19.8011C20.3284 20.0663 19.9087 20.0663 19.6499 19.8011C19.391 19.536 19.391 19.1061 19.6499 18.8409L22.7368 15.679H0.662879C0.296781 15.679 0 15.375 0 15C0 14.625 0.296781 14.321 0.662879 14.321H22.7368L19.6499 11.1591C19.391 10.8939 19.391 10.464 19.6499 10.1989C19.9087 9.93371 20.3284 9.93371 20.5873 10.1989Z" fill="#44B64B"/>
+  </svg>
+</a>
+        </div>
+      </div>
+      <div class="row gap-6">
+        <div class="col-span-3">
+          <a href="#" class="rounded-6xl group overflow-hidden min-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Credit <br> Reporting <br> Errors Attorneys</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] icon-speed"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</a>
+        </div>
+        <div class="col-span-3">
+          <a href="#" class="rounded-6xl group overflow-hidden min-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Debt Collection <br> Harassment <br> Attorneys</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-money"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</a>
+        </div>
+        <div class="col-span-3">
+          <a href="#" class="rounded-6xl group overflow-hidden min-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Attorneys <br> for Identity <br> Theft</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Identity"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</a>
+        </div>
+        <div class="col-span-3">
+          <a href="#" class="rounded-6xl group overflow-hidden min-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Labor and <br> Employment <br> Attorneys</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Attorney"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</a>
+        </div>
+        <div class="col-span-3">
+          <a href="#" class="rounded-6xl group overflow-hidden min-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Lawyer <br> for Car <br> Accident</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Car-Accident"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</a>
+        </div>
+        <div class="col-span-3">
+          <a href="#" class="rounded-6xl group overflow-hidden min-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Background <br> Check Errors <br> Attorneys</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Check-Errors"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</a>
+        </div>
+        <div class="col-span-3">
+          <a href="#" class="rounded-6xl group overflow-hidden min-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Employment <br> Discrimination <br> Attorneys</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Discrimination"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</a>
         </div>
       </div>
     </div>
@@ -348,10 +498,10 @@
     <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
   </svg>
   <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
-    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Credit <br> Reporting <br> Errors Attorneys</h3>
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">@@Title</h3>
     <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
     <div class="relative w-full h-full self-end">
-      <i class="absolute right-6 bottom-6 icon-speed w-[75px] h-[75px] z-[2]"></i>
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] @@Icon"></i>
       <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
         <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
       </svg>

@@ -1,6 +1,6 @@
 <header class="flex flex-col w-full relative z-10 @@commonStyle">
   <div x-data="{dropdownOpen: false}" class="w-full flex flex-col">
-    <div class="bg-white shadow-3xl py-6">
+    <div class="py-6">
       <div class="container flex items-center w-full">
         <a class="lg:max-w-[171x] minlg:min-w-[140px] mr-3" href="index.html">
           <img width="140" height="48" src="img/Logo-header.svg" alt="Logo">
@@ -33,7 +33,7 @@
           </div>
           <div class="flex items-center gap-x-3 ml-3 lg:ml-auto">
             @@include('button.html', {
-            'style': '',
+            'style': 'shadow-v3',
             'type': 'button',
             'ariaLabel': 'Button',
             'title': 'Button',

@@ -7,15 +7,17 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
-  <section class="">
+  <section class="pb-[59px] hero-section relative overflow-hidden" style="background-image: url(img/Hero-img-1.png)">
     @@include('components/Header.html', {
     'commonStyle': ' ',
     })
+    <span class="shadow-elem-hero-block-1 absolute -left-[280px] -bottom-[260px]"></span>
+    <span class="shadow-elem-hero-block-2 absolute -right-[390px] -top-[237px]"></span>
     <div class="container">
       <div class="row">
         <div class="col-span-5 flex items-center">
           <div class="flex flex-col max-w-[486px]">
-            <h1 class="text-h1 font-semibold text-Blue100 mb-8">Headline with a <span class="text-Green">catchy slogan</span>.</h1>
+            <h1 class="text-h1 font-semibold text-Blue100 mb-8">Headline with a <span class="text-Green">catchy slogan.</span></h1>
             <p class="text-base text-BlackText">Additional text describing the service in <br> general and why it is the best on the market.</p>
             @@include('components/Link-icon.html', {
             'style': 'mt-20 btn-icons',
@@ -26,8 +28,85 @@
         </div>
         <div class="col-span-7 flex">
           <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="530" height="693" viewBox="0 0 530 693" fill="none">
-            <path d="M2 203.605V66.113C57.9763 27.554 153.543 2 264.985 2C376.427 2 472.024 27.554 528 66.113V418.474C528 439.838 520.92 459.784 513.238 479.418C504.393 499.103 493.323 516.883 480.577 533.15M2 255.113V253.452M2 309.945V418.474C2 439.838 9.08022 459.784 16.7618 479.418C56.6792 568.254 141.935 618.324 222.117 665.414C236.684 673.969 251.085 682.427 265.015 691C278.936 682.433 293.325 673.982 307.88 665.433C342.34 645.193 377.734 624.404 410.065 600.225M446.213 570.259C446.808 569.707 447.4 569.153 447.99 568.597" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 203.605V66.113C57.9763 27.554 153.543 2 264.985 2C376.427 2 472.024 27.554 528 66.113V418.474C528 439.838 520.92 459.784 513.238 479.418C504.393 499.103 493.323 516.883 480.577 533.15M2 255.113V253.452M2 309.945V418.474C2 439.838 9.08022 459.784 16.7618 479.418C56.6792 568.254 141.935 618.324 222.117 665.414C236.684 673.969 251.085 682.427 265.015 691C278.936 682.433 293.325 673.982 307.88 665.433C342.34 645.193 377.734 624.404 410.065 600.225M446.213 570.259C446.808 569.707 447.4 569.153 447.99 568.597" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pt-[100px]">
+    <div class="container">
+      <div class="row">
+        <div class="col-span-12 flex items-end justify-between mb-14">
+          @@include('components/Title-block.html', {
+          'Style': '',
+          'Subtitle': 'PRACTICE AREAS',
+          'Title': 'We can help you with...',
+          'StyleGreenLine': 'hidden',
+          })
+          @@include('components/Button-link.html', {
+          'style': '',
+          'URL': '#',
+          'title': 'All PRACTICE AREAS',
+          })
+        </div>
+      </div>
+      <div class="row gap-6">
+        <div class="col-span-3">
+          @@include('components/Practice-Area-Card.html', {
+          'Style': '',
+          'URL': '#',
+          'Title': 'Credit <br> Reporting <br> Errors Attorneys',
+          'Icon': 'icon-speed',
+          })
+        </div>
+        <div class="col-span-3">
+          @@include('components/Practice-Area-Card.html', {
+          'Style': '',
+          'URL': '#',
+          'Title': 'Debt Collection <br> Harassment <br> Attorneys',
+          'Icon': 'Icon-money',
+          })
+        </div>
+        <div class="col-span-3">
+          @@include('components/Practice-Area-Card.html', {
+          'Style': '',
+          'URL': '#',
+          'Title': 'Attorneys <br> for Identity <br> Theft',
+          'Icon': 'Icon-Identity',
+          })
+        </div>
+        <div class="col-span-3">
+          @@include('components/Practice-Area-Card.html', {
+          'Style': '',
+          'URL': '#',
+          'Title': 'Labor and <br> Employment <br> Attorneys',
+          'Icon': 'Icon-Attorney',
+          })
+        </div>
+        <div class="col-span-3">
+          @@include('components/Practice-Area-Card.html', {
+          'Style': '',
+          'URL': '#',
+          'Title': 'Lawyer <br> for Car <br> Accident',
+          'Icon': 'Icon-Car-Accident',
+          })
+        </div>
+        <div class="col-span-3">
+          @@include('components/Practice-Area-Card.html', {
+          'Style': '',
+          'URL': '#',
+          'Title': 'Background <br> Check Errors <br> Attorneys',
+          'Icon': 'Icon-Check-Errors',
+          })
+        </div>
+        <div class="col-span-3">
+          @@include('components/Practice-Area-Card.html', {
+          'Style': '',
+          'URL': '#',
+          'Title': 'Employment <br> Discrimination <br> Attorneys',
+          'Icon': 'Icon-Discrimination',
+          })
         </div>
       </div>
     </div>
