@@ -35,7 +35,7 @@ module.exports = {
       base: ['18px', '130%'],
       h1: ['68px', '100%'],
       h2: ['52px', '120%'],
-      "h2-5": ['48px', '120%'],
+      "h2-5": ['48px', '110%'],
       h3: ['40px', '110%'],
       h4: ['32px', '130%'],
       h1Mob: ['56px', '120%'],
@@ -107,6 +107,8 @@ module.exports = {
         LightBlue2: '#E7E9FC',
         LightBlue3: '#B5B8D0',
         LightBlue4: '#B4B7CF',
+        LightBlue5: '#F4F5FC',
+        LightBlue6: '#D9D9D9',
         SecondaryBlue: '#2F3579',
 
       },
