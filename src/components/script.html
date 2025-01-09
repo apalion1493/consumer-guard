@@ -43,7 +43,8 @@
                 },
             },
             onClickDate(self) {
-                calendarInput.value = self.context.selectedDates; // Устанавливаем дату
+                const selectedDate = self.context.selectedDates; // Получаем выбранную дату
+                calendarInput.value = selectedDate; // Устанавливаем дату в инпут
                 showTimePicker(); // Показываем выбор времени
             },
         });
@@ -51,9 +52,8 @@
 // Показываем контейнер с календарём при клике на инпут
         calendarInput.addEventListener('click', (event) => {
             calendarContainer.style.display = 'block'; // Показываем контейнер
-            const rect = calendarInput.getBoundingClientRect(); // Расположение инпута
             calendarContainer.style.top = `50px`;
-            calendarContainer.style.left = `0`;
+            calendarContainer.style.left = `0px`;
         });
 
 // Скрываем контейнер при клике вне его
@@ -75,7 +75,7 @@
         function generateTimeSlots() {
             timeOptions.innerHTML = ''; // Очищаем предыдущие слоты
             const times = [
-                '09:30', '10:00', '10:30', '11:30', '12:30'
+                '09:00', '10:00', '11:00', '12:00', '13:00'
             ];
 
             times.forEach((time) => {
@@ -83,7 +83,8 @@
                 timeButton.textContent = time;
                 timeButton.classList.add('time-slot');
                 timeButton.addEventListener('click', () => {
-                    calendarInput.value += ` ${time}`; // Устанавливаем время в инпут
+                    const currentValue = calendarInput.value.split(' ')[0]; // Извлекаем дату без времени
+                    calendarInput.value = `${currentValue} ${time}`; // Добавляем новое время
                     calendarContainer.style.display = 'none'; // Скрываем контейнер
                 });
                 timeOptions.appendChild(timeButton);
@@ -92,5 +93,5 @@
 
 // Инициализация календаря
         calendar.init();
-    });
+    })
 </script>
