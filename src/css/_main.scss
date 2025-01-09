@@ -537,3 +537,10 @@
   background-blend-mode: screen;
   pointer-events: none;
 }
+
+.bg-img-2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+}

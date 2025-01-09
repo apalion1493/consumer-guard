@@ -9,13 +9,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <style>
+    .time-slot {
+      padding: 5px 10px;
+      border: 1px solid #007bff;
+      background-color: #007bff;
+      color: white;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .time-slot:hover {
+      background-color: #0056b3;
+    }
+
+  </style>
 </head>
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
   <section class="pb-[59px] hero-section relative overflow-hidden" style="background-image: url(img/Hero-img-1.png)">
-    <header class="flex flex-col w-full relative z-10  ">
+    <header class="flex flex-col w-full relative z-10 sticky top-0  ">
   <div x-data="{dropdownOpen: false}" class="w-full flex flex-col">
     <div class="py-6">
       <div class="container flex items-center w-full">
@@ -766,9 +783,25 @@
         </div>
       </div>
     </section>
-    <section class="section relative">
+    <section class="section relative bg-img-2" style="background-image: url(img/Background-footer.png);">
       <div class="container">
+        <div class="row">
+          <div class="col-span-12">
+            <div class="relative">
+<!--              <input id="calendar" type="text" placeholder="Choose date" readonly />-->
+              <input class="w-[556px]" id="calendar" type="text" placeholder="Choose date" readonly />
 
+              <div id="calendar-container" class="w-[556px]" style="display: none; position: absolute; z-index: 100; border: 1px solid #ccc; background: #fff; padding: 10px; border-radius: 5px;">
+                <div id="vanilla-calendar" class="vanilla-calendar"></div>
+
+                <div id="time-picker" style="margin-top: 10px;">
+                  <h3>Выберите время:</h3>
+                  <div id="time-options" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -986,7 +1019,7 @@
           <br>
 
           <div class="form-group flex flex-col items-start input-icon">
-  <label class="mb-3 font-semibold text-body md:text-body2 " for="TextId1">First name</label>
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 " for="TextId1">First name</label>
   <input
     class="input user-icon input-icon "
     type="text" id="TextId1" placeholder="" required>
@@ -997,7 +1030,7 @@
           <br>
 
           <div class="form-group flex flex-col items-start input-icon">
-  <label class="mb-3 font-semibold text-body md:text-body2 " for="TextId1">First name</label>
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 " for="TextId1">First name</label>
   <input
     class="input message-icon input-icon "
     type="text" id="TextId1" placeholder="" required>
@@ -1008,7 +1041,7 @@
           <br>
 
           <div class="form-group flex flex-col items-start input-icon">
-  <label class="mb-3 font-semibold text-body md:text-body2 hidden" for="TextId1">First name</label>
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 hidden" for="TextId1">First name</label>
   <input
     class="input phone-call-icon input-icon "
     type="text" id="TextId1" placeholder="" required>
@@ -1042,6 +1075,21 @@
   <small class="text-body2 font-medium text-Error md:text-body4 mt-2 "></small>
 </div>
 
+          <br>
+          <br>
+          <br>
+          <div class="form-group flex flex-col items-start relative ">
+  <label class="mb-3 font-semibold text-body md:text-body2 " for="selectId">Select Service</label>
+  <svg class="absolute pointer-events-none right-4 bottom-6 h-[6px] w-[12px]" xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.414376 1.09205C0.673133 0.768607 1.1451 0.716166 1.46855 0.974923L6.00003 4.60011L10.5315 0.974923C10.855 0.716166 11.3269 0.768607 11.5857 1.09205C11.8444 1.4155 11.792 1.88747 11.4685 2.14623L6.46855 6.14623C6.19463 6.36536 5.80542 6.36536 5.53151 6.14623L0.531506 2.14623C0.20806 1.88747 0.155619 1.4155 0.414376 1.09205Z" fill="#44B64B"/>
+  </svg>
+  <select id="selectId" required name="Select_Service" class="select w-full input">
+    <option value="" selected disabled></option>
+    <option value="Service1">Service 1</option>
+    <option value="Service2">Service 2</option>
+  </select>
+</div>
+
         </div>
       </div>
     </div>
@@ -1065,7 +1113,7 @@
       <form class="row gap-y-5 gap-x-6 mt-10">
         <div class="col-span-6">
           <div class="form-group flex flex-col items-start ">
-  <label class="mb-3 font-semibold text-body md:text-body2 hidden" for="TextId1"></label>
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 hidden" for="TextId1"></label>
   <input
     class="input  "
     type="text" id="TextId1" placeholder="Your Name" required>
@@ -1074,7 +1122,7 @@
         </div>
         <div class="col-span-6">
           <div class="form-group flex flex-col items-start ">
-  <label class="mb-3 font-semibold text-body md:text-body2 hidden" for="EmailId1"></label>
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 hidden" for="EmailId1"></label>
   <input
     class="input  "
     type="email" id="EmailId1" placeholder="Email" required>
@@ -1082,71 +1130,17 @@
 </div>
         </div>
         <div class="col-span-6">
-          <div class="form-group flex flex-col items-start relative ">
-  <label class="mb-3 font-semibold text-body md:text-body2 hidden" for="selectId1"></label>
-  <svg class="absolute pointer-events-none right-4 top-6 h-[6px] w-[12px]" xmlns="http://www.w3.org/2000/svg" width="14"
-       height="8" viewBox="0 0 14 8" fill="none">
-    <path d="M1 1L7 7L13 1" stroke="#646E8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-  </svg>
-  <select id="selectId1" required name="" class="select w-full input">
-    <option value="" selected disabled>Choose State</option>
-    <option value="AL">Alabama</option>
-    <option value="AK">Alaska</option>
-    <option value="AZ">Arizona</option>
-    <option value="AR">Arkansas</option>
-    <option value="CA">California</option>
-    <option value="CO">Colorado</option>
-    <option value="CT">Connecticut</option>
-    <option value="DE">Delaware</option>
-    <option value="FL">Florida</option>
-    <option value="GA">Georgia</option>
-    <option value="HI">Hawaii</option>
-    <option value="ID">Idaho</option>
-    <option value="IL">Illinois</option>
-    <option value="IN">Indiana</option>
-    <option value="IA">Iowa</option>
-    <option value="KS">Kansas</option>
-    <option value="KY">Kentucky</option>
-    <option value="LA">Louisiana</option>
-    <option value="ME">Maine</option>
-    <option value="MD">Maryland</option>
-    <option value="MA">Massachusetts</option>
-    <option value="MI">Michigan</option>
-    <option value="MN">Minnesota</option>
-    <option value="MS">Mississippi</option>
-    <option value="MO">Missouri</option>
-    <option value="MT">Montana</option>
-    <option value="NE">Nebraska</option>
-    <option value="NV">Nevada</option>
-    <option value="NH">New Hampshire</option>
-    <option value="NJ">New Jersey</option>
-    <option value="NM">New Mexico</option>
-    <option value="NY">New York</option>
-    <option value="NC">North Carolina</option>
-    <option value="ND">North Dakota</option>
-    <option value="OH">Ohio</option>
-    <option value="OK">Oklahoma</option>
-    <option value="OR">Oregon</option>
-    <option value="PA">Pennsylvania</option>
-    <option value="RI">Rhode Island</option>
-    <option value="SC">South Carolina</option>
-    <option value="SD">South Dakota</option>
-    <option value="TN">Tennessee</option>
-    <option value="TX">Texas</option>
-    <option value="UT">Utah</option>
-    <option value="VT">Vermont</option>
-    <option value="VA">Virginia</option>
-    <option value="WA">Washington</option>
-    <option value="WV">West Virginia</option>
-    <option value="WI">Wisconsin</option>
-    <option value="WY">Wyoming</option>
-  </select>
-</div>
 
+<!--          'commonStyle': '',-->
+<!--          'labelStyle': 'hidden',-->
+<!--          'idSelect': 'selectId1',-->
+<!--          'NameSelect': '',-->
+<!--          'label': '',-->
+<!--          })-->
         </div>
         <div class="col-span-6">
           <div class="form-group flex flex-col items-start ">
-  <label class="mb-3 font-semibold text-body md:text-body2 hidden" for="PhoneId1"></label>
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 hidden" for="PhoneId1"></label>
   <input
     class="input  "
     type="text" id="PhoneId1" placeholder="Phone" required>
@@ -1328,6 +1322,95 @@
         Alpine.data('data', () => ({
         }))
     })
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // const options = {
+        //     inputMode: true,
+        //     positionToInput: 'auto',
+        //     onChangeToInput(self) {
+        //         if (!self.context.inputElement) return;
+        //         if (self.context.selectedDates[0]) {
+        //             self.context.inputElement.value = self.context.selectedDates[0];
+        //             // if you want to hide the calendar after picking a date
+        //             self.hide();
+        //         } else {
+        //             self.context.inputElement.value = '';
+        //         }
+        //     },
+        // };
+        // // Деструктуризация конструктора Calendar
+        // const { Calendar } = window.VanillaCalendarPro;
+        // // Создайте экземпляр календаря и инициализируйте его.
+        // const calendarInput = new Calendar('#calendar', options);
+        // calendarInput.init();
+
+        const calendarInput = document.getElementById('calendar');
+        const calendarContainer = document.getElementById('calendar-container');
+        const calendarElement = document.getElementById('vanilla-calendar');
+        const timePicker = document.getElementById('time-picker');
+        const timeOptions = document.getElementById('time-options');
+        const { Calendar } = window.VanillaCalendarPro;
+
+// Инициализация календаря
+        const calendar = new Calendar(calendarElement, {
+            settings: {
+                lang: 'en',
+                iso8601: true,
+                selection: {
+                    day: 'single',
+                },
+            },
+            onClickDate(self) {
+                calendarInput.value = self.context.selectedDates; // Устанавливаем дату
+                showTimePicker(); // Показываем выбор времени
+            },
+        });
+
+// Показываем контейнер с календарём при клике на инпут
+        calendarInput.addEventListener('click', (event) => {
+            calendarContainer.style.display = 'block'; // Показываем контейнер
+            const rect = calendarInput.getBoundingClientRect(); // Расположение инпута
+            calendarContainer.style.top = `50px`;
+            calendarContainer.style.left = `0`;
+        });
+
+// Скрываем контейнер при клике вне его
+        document.addEventListener('click', (event) => {
+            if (
+                !calendarContainer.contains(event.target) && // Если клик вне календаря
+                event.target !== calendarInput // И не по самому инпуту
+            ) {
+                calendarContainer.style.display = 'none'; // Скрываем контейнер
+            }
+        });
+
+// Показываем выбор времени
+        function showTimePicker() {
+            generateTimeSlots(); // Генерируем слоты времени
+        }
+
+// Генерация временных слотов
+        function generateTimeSlots() {
+            timeOptions.innerHTML = ''; // Очищаем предыдущие слоты
+            const times = [
+                '09:30', '10:00', '10:30', '11:30', '12:30'
+            ];
+
+            times.forEach((time) => {
+                const timeButton = document.createElement('button');
+                timeButton.textContent = time;
+                timeButton.classList.add('time-slot');
+                timeButton.addEventListener('click', () => {
+                    calendarInput.value += ` ${time}`; // Устанавливаем время в инпут
+                    calendarContainer.style.display = 'none'; // Скрываем контейнер
+                });
+                timeOptions.appendChild(timeButton);
+            });
+        }
+
+// Инициализация календаря
+        calendar.init();
+    });
 </script>
 </body>
 

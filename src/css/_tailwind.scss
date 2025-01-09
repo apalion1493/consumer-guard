@@ -52,7 +52,7 @@ section {
 }
 
 .input::placeholder {
-  @apply text-LightBlue3 text-body2
+  @apply text-Blue100 text-body2
 }
 
 .input {
@@ -69,8 +69,8 @@ section {
   }
 
   @apply p-4 bg-white flex items-center rounded
-  h-[52px] text-body2 w-full text-DarkBlue border border-LightBlue2
-  transition-all focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit focus:border-LightBlue2
+  h-[52px] text-body2 w-full text-DarkBlue border border-LightBlue3
+  transition-all focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit focus:border-LightBlue3
   focus:shadow-v2
 }
 

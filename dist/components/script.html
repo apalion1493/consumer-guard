@@ -4,4 +4,93 @@
         Alpine.data('data', () => ({
         }))
     })
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // const options = {
+        //     inputMode: true,
+        //     positionToInput: 'auto',
+        //     onChangeToInput(self) {
+        //         if (!self.context.inputElement) return;
+        //         if (self.context.selectedDates[0]) {
+        //             self.context.inputElement.value = self.context.selectedDates[0];
+        //             // if you want to hide the calendar after picking a date
+        //             self.hide();
+        //         } else {
+        //             self.context.inputElement.value = '';
+        //         }
+        //     },
+        // };
+        // // Деструктуризация конструктора Calendar
+        // const { Calendar } = window.VanillaCalendarPro;
+        // // Создайте экземпляр календаря и инициализируйте его.
+        // const calendarInput = new Calendar('#calendar', options);
+        // calendarInput.init();
+
+        const calendarInput = document.getElementById('calendar');
+        const calendarContainer = document.getElementById('calendar-container');
+        const calendarElement = document.getElementById('vanilla-calendar');
+        const timePicker = document.getElementById('time-picker');
+        const timeOptions = document.getElementById('time-options');
+        const { Calendar } = window.VanillaCalendarPro;
+
+// Инициализация календаря
+        const calendar = new Calendar(calendarElement, {
+            settings: {
+                lang: 'en',
+                iso8601: true,
+                selection: {
+                    day: 'single',
+                },
+            },
+            onClickDate(self) {
+                calendarInput.value = self.context.selectedDates; // Устанавливаем дату
+                showTimePicker(); // Показываем выбор времени
+            },
+        });
+
+// Показываем контейнер с календарём при клике на инпут
+        calendarInput.addEventListener('click', (event) => {
+            calendarContainer.style.display = 'block'; // Показываем контейнер
+            const rect = calendarInput.getBoundingClientRect(); // Расположение инпута
+            calendarContainer.style.top = `50px`;
+            calendarContainer.style.left = `0`;
+        });
+
+// Скрываем контейнер при клике вне его
+        document.addEventListener('click', (event) => {
+            if (
+                !calendarContainer.contains(event.target) && // Если клик вне календаря
+                event.target !== calendarInput // И не по самому инпуту
+            ) {
+                calendarContainer.style.display = 'none'; // Скрываем контейнер
+            }
+        });
+
+// Показываем выбор времени
+        function showTimePicker() {
+            generateTimeSlots(); // Генерируем слоты времени
+        }
+
+// Генерация временных слотов
+        function generateTimeSlots() {
+            timeOptions.innerHTML = ''; // Очищаем предыдущие слоты
+            const times = [
+                '09:30', '10:00', '10:30', '11:30', '12:30'
+            ];
+
+            times.forEach((time) => {
+                const timeButton = document.createElement('button');
+                timeButton.textContent = time;
+                timeButton.classList.add('time-slot');
+                timeButton.addEventListener('click', () => {
+                    calendarInput.value += ` ${time}`; // Устанавливаем время в инпут
+                    calendarContainer.style.display = 'none'; // Скрываем контейнер
+                });
+                timeOptions.appendChild(timeButton);
+            });
+        }
+
+// Инициализация календаря
+        calendar.init();
+    });
 </script>
