@@ -490,3 +490,50 @@
 .bg-gradient1 {
   background: linear-gradient(180deg, #F4F5FC 15.36%, rgba(243, 244, 255, 0.00) 97.81%);
 }
+
+.bg-gradient2 {
+  background: linear-gradient(58deg, rgba(48, 54, 122, 0.90) 9.64%, rgba(48, 54, 122, 0.00) 68.3%);
+}
+
+.img-filter-1 {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 276px;
+  height: 354px;
+}
+
+.img-filter-2 {
+  position: absolute;
+  width: 281px;
+  height: 202px;
+}
+
+.img-filter-3 {
+  position: absolute;
+  width: 277px;
+  height: 320px;
+}
+
+.img-filter-4 {
+  position: absolute;
+  width: 305px;
+  height: 301px;
+}
+
+.img-filter-1 img, .img-filter-2 img, .img-filter-3 img, .img-filter-4 img {
+  object-fit: cover;
+}
+
+.img-filter-1:before, .img-filter-2:before, .img-filter-3:before, .img-filter-4:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background: rgba(48, 54, 122, 0.9); /* Цвет фильтра */
+  background-blend-mode: screen;
+  pointer-events: none;
+}

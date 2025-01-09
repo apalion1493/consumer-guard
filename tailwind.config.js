@@ -88,6 +88,7 @@ module.exports = {
         '6xl': '20px',
         '7xl': '8px',
         '8xl': '10px',
+        '15': '15px',
       },
       colors: {
         transparent: 'transparent',
