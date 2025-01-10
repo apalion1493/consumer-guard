@@ -521,11 +521,13 @@
   height: 301px;
 }
 
-.img-filter-1 img, .img-filter-2 img, .img-filter-3 img, .img-filter-4 img {
-  object-fit: cover;
+.img-filter-5 {
+  position: absolute;
+  width: 526px;
+  height: 411px;
 }
 
-.img-filter-1:before, .img-filter-2:before, .img-filter-3:before, .img-filter-4:before{
+.img-filter-1:before, .img-filter-2:before, .img-filter-3:before, .img-filter-4:before, .img-filter-5:before{
   content: '';
   position: absolute;
   top: 0;

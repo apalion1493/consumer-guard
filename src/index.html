@@ -429,19 +429,103 @@
     <section class="section relative bg-img-2" style="background-image: url(img/Background-footer.png);">
       <div class="container">
         <div class="row">
-          <div class="col-span-12">
-            <div class="relative">
-<!--              <input id="calendar" type="text" placeholder="Choose date" readonly />-->
-              <input class="w-[556px]" id="calendar" type="text" placeholder="Choose date" readonly />
-
-              <div id="calendar-container" class="w-[556px]" style="display: none; position: absolute; z-index: 100; border: 1px solid #ccc; background: #fff; padding: 10px; border-radius: 5px;">
-                <div id="vanilla-calendar" class="vanilla-calendar"></div>
-
-                <div id="time-picker" style="margin-top: 10px;">
-                  <h3>Выберите время:</h3>
-                  <div id="time-options" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
-                </div>
+          <div class="col-span-12 flex">
+            <div class="max-w-[400px] w-full flex flex-col relative">
+              @@include('components/Title-block.html', {
+              'Style': '',
+              'Subtitle': 'Contact us',
+              'Title': 'Contact us <br> with any <br>questions.',
+              'StyleGreenLine': '',
+              })
+              <div class="shadow-v1 w-[526px] h-[412px] rounded-15 absolute bottom-1 left-0 z-[1] img-filter-5 overflow-hidden block">
+                <img width="526" height="412" class="object-cover rounded-15" src="img/img-9.png" alt="">
               </div>
+            </div>
+            <div class="w-[808px] relative z-[2] mb-10 ml-auto shadow-v4 rounded-6xl overflow-hidden bg-white border border-Green py-16 px-[86px]">
+              <form class="row gap-x-6 gap-y-5">
+                <div class="col-span-6">
+                  @@include('components/input.html', {
+                  'common-style': 'input-icon',
+                  'StyleLabel': '',
+                  'idInput': 'TextId1',
+                  'label': 'First name',
+                  'styleInput': 'user-icon input-icon',
+                  'type': 'text',
+                  'errorStyle': 'hidden',
+                  'placeholder': '',
+                  })
+                </div>
+                <div class="col-span-6">
+                  @@include('components/input.html', {
+                  'common-style': 'input-icon',
+                  'StyleLabel': '',
+                  'idInput': 'TextId2',
+                  'label': 'Last name',
+                  'styleInput': 'user-icon input-icon',
+                  'type': 'text',
+                  'errorStyle': 'hidden',
+                  'placeholder': '',
+                  })
+                </div>
+                <div class="col-span-6">
+                  @@include('components/input.html', {
+                  'common-style': 'input-icon',
+                  'StyleLabel': '',
+                  'idInput': 'MailId',
+                  'label': 'Email',
+                  'styleInput': 'message-icon input-icon',
+                  'type': 'email',
+                  'errorStyle': 'hidden',
+                  'placeholder': '',
+                  })
+                </div>
+                <div class="col-span-6">
+                  @@include('components/input.html', {
+                  'common-style': 'input-icon',
+                  'StyleLabel': '',
+                  'idInput': 'PhoneId',
+                  'label': 'Phone Number',
+                  'styleInput': 'phone-call-icon input-icon',
+                  'type': 'text',
+                  'errorStyle': 'hidden',
+                  'placeholder': '',
+                  })
+                </div>
+                <div class="col-span-12">
+                  @@include('components/Select.html', {
+                  'commonStyle': '',
+                  'labelStyle': '',
+                  'label': 'Select Service',
+                  'idSelect': 'selectId',
+                  'NameSelect': 'Select_Service',
+                  })
+                </div>
+                <div class="col-span-12">
+                  @@include('components/textarea.html', {
+                  'commonStyle': '',
+                  'idTextarea': 'CommentId',
+                  'label': '',
+                  'styleTextarea': '',
+                  'placeholder': 'Text message...',
+                  'rows': '3',
+                  })
+                </div>
+                <div class="col-span-12">
+                  @@include('components/checkbox.html', {
+                  'styleText': '',
+                  'text': 'I have read and agree to the <a href="#" class="">Privacy Policy</a>, <a href="#">Investigation</a>',
+                  'errorStyle': '',
+                  'errorText': '',
+                  })
+
+                  @@include('components/button.html', {
+                  'style': 'shadow-v3 mt-14',
+                  'type': 'submit',
+                  'ariaLabel': 'Send',
+                  'title': 'Send',
+                  })
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -453,6 +537,22 @@
     <div class="container">
       <div class="row">
         <div class="col-span-12">
+          <div class="relative">
+            <input class="w-[556px]" id="calendar" type="text" placeholder="Choose date" readonly />
+            <div id="calendar-container" class="w-[556px]" style="display: none; position: absolute; z-index: 100; border: 1px solid #ccc; background: #fff; padding: 10px; border-radius: 5px;">
+              <div id="vanilla-calendar" class="vanilla-calendar"></div>
+
+              <div id="time-picker" style="margin-top: 10px;">
+                <h3>Выберите время:</h3>
+                <div id="time-options" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+
           @@include('components/button.html', {
           'style': 'btn-outline',
           'type': 'button',
