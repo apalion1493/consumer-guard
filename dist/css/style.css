@@ -920,6 +920,21 @@ html {
 .mt-auto{
   margin-top: auto;
 }
+.mt-\[140px\]{
+  margin-top: 140px;
+}
+.mb-\[250px\]{
+  margin-bottom: 250px;
+}
+.mb-\[240px\]{
+  margin-bottom: 240px;
+}
+.mt-8{
+  margin-top: 2rem;
+}
+.mb-\[180px\]{
+  margin-bottom: 180px;
+}
 .line-clamp-5{
   overflow: hidden;
   display: -webkit-box;
@@ -1018,6 +1033,9 @@ html {
 .h-min{
   height: -moz-min-content;
   height: min-content;
+}
+.h-\[700px\]{
+  height: 700px;
 }
 .max-h-44{
   max-height: 11rem;

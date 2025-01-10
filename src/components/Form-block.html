@@ -1,0 +1,86 @@
+<div class="w-[808px] relative z-[2] mb-10 ml-auto shadow-v4 rounded-6xl overflow-hidden bg-white border border-Green py-16 px-[86px]">
+  <form class="row gap-x-6 gap-y-5">
+    <div class="col-span-6">
+      @@include('input.html', {
+      'common-style': 'input-icon',
+      'StyleLabel': '',
+      'idInput': 'TextId1',
+      'label': 'First name',
+      'styleInput': 'user-icon input-icon',
+      'type': 'text',
+      'errorStyle': 'hidden',
+      'placeholder': '',
+      })
+    </div>
+    <div class="col-span-6">
+      @@include('input.html', {
+      'common-style': 'input-icon',
+      'StyleLabel': '',
+      'idInput': 'TextId2',
+      'label': 'Last name',
+      'styleInput': 'user-icon input-icon',
+      'type': 'text',
+      'errorStyle': 'hidden',
+      'placeholder': '',
+      })
+    </div>
+    <div class="col-span-6">
+      @@include('input.html', {
+      'common-style': 'input-icon',
+      'StyleLabel': '',
+      'idInput': 'MailId',
+      'label': 'Email',
+      'styleInput': 'message-icon input-icon',
+      'type': 'email',
+      'errorStyle': 'hidden',
+      'placeholder': '',
+      })
+    </div>
+    <div class="col-span-6">
+      @@include('input.html', {
+      'common-style': 'input-icon',
+      'StyleLabel': '',
+      'idInput': 'PhoneId',
+      'label': 'Phone Number',
+      'styleInput': 'phone-call-icon input-icon',
+      'type': 'text',
+      'errorStyle': 'hidden',
+      'placeholder': '',
+      })
+    </div>
+    <div class="col-span-12">
+      @@include('Select.html', {
+      'commonStyle': '',
+      'labelStyle': '',
+      'label': 'Select Service',
+      'idSelect': 'selectId',
+      'NameSelect': 'Select_Service',
+      })
+    </div>
+    <div class="col-span-12">
+      @@include('textarea.html', {
+      'commonStyle': '',
+      'idTextarea': 'CommentId',
+      'label': '',
+      'styleTextarea': '',
+      'placeholder': 'Text message...',
+      'rows': '3',
+      })
+    </div>
+    <div class="col-span-12">
+      @@include('checkbox.html', {
+      'styleText': '',
+      'text': 'I have read and agree to the <a href="#" class="">Privacy Policy</a>, <a href="#">Investigation</a>',
+      'errorStyle': '',
+      'errorText': '',
+      })
+
+      @@include('button.html', {
+      'style': 'shadow-v3 mt-14',
+      'type': 'submit',
+      'ariaLabel': 'Send',
+      'title': 'Send',
+      })
+    </div>
+  </form>
+</div>

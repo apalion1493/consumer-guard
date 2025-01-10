@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Contacts Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <style>
+    #time-picker {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+
+    #time-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .time-slot {
+      padding: 5px 10px;
+      border: 1px solid #007bff;
+      background-color: #007bff;
+      color: white;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .time-slot:hover {
+      background-color: #0056b3;
+    }
+
+  </style>
+</head>
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen">
+  <section class="pb-[59px] hero-section relative" style="background-image: url(img/Backgound-CU-page.png);">
+    <header class="flex flex-col w-full relative z-10  ">
+  <div x-data="{dropdownOpen: false}" class="w-full flex flex-col">
+    <div class="py-6">
+      <div class="container flex items-center w-full">
+        <a class="lg:max-w-[171x] minlg:min-w-[140px] mr-3" href="index.html">
+          <img width="140" height="48" src="img/Logo-header.svg" alt="Logo">
+        </a>
+        <div class="flex items-center w-full">
+          <div class="ml-auto w-full lg:hidden">
+            <div class="items-center minlg:h-14 flex justify-end relative">
+              <nav class="mx-auto lg:hidden">
+                <div class="container px-0 mx-auto flex justify-center items-center gap-x-5 w-full">
+                  <!--                  <button @click="dropdownOpen = !dropdownOpen"-->
+                  <!--                          class="inline-flex items-center py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2"-->
+                  <!--                          :class="dropdownOpen ? 'text-LightBlue' : ''"-->
+                  <!--                          data-menu-target="menu1">Services <span-->
+                  <!--                    :class="dropdownOpen ? 'rotate-180' : ''"-->
+                  <!--                    class="check-icon-menu transition-all ml-2"></span></button>-->
+                  <a href="#"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Services</a>
+                  <a href="#"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Locations</a>
+                  <a href="#"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Partners</a>
+                  <a href="About-us.html"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">About
+                    Us</a>
+                  <a href="contact-us.html"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Contacts</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="flex items-center gap-x-3 ml-3 lg:ml-auto">
+            <button class="button shadow-v3" type="button" aria-label="Button">
+  <span>Button</span>
+</button>
+          </div>
+          <button id="burger-button" class="minlg:hidden ml-5 flex items-center justify-center p-2"
+                  aria-label="Mobile Burger Button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container md:hidden">
+      <!-- Mega Menus -->
+      <div style="display: none" x-cloak x-show="dropdownOpen" @click.outside="dropdownOpen = false"
+           x-transition.opacity.duration.200ms
+           x-trap.inert.noscroll="dropdownOpen" class="relative">
+        <div x-show="dropdownOpen"
+             x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity"
+             x-transition:enter-start="opacity-0 scale-50" x-transition:enter-end="opacity-100 scale-100"
+             id="menu1"
+             class="mega-menu min-w-[1204px] rounded-xl border border-primary border-solid absolute top-3 left-1/2 -translate-x-1/2 bg-white z-50 p-8">
+          <div class="grid grid-cols-3 minxl:grid-cols-5 gap-x-12 gap-y-4">
+            <div class="flex flex-col gap-4">
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Neurology-40 mr-3 min-w-10"></i>
+                Neurology
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Oncology-40 mr-3 min-w-10"></i>
+                Oncology
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Cardiology-40 mr-3 min-w-10"></i>
+                Cardiology
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Hematology-40 mr-3 min-w-10"></i>
+                Hematology
+              </a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Fertility-40 mr-3 min-w-10"></i>
+                Fertility
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Urology-40 mr-3 min-w-10"></i>
+                Urology
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Obgyn-40 mr-3 min-w-10"></i>
+                Obgyn
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Erectile-Disfunction-40 mr-3 min-w-10"></i>
+                Erectile Disfunction
+              </a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Pulmonology-40 mr-3 min-w-10"></i>
+                Pulmonology
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Endochrinology-40 mr-3 min-w-10"></i>
+                Endocrinology
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Rheymatology-40 mr-3 min-w-10"></i>
+                Rheymotology
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Gastroenterology-40 mr-3 min-w-10"></i>
+                Gastroenterology
+              </a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Allergy-40 mr-3 min-w-10"></i>
+                Allergy
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Infection-40 mr-3 min-w-10"></i>
+                Infection
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Weight-Loss-40 mr-3 min-w-10"></i>
+                Weight Loss
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Dermatology-40 mr-3 min-w-10"></i>
+                Dermatology
+              </a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Sugar-Control-40 mr-3 min-w-10"></i>
+                Sugar Control
+              </a>
+              <a href="#"
+                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
+                <i class="Ophtalmology-40 mr-3 min-w-10"></i>
+                Ophtalmology
+              </a>
+            </div>
+          </div>
+          <a href="#" class="text-body block mt-6 text-DarkBlue underline font-semibold md:text-body4">Show All</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu hidden">
+    <div class="flex flex-col container py-6 gap-y-6">
+      <nav class="bg-white shadow-md p-4 w-full mb-20">
+        <ul class="flex flex-col gap-y-6">
+          <li>
+            <button
+              class="menu-btn flex justify-between items-center w-full px-4 text-left text-gray-700 focus:outline-none">
+              All Categories
+              <span class='menu-btn--icon'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                  <path d="M8.88715 0.511963L5 4.4881L1.11285 0.511963" stroke="#333333" stroke-linecap="round" />
+                </svg>
+              </span>
+            </button>
+            <ul class="hidden space-y-1 mt-2">
+              <li class="flex flex-col px-4">
+                <ul class="py-5 flex flex-col gap-5">
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="botulinum-icon mr-2"></i>
+                      Botulinum
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="mesotherapy-icon mr-2"></i>
+                      Mesotherapy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="dermal-fillers-icon mr-2"></i>
+                      Dermal Fillers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="lipolitics-icon mr-2"></i>
+                      Lipolitics
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="placental-extract-icon mr-2"></i>
+                      Placental Extract
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="creams-serum-icon mr-2"></i>
+                      Creams & Serum
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="Rheumatology-icon mr-2"></i>
+                      Rheumatology
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="ortophedics-icon mr-2"></i>
+                      Ortophedics
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black-1 text-base flex items-center">
+                      <i class="ginecology-icon mr-2"></i>
+                      Ginecology
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+               class="menu-btn block w-full text-left px-4 text-gray-700 hover:bg-gray-200 focus:outline-none">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="#"
+               class="menu-btn block w-full text-left px-4 text-gray-700 hover:bg-gray-200 focus:outline-none">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flex items-center mx-auto mt-auto">
+        <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+             fill="none">
+          <path
+            d="M18.3077 19.7436L18.0965 20.7995C18.5728 20.8949 19.0538 20.6595 19.2709 20.2252L18.3077 19.7436ZM8.25641 9.69231L7.7748 8.72908C7.34042 8.94626 7.10517 9.4273 7.20039 9.90351L8.25641 9.69231ZM20.1026 12.5641C20.1026 13.1589 20.5847 13.641 21.1795 13.641C21.7742 13.641 22.2564 13.1589 22.2564 12.5641H20.1026ZM15.4359 5.74359C14.8411 5.74359 14.359 6.22575 14.359 6.82051C14.359 7.41528 14.8411 7.89744 15.4359 7.89744V5.74359ZM25.8462 12.5641C25.8462 13.1589 26.3283 13.641 26.9231 13.641C27.5178 13.641 28 13.1589 28 12.5641H25.8462ZM15.4359 0C14.8411 0 14.359 0.48216 14.359 1.07692C14.359 1.67169 14.8411 2.15385 15.4359 2.15385V0ZM25.8462 21.6879V24.0513H28V21.6879H25.8462ZM3.94872 2.15385H6.3121V0H3.94872V2.15385ZM18.3077 19.7436C18.5189 18.6876 18.5192 18.6876 18.5195 18.6876C18.5162 18.6869 18.5087 18.6855 18.4988 18.6832C18.479 18.6789 18.4465 18.6714 18.4023 18.6608C18.314 18.6392 18.179 18.6043 18.0059 18.5534C17.659 18.4513 17.1613 18.2857 16.578 18.0357C15.4066 17.5337 13.9194 16.7042 12.6076 15.3924L11.0847 16.9153C12.6447 18.4753 14.3883 19.4406 15.7297 20.0155C16.4028 20.304 16.9821 20.4974 17.3981 20.6196C17.6063 20.6809 17.7743 20.7246 17.8933 20.7536C17.9529 20.7681 18.0003 20.7789 18.0344 20.7865C18.0517 20.7902 18.0655 20.7931 18.0758 20.7954C18.081 20.7964 18.0853 20.7974 18.0887 20.798C18.0904 20.7984 18.092 20.7987 18.0933 20.799C18.0939 20.7991 18.0945 20.7993 18.095 20.7993C18.0953 20.7994 18.0963 20.7995 18.0965 20.7995C18.0969 20.7997 18.0965 20.7995 18.3077 19.7436ZM12.6076 15.3924C11.2958 14.0806 10.4663 12.5934 9.96421 11.422C9.71423 10.8387 9.54866 10.3411 9.44663 9.99421C9.39568 9.82099 9.36079 9.68606 9.33928 9.59762C9.32854 9.55344 9.32114 9.52093 9.31678 9.50115C9.3146 9.49127 9.31316 9.48456 9.31246 9.48117C9.3121 9.47948 9.31192 9.47862 9.31191 9.4786C9.31182 9.47819 9.31191 9.47859 9.31191 9.4786C9.31192 9.47862 9.3121 9.47948 9.31246 9.48117C9.31244 9.48109 9.31248 9.48133 9.31246 9.48117C9.31251 9.48146 9.31243 9.4811 8.25641 9.69231C7.20039 9.90351 7.20032 9.90317 7.20039 9.90351C7.20042 9.90364 7.20064 9.90468 7.2007 9.90495C7.2008 9.90548 7.20091 9.90607 7.20104 9.90672C7.20131 9.90801 7.20161 9.90952 7.20197 9.91124C7.20268 9.9147 7.20357 9.91902 7.20466 9.92421C7.20684 9.93459 7.2098 9.94839 7.21358 9.9655C7.22113 9.9997 7.23197 10.0471 7.24646 10.1067C7.27543 10.2258 7.31907 10.3938 7.3803 10.6019C7.50262 11.0179 7.69602 11.5972 7.98451 12.2703C8.55937 13.6117 9.52467 15.3553 11.0847 16.9153L12.6076 15.3924ZM8.73802 10.6555L9.24636 10.4014L8.28313 8.47491L7.7748 8.72908L8.73802 10.6555ZM11.1467 5.40301L9.97841 2.48221L7.97861 3.28212L9.14693 6.20293L11.1467 5.40301ZM25.5178 18.0217L22.597 16.8533L21.7971 18.853L24.7178 20.0214L25.5178 18.0217ZM17.5986 18.7537L17.3445 19.262L19.2709 20.2252L19.525 19.7169L17.5986 18.7537ZM22.597 16.8533C20.6901 16.0905 18.517 16.9167 17.5986 18.7537L19.525 19.7169C19.9426 18.8819 20.9304 18.5064 21.7971 18.853L22.597 16.8533ZM9.24636 10.4014C11.0832 9.48294 11.9095 7.30981 11.1467 5.40301L9.14693 6.20293C9.49362 7.06966 9.11806 8.05744 8.28313 8.47491L9.24636 10.4014ZM6.3121 2.15385C7.04603 2.15385 7.70603 2.60068 7.97861 3.28212L9.97841 2.48221C9.37874 0.983044 7.92676 0 6.3121 0V2.15385ZM28 21.6879C28 20.0733 27.017 18.6213 25.5178 18.0217L24.7178 20.0214C25.3993 20.294 25.8462 20.9539 25.8462 21.6879H28ZM24.0513 25.8462C11.9577 25.8462 2.15385 16.0423 2.15385 3.94872H0C0 17.2319 10.7681 28 24.0513 28V25.8462ZM24.0513 28C26.2321 28 28 26.2321 28 24.0513H25.8462C25.8462 25.0426 25.0426 25.8462 24.0513 25.8462V28ZM2.15385 3.94872C2.15385 2.95743 2.95743 2.15385 3.94872 2.15385V0C1.76791 0 0 1.76791 0 3.94872H2.15385ZM22.2564 12.5641C22.2564 11.6684 22.0799 10.7815 21.7372 9.954L19.7473 10.7782C19.9818 11.3445 20.1026 11.9513 20.1026 12.5641H22.2564ZM21.7372 9.954C21.3944 9.12651 20.892 8.37461 20.2588 7.74127L18.7357 9.26427C19.1691 9.69761 19.5128 10.2121 19.7473 10.7782L21.7372 9.954ZM20.2588 7.74127C19.6254 7.10792 18.8734 6.60553 18.0459 6.26277L17.2217 8.25266C17.7879 8.48719 18.3024 8.83093 18.7357 9.26427L20.2588 7.74127ZM18.0459 6.26277C17.2186 5.92 16.3316 5.74359 15.4359 5.74359V7.89744C16.0487 7.89744 16.6555 8.01814 17.2217 8.25266L18.0459 6.26277ZM28 12.5641C28 10.9142 27.6751 9.28038 27.0436 7.75603L25.0537 8.58026C25.5769 9.84331 25.8462 11.197 25.8462 12.5641H28ZM27.0436 7.75603C26.4122 6.23168 25.4867 4.84663 24.3201 3.67995L22.797 5.20295C23.7637 6.16962 24.5306 7.31723 25.0537 8.58026L27.0436 7.75603ZM24.3201 3.67995C23.1534 2.51325 21.7683 1.58779 20.244 0.956379L19.4198 2.94627C20.6828 3.46944 21.8304 4.23626 22.797 5.20295L24.3201 3.67995ZM20.244 0.956379C18.7197 0.324987 17.0859 0 15.4359 0V2.15385C16.803 2.15385 18.1566 2.42312 19.4198 2.94627L20.244 0.956379Z"
+            fill="#007F84" />
+        </svg>
+        <div class="flex flex-col">
+          <span>Support</span>
+          <a class="hover:underline font-semibold" href="tel:+19298104787">(929) 810 4787</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="container pt-[100px]">
+      <div class="row gap-x-6">
+        <div class="col-span-12">
+          <div class="flex flex-col items-center mx-auto mb-6">
+            <h1 class="text-center text-Blue100 block font-semibold">Contacts Us</h1>
+            <span class="border-0 border-b-4 border-Green w-[86px] my-8 @@StyleGreenLine"></span>
+          </div>
+        </div>
+        <div class="col-span-4">
+          <div class="flex flex-col">
+            <p class="text-black text-body">In vero zril dictas eos, in esse summo aperiri sea. Errem constituam per in.
+              In vix mucius nonumes
+              intellegam, eum in homero vivendo explicari, deterruisset mediocritatem cu eum. Usu porro clita at. Mei
+              prima civibus accumsan at, eu qui quas saepe intellegam.</p>
+            <div class="mt-[140px] mb-[180px]">
+              <span class="text-Top3 text-Blue100 mb-3 block font-semibold">Head Office</span>
+              <ul class="flex flex-col gap-y-2">
+                <li class="flex items-center">
+                  <div class="flex items-center text-base text-black">
+                    <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                        <path d="M8 20L7.44506 19.502C6.68002 18.8315 0 12.7922 0 8.37462C0 3.74945 3.58173 0 8 0C12.4183 0 16 3.74945 16 8.37462C16 12.7922 9.31998 18.8315 8.55811 19.5054L8 20ZM8 1.81084C4.53873 1.81494 1.73379 4.75123 1.72987 8.37458C1.72987 11.1498 5.83968 15.5832 8 17.6123C10.1604 15.5823 14.2701 11.1464 14.2701 8.37458C14.2662 4.75123 11.4613 1.81498 8 1.81084Z" fill="#44B64B"/>
+                        <path d="M8.00009 11.694C6.24873 11.694 4.82896 10.2077 4.82896 8.37433C4.82896 6.54095 6.24873 5.0547 8.00009 5.0547C9.75146 5.0547 11.1712 6.54095 11.1712 8.37433C11.1712 10.2077 9.7515 11.694 8.00009 11.694ZM8.00009 6.71448C7.12441 6.71448 6.41453 7.4576 6.41453 8.37429C6.41453 9.29098 7.12441 10.0341 8.00009 10.0341C8.87578 10.0341 9.58566 9.29098 9.58566 8.37429C9.58566 7.4576 8.87581 6.71448 8.00009 6.71448Z" fill="#44B64B"/>
+                     </svg>
+                    </span>
+                    <span>
+                       East 14th Street, New York, <br>NY 10003, United State
+                    </span>
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <a class="flex items-center text-base text-black hover:text-Green transition-colors"
+                     href="tel:+1234567890">
+                      <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                          <path
+                            d="M9.98256 5.18462V2.51796C9.98256 2.34115 10.0528 2.17158 10.1778 2.04655C10.3028 1.92153 10.4724 1.85129 10.6492 1.85129C10.826 1.85129 10.9956 1.92153 11.1206 2.04655C11.2457 2.17158 11.3159 2.34115 11.3159 2.51796V4.25862C11.7359 3.83596 14.4499 1.10796 14.8446 0.713291C14.9061 0.649618 14.9796 0.59883 15.061 0.56389C15.1423 0.528951 15.2298 0.51056 15.3183 0.509791C15.4068 0.509022 15.4946 0.525889 15.5765 0.55941C15.6585 0.592931 15.7329 0.642433 15.7955 0.705028C15.8581 0.767623 15.9076 0.842058 15.9411 0.923988C15.9746 1.00592 15.9915 1.09371 15.9907 1.18223C15.99 1.27074 15.9716 1.35822 15.9366 1.43956C15.9017 1.5209 15.8509 1.59446 15.7872 1.65596C15.3926 2.05062 12.6926 4.76596 12.2752 5.18462H13.9826C14.1594 5.18462 14.3289 5.25486 14.454 5.37989C14.579 5.50491 14.6492 5.67448 14.6492 5.85129C14.6492 6.0281 14.579 6.19767 14.454 6.3227C14.3289 6.44772 14.1594 6.51796 13.9826 6.51796H11.3159C10.9623 6.51796 10.6231 6.37748 10.3731 6.12743C10.123 5.87739 9.98256 5.53825 9.98256 5.18462ZM15.3792 11.6773C15.7656 12.0647 15.9825 12.5895 15.9825 13.1366C15.9825 13.6837 15.7656 14.2085 15.3792 14.596L14.7712 15.296C9.31056 20.5213 -3.97478 7.23996 1.17122 1.76262L1.93789 1.09596C2.32565 0.720321 2.84571 0.51245 3.38556 0.517316C3.9254 0.522182 4.44163 0.739393 4.82256 1.12196C4.84322 1.14196 6.07789 2.74729 6.07789 2.74729C6.44317 3.13299 6.64642 3.64421 6.64567 4.17542C6.64493 4.70664 6.44025 5.21729 6.07389 5.60196L5.30189 6.57262C5.72922 7.61064 6.35739 8.55402 7.15035 9.34857C7.9433 10.1431 8.8854 10.7732 9.92256 11.2026L10.8992 10.426C11.2831 10.0586 11.7938 9.85327 12.3251 9.85253C12.8564 9.85178 13.3676 10.0557 13.7526 10.422C13.7526 10.422 15.3586 11.6573 15.3792 11.6773ZM14.4626 12.6466C14.4626 12.6466 12.8672 11.4186 12.8466 11.3986C12.7092 11.2624 12.5236 11.186 12.3302 11.186C12.1368 11.186 11.9512 11.2624 11.8139 11.3986C11.7959 11.416 10.4512 12.488 10.4512 12.488C10.3606 12.5601 10.2528 12.6074 10.1383 12.6251C10.0239 12.6429 9.90678 12.6305 9.79856 12.5893C8.45417 12.0891 7.23304 11.3057 6.21795 10.2922C5.20286 9.27877 4.41754 8.05888 3.91522 6.71529C3.87069 6.60559 3.85617 6.48602 3.87316 6.36885C3.89015 6.25168 3.93803 6.14115 4.01189 6.04862C4.01189 6.04862 5.08389 4.70596 5.10189 4.68862C5.23807 4.55128 5.31448 4.3657 5.31448 4.17229C5.31448 3.97888 5.23807 3.7933 5.10189 3.65596C5.08189 3.63596 3.85389 2.03929 3.85389 2.03929C3.71449 1.9143 3.53256 1.84735 3.34539 1.85219C3.15822 1.85702 2.97998 1.93327 2.84722 2.06529L2.08056 2.73196C-1.68078 7.25396 9.83389 18.13 13.7959 14.3873L14.4039 13.6866C14.5472 13.5551 14.6336 13.3728 14.6445 13.1785C14.6555 12.9843 14.5902 12.7935 14.4626 12.6466Z"
+                            fill="#44B64B" />
+                        </svg>
+                      </span>
+                    <span class="font-medium">+1 123 4567 890</span>
+                  </a>
+                </li>
+                <li class="flex items-center">
+                  <a class="flex items-center text-base text-black hover:text-Green transition-colors"
+                     href="mailto:info@consumerguard.com">
+                      <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                          <path
+                            d="M14.25 0.5H3.75C2.7558 0.501155 1.80267 0.884641 1.09966 1.56634C0.396661 2.24804 0.00119089 3.17229 0 4.13636L0 12.8636C0.00119089 13.8277 0.396661 14.752 1.09966 15.4337C1.80267 16.1154 2.7558 16.4988 3.75 16.5H14.25C15.2442 16.4988 16.1973 16.1154 16.9003 15.4337C17.6033 14.752 17.9988 13.8277 18 12.8636V4.13636C17.9988 3.17229 17.6033 2.24804 16.9003 1.56634C16.1973 0.884641 15.2442 0.501155 14.25 0.5ZM3.75 1.95455H14.25C14.6991 1.9554 15.1376 2.08656 15.5092 2.33113C15.8808 2.5757 16.1684 2.92251 16.335 3.32691L10.5915 8.89709C10.1688 9.30532 9.59656 9.53452 9 9.53452C8.40344 9.53452 7.83118 9.30532 7.4085 8.89709L1.665 3.32691C1.83161 2.92251 2.11921 2.5757 2.49079 2.33113C2.86236 2.08656 3.30091 1.9554 3.75 1.95455ZM14.25 15.0455H3.75C3.15326 15.0455 2.58097 14.8156 2.15901 14.4064C1.73705 13.9972 1.5 13.4423 1.5 12.8636V5.22727L6.348 9.92546C7.05197 10.6064 8.00569 10.9888 9 10.9888C9.99431 10.9888 10.948 10.6064 11.652 9.92546L16.5 5.22727V12.8636C16.5 13.4423 16.2629 13.9972 15.841 14.4064C15.419 14.8156 14.8467 15.0455 14.25 15.0455Z"
+                            fill="#44B64B" />
+                        </svg>
+                      </span>
+                    <span class="font-medium">info@consumerguard.com</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="flex items-center gap-x-4 mt-8">
+                <li class="flex items-center">
+                  <a href="#" target="_blank" class="group text-none">
+                    Facebook
+                    <span class="flex items-center justify-center group-hover:border-Green transition-all w-8 min-w-8 h-8 rounded-full border border-LightBlue4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17" fill="none">
+                    <g clip-path="url(#clip0_166_1295)">
+                      <path class="group-hover:fill-Green transition-all" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.51367 9.90643V16.5155H6.11807V9.90643H8.80584L9.36514 6.86754H6.11807V5.79244C6.11807 4.18599 6.74885 3.57076 8.37704 3.57076C8.88352 3.57076 9.29057 3.58319 9.52672 3.60804V0.851918C9.08239 0.730735 7.99485 0.606445 7.36719 0.606445C4.04554 0.606445 2.51367 2.1756 2.51367 5.55939V6.86754H0.462891V9.90643H2.51367Z"
+                            fill="#B4B7CF" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_166_1295">
+                        <rect width="9.94318" height="15.9091" fill="white" transform="translate(0.0283203 0.606445)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                  </a>
+                </li>
+                <li class="flex items-center">
+                  <a href="#" target="_blank" class="group text-none">
+                    Instagram
+                    <span class="flex items-center justify-center group-hover:border-Green transition-all w-8 min-w-8 h-8 rounded-full border border-LightBlue4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <g clip-path="url(#clip0_166_1298)">
+                      <path class="group-hover:fill-Green transition-all" d="M7.00326 4.98804C5.02706 4.98804 3.43304 6.58205 3.43304 8.55826C3.43304 10.5345 5.02706 12.1285 7.00326 12.1285C8.97947 12.1285 10.5735 10.5345 10.5735 8.55826C10.5735 6.58205 8.97947 4.98804 7.00326 4.98804ZM7.00326 10.8794C5.72619 10.8794 4.68215 9.83845 4.68215 8.55826C4.68215 7.27808 5.72308 6.23715 7.00326 6.23715C8.28345 6.23715 9.32437 7.27808 9.32437 8.55826C9.32437 9.83845 8.28034 10.8794 7.00326 10.8794ZM11.5523 4.842C11.5523 5.30498 11.1794 5.67474 10.7195 5.67474C10.2565 5.67474 9.88679 5.30187 9.88679 4.842C9.88679 4.38212 10.2597 4.00925 10.7195 4.00925C11.1794 4.00925 11.5523 4.38212 11.5523 4.842ZM13.9169 5.68717C13.8641 4.57167 13.6093 3.58356 12.7921 2.76946C11.978 1.95537 10.9899 1.70057 9.87436 1.64464C8.72468 1.57939 5.27874 1.57939 4.12906 1.64464C3.01667 1.69747 2.02856 1.95226 1.21136 2.76636C0.394154 3.58046 0.142467 4.56856 0.0865368 5.68406C0.0212846 6.83374 0.0212846 10.2797 0.0865368 11.4294C0.13936 12.5449 0.394154 13.533 1.21136 14.3471C2.02856 15.1612 3.01356 15.4159 4.12906 15.4719C5.27874 15.5371 8.72468 15.5371 9.87436 15.4719C10.9899 15.4191 11.978 15.1643 12.7921 14.3471C13.6062 13.533 13.861 12.5449 13.9169 11.4294C13.9821 10.2797 13.9821 6.83685 13.9169 5.68717ZM12.4316 12.6629C12.1893 13.2719 11.7201 13.7411 11.1079 13.9866C10.1913 14.3502 8.01622 14.2663 7.00326 14.2663C5.9903 14.2663 3.81212 14.3471 2.89859 13.9866C2.28957 13.7443 1.82038 13.2751 1.57491 12.6629C1.21136 11.7463 1.29525 9.57122 1.29525 8.55826C1.29525 7.5453 1.21447 5.36712 1.57491 4.45359C1.81727 3.84457 2.28647 3.37538 2.89859 3.1299C3.81523 2.76636 5.9903 2.85025 7.00326 2.85025C8.01622 2.85025 10.1944 2.76946 11.1079 3.1299C11.717 3.37227 12.1861 3.84146 12.4316 4.45359C12.7952 5.37023 12.7113 7.5453 12.7113 8.55826C12.7113 9.57122 12.7952 11.7494 12.4316 12.6629Z" fill="#B4B7CF"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_166_1298">
+                        <rect width="13.9205" height="15.9091" fill="white" transform="translate(0.0395508 0.606445)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                  </a>
+                </li>
+                <li class="flex items-center">
+                  <a href="#" target="_blank" class="group text-none">
+                    Linkedin
+                    <span class="flex items-center justify-center group-hover:border-Green transition-all w-8 min-w-8 h-8 rounded-full border border-LightBlue4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <g clip-path="url(#clip0_166_1301)">
+                      <path class="group-hover:fill-Green transition-all" d="M3.15612 14.5269H0.269487V5.23313H3.15612V14.5269ZM1.71125 3.96538C0.788397 3.96538 0.0395508 3.20099 0.0395508 2.27814C0.0395508 1.83478 0.215676 1.40958 0.52918 1.09607C0.842684 0.78257 1.26789 0.606445 1.71125 0.606445C2.15461 0.606445 2.57981 0.78257 2.89332 1.09607C3.20682 1.40958 3.38295 1.83478 3.38295 2.27814C3.38295 3.20099 2.6341 3.96538 1.71125 3.96538ZM13.9569 14.5269H11.0765V10.0028C11.0765 8.92454 11.0547 7.54181 9.57568 7.54181C8.07488 7.54181 7.84495 8.71325 7.84495 9.92507V14.5269H4.96143V5.23313H7.72998V6.50089H7.77037C8.15567 5.77069 9.09717 5.00009 10.5016 5.00009C13.4225 5.00009 13.96 6.92347 13.96 9.4217V14.5269H13.9569Z" fill="#B4B7CF"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_166_1301">
+                        <rect width="13.9205" height="15.9091" fill="white" transform="translate(0.0395508 0.606445)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-8 relative">
+          <div class="absolute top-0 right-0 z-10">
+            <div class="w-[808px] relative z-[2] mb-10 ml-auto shadow-v4 rounded-6xl overflow-hidden bg-white border border-Green py-16 px-[86px]">
+  <form class="row gap-x-6 gap-y-5">
+    <div class="col-span-6">
+      <div class="form-group flex flex-col items-start input-icon">
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 " for="TextId1">First name</label>
+  <input
+    class="input user-icon input-icon "
+    type="text" id="TextId1" placeholder="" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+    </div>
+    <div class="col-span-6">
+      <div class="form-group flex flex-col items-start input-icon">
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 " for="TextId2">Last name</label>
+  <input
+    class="input user-icon input-icon "
+    type="text" id="TextId2" placeholder="" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+    </div>
+    <div class="col-span-6">
+      <div class="form-group flex flex-col items-start input-icon">
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 " for="MailId">Email</label>
+  <input
+    class="input message-icon input-icon "
+    type="email" id="MailId" placeholder="" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+    </div>
+    <div class="col-span-6">
+      <div class="form-group flex flex-col items-start input-icon">
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 " for="PhoneId">Phone Number</label>
+  <input
+    class="input phone-call-icon input-icon "
+    type="text" id="PhoneId" placeholder="" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+    </div>
+    <div class="col-span-12">
+      <div class="form-group flex flex-col items-start relative ">
+  <label class="mb-3 font-semibold text-body md:text-body2 " for="selectId">Select Service</label>
+  <svg class="absolute pointer-events-none right-4 bottom-6 h-[6px] w-[12px]" xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.414376 1.09205C0.673133 0.768607 1.1451 0.716166 1.46855 0.974923L6.00003 4.60011L10.5315 0.974923C10.855 0.716166 11.3269 0.768607 11.5857 1.09205C11.8444 1.4155 11.792 1.88747 11.4685 2.14623L6.46855 6.14623C6.19463 6.36536 5.80542 6.36536 5.53151 6.14623L0.531506 2.14623C0.20806 1.88747 0.155619 1.4155 0.414376 1.09205Z" fill="#44B64B"/>
+  </svg>
+  <select id="selectId" required name="Select_Service" class="select w-full input">
+    <option value="" selected disabled></option>
+    <option value="Service1">Service 1</option>
+    <option value="Service2">Service 2</option>
+  </select>
+</div>
+
+    </div>
+    <div class="col-span-12">
+      <div class="form-group flex flex-col items-start overflow-hidden ">
+  <label class="mb-3 font-semibold text-body" for="CommentId"></label>
+  <textarea
+    class="input "
+    id="CommentId" placeholder="Text message..." rows="3"></textarea>
+</div>
+    </div>
+    <div class="col-span-12">
+      <div class="flex flex-col">
+  <label class="custom-checkbox">
+    <span class="custom-checkbox__block w-5 min-w-5 h-5">
+      <i class="w-5 min-w-5 h-5 rounded bg-white border border-LightBlue2 flex"></i>
+    </span>
+    <input type="checkbox">
+    <span class="checkmark">
+      <i class="Check-box-on"></i>
+    </span>
+    <span class="ml-2 text-body2 text-DarkBlue md:text-body4 ">I have read and agree to the <a href="#" class="">Privacy Policy</a>, <a href="#">Investigation</a></span>
+  </label>
+  <small class="text-body2 font-medium text-Error md:text-body4 mt-2 "></small>
+</div>
+
+      <button class="button shadow-v3 mt-14" type="submit" aria-label="Send">
+  <span>Send</span>
+</button>
+    </div>
+  </form>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-full h-[700px]">
+    <iframe
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAOMhVrALnzqYT8bHJf7lS3jJKqkeC4RIc&q=East+14th+Street,+New+York,+NY+10003,+United+States"
+      class="w-full h-[700px]"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
+
+
+  <div id="modal" class="fixed inset-0 z-[10000] bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+  <div class="bg-white rounded-lg shadow-lg py-8 px-6 w-full max-w-[561px] max-h-screen md:overflow-y-scroll relative">
+    <div class="flex justify-between items-center mb-5">
+      <span class="text-Top5 text-DarkBlue font-semibold">Make a Request</span>
+      <button class="close-modal text-gray-500 ml-auto hover:text-gray-700 focus:outline-none text-2xl transition">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+          <path d="M17.3998 1.11339C17.2765 0.989783 17.1299 0.891719 16.9686 0.824811C16.8073 0.757902 16.6344 0.723462 16.4598 0.723462C16.2852 0.723462 16.1123 0.757902 15.951 0.824811C15.7897 0.891719 15.6432 0.989783 15.5198 1.11339L8.99981 7.62005L2.47981 1.10005C2.35637 0.976611 2.20982 0.878691 2.04853 0.811885C1.88725 0.745078 1.71438 0.710693 1.53981 0.710693C1.36524 0.710693 1.19237 0.745078 1.03109 0.811885C0.8698 0.878691 0.723252 0.976611 0.59981 1.10005C0.476367 1.2235 0.378447 1.37004 0.31164 1.53133C0.244834 1.69261 0.210449 1.86548 0.210449 2.04005C0.210449 2.21463 0.244834 2.38749 0.31164 2.54878C0.378447 2.71006 0.476367 2.85661 0.59981 2.98005L7.11981 9.50005L0.59981 16.0201C0.476367 16.1435 0.378447 16.29 0.31164 16.4513C0.244834 16.6126 0.210449 16.7855 0.210449 16.9601C0.210449 17.1346 0.244834 17.3075 0.31164 17.4688C0.378447 17.6301 0.476367 17.7766 0.59981 17.9001C0.723252 18.0235 0.8698 18.1214 1.03109 18.1882C1.19237 18.255 1.36524 18.2894 1.53981 18.2894C1.71438 18.2894 1.88725 18.255 2.04853 18.1882C2.20982 18.1214 2.35637 18.0235 2.47981 17.9001L8.99981 11.3801L15.5198 17.9001C15.6433 18.0235 15.7898 18.1214 15.9511 18.1882C16.1124 18.255 16.2852 18.2894 16.4598 18.2894C16.6344 18.2894 16.8072 18.255 16.9685 18.1882C17.1298 18.1214 17.2764 18.0235 17.3998 17.9001C17.5233 17.7766 17.6212 17.6301 17.688 17.4688C17.7548 17.3075 17.7892 17.1346 17.7892 16.9601C17.7892 16.7855 17.7548 16.6126 17.688 16.4513C17.6212 16.29 17.5233 16.1435 17.3998 16.0201L10.8798 9.50005L17.3998 2.98005C17.9065 2.47339 17.9065 1.62005 17.3998 1.11339Z" fill="#1B3C74"/>
+        </svg>
+      </button>
+    </div>
+    <div class="flex flex-col">
+      <p class="mb-2 text-Top3 text-BlackText">Our professional team will assist you from the moment you place the
+        order till the moment you receive it.</p>
+      <p class="text-base text-DarkBlue font-medium">We sell to the certified doctors and companies only.</p>
+      <form class="row gap-y-5 gap-x-6 mt-10">
+        <div class="col-span-6">
+          <div class="form-group flex flex-col items-start ">
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 hidden" for="TextId1"></label>
+  <input
+    class="input  "
+    type="text" id="TextId1" placeholder="Your Name" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+        </div>
+        <div class="col-span-6">
+          <div class="form-group flex flex-col items-start ">
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 hidden" for="EmailId1"></label>
+  <input
+    class="input  "
+    type="email" id="EmailId1" placeholder="Email" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+        </div>
+        <div class="col-span-6">
+
+<!--          'commonStyle': '',-->
+<!--          'labelStyle': 'hidden',-->
+<!--          'idSelect': 'selectId1',-->
+<!--          'NameSelect': '',-->
+<!--          'label': '',-->
+<!--          })-->
+        </div>
+        <div class="col-span-6">
+          <div class="form-group flex flex-col items-start ">
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 hidden" for="PhoneId1"></label>
+  <input
+    class="input  "
+    type="text" id="PhoneId1" placeholder="Phone" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+        </div>
+        <div class="col-span-12">
+          <div class="form-group flex flex-col items-start overflow-hidden @@commonStyle">
+  <label class="mb-3 font-semibold text-body" for="@@idTextarea"></label>
+  <textarea
+    class="input "
+    id="@@idTextarea" placeholder="Message" rows="3"></textarea>
+</div>
+        </div>
+        <div class="col-span-12">
+          <button class="button w-full" type="submit" aria-label="Send Button">
+  <span>Send</span>
+</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <footer class="w-full mt-auto overflow-hidden bg-Blue100 pt-16 text-white shadow-3xl">
+  <div class="container pb-10">
+    <div class="row">
+      <div class="col-span-12 flex justify-between gap-x-8">
+        <div class="flex flex-col">
+          <a class="mb-8 block" href="index.html">
+            <img width="196" height="69" src="img/Logo-footer.svg" alt="Consumer Guard Footer Logo">
+          </a>
+          <p class="text-white text-body">&#169; 2024 Consumer Guard. <br>
+            All Rights Reserved.</p>
+        </div>
+        <div class="flex flex-col">
+          <ul class="flex flex-col gap-y-3">
+            <li class="flex items-center">
+              <a class="text-white text-body transition-colors hover:text-Green" href="#">Services</a>
+            </li>
+            <li class="flex items-center">
+              <a class="text-white text-body transition-colors hover:text-Green" href="#">Partners</a>
+            </li>
+            <li class="flex items-center">
+              <a class="text-white text-body transition-colors hover:text-Green" href="#">About Us</a>
+            </li>
+            <li class="flex items-center">
+              <a class="text-white text-body transition-colors hover:text-Green" href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col">
+          <ul class="flex flex-col gap-y-3">
+            <li class="flex items-center">
+              <a class="text-white text-body transition-colors hover:text-Green" href="#">Terms and Conditions</a>
+            </li>
+            <li class="flex items-center">
+              <a class="text-white text-body transition-colors hover:text-Green" href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col">
+          <ul class="flex flex-col gap-y-4 mb-8">
+            <li class="flex items-center">
+              <p class="flex items-center gap-x-4 text-white text-body">
+                <span class="flex items-center justify-center w-5 min-w-5 h-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
+                  <path
+                    d="M8 20.0605L7.44506 19.5626C6.68002 18.892 0 12.8527 0 8.43517C0 3.81 3.58173 0.0605469 8 0.0605469C12.4183 0.0605469 16 3.81 16 8.43517C16 12.8528 9.31998 18.892 8.55811 19.5659L8 20.0605ZM8 1.87138C4.53873 1.87549 1.73379 4.81177 1.72987 8.43513C1.72987 11.2104 5.83968 15.6437 8 17.6728C10.1604 15.6429 14.2701 11.207 14.2701 8.43513C14.2662 4.81177 11.4613 1.87553 8 1.87138Z"
+                    fill="#44B64B" />
+                  <path
+                    d="M8.00009 11.7545C6.24873 11.7545 4.82896 10.2683 4.82896 8.43488C4.82896 6.6015 6.24873 5.11525 8.00009 5.11525C9.75146 5.11525 11.1712 6.6015 11.1712 8.43488C11.1712 10.2683 9.7515 11.7545 8.00009 11.7545ZM8.00009 6.77502C7.12441 6.77502 6.41453 7.51815 6.41453 8.43484C6.41453 9.35153 7.12441 10.0947 8.00009 10.0947C8.87578 10.0947 9.58566 9.35153 9.58566 8.43484C9.58566 7.51815 8.87581 6.77502 8.00009 6.77502Z"
+                    fill="#44B64B" />
+                </svg>
+                </span>
+                <span>8245 N. 85th Way Scottsdale, AZ 85258</span>
+              </p>
+            </li>
+            <li class="flex items-center">
+              <a class="flex items-center gap-x-4 text-white text-body transition-colors hover:text-Green"
+                 href="tel:+18776151725">
+                <span class="flex items-center justify-center w-5 min-w-5 h-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                  <path
+                    d="M9.73533 0.826393C9.73533 0.627481 9.81435 0.436715 9.955 0.296063C10.0957 0.155411 10.2864 0.076393 10.4853 0.076393C12.4738 0.0785767 14.3802 0.869454 15.7862 2.2755C17.1923 3.68155 17.9831 5.58794 17.9853 7.57639C17.9853 7.77531 17.9063 7.96607 17.7656 8.10672C17.625 8.24738 17.4342 8.32639 17.2353 8.32639C17.0364 8.32639 16.8456 8.24738 16.705 8.10672C16.5643 7.96607 16.4853 7.77531 16.4853 7.57639C16.4835 5.98564 15.8508 4.46056 14.726 3.33573C13.6012 2.21089 12.0761 1.57818 10.4853 1.57639C10.2864 1.57639 10.0957 1.49738 9.955 1.35672C9.81435 1.21607 9.73533 1.02531 9.73533 0.826393ZM10.4853 4.57639C11.281 4.57639 12.044 4.89246 12.6066 5.45507C13.1693 6.01768 13.4853 6.78074 13.4853 7.57639C13.4853 7.77531 13.5643 7.96607 13.705 8.10672C13.8456 8.24738 14.0364 8.32639 14.2353 8.32639C14.4342 8.32639 14.625 8.24738 14.7657 8.10672C14.9063 7.96607 14.9853 7.77531 14.9853 7.57639C14.9841 6.38329 14.5096 5.23938 13.666 4.39573C12.8223 3.55207 11.6784 3.07758 10.4853 3.07639C10.2864 3.07639 10.0957 3.15541 9.955 3.29606C9.81435 3.43672 9.73533 3.62748 9.73533 3.82639C9.73533 4.02531 9.81435 4.21607 9.955 4.35672C10.0957 4.49738 10.2864 4.57639 10.4853 4.57639ZM17.3051 12.6306C17.7397 13.0665 17.9838 13.6569 17.9838 14.2724C17.9838 14.8879 17.7397 15.4783 17.3051 15.9141L16.6226 16.7009C10.4801 22.5816 -4.4674 7.63789 1.32259 1.47589L2.18509 0.725893C2.62141 0.303401 3.20654 0.0696798 3.81386 0.0752942C4.42119 0.0809085 5.00189 0.325407 5.43033 0.755893C5.45358 0.779143 6.84333 2.58439 6.84333 2.58439C7.2557 3.01761 7.48526 3.59309 7.48428 4.1912C7.4833 4.7893 7.25187 5.36402 6.83808 5.79589L5.96958 6.88789C6.45022 8.05573 7.15688 9.11708 8.04896 10.011C8.94105 10.9049 10.001 11.6137 11.1678 12.0966L12.2666 11.2229C12.6985 10.8094 13.2731 10.5783 13.871 10.5774C14.469 10.5766 15.0442 10.8061 15.4773 11.2184C15.4773 11.2184 17.2818 12.6074 17.3051 12.6306ZM16.2731 13.7211C16.2731 13.7211 14.4783 12.3404 14.4551 12.3171C14.3006 12.1639 14.0918 12.078 13.8742 12.078C13.6566 12.078 13.4478 12.1639 13.2933 12.3171C13.2731 12.3381 11.7603 13.5434 11.7603 13.5434C11.6584 13.6245 11.5371 13.6777 11.4083 13.6977C11.2796 13.7177 11.1478 13.7038 11.0261 13.6574C9.51442 13.0946 8.14138 12.2134 6.99996 11.0737C5.85853 9.93396 4.97539 8.56222 4.41034 7.05139C4.36023 6.92799 4.3439 6.79346 4.36301 6.66165C4.38213 6.52983 4.436 6.40549 4.51909 6.30139C4.51909 6.30139 5.72433 4.78789 5.74458 4.76839C5.89778 4.61388 5.98374 4.40511 5.98374 4.18752C5.98374 3.96993 5.89778 3.76115 5.74458 3.60664C5.72133 3.58414 4.34059 1.78789 4.34059 1.78789C4.18376 1.64727 3.97909 1.57196 3.76852 1.5774C3.55796 1.58284 3.35744 1.66862 3.20809 1.81714L2.34559 2.56714C-1.88591 7.65514 11.0673 19.8899 15.5261 15.6764L16.2093 14.8889C16.3694 14.7406 16.4656 14.5358 16.4775 14.3179C16.4894 14.1 16.4161 13.886 16.2731 13.7211Z"
+                    fill="#44B64B" />
+                </svg>
+                </span>
+                <span>+1 877-615-1725</span>
+              </a>
+            </li>
+            <li class="flex items-center">
+              <a class="flex items-center gap-x-4 text-white text-body transition-colors hover:text-Green"
+                 href="mailto:info@consumerguard.com">
+                <span class="flex items-center justify-center w-5 min-w-5 h-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                  <path
+                    d="M14.25 0.0605469H3.75C2.7558 0.0617017 1.80267 0.445188 1.09966 1.12689C0.396661 1.80859 0.00119089 2.73284 0 3.69691L0 12.4242C0.00119089 13.3883 0.396661 14.3125 1.09966 14.9942C1.80267 15.6759 2.7558 16.0594 3.75 16.0605H14.25C15.2442 16.0594 16.1973 15.6759 16.9003 14.9942C17.6033 14.3125 17.9988 13.3883 18 12.4242V3.69691C17.9988 2.73284 17.6033 1.80859 16.9003 1.12689C16.1973 0.445188 15.2442 0.0617017 14.25 0.0605469ZM3.75 1.51509H14.25C14.6991 1.51595 15.1376 1.6471 15.5092 1.89168C15.8808 2.13625 16.1684 2.48305 16.335 2.88746L10.5915 8.45764C10.1688 8.86587 9.59656 9.09507 9 9.09507C8.40344 9.09507 7.83118 8.86587 7.4085 8.45764L1.665 2.88746C1.83161 2.48305 2.11921 2.13625 2.49079 1.89168C2.86236 1.6471 3.30091 1.51595 3.75 1.51509ZM14.25 14.606H3.75C3.15326 14.606 2.58097 14.3761 2.15901 13.967C1.73705 13.5578 1.5 13.0028 1.5 12.4242V4.78782L6.348 9.486C7.05197 10.1669 8.00569 10.5493 9 10.5493C9.99431 10.5493 10.948 10.1669 11.652 9.486L16.5 4.78782V12.4242C16.5 13.0028 16.2629 13.5578 15.841 13.967C15.419 14.3761 14.8467 14.606 14.25 14.606Z"
+                    fill="#44B64B" />
+                </svg>
+                </span>
+                <span>info@consumerguard.com</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="flex items-center gap-x-4">
+            <li class="flex items-center">
+              <a href="#" target="_blank" class="group text-none">
+                Facebook
+                <span class="flex items-center justify-center group-hover:border-Green transition-all w-8 min-w-8 h-8 rounded-full border border-LightBlue4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17" fill="none">
+                    <g clip-path="url(#clip0_166_1295)">
+                      <path class="group-hover:fill-Green transition-all" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.51367 9.90643V16.5155H6.11807V9.90643H8.80584L9.36514 6.86754H6.11807V5.79244C6.11807 4.18599 6.74885 3.57076 8.37704 3.57076C8.88352 3.57076 9.29057 3.58319 9.52672 3.60804V0.851918C9.08239 0.730735 7.99485 0.606445 7.36719 0.606445C4.04554 0.606445 2.51367 2.1756 2.51367 5.55939V6.86754H0.462891V9.90643H2.51367Z"
+                        fill="#B4B7CF" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_166_1295">
+                        <rect width="9.94318" height="15.9091" fill="white" transform="translate(0.0283203 0.606445)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="flex items-center">
+              <a href="#" target="_blank" class="group text-none">
+                Instagram
+                <span class="flex items-center justify-center group-hover:border-Green transition-all w-8 min-w-8 h-8 rounded-full border border-LightBlue4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <g clip-path="url(#clip0_166_1298)">
+                      <path class="group-hover:fill-Green transition-all" d="M7.00326 4.98804C5.02706 4.98804 3.43304 6.58205 3.43304 8.55826C3.43304 10.5345 5.02706 12.1285 7.00326 12.1285C8.97947 12.1285 10.5735 10.5345 10.5735 8.55826C10.5735 6.58205 8.97947 4.98804 7.00326 4.98804ZM7.00326 10.8794C5.72619 10.8794 4.68215 9.83845 4.68215 8.55826C4.68215 7.27808 5.72308 6.23715 7.00326 6.23715C8.28345 6.23715 9.32437 7.27808 9.32437 8.55826C9.32437 9.83845 8.28034 10.8794 7.00326 10.8794ZM11.5523 4.842C11.5523 5.30498 11.1794 5.67474 10.7195 5.67474C10.2565 5.67474 9.88679 5.30187 9.88679 4.842C9.88679 4.38212 10.2597 4.00925 10.7195 4.00925C11.1794 4.00925 11.5523 4.38212 11.5523 4.842ZM13.9169 5.68717C13.8641 4.57167 13.6093 3.58356 12.7921 2.76946C11.978 1.95537 10.9899 1.70057 9.87436 1.64464C8.72468 1.57939 5.27874 1.57939 4.12906 1.64464C3.01667 1.69747 2.02856 1.95226 1.21136 2.76636C0.394154 3.58046 0.142467 4.56856 0.0865368 5.68406C0.0212846 6.83374 0.0212846 10.2797 0.0865368 11.4294C0.13936 12.5449 0.394154 13.533 1.21136 14.3471C2.02856 15.1612 3.01356 15.4159 4.12906 15.4719C5.27874 15.5371 8.72468 15.5371 9.87436 15.4719C10.9899 15.4191 11.978 15.1643 12.7921 14.3471C13.6062 13.533 13.861 12.5449 13.9169 11.4294C13.9821 10.2797 13.9821 6.83685 13.9169 5.68717ZM12.4316 12.6629C12.1893 13.2719 11.7201 13.7411 11.1079 13.9866C10.1913 14.3502 8.01622 14.2663 7.00326 14.2663C5.9903 14.2663 3.81212 14.3471 2.89859 13.9866C2.28957 13.7443 1.82038 13.2751 1.57491 12.6629C1.21136 11.7463 1.29525 9.57122 1.29525 8.55826C1.29525 7.5453 1.21447 5.36712 1.57491 4.45359C1.81727 3.84457 2.28647 3.37538 2.89859 3.1299C3.81523 2.76636 5.9903 2.85025 7.00326 2.85025C8.01622 2.85025 10.1944 2.76946 11.1079 3.1299C11.717 3.37227 12.1861 3.84146 12.4316 4.45359C12.7952 5.37023 12.7113 7.5453 12.7113 8.55826C12.7113 9.57122 12.7952 11.7494 12.4316 12.6629Z" fill="#B4B7CF"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_166_1298">
+                        <rect width="13.9205" height="15.9091" fill="white" transform="translate(0.0395508 0.606445)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="flex items-center">
+              <a href="#" target="_blank" class="group text-none">
+                Linkedin
+                <span class="flex items-center justify-center group-hover:border-Green transition-all w-8 min-w-8 h-8 rounded-full border border-LightBlue4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <g clip-path="url(#clip0_166_1301)">
+                      <path class="group-hover:fill-Green transition-all" d="M3.15612 14.5269H0.269487V5.23313H3.15612V14.5269ZM1.71125 3.96538C0.788397 3.96538 0.0395508 3.20099 0.0395508 2.27814C0.0395508 1.83478 0.215676 1.40958 0.52918 1.09607C0.842684 0.78257 1.26789 0.606445 1.71125 0.606445C2.15461 0.606445 2.57981 0.78257 2.89332 1.09607C3.20682 1.40958 3.38295 1.83478 3.38295 2.27814C3.38295 3.20099 2.6341 3.96538 1.71125 3.96538ZM13.9569 14.5269H11.0765V10.0028C11.0765 8.92454 11.0547 7.54181 9.57568 7.54181C8.07488 7.54181 7.84495 8.71325 7.84495 9.92507V14.5269H4.96143V5.23313H7.72998V6.50089H7.77037C8.15567 5.77069 9.09717 5.00009 10.5016 5.00009C13.4225 5.00009 13.96 6.92347 13.96 9.4217V14.5269H13.9569Z" fill="#B4B7CF"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_166_1301">
+                        <rect width="13.9205" height="15.9091" fill="white" transform="translate(0.0395508 0.606445)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full bg-DarkBlue py-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-span-12">
+          <p class="text-center text-body2 text-LightBlue4">Attorney Advertising, Prior Results Do Not Guarantee A Similar Outcome. This website is for informational purposes only and does not contain legal advice. Results may vary depending on your particular facts and legal circumstances.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</main>
+
+<script src="./js/scripts.js"></script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('data', () => ({
+        }))
+    })
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // const options = {
+        //     inputMode: true,
+        //     positionToInput: 'auto',
+        //     onChangeToInput(self) {
+        //         if (!self.context.inputElement) return;
+        //         if (self.context.selectedDates[0]) {
+        //             self.context.inputElement.value = self.context.selectedDates[0];
+        //             // if you want to hide the calendar after picking a date
+        //             self.hide();
+        //         } else {
+        //             self.context.inputElement.value = '';
+        //         }
+        //     },
+        // };
+        // // Деструктуризация конструктора Calendar
+        // const { Calendar } = window.VanillaCalendarPro;
+        // // Создайте экземпляр календаря и инициализируйте его.
+        // const calendarInput = new Calendar('#calendar', options);
+        // calendarInput.init();
+
+        const calendarInput = document.getElementById('calendar');
+        const calendarContainer = document.getElementById('calendar-container');
+        const calendarElement = document.getElementById('vanilla-calendar');
+        const timePicker = document.getElementById('time-picker');
+        const timeOptions = document.getElementById('time-options');
+        const { Calendar } = window.VanillaCalendarPro;
+
+// Инициализация календаря
+        const calendar = new Calendar(calendarElement, {
+            settings: {
+                lang: 'en',
+                iso8601: true,
+                selection: {
+                    day: 'single',
+                },
+            },
+            onClickDate(self) {
+                const selectedDate = self.context.selectedDates; // Получаем выбранную дату
+                calendarInput.value = selectedDate; // Устанавливаем дату в инпут
+                showTimePicker(); // Показываем выбор времени
+            },
+        });
+
+// Показываем контейнер с календарём при клике на инпут
+        calendarInput.addEventListener('click', (event) => {
+            calendarContainer.style.display = 'block'; // Показываем контейнер
+            calendarContainer.style.top = `50px`;
+            calendarContainer.style.left = `0px`;
+        });
+
+// Скрываем контейнер при клике вне его
+        document.addEventListener('click', (event) => {
+            if (
+                !calendarContainer.contains(event.target) && // Если клик вне календаря
+                event.target !== calendarInput // И не по самому инпуту
+            ) {
+                calendarContainer.style.display = 'none'; // Скрываем контейнер
+            }
+        });
+
+// Показываем выбор времени
+        function showTimePicker() {
+            generateTimeSlots(); // Генерируем слоты времени
+        }
+
+// Генерация временных слотов
+        function generateTimeSlots() {
+            timeOptions.innerHTML = ''; // Очищаем предыдущие слоты
+            const times = [
+                '09:00', '10:00', '11:00', '12:00', '13:00'
+            ];
+
+            times.forEach((time) => {
+                const timeButton = document.createElement('button');
+                timeButton.textContent = time;
+                timeButton.classList.add('time-slot');
+                timeButton.addEventListener('click', () => {
+                    const currentValue = calendarInput.value.split(' ')[0]; // Извлекаем дату без времени
+                    calendarInput.value = `${currentValue} ${time}`; // Добавляем новое время
+                    calendarContainer.style.display = 'none'; // Скрываем контейнер
+                });
+                timeOptions.appendChild(timeButton);
+            });
+        }
+
+// Инициализация календаря
+        calendar.init();
+    })
+</script>
+</body>
+
+</html>
+
+<!--AIzaSyAOMhVrALnzqYT8bHJf7lS3jJKqkeC4RIc-->
