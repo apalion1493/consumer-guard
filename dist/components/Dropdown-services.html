@@ -1,13 +1,315 @@
-<div x-data="{ isExpanded: false }" class="divide-y divide-slate-300 overflow-hidden rounded-xl border border-slate-300 bg-slate-100/40 dark:divide-slate-700 dark:border-slate-700 dark:bg-slate-800/50">
-  <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-2 bg-slate-100 p-4 text-left underline-offset-2 hover:bg-slate-100/75 focus-visible:bg-slate-100/75 focus-visible:underline focus-visible:outline-none dark:bg-slate-800 dark:hover:bg-slate-800/75 dark:focus-visible:bg-slate-800/75" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong dark:text-onSurfaceDarkStrong font-bold'  : 'text-onSurface dark:text-onSurfaceDark font-medium'" :aria-expanded="isExpanded ? 'true' : 'false'">
+<div x-data="{ isExpanded: false }" class="overflow-hidden rounded-6xl bg-white border border-LightBlue2 transition-shadow" :class="isExpanded ? 'shadow-v5'  : ''">
+  <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-2 p-8 text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
+    <span class="flex items-center justify-center w-[60px] min-w-[60px] h-[60px]">
+      <svg xmlns="http://www.w3.org/2000/svg" width="58" height="52" viewBox="0 0 58 52" fill="none">
+        <path d="M58 5.98412C53.7432 3.16981 46.4735 1.30469 37.9988 1.30469C29.5241 1.30469 22.2568 3.16981 18 5.98412V31.4137C18 32.973 18.5384 34.4289 19.1226 35.8619C22.7096 43.5238 31.1111 47.2348 38.0012 51.3047C44.8913 47.2348 53.2904 43.5238 56.8774 35.8619C57.4616 34.4289 58 32.973 58 31.4137V5.98412Z" fill="#F8F8FF"/>
+        <path d="M22.5879 0.748381C16.8945 1.33432 11.6699 3.75619 7.60742 7.71127C6.15234 9.12729 5.08789 10.4164 4.01367 12.057C1.62109 15.7093 0.224609 19.9964 0.0585938 24.1761L0 25.641L0.722656 26.3636L9.375 26.3831L18.0273 26.4124L18.2031 26.9203C18.6426 28.2191 19.4824 29.4398 20.6055 30.3871C21.2207 30.9046 22.6465 31.6566 23.3887 31.8519C23.8086 31.9593 23.877 31.9496 24.1211 31.764C24.4434 31.5296 24.5508 31.0999 24.375 30.7386C24.2871 30.5433 24.0918 30.4261 23.6328 30.2796C21.7969 29.6644 20.2246 28.0824 19.6484 26.266C19.375 25.4066 19.3066 24.0687 19.4922 23.18C19.9023 21.2562 21.1816 19.6351 22.9297 18.8441C23.252 18.6976 25.8008 17.8675 28.5938 17.0081C31.3867 16.139 33.9355 15.3578 34.2676 15.2503L34.8633 15.0648L34.6777 15.6605C34.5703 15.9925 33.7891 18.5414 32.9199 21.3343C32.0605 24.1273 31.2305 26.6859 31.0742 27.0277C30.3906 28.5511 28.8965 29.8402 27.2461 30.3187C26.6211 30.4945 26.3965 30.7386 26.3965 31.2171C26.3965 31.598 26.7188 31.93 27.0801 31.93C27.5 31.93 28.3496 31.6468 29.1309 31.2367C30.8398 30.3578 32.0703 28.9222 32.793 27.0081L33.0176 26.4124L41.1816 26.3831L49.3359 26.3636L49.6875 26.0218L50.0293 25.6703V24.7035C50.0293 22.9164 49.6289 20.4749 48.9844 18.3558C47.8223 14.5179 45.8301 11.1683 42.9492 8.20932C39.9414 5.12338 36.3672 2.93588 32.3145 1.71518C31.0254 1.31479 29.0625 0.924162 27.7441 0.777677C26.8652 0.689787 23.3789 0.66049 22.5879 0.748381ZM24.248 7.20346L24.0332 7.26205C23.9062 7.29135 23.6328 7.32065 23.418 7.32065C22.8711 7.32065 20.9863 7.65268 20.0781 7.91635C17.5195 8.62924 15.0879 9.90854 13.2031 11.5296C12.9004 11.7933 12.6074 12.0081 12.5684 12.0081C12.5195 12.0081 11.6992 11.2269 10.7422 10.2699L9.01367 8.54135L9.77539 7.89682C13.1934 4.99643 17.1191 3.17026 21.3672 2.49643C22.4609 2.32065 22.8711 2.28158 23.6914 2.26205L24.248 2.24252V7.20346ZM28.8867 2.54526C33.1055 3.24838 36.9043 5.00619 40.1953 7.79916L41.0547 8.53158L39.3164 10.2699C38.3594 11.2269 37.5391 12.0081 37.4902 12.0081C37.4512 12.0081 37.1582 11.7933 36.8555 11.5296C34.2578 9.2933 30.4102 7.65268 27.1094 7.36947C26.748 7.34018 26.2988 7.29135 26.1328 7.26205L25.8105 7.21322V2.21322L26.7676 2.28158C27.2852 2.32065 28.2422 2.43783 28.8867 2.54526ZM27.5195 8.99057C32.2852 9.70346 36.6113 12.516 39.248 16.6078C40.5566 18.6488 41.5527 21.4515 41.7773 23.7269C41.8066 24.0785 41.8555 24.4593 41.8848 24.5765L41.9238 24.8011H37.7246C33.7598 24.8011 33.5156 24.7914 33.5645 24.6253C33.5938 24.5374 34.2578 22.3695 35.0488 19.8206C35.9668 16.8519 36.4844 15.0355 36.4746 14.7718C36.4648 14.0003 35.9082 13.4339 35.1465 13.4437C34.502 13.4437 23.1152 16.9984 22.0508 17.5257C19.5703 18.7562 18.0078 21.1097 17.832 23.8929L17.7734 24.8011H8.13477L8.17383 24.5765C8.20312 24.4593 8.25195 24.0785 8.28125 23.7269C8.71094 19.3812 11.2598 14.9378 14.873 12.2425C17.627 10.1917 20.3223 9.17612 23.9062 8.84408C24.5117 8.78549 26.7578 8.88315 27.5195 8.99057ZM11.3574 13.2093C11.3574 13.2581 11.1035 13.5902 10.8008 13.9417C8.66211 16.4515 7.03125 20.2894 6.71875 23.5316C6.68945 23.8831 6.64062 24.3128 6.61133 24.4789L6.5625 24.8011H1.5625L1.64062 23.7953C1.96289 19.0785 3.95508 14.2738 7.14844 10.514L7.88086 9.65463L9.61914 11.3929C10.5762 12.3499 11.3574 13.1703 11.3574 13.2093ZM42.9199 10.514C46.1035 14.2738 48.0957 19.0687 48.418 23.7953L48.4961 24.8011H43.4961L43.4473 24.4789C43.418 24.3128 43.3691 23.8831 43.3398 23.5316C43.0273 20.2894 41.3965 16.4515 39.2578 13.9417C38.9551 13.5902 38.7012 13.2581 38.7012 13.2093C38.7012 13.1507 42.1191 9.6644 42.1777 9.6644C42.1875 9.6644 42.5195 10.0453 42.9199 10.514Z" fill="#44B64B"/>
+        <path d="M24.9609 20.7972C23.6914 20.9339 22.5781 21.7347 22.0215 22.9261C21.7871 23.4144 21.7578 23.5999 21.7578 24.5081C21.7578 25.4164 21.7871 25.5921 22.0215 26.0999C22.3535 26.8031 23.1348 27.5843 23.8574 27.9164C24.3262 28.141 24.5215 28.1703 25.4199 28.1703C26.2793 28.1703 26.5234 28.1312 26.9238 27.9456C27.5195 27.6722 28.2129 27.1156 28.457 26.7152C28.8379 26.0804 28.5742 25.4847 27.9004 25.4847C27.6172 25.4847 27.4512 25.5726 27.0215 25.9632C26.3965 26.5394 25.9863 26.6956 25.2246 26.6371C24.1602 26.5589 23.3691 25.7679 23.291 24.7035C23.2227 23.7269 23.6426 22.9652 24.4824 22.5355C25.3418 22.096 26.3379 22.3206 27.1289 23.1312C27.4414 23.4632 27.5781 23.5316 27.8711 23.5316C28.3105 23.5316 28.6426 23.18 28.6426 22.721C28.6426 22.4769 28.5254 22.3011 28.0762 21.8617C27.3828 21.1976 26.9043 20.9535 25.8105 20.7581C25.7324 20.7386 25.3516 20.7581 24.9609 20.7972Z" fill="#44B64B"/>
+      </svg>
+    </span>
     Credit Reporting Errors Attorneys
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="currentColor" class="size-5 shrink-0 transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-    </svg>
+    <span class="w-10 h-10 min-w-10 flex items-center justify-center rounded-full border ml-auto" :class="isExpanded ? 'border-LightBlue3'  : 'border-Green'">
+      <svg :class="isExpanded ? 'hidden'  : ''" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M20 10L0 10M10 0V20" stroke="#44B64B"/>
+      </svg>
+      <svg :class="isExpanded ? ''  : 'hidden'" xmlns="http://www.w3.org/2000/svg" width="20" height="2" viewBox="0 0 20 2" fill="none">
+        <path d="M20 1L0 0.999999" stroke="#B5B8D0"/>
+      </svg>
+    </span>
   </button>
   <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
-    <div class="p-4 text-sm sm:text-base text-pretty">
-      Our website is optimized for the latest versions of Chrome, Firefox, Safari, and Edge. Check our <a href="#" class="underline underline-offset-2 text-blue-700 dark:text-blue-600">documentation</a> for additional information.
+    <div class="py-8">
+      <div class="gap-6 flex flex-wrap justify-center max-w-[1096px] mx-auto">
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Identity-Theft w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Identity Theft</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Mixed-File w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Mixed File</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Hard-Inquiry w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Hard Inquiry</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Fraud-Alert w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Fraud Alert</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Late-Payments w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Late Payments</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Late-Payments w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Charge-Off</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Wrong-Balances w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Wrong Balances</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Inaccurate-Pay-Status w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Inaccurate Pay Status</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Defaults w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Defaults</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Bankruptcy-Accounts w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Post-Bankruptcy Accounts</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Student-Loan w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Student Loan</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Credit-Freeze w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Credit Freeze</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Repossession w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Repossession</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Outdated-Accounts w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Outdated Accounts</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Double-Reported-Accounts w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Double Reported Accounts</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+           <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="Incorrect-Names-Addresses w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Incorrect Names and Addresses</h3>
+  </div>
+</a>
+        </div>
+        <div class="flex">
+          <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
+  </svg>
+  <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
+    <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
+      <i class="False-Deceased-Reporting w-[60px] h-[60px] relative z-[2]"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
+      </svg>
+    </div>
+    <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">False Deceased Reporting</h3>
+  </div>
+</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>

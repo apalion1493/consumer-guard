@@ -1126,11 +1126,17 @@ html {
 .min-w-\[60px\]{
   min-width: 60px;
 }
+.max-w-\[1096px\]{
+  max-width: 1096px;
+}
 .max-w-\[178px\]{
   max-width: 178px;
 }
 .max-w-\[194px\]{
   max-width: 194px;
+}
+.max-w-\[196px\]{
+  max-width: 196px;
 }
 .max-w-\[374px\]{
   max-width: 374px;
@@ -1308,15 +1314,6 @@ html {
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
-.divide-y > :not([hidden]) ~ :not([hidden]){
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
-}
-.divide-slate-300 > :not([hidden]) ~ :not([hidden]){
-  --tw-divide-opacity: 1;
-  border-color: rgb(203 213 225 / var(--tw-divide-opacity, 1));
-}
 .self-end{
   align-self: flex-end;
 }
@@ -1331,9 +1328,6 @@ html {
 }
 .whitespace-nowrap{
   white-space: nowrap;
-}
-.text-pretty{
-  text-wrap: pretty;
 }
 .rounded{
   border-radius: 0.25rem;
@@ -1417,6 +1411,10 @@ html {
   --tw-border-opacity: 1;
   border-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
 }
+.border-LightBlue3{
+  --tw-border-opacity: 1;
+  border-color: rgb(181 184 208 / var(--tw-border-opacity, 1));
+}
 .bg-Blue100{
   --tw-bg-opacity: 1;
   background-color: rgb(48 54 122 / var(--tw-bg-opacity, 1));
@@ -1443,9 +1441,6 @@ html {
 .bg-slate-100{
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
-}
-.bg-slate-100\/40{
-  background-color: rgb(241 245 249 / 0.4);
 }
 .bg-white{
   --tw-bg-opacity: 1;
@@ -1681,10 +1676,6 @@ html {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
-.text-blue-700{
-  --tw-text-opacity: 1;
-  color: rgb(29 78 216 / var(--tw-text-opacity, 1));
-}
 .text-gray-500{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
@@ -1742,6 +1733,11 @@ html {
   --tw-shadow-colored: 0px 0px 25px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.shadow-v5{
+  --tw-shadow: 0px 0px 40px 0px rgba(42, 43, 63, 0.10);;
+  --tw-shadow-colored: 0px 0px 40px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .blur{
   --tw-blur: blur(8px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1767,6 +1763,11 @@ html {
 }
 .transition-colors{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-shadow{
+  transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -2084,6 +2085,96 @@ a{
 
 .Identity-Theft {
   background: url("../img/icons/Identity-Theft-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Mixed-File {
+  background: url("../img/icons/Mixed-File-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Hard-Inquiry {
+  background: url("../img/icons/Hard-Inquiry-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Fraud-Alert {
+  background: url("../img/icons/Fraud-Alert-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Late-Payments {
+  background: url("../img/icons/Late-Payments-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Wrong-Balances {
+  background: url("../img/icons/Wrong-Balances-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Inaccurate-Pay-Status {
+  background: url("../img/icons/Inaccurate-Pay-Status-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Defaults {
+  background: url("../img/icons/Defaults-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Bankruptcy-Accounts {
+  background: url("../img/icons/Bankruptcy-Accounts-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Student-Loan {
+  background: url("../img/icons/Student-Loan-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Credit-Freeze {
+  background: url("../img/icons/Credit-Freeze-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Repossession {
+  background: url("../img/icons/Repossession-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Outdated-Accounts {
+  background: url("../img/icons/Outdated-Accounts-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Double-Reported-Accounts {
+  background: url("../img/icons/Double-Reported-Accounts-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Incorrect-Names-Addresses {
+  background: url("../img/icons/Incorrect-Names-Addresses-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.False-Deceased-Reporting {
+  background: url("../img/icons/False-Deceased-Reporting-60.svg") no-repeat center center;
   background-size: 100% auto;
   display: block;
 }
@@ -3004,28 +3095,9 @@ a{
   }
 }
 
-.dark\:divide-slate-700:is(.dark *) > :not([hidden]) ~ :not([hidden]){
-  --tw-divide-opacity: 1;
-  border-color: rgb(51 65 85 / var(--tw-divide-opacity, 1));
-}
-
-.dark\:border-slate-700:is(.dark *){
-  --tw-border-opacity: 1;
-  border-color: rgb(51 65 85 / var(--tw-border-opacity, 1));
-}
-
 .dark\:bg-slate-800:is(.dark *){
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity, 1));
-}
-
-.dark\:bg-slate-800\/50:is(.dark *){
-  background-color: rgb(30 41 59 / 0.5);
-}
-
-.dark\:text-blue-600:is(.dark *){
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity, 1));
 }
 
 .dark\:hover\:bg-slate-800\/75:hover:is(.dark *){
@@ -3069,13 +3141,6 @@ a{
   .md\:text-body4{
     font-size: 12px;
     line-height: 120%;
-  }
-}
-
-@media (max-width: 639px){
-  .sm\:text-base{
-    font-size: 18px;
-    line-height: 130%;
   }
 }
 
