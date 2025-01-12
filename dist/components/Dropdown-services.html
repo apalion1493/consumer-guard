@@ -1,5 +1,5 @@
-<div x-data="{ isExpanded: false }" class="overflow-hidden rounded-6xl bg-white border border-LightBlue2 transition-shadow" :class="isExpanded ? 'shadow-v5'  : ''">
-  <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-2 p-8 text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
+<div x-data="{ isExpanded: false }" class="overflow-hidden rounded-6xl bg-white border p-8 border-LightBlue2 transition-shadow" :class="isExpanded ? 'shadow-v5'  : ''">
+  <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-2 text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
     <span class="flex items-center justify-center w-[60px] min-w-[60px] h-[60px]">
       <svg xmlns="http://www.w3.org/2000/svg" width="58" height="52" viewBox="0 0 58 52" fill="none">
         <path d="M58 5.98412C53.7432 3.16981 46.4735 1.30469 37.9988 1.30469C29.5241 1.30469 22.2568 3.16981 18 5.98412V31.4137C18 32.973 18.5384 34.4289 19.1226 35.8619C22.7096 43.5238 31.1111 47.2348 38.0012 51.3047C44.8913 47.2348 53.2904 43.5238 56.8774 35.8619C57.4616 34.4289 58 32.973 58 31.4137V5.98412Z" fill="#F8F8FF"/>
@@ -18,7 +18,7 @@
     </span>
   </button>
   <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
-    <div class="py-8">
+    <div class="pt-8">
       <div class="gap-6 flex flex-wrap justify-center max-w-[1096px] mx-auto">
         <div class="flex">
            <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
