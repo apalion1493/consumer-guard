@@ -845,6 +845,9 @@ html {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.mb-0{
+  margin-bottom: 0px;
+}
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -1146,8 +1149,14 @@ html {
 .max-w-\[414px\]{
   max-width: 414px;
 }
+.max-w-\[416px\]{
+  max-width: 416px;
+}
 .max-w-\[486px\]{
   max-width: 486px;
+}
+.max-w-\[513px\]{
+  max-width: 513px;
 }
 .max-w-\[524px\]{
   max-width: 524px;
@@ -1304,6 +1313,9 @@ html {
 }
 .gap-y-6{
   row-gap: 1.5rem;
+}
+.gap-y-8{
+  row-gap: 2rem;
 }
 .space-y-1 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
@@ -2241,6 +2253,12 @@ a{
   display: block;
 }
 
+.Debt-Collection {
+  background: url("../img/icons/Debt-Collection-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
 .button{
   display: flex;
   height: 4rem;
@@ -2935,6 +2953,11 @@ a{
   background-repeat: no-repeat;
   background-position: center top;
   width: 100%;
+}
+
+.bg-Attorney-Card-img {
+  background: url("../img/image-bg-card-1.png") no-repeat center;
+  background-size: cover;
 }
 
 .hover\:border-Green:hover{
