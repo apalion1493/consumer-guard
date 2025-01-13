@@ -7,38 +7,130 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
-  <section class="pb-[59px] hero-section relative" style="background-image: url(img/Backgound-CU-page.png);">
+  <section class="pb-[59px] hero-section relative bg-gradient1">
     @@include('components/Header.html', {
     'commonStyle': ' ',
     })
     <div class="container pt-[100px]">
       <div class="row gap-x-6">
-        <div class="col-span-12">
-          <div class="flex flex-col items-center mx-auto mb-6">
-            <h1 class="text-center text-Blue100 block font-semibold">About Us</h1>
+        <div class="col-span-5">
+          <div class="flex flex-col">
+            <h1 class="text-Blue100 block font-semibold">Partners</h1>
             <span class="border-0 border-b-4 border-Green w-[86px] my-8 @@StyleGreenLine"></span>
+            <p class="font-semibold text-Top6 text-Blue100 mb-10">Our team of experienced attorneys is dedicated to
+              helping clients located throughout the country better understand and navigate every step of their
+              case.</p>
+            <p>Our team of experienced attorneys is dedicated to helping clients located throughout the country better
+              understand and navigate every step of their case.</p>
+            @@include('components/Link.html', {
+            'style': 'mt-10 shadow-v3',
+            'URL': '#',
+            'title': 'Get In Touch',
+            })
           </div>
         </div>
+        <div class="col-span-1"></div>
         <div class="col-span-6">
-
-        </div>
-        <div class="col-span-6">
-          <div class="relative max-w-[604px] w-full h-[780px] ml-auto">
-              <span class="absolute top-5 right-0 z-[1]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="263" height="537" viewBox="0 0 263 537" fill="none">
-                  <path d="M130.686 88.7548L261 2V66.5239L195.843 186.896L178.923 161.412M130.686 88.7548L2 2V66.5239L65.5283 186.896L82.4476 161.412M130.686 88.7548L82.4476 161.412M130.686 88.7548L178.923 161.412M82.4476 161.412L95.392 202.621M95.392 202.621H164.35M95.392 202.621L63.3564 441.739L130.686 535L196.929 441.739L164.35 202.621M164.35 202.621L178.923 161.412" stroke="#E7E9FC" stroke-width="3" stroke-linejoin="round"/>
-                </svg>
-              </span>
-            <div class="absolute top-0 right-[109px] z-[2] shadow-v1 overflow-hidden rounded-15 bg-gradient2">
-              <img src="img/img-4.png" alt="">
-            </div>
-            <div class="absolute top-[100px] left-0 z-[2] shadow-v1 overflow-hidden rounded-15 img-filter-1">
-              <img class="object-cover" width="276" height="354" src="img/img-5.png" alt="">
-            </div>
-            <div class="absolute bottom-6 right-0 z-[3] shadow-v1 overflow-hidden rounded-15 img-filter-2">
-              <img class="object-cover" width="281" height="202" src="img/img-6.png" alt="">
-            </div>
+          <div class="relative max-w-[637px] w-full h-[681px] ml-auto">
+            <img src="img/hero-img-block-5.png" alt="Services Image">
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="row gap-6">
+        <div class="col-span-3">
+          @@include('components/Info-card.html', {
+          'Style': '',
+          'Icon': 'Quick-solutions',
+          'Title': 'Quick solutions',
+          'Text': 'We guarantee the fastest resolution of any issue.',
+          })
+        </div>
+        <div class="col-span-3">
+          @@include('components/Info-card.html', {
+          'Style': '',
+          'Icon': 'Reliability',
+          'Title': 'Reliability',
+          'Text': 'We are ready to be your reliable partners in all your matters.',
+          })
+        </div>
+        <div class="col-span-3">
+          @@include('components/Info-card.html', {
+          'Style': '',
+          'Icon': 'Your-Secure',
+          'Title': 'Your Secure',
+          'Text': 'We guarantee your safety and the safety of your data.',
+          })
+        </div>
+        <div class="col-span-3">
+          @@include('components/Info-card.html', {
+          'Style': '',
+          'Icon': 'Successful-Result',
+          'Title': 'Successful Result',
+          'Text': 'We will achieve the desired outcome in the shortest time.',
+          })
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-span-12">
+          @@include('components/Attorneys-big-card.html', {
+          'Title': 'Daniel Cohen',
+          '': '',
+          })
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-span-12">
+          <div class="p-20 pl-[86px] flex justify-center flex-col rounded-6xl overflow-hidden bgim-style" style="background-image: url('img/bg-img-1.png');">
+            <span class="font-semibold text-Blue100 text-h2-5 block mb-3">Became a part <br> of our team!</span>
+            <p class="text-base text-Blue100">Find out more about affiliate program.</p>
+            @@include('components/Link.html', {
+            'style': 'mt-16 shadow-v3',
+            'URL': '#',
+            'title': 'CTA Button',
+            })
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-span-12 flex flex-col items-center">
+          <span class="text-center text-h3 font-semibold text-Blue100 block">Our Partners</span>
+          <span class="border-0 border-b-4 border-Green w-[86px] block text-center mt-8 @@StyleGreenLine"></span>
+        </div>
+      </div>
+      <div class="row mt-10 gap-x-6">
+        <div class="col-span-2">
+          <img src="img/Dash-logo.svg" alt="Dash logo">
+        </div>
+        <div class="col-span-2">
+          <img src="img/DoubleClick-logo.svg" alt="DoubleClick logo">
+        </div>
+        <div class="col-span-2">
+          <img src="img/InTrax-logo.svg" alt="InTrax logo">
+        </div>
+        <div class="col-span-2">
+          <img src="img/Herschel-logo.svg" alt="Herschel logo">
+        </div>
+        <div class="col-span-2">
+          <img src="img/BJM-logo.svg" alt="BJM logo">
+        </div>
+        <div class="col-span-2">
+          <img src="img/Ram-logo.svg" alt="Ram logo">
         </div>
       </div>
     </div>
@@ -56,7 +148,8 @@
             'Title': 'Contact us <br> with any <br>questions.',
             'StyleGreenLine': '',
             })
-            <div class="shadow-v1 w-[526px] h-[412px] rounded-15 absolute bottom-1 left-0 z-[1] img-filter-5 overflow-hidden block">
+            <div
+              class="shadow-v1 w-[526px] h-[412px] rounded-15 absolute bottom-1 left-0 z-[1] img-filter-5 overflow-hidden block">
               <img width="526" height="412" class="object-cover rounded-15" src="img/img-9.png" alt="">
             </div>
           </div>

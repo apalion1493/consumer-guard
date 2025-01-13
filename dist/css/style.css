@@ -832,6 +832,9 @@ html {
 .col-span-8{
   grid-column: span 8 / span 8;
 }
+.col-span-2{
+  grid-column: span 2 / span 2;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -843,6 +846,10 @@ html {
 .my-20{
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 .my-8{
   margin-top: 2rem;
@@ -885,6 +892,9 @@ html {
 .mb-\[180px\]{
   margin-bottom: 180px;
 }
+.mb-auto{
+  margin-bottom: auto;
+}
 .ml-2{
   margin-left: 0.5rem;
 }
@@ -914,6 +924,9 @@ html {
 }
 .mt-14{
   margin-top: 3.5rem;
+}
+.mt-16{
+  margin-top: 4rem;
 }
 .mt-2{
   margin-top: 0.5rem;
@@ -1010,11 +1023,17 @@ html {
 .h-\[416px\]{
   height: 416px;
 }
+.h-\[440px\]{
+  height: 440px;
+}
 .h-\[448px\]{
   height: 448px;
 }
 .h-\[467px\]{
   height: 467px;
+}
+.h-\[543px\]{
+  height: 543px;
 }
 .h-\[552px\]{
   height: 552px;
@@ -1049,9 +1068,6 @@ html {
 .h-min{
   height: -moz-min-content;
   height: min-content;
-}
-.h-\[543px\]{
-  height: 543px;
 }
 .max-h-44{
   max-height: 11rem;
@@ -1088,6 +1104,9 @@ html {
 }
 .w-\[416px\]{
   width: 416px;
+}
+.w-\[440px\]{
+  width: 440px;
 }
 .w-\[526px\]{
   width: 526px;
@@ -1137,6 +1156,9 @@ html {
 }
 .min-w-\[306px\]{
   min-width: 306px;
+}
+.min-w-\[440px\]{
+  min-width: 440px;
 }
 .min-w-\[60px\]{
   min-width: 60px;
@@ -1192,20 +1214,23 @@ html {
 .max-w-\[636px\]{
   max-width: 636px;
 }
+.max-w-\[637px\]{
+  max-width: 637px;
+}
 .max-w-\[642px\]{
   max-width: 642px;
 }
 .max-w-\[746px\]{
   max-width: 746px;
 }
+.max-w-\[748px\]{
+  max-width: 748px;
+}
 .max-w-xs{
   max-width: 20rem;
 }
-.max-w-\[543px\]{
-  max-width: 543px;
-}
-.max-w-\[748px\]{
-  max-width: 748px;
+.max-w-\[377px\]{
+  max-width: 377px;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -1349,6 +1374,9 @@ html {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+.self-start{
+  align-self: flex-start;
 }
 .self-end{
   align-self: flex-end;
@@ -1509,6 +1537,9 @@ html {
 .p-2{
   padding: 0.5rem;
 }
+.p-20{
+  padding: 5rem;
+}
 .p-3{
   padding: 0.75rem;
 }
@@ -1584,6 +1615,10 @@ html {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.py-\[72px\]{
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1595,6 +1630,9 @@ html {
 }
 .pb-\[59px\]{
   padding-bottom: 59px;
+}
+.pl-\[86px\]{
+  padding-left: 86px;
 }
 .pr-16{
   padding-right: 4rem;
@@ -2317,6 +2355,24 @@ a{
   display: block;
 }
 
+.Reliability {
+  background: url("../img/icons/Reliability-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Your-Secure {
+  background: url("../img/icons/Your-Secure-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Successful-Result {
+  background: url("../img/icons/Successful-Result-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
 .button{
   display: flex;
   height: 4rem;
@@ -3016,6 +3072,12 @@ a{
 .bg-Attorney-Card-img {
   background: url("../img/image-bg-card-1.png") no-repeat center;
   background-size: cover;
+}
+
+.bgim-style {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hover\:border-Green:hover{
