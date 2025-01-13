@@ -12,13 +12,6 @@
   <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
   <style>
-    #time-picker {
-      margin-top: 10px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      background-color: #f9f9f9;
-      border-radius: 5px;
-    }
 
     #time-options {
       display: flex;
@@ -26,26 +19,12 @@
       gap: 10px;
     }
 
-    .time-slot {
-      padding: 5px 10px;
-      border: 1px solid #007bff;
-      background-color: #007bff;
-      color: white;
-      border-radius: 3px;
-      cursor: pointer;
-      transition: background-color 0.2s;
-    }
-
-    .time-slot:hover {
-      background-color: #0056b3;
-    }
-
   </style>
 </head>
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
-  <section class="pb-[59px] hero-section relative" style="background-image: url(img/Backgound-CU-page.png);">
+  <section class="pb-[59px] hero-section relative bg-gradient1">
     <header class="flex flex-col w-full relative z-10  ">
   <div x-data="{dropdownOpen: false}" class="w-full flex flex-col">
     <div class="py-6">
@@ -318,37 +297,98 @@
 </header>
     <div class="container pt-[100px]">
       <div class="row gap-x-6">
-        <div class="col-span-12">
-          <div class="flex flex-col items-center mx-auto mb-6">
-            <h1 class="text-center text-Blue100 block font-semibold">About Us</h1>
-            <span class="border-0 border-b-4 border-Green w-[86px] my-8 @@StyleGreenLine"></span>
-          </div>
-        </div>
         <div class="col-span-6">
-
-        </div>
-        <div class="col-span-6">
-          <div class="relative max-w-[604px] w-full h-[780px] ml-auto">
-              <span class="absolute top-5 right-0 z-[1]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="263" height="537" viewBox="0 0 263 537" fill="none">
-                  <path d="M130.686 88.7548L261 2V66.5239L195.843 186.896L178.923 161.412M130.686 88.7548L2 2V66.5239L65.5283 186.896L82.4476 161.412M130.686 88.7548L82.4476 161.412M130.686 88.7548L178.923 161.412M82.4476 161.412L95.392 202.621M95.392 202.621H164.35M95.392 202.621L63.3564 441.739L130.686 535L196.929 441.739L164.35 202.621M164.35 202.621L178.923 161.412" stroke="#E7E9FC" stroke-width="3" stroke-linejoin="round"/>
-                </svg>
-              </span>
-            <div class="absolute top-0 right-[109px] z-[2] shadow-v1 overflow-hidden rounded-15 bg-gradient2">
-              <img src="img/img-4.png" alt="">
+          <div class="flex flex-col gap-y-10">
+            <a class="text-black text-body flex items-center gap-x-4 mb-6" href="#">
+            <span class="w-10 h-10 min-w-10 flex items-center justify-center rounded-full border border-Green">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.40826 1.08002C9.09584 0.767598 8.58931 0.767598 8.27689 1.08002L0.357297 8.99961L8.27689 16.9192C8.58931 17.2316 9.09584 17.2316 9.40826 16.9192C9.72068 16.6068 9.72068 16.1003 9.40826 15.7878L2.62004 8.99961L9.40826 2.21139C9.72068 1.89897 9.72068 1.39244 9.40826 1.08002Z"
+                      fill="#44B64B" />
+              </svg>
+            </span>
+              Back
+            </a>
+            <div class="flex flex-col">
+              <div class="flex flex-col">
+                <h1>Daniel Cohen</h1>
+                <span class="border-0 border-b-4 border-Green w-[86px] my-8 @@StyleGreenLine"></span>
+                <p>Founding Partner</p>
+              </div>
+              <div class="flex flex-col mt-8 gap-y-6">
+                <p>Daniel Cohen is the Founder of Consumer Attorneys. Daniel manages the firm’s branding, marketing,
+                  client intake and business development efforts.</p>
+                <p>Daniel has a proven record of effectively representing consumers across the United States in class
+                  action lawsuits, securing both monetary awards and non-monetary relief on their behalf in numerous
+                  cases. He also counsels visually-impaired individuals who believe that their rights under the
+                  Americans with Disabilities Act have been violated in both physical and digital spaces.</p>
+                <p>Daniel graduated from Arizona State University’s Sandra Day O’Connor College of Law and holds a
+                  bachelor of arts degree in Humanities from Thomas Edison State College. He is licensed to practice in
+                  New York and Arizona.</p>
+                <p>A nationally-recognized practitioner of consumer protection law, Daniel has been an active member of
+                  both the National Association of Consumer Advocates and the National Consumer Law Center since
+                  2017.</p>
+              </div>
             </div>
-            <div class="absolute top-[100px] left-0 z-[2] shadow-v1 overflow-hidden rounded-15 img-filter-1">
-              <img class="object-cover" width="276" height="354" src="img/img-5.png" alt="">
-            </div>
-            <div class="absolute bottom-6 right-0 z-[3] shadow-v1 overflow-hidden rounded-15 img-filter-2">
-              <img class="object-cover" width="281" height="202" src="img/img-6.png" alt="">
+            <div class="rounded-6xl shadow-v4 border border-Green w-full p-10">
+              <div class="row gap-5">
+                <div class="col-span-12 flex justify-center">
+                  <span>CONTACT US</span>
+                </div>
+                <div class="col-span-6">
+                  <div class="form-group flex flex-col items-start input-icon">
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 hidden" for="TextId1">First name</label>
+  <input
+    class="input user-icon input-icon "
+    type="text" id="TextId1" placeholder="First name" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+                </div>
+                <div class="col-span-6">
+                  <div class="form-group flex flex-col items-start input-icon">
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 hidden" for="TextId2">Last name</label>
+  <input
+    class="input user-icon input-icon "
+    type="text" id="TextId2" placeholder="Last name" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+                </div>
+                <div class="col-span-6">
+                  <div class="form-group flex flex-col items-start input-icon">
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 hidden" for="MailId">Email</label>
+  <input
+    class="input message-icon input-icon "
+    type="email" id="MailId" placeholder="Email" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+                </div>
+                <div class="col-span-6">
+                  <div class="form-group flex flex-col items-start input-icon">
+  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 hidden" for="PhoneId">Phone Number</label>
+  <input
+    class="input phone-call-icon input-icon "
+    type="text" id="PhoneId" placeholder="Phone" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+                </div>
+                <div class="col-span-12">
+                  <div class="relative">
+                    <input class="w-full" id="calendar" type="text" placeholder="Choose date" readonly />
+                    <div id="calendar-container" class="w-[556px]" style="display: none; position: absolute; z-index: 100; border: 1px solid #ccc; background: #fff; padding: 10px; border-radius: 5px;">
+                      <div id="vanilla-calendar" class="vanilla-calendar"></div>
+                      <div id="time-picker">
+                        <div class="flex flex-col gap-y-2" id="time-options"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
 
   <section class="section relative bg-img-2" style="background-image: url(img/Background-footer.png);">
     <div class="container">
@@ -360,7 +400,8 @@
   <h3 class="text-h3 font-semibold text-Blue100">Contact us <br> with any <br>questions.</h3>
   <span class="border-0 border-b-4 border-Green w-[86px] my-8 "></span>
 </div>
-            <div class="shadow-v1 w-[526px] h-[412px] rounded-15 absolute bottom-1 left-0 z-[1] img-filter-5 overflow-hidden block">
+            <div
+              class="shadow-v1 w-[526px] h-[412px] rounded-15 absolute bottom-1 left-0 z-[1] img-filter-5 overflow-hidden block">
               <img width="526" height="412" class="object-cover rounded-15" src="img/img-9.png" alt="">
             </div>
           </div>
@@ -671,100 +712,100 @@
 
 <script src="./js/scripts.js"></script>
 <script>
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('data', () => ({
-        }))
-    })
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('data', () => ({}));
+  });
 
-    document.addEventListener('DOMContentLoaded', () => {
-        // const options = {
-        //     inputMode: true,
-        //     positionToInput: 'auto',
-        //     onChangeToInput(self) {
-        //         if (!self.context.inputElement) return;
-        //         if (self.context.selectedDates[0]) {
-        //             self.context.inputElement.value = self.context.selectedDates[0];
-        //             // if you want to hide the calendar after picking a date
-        //             self.hide();
-        //         } else {
-        //             self.context.inputElement.value = '';
-        //         }
-        //     },
-        // };
-        // // Деструктуризация конструктора Calendar
-        // const { Calendar } = window.VanillaCalendarPro;
-        // // Создайте экземпляр календаря и инициализируйте его.
-        // const calendarInput = new Calendar('#calendar', options);
-        // calendarInput.init();
+  document.addEventListener('DOMContentLoaded', () => {
+    // const options = {
+    //     inputMode: true,
+    //     positionToInput: 'auto',
+    //     onChangeToInput(self) {
+    //         if (!self.context.inputElement) return;
+    //         if (self.context.selectedDates[0]) {
+    //             self.context.inputElement.value = self.context.selectedDates[0];
+    //             // if you want to hide the calendar after picking a date
+    //             self.hide();
+    //         } else {
+    //             self.context.inputElement.value = '';
+    //         }
+    //     },
+    // };
+    // // Деструктуризация конструктора Calendar
+    // const { Calendar } = window.VanillaCalendarPro;
+    // // Создайте экземпляр календаря и инициализируйте его.
+    // const calendarInput = new Calendar('#calendar', options);
+    // calendarInput.init();
 
-        const calendarInput = document.getElementById('calendar');
-        const calendarContainer = document.getElementById('calendar-container');
-        const calendarElement = document.getElementById('vanilla-calendar');
-        const timePicker = document.getElementById('time-picker');
-        const timeOptions = document.getElementById('time-options');
-        const { Calendar } = window.VanillaCalendarPro;
+    const calendarInput = document.getElementById('calendar');
+    const calendarContainer = document.getElementById('calendar-container');
+    const calendarElement = document.getElementById('vanilla-calendar');
+    const timePicker = document.getElementById('time-picker');
+    const timeOptions = document.getElementById('time-options');
+    const { Calendar } = window.VanillaCalendarPro;
 
 // Инициализация календаря
-        const calendar = new Calendar(calendarElement, {
-            settings: {
-                lang: 'en',
-                iso8601: true,
-                selection: {
-                    day: 'single',
-                },
-            },
-            onClickDate(self) {
-                const selectedDate = self.context.selectedDates; // Получаем выбранную дату
-                calendarInput.value = selectedDate; // Устанавливаем дату в инпут
-                showTimePicker(); // Показываем выбор времени
-            },
-        });
+    const calendar = new Calendar(calendarElement, {
+      selectedTheme: 'light',
+      settings: {
+        lang: 'en',
+        iso8601: true,
+        selection: {
+          day: 'single',
+        },
+      },
+      onClickDate(self) {
+        const selectedDate = self.context.selectedDates; // Получаем выбранную дату
+        calendarInput.value = selectedDate; // Устанавливаем дату в инпут
+        showTimePicker(); // Показываем выбор времени
+      },
+    });
 
 // Показываем контейнер с календарём при клике на инпут
-        calendarInput.addEventListener('click', (event) => {
-            calendarContainer.style.display = 'block'; // Показываем контейнер
-            calendarContainer.style.top = `50px`;
-            calendarContainer.style.left = `0px`;
-        });
+    calendarInput.addEventListener('click', (event) => {
+      calendarContainer.style.display = 'flex'; // Показываем контейнер
+      calendarContainer.style.top = `50px`;
+      calendarContainer.style.left = `0px`;
+    });
 
 // Скрываем контейнер при клике вне его
-        document.addEventListener('click', (event) => {
-            if (
-                !calendarContainer.contains(event.target) && // Если клик вне календаря
-                event.target !== calendarInput // И не по самому инпуту
-            ) {
-                calendarContainer.style.display = 'none'; // Скрываем контейнер
-            }
-        });
+    document.addEventListener('click', (event) => {
+      if (
+        !calendarContainer.contains(event.target) && // Если клик вне календаря
+        event.target !== calendarInput // И не по самому инпуту
+      ) {
+        calendarContainer.style.display = 'none'; // Скрываем контейнер
+      }
+    });
 
 // Показываем выбор времени
-        function showTimePicker() {
-            generateTimeSlots(); // Генерируем слоты времени
-        }
+    function showTimePicker() {
+      generateTimeSlots(); // Генерируем слоты времени
+    }
 
 // Генерация временных слотов
-        function generateTimeSlots() {
-            timeOptions.innerHTML = ''; // Очищаем предыдущие слоты
-            const times = [
-                '09:00', '10:00', '11:00', '12:00', '13:00'
-            ];
+    function generateTimeSlots() {
+      timeOptions.innerHTML = ''; // Очищаем предыдущие слоты
+      const times = [
+        '09:00', '10:00', '11:00', '12:00', '13:00',
+      ];
 
-            times.forEach((time) => {
-                const timeButton = document.createElement('button');
-                timeButton.textContent = time;
-                timeButton.classList.add('time-slot');
-                timeButton.addEventListener('click', () => {
-                    const currentValue = calendarInput.value.split(' ')[0]; // Извлекаем дату без времени
-                    calendarInput.value = `${currentValue} ${time}`; // Добавляем новое время
-                    calendarContainer.style.display = 'none'; // Скрываем контейнер
-                });
-                timeOptions.appendChild(timeButton);
-            });
-        }
+      times.forEach((time) => {
+        const timeButton = document.createElement('button');
+        timeButton.textContent = time;
+        timeButton.classList.add('time-slot');
+        timeButton.addEventListener('click', () => {
+          const currentValue = calendarInput.value.split(' ')[0]; // Извлекаем дату без времени
+          calendarInput.value = `${currentValue} ${time}`; // Добавляем новое время
+          calendarContainer.style.display = 'none'; // Скрываем контейнер
+        });
+        timeOptions.appendChild(timeButton);
+      });
+    }
 
 // Инициализация календаря
-        calendar.init();
-    })
+    calendar.init();
+  });
 </script>
 </body>
 

@@ -113,6 +113,7 @@ module.exports = {
         LightBlue4: '#B4B7CF',
         LightBlue5: '#F4F5FC',
         LightBlue6: '#D9D9D9',
+        LightBlue7: '#F8F8FF80',
         SecondaryBlue: '#2F3579',
 
       },

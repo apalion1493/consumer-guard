@@ -557,3 +557,27 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.time-slot {
+  @apply flex items-center justify-center text-body2 font-medium text-Green h-[34px] w-[177px] border border-Green rounded-lg
+}
+
+#time-picker {
+  @apply flex flex-col items-center ml-6
+}
+
+[data-vc-date] .vc-date__btn {
+  @apply w-[41px] h-[41px] min-w-[41px] rounded-full bg-LightBlue7 text-body2 text-black
+}
+
+.vc-dates {
+  @apply gap-[6px]
+}
+
+[data-vc-theme=light] .vc-date[data-vc-date-selected] .vc-date__btn {
+  @apply bg-Green hover:bg-Green
+}
+
+[data-vc-theme=light] .vc-date[data-vc-date-holiday] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-weekend] .vc-date__btn {
+  @apply bg-LightBlue7 text-black
+}

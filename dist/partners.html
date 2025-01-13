@@ -12,32 +12,11 @@
   <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
   <style>
-    #time-picker {
-      margin-top: 10px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      background-color: #f9f9f9;
-      border-radius: 5px;
-    }
 
     #time-options {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-    }
-
-    .time-slot {
-      padding: 5px 10px;
-      border: 1px solid #007bff;
-      background-color: #007bff;
-      color: white;
-      border-radius: 3px;
-      cursor: pointer;
-      transition: background-color 0.2s;
-    }
-
-    .time-slot:hover {
-      background-color: #0056b3;
     }
 
   </style>
@@ -1668,100 +1647,100 @@
 
 <script src="./js/scripts.js"></script>
 <script>
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('data', () => ({
-        }))
-    })
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('data', () => ({}));
+  });
 
-    document.addEventListener('DOMContentLoaded', () => {
-        // const options = {
-        //     inputMode: true,
-        //     positionToInput: 'auto',
-        //     onChangeToInput(self) {
-        //         if (!self.context.inputElement) return;
-        //         if (self.context.selectedDates[0]) {
-        //             self.context.inputElement.value = self.context.selectedDates[0];
-        //             // if you want to hide the calendar after picking a date
-        //             self.hide();
-        //         } else {
-        //             self.context.inputElement.value = '';
-        //         }
-        //     },
-        // };
-        // // Деструктуризация конструктора Calendar
-        // const { Calendar } = window.VanillaCalendarPro;
-        // // Создайте экземпляр календаря и инициализируйте его.
-        // const calendarInput = new Calendar('#calendar', options);
-        // calendarInput.init();
+  document.addEventListener('DOMContentLoaded', () => {
+    // const options = {
+    //     inputMode: true,
+    //     positionToInput: 'auto',
+    //     onChangeToInput(self) {
+    //         if (!self.context.inputElement) return;
+    //         if (self.context.selectedDates[0]) {
+    //             self.context.inputElement.value = self.context.selectedDates[0];
+    //             // if you want to hide the calendar after picking a date
+    //             self.hide();
+    //         } else {
+    //             self.context.inputElement.value = '';
+    //         }
+    //     },
+    // };
+    // // Деструктуризация конструктора Calendar
+    // const { Calendar } = window.VanillaCalendarPro;
+    // // Создайте экземпляр календаря и инициализируйте его.
+    // const calendarInput = new Calendar('#calendar', options);
+    // calendarInput.init();
 
-        const calendarInput = document.getElementById('calendar');
-        const calendarContainer = document.getElementById('calendar-container');
-        const calendarElement = document.getElementById('vanilla-calendar');
-        const timePicker = document.getElementById('time-picker');
-        const timeOptions = document.getElementById('time-options');
-        const { Calendar } = window.VanillaCalendarPro;
+    const calendarInput = document.getElementById('calendar');
+    const calendarContainer = document.getElementById('calendar-container');
+    const calendarElement = document.getElementById('vanilla-calendar');
+    const timePicker = document.getElementById('time-picker');
+    const timeOptions = document.getElementById('time-options');
+    const { Calendar } = window.VanillaCalendarPro;
 
 // Инициализация календаря
-        const calendar = new Calendar(calendarElement, {
-            settings: {
-                lang: 'en',
-                iso8601: true,
-                selection: {
-                    day: 'single',
-                },
-            },
-            onClickDate(self) {
-                const selectedDate = self.context.selectedDates; // Получаем выбранную дату
-                calendarInput.value = selectedDate; // Устанавливаем дату в инпут
-                showTimePicker(); // Показываем выбор времени
-            },
-        });
+    const calendar = new Calendar(calendarElement, {
+      selectedTheme: 'light',
+      settings: {
+        lang: 'en',
+        iso8601: true,
+        selection: {
+          day: 'single',
+        },
+      },
+      onClickDate(self) {
+        const selectedDate = self.context.selectedDates; // Получаем выбранную дату
+        calendarInput.value = selectedDate; // Устанавливаем дату в инпут
+        showTimePicker(); // Показываем выбор времени
+      },
+    });
 
 // Показываем контейнер с календарём при клике на инпут
-        calendarInput.addEventListener('click', (event) => {
-            calendarContainer.style.display = 'block'; // Показываем контейнер
-            calendarContainer.style.top = `50px`;
-            calendarContainer.style.left = `0px`;
-        });
+    calendarInput.addEventListener('click', (event) => {
+      calendarContainer.style.display = 'flex'; // Показываем контейнер
+      calendarContainer.style.top = `50px`;
+      calendarContainer.style.left = `0px`;
+    });
 
 // Скрываем контейнер при клике вне его
-        document.addEventListener('click', (event) => {
-            if (
-                !calendarContainer.contains(event.target) && // Если клик вне календаря
-                event.target !== calendarInput // И не по самому инпуту
-            ) {
-                calendarContainer.style.display = 'none'; // Скрываем контейнер
-            }
-        });
+    document.addEventListener('click', (event) => {
+      if (
+        !calendarContainer.contains(event.target) && // Если клик вне календаря
+        event.target !== calendarInput // И не по самому инпуту
+      ) {
+        calendarContainer.style.display = 'none'; // Скрываем контейнер
+      }
+    });
 
 // Показываем выбор времени
-        function showTimePicker() {
-            generateTimeSlots(); // Генерируем слоты времени
-        }
+    function showTimePicker() {
+      generateTimeSlots(); // Генерируем слоты времени
+    }
 
 // Генерация временных слотов
-        function generateTimeSlots() {
-            timeOptions.innerHTML = ''; // Очищаем предыдущие слоты
-            const times = [
-                '09:00', '10:00', '11:00', '12:00', '13:00'
-            ];
+    function generateTimeSlots() {
+      timeOptions.innerHTML = ''; // Очищаем предыдущие слоты
+      const times = [
+        '09:00', '10:00', '11:00', '12:00', '13:00',
+      ];
 
-            times.forEach((time) => {
-                const timeButton = document.createElement('button');
-                timeButton.textContent = time;
-                timeButton.classList.add('time-slot');
-                timeButton.addEventListener('click', () => {
-                    const currentValue = calendarInput.value.split(' ')[0]; // Извлекаем дату без времени
-                    calendarInput.value = `${currentValue} ${time}`; // Добавляем новое время
-                    calendarContainer.style.display = 'none'; // Скрываем контейнер
-                });
-                timeOptions.appendChild(timeButton);
-            });
-        }
+      times.forEach((time) => {
+        const timeButton = document.createElement('button');
+        timeButton.textContent = time;
+        timeButton.classList.add('time-slot');
+        timeButton.addEventListener('click', () => {
+          const currentValue = calendarInput.value.split(' ')[0]; // Извлекаем дату без времени
+          calendarInput.value = `${currentValue} ${time}`; // Добавляем новое время
+          calendarContainer.style.display = 'none'; // Скрываем контейнер
+        });
+        timeOptions.appendChild(timeButton);
+      });
+    }
 
 // Инициализация календаря
-        calendar.init();
-    })
+    calendar.init();
+  });
 </script>
 </body>
 
