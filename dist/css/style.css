@@ -848,6 +848,10 @@ html {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .mb-0{
   margin-bottom: 0px;
 }
@@ -1009,6 +1013,9 @@ html {
 .h-\[448px\]{
   height: 448px;
 }
+.h-\[467px\]{
+  height: 467px;
+}
 .h-\[552px\]{
   height: 552px;
 }
@@ -1042,6 +1049,9 @@ html {
 .h-min{
   height: -moz-min-content;
   height: min-content;
+}
+.h-\[543px\]{
+  height: 543px;
 }
 .max-h-44{
   max-height: 11rem;
@@ -1167,6 +1177,9 @@ html {
 .max-w-\[524px\]{
   max-width: 524px;
 }
+.max-w-\[526px\]{
+  max-width: 526px;
+}
 .max-w-\[529px\]{
   max-width: 529px;
 }
@@ -1187,6 +1200,12 @@ html {
 }
 .max-w-xs{
   max-width: 20rem;
+}
+.max-w-\[543px\]{
+  max-width: 543px;
+}
+.max-w-\[748px\]{
+  max-width: 748px;
 }
 .flex-1{
   flex: 1 1 0%;
