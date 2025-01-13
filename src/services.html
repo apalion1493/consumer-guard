@@ -13,12 +13,12 @@
     })
     <div class="container pt-[100px]">
       <div class="row gap-x-6">
-        <div class="col-span-6">
+        <div class="col-span-5">
           <div class="flex flex-col">
             <h1 class="text-Blue100 block font-semibold">Services</h1>
             <span class="border-0 border-b-4 border-Green w-[86px] my-8 @@StyleGreenLine"></span>
             <p class="font-semibold text-Top6 text-Blue100 mb-10">Consumer laws are inplace to protect you. Once you
-              know your rights, you can fight back. <span class="text-Green">We can help.</span></p>
+              know your rights, you can fight back. <br> <span class="text-Green">We can help.</span></p>
             <p>In vero zril dictas eos, in esse summo aperiri sea. Errem constituam per in. In vix mucius nonumes
               intellegam, eum in homero vivendo explicari, deterruisset mediocritatem cu eum. Usu porro clita at. Mei
               prima civibus accumsan at, eu qui quas saepe intellegam.</p>
@@ -29,24 +29,10 @@
             })
           </div>
         </div>
+        <div class="col-span-1"></div>
         <div class="col-span-6">
-          <div class="relative max-w-[604px] w-full h-[780px] ml-auto">
-              <span class="absolute top-5 right-0 z-[1]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="263" height="537" viewBox="0 0 263 537" fill="none">
-                  <path
-                    d="M130.686 88.7548L261 2V66.5239L195.843 186.896L178.923 161.412M130.686 88.7548L2 2V66.5239L65.5283 186.896L82.4476 161.412M130.686 88.7548L82.4476 161.412M130.686 88.7548L178.923 161.412M82.4476 161.412L95.392 202.621M95.392 202.621H164.35M95.392 202.621L63.3564 441.739L130.686 535L196.929 441.739L164.35 202.621M164.35 202.621L178.923 161.412"
-                    stroke="#E7E9FC" stroke-width="3" stroke-linejoin="round" />
-                </svg>
-              </span>
-            <div class="absolute top-0 right-[109px] z-[2] shadow-v1 overflow-hidden rounded-15 bg-gradient2">
-              <img src="img/img-4.png" alt="">
-            </div>
-            <div class="absolute top-[100px] left-0 z-[2] shadow-v1 overflow-hidden rounded-15 img-filter-1">
-              <img class="object-cover" width="276" height="354" src="img/img-5.png" alt="">
-            </div>
-            <div class="absolute bottom-6 right-0 z-[3] shadow-v1 overflow-hidden rounded-15 img-filter-2">
-              <img class="object-cover" width="281" height="202" src="img/img-6.png" alt="">
-            </div>
+          <div class="relative max-w-[642px] w-full h-[681px] ml-auto">
+            <img src="img/hero-img-block-3.png" alt="Services Image">
           </div>
         </div>
       </div>
@@ -97,6 +83,36 @@
           @@include('components/Dropdown-Practices.html', {
           'Icon': 'Debt-Collection',
           'Title': 'Debt Collection Harassment Attorneys',
+          })
+        </div>
+        <div class="col-span-12">
+          @@include('components/Dropdown-Practices.html', {
+          'Icon': 'Identity',
+          'Title': 'Attorneys for Identity Theft',
+          })
+        </div>
+        <div class="col-span-12">
+          @@include('components/Dropdown-Practices.html', {
+          'Icon': 'Lawyer',
+          'Title': 'Lawyer for Car Accident',
+          })
+        </div>
+        <div class="col-span-12">
+          @@include('components/Dropdown-Practices.html', {
+          'Icon': 'Accident',
+          'Title': 'Employment Discrimination Attorneys',
+          })
+        </div>
+        <div class="col-span-12">
+          @@include('components/Dropdown-Practices.html', {
+          'Icon': 'Check',
+          'Title': 'Background Check Errors Attorneys',
+          })
+        </div>
+        <div class="col-span-12">
+          @@include('components/Dropdown-Practices.html', {
+          'Icon': 'Labor',
+          'Title': 'Labor and Employment Attorneys',
           })
         </div>
       </div>

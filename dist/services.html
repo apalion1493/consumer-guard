@@ -318,12 +318,12 @@
 </header>
     <div class="container pt-[100px]">
       <div class="row gap-x-6">
-        <div class="col-span-6">
+        <div class="col-span-5">
           <div class="flex flex-col">
             <h1 class="text-Blue100 block font-semibold">Services</h1>
             <span class="border-0 border-b-4 border-Green w-[86px] my-8 @@StyleGreenLine"></span>
             <p class="font-semibold text-Top6 text-Blue100 mb-10">Consumer laws are inplace to protect you. Once you
-              know your rights, you can fight back. <span class="text-Green">We can help.</span></p>
+              know your rights, you can fight back. <br> <span class="text-Green">We can help.</span></p>
             <p>In vero zril dictas eos, in esse summo aperiri sea. Errem constituam per in. In vix mucius nonumes
               intellegam, eum in homero vivendo explicari, deterruisset mediocritatem cu eum. Usu porro clita at. Mei
               prima civibus accumsan at, eu qui quas saepe intellegam.</p>
@@ -332,24 +332,10 @@
 </a>
           </div>
         </div>
+        <div class="col-span-1"></div>
         <div class="col-span-6">
-          <div class="relative max-w-[604px] w-full h-[780px] ml-auto">
-              <span class="absolute top-5 right-0 z-[1]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="263" height="537" viewBox="0 0 263 537" fill="none">
-                  <path
-                    d="M130.686 88.7548L261 2V66.5239L195.843 186.896L178.923 161.412M130.686 88.7548L2 2V66.5239L65.5283 186.896L82.4476 161.412M130.686 88.7548L82.4476 161.412M130.686 88.7548L178.923 161.412M82.4476 161.412L95.392 202.621M95.392 202.621H164.35M95.392 202.621L63.3564 441.739L130.686 535L196.929 441.739L164.35 202.621M164.35 202.621L178.923 161.412"
-                    stroke="#E7E9FC" stroke-width="3" stroke-linejoin="round" />
-                </svg>
-              </span>
-            <div class="absolute top-0 right-[109px] z-[2] shadow-v1 overflow-hidden rounded-15 bg-gradient2">
-              <img src="img/img-4.png" alt="">
-            </div>
-            <div class="absolute top-[100px] left-0 z-[2] shadow-v1 overflow-hidden rounded-15 img-filter-1">
-              <img class="object-cover" width="276" height="354" src="img/img-5.png" alt="">
-            </div>
-            <div class="absolute bottom-6 right-0 z-[3] shadow-v1 overflow-hidden rounded-15 img-filter-2">
-              <img class="object-cover" width="281" height="202" src="img/img-6.png" alt="">
-            </div>
+          <div class="relative max-w-[642px] w-full h-[681px] ml-auto">
+            <img src="img/hero-img-block-3.png" alt="Services Image">
           </div>
         </div>
       </div>
@@ -393,7 +379,7 @@
       <div class="row gap-y-8">
         <div class="col-span-12">
           <div x-data="{ isExpanded: false }" class="overflow-hidden rounded-6xl bg-white border p-8 border-LightBlue2 transition-shadow" :class="isExpanded ? 'shadow-v5'  : ''">
-  <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-2 text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
+  <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-x-4 text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
     <span class="flex items-center justify-center w-[60px] min-w-[60px] h-[60px]">
       <svg xmlns="http://www.w3.org/2000/svg" width="58" height="52" viewBox="0 0 58 52" fill="none">
         <path d="M58 5.98412C53.7432 3.16981 46.4735 1.30469 37.9988 1.30469C29.5241 1.30469 22.2568 3.16981 18 5.98412V31.4137C18 32.973 18.5384 34.4289 19.1226 35.8619C22.7096 43.5238 31.1111 47.2348 38.0012 51.3047C44.8913 47.2348 53.2904 43.5238 56.8774 35.8619C57.4616 34.4289 58 32.973 58 31.4137V5.98412Z" fill="#F8F8FF"/>
@@ -710,11 +696,331 @@
         </div>
         <div class="col-span-12">
           <div x-data="{ isExpanded: false }" class="overflow-hidden rounded-6xl bg-white border p-8 border-LightBlue2 transition-shadow" :class="isExpanded ? 'shadow-v5'  : ''">
-  <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-2 text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
+  <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-x-4 text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
     <span class="flex items-center justify-center w-[60px] min-w-[60px] h-[60px]">
       <i class="block w-[60px] h-[60px] Debt-Collection"></i>
     </span>
     Debt Collection Harassment Attorneys
+    <span class="w-10 h-10 min-w-10 flex items-center justify-center rounded-full border ml-auto" :class="isExpanded ? 'border-LightBlue3'  : 'border-Green'">
+      <svg :class="isExpanded ? 'hidden'  : ''" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M20 10L0 10M10 0V20" stroke="#44B64B"/>
+      </svg>
+      <svg :class="isExpanded ? ''  : 'hidden'" xmlns="http://www.w3.org/2000/svg" width="20" height="2" viewBox="0 0 20 2" fill="none">
+        <path d="M20 1L0 0.999999" stroke="#B5B8D0"/>
+      </svg>
+    </span>
+  </button>
+  <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
+    <div class="pt-8">
+      <div class="row gap-8">
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Sandra Day O’Connor College of Law, Arizona State University – J.D.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Sandra Day O’Connor College of Law, Arizona State University – J.D.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Thomas Edison State College – B.A.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Thomas Edison State College – B.A.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-span-12">
+          <div x-data="{ isExpanded: false }" class="overflow-hidden rounded-6xl bg-white border p-8 border-LightBlue2 transition-shadow" :class="isExpanded ? 'shadow-v5'  : ''">
+  <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-x-4 text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
+    <span class="flex items-center justify-center w-[60px] min-w-[60px] h-[60px]">
+      <i class="block w-[60px] h-[60px] Identity"></i>
+    </span>
+    Attorneys for Identity Theft
+    <span class="w-10 h-10 min-w-10 flex items-center justify-center rounded-full border ml-auto" :class="isExpanded ? 'border-LightBlue3'  : 'border-Green'">
+      <svg :class="isExpanded ? 'hidden'  : ''" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M20 10L0 10M10 0V20" stroke="#44B64B"/>
+      </svg>
+      <svg :class="isExpanded ? ''  : 'hidden'" xmlns="http://www.w3.org/2000/svg" width="20" height="2" viewBox="0 0 20 2" fill="none">
+        <path d="M20 1L0 0.999999" stroke="#B5B8D0"/>
+      </svg>
+    </span>
+  </button>
+  <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
+    <div class="pt-8">
+      <div class="row gap-8">
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Sandra Day O’Connor College of Law, Arizona State University – J.D.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Sandra Day O’Connor College of Law, Arizona State University – J.D.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Thomas Edison State College – B.A.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Thomas Edison State College – B.A.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-span-12">
+          <div x-data="{ isExpanded: false }" class="overflow-hidden rounded-6xl bg-white border p-8 border-LightBlue2 transition-shadow" :class="isExpanded ? 'shadow-v5'  : ''">
+  <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-x-4 text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
+    <span class="flex items-center justify-center w-[60px] min-w-[60px] h-[60px]">
+      <i class="block w-[60px] h-[60px] Lawyer"></i>
+    </span>
+    Lawyer for Car Accident
+    <span class="w-10 h-10 min-w-10 flex items-center justify-center rounded-full border ml-auto" :class="isExpanded ? 'border-LightBlue3'  : 'border-Green'">
+      <svg :class="isExpanded ? 'hidden'  : ''" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M20 10L0 10M10 0V20" stroke="#44B64B"/>
+      </svg>
+      <svg :class="isExpanded ? ''  : 'hidden'" xmlns="http://www.w3.org/2000/svg" width="20" height="2" viewBox="0 0 20 2" fill="none">
+        <path d="M20 1L0 0.999999" stroke="#B5B8D0"/>
+      </svg>
+    </span>
+  </button>
+  <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
+    <div class="pt-8">
+      <div class="row gap-8">
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Sandra Day O’Connor College of Law, Arizona State University – J.D.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Sandra Day O’Connor College of Law, Arizona State University – J.D.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Thomas Edison State College – B.A.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Thomas Edison State College – B.A.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-span-12">
+          <div x-data="{ isExpanded: false }" class="overflow-hidden rounded-6xl bg-white border p-8 border-LightBlue2 transition-shadow" :class="isExpanded ? 'shadow-v5'  : ''">
+  <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-x-4 text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
+    <span class="flex items-center justify-center w-[60px] min-w-[60px] h-[60px]">
+      <i class="block w-[60px] h-[60px] Accident"></i>
+    </span>
+    Employment Discrimination Attorneys
+    <span class="w-10 h-10 min-w-10 flex items-center justify-center rounded-full border ml-auto" :class="isExpanded ? 'border-LightBlue3'  : 'border-Green'">
+      <svg :class="isExpanded ? 'hidden'  : ''" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M20 10L0 10M10 0V20" stroke="#44B64B"/>
+      </svg>
+      <svg :class="isExpanded ? ''  : 'hidden'" xmlns="http://www.w3.org/2000/svg" width="20" height="2" viewBox="0 0 20 2" fill="none">
+        <path d="M20 1L0 0.999999" stroke="#B5B8D0"/>
+      </svg>
+    </span>
+  </button>
+  <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
+    <div class="pt-8">
+      <div class="row gap-8">
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Sandra Day O’Connor College of Law, Arizona State University – J.D.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Sandra Day O’Connor College of Law, Arizona State University – J.D.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Thomas Edison State College – B.A.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Thomas Edison State College – B.A.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-span-12">
+          <div x-data="{ isExpanded: false }" class="overflow-hidden rounded-6xl bg-white border p-8 border-LightBlue2 transition-shadow" :class="isExpanded ? 'shadow-v5'  : ''">
+  <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-x-4 text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
+    <span class="flex items-center justify-center w-[60px] min-w-[60px] h-[60px]">
+      <i class="block w-[60px] h-[60px] Check"></i>
+    </span>
+    Background Check Errors Attorneys
+    <span class="w-10 h-10 min-w-10 flex items-center justify-center rounded-full border ml-auto" :class="isExpanded ? 'border-LightBlue3'  : 'border-Green'">
+      <svg :class="isExpanded ? 'hidden'  : ''" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M20 10L0 10M10 0V20" stroke="#44B64B"/>
+      </svg>
+      <svg :class="isExpanded ? ''  : 'hidden'" xmlns="http://www.w3.org/2000/svg" width="20" height="2" viewBox="0 0 20 2" fill="none">
+        <path d="M20 1L0 0.999999" stroke="#B5B8D0"/>
+      </svg>
+    </span>
+  </button>
+  <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
+    <div class="pt-8">
+      <div class="row gap-8">
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Sandra Day O’Connor College of Law, Arizona State University – J.D.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Sandra Day O’Connor College of Law, Arizona State University – J.D.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Thomas Edison State College – B.A.</p>
+          </div>
+        </div>
+        <div class="col-span-6">
+          <div class="flex gap-x-5">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body">Thomas Edison State College – B.A.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-span-12">
+          <div x-data="{ isExpanded: false }" class="overflow-hidden rounded-6xl bg-white border p-8 border-LightBlue2 transition-shadow" :class="isExpanded ? 'shadow-v5'  : ''">
+  <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-x-4 text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
+    <span class="flex items-center justify-center w-[60px] min-w-[60px] h-[60px]">
+      <i class="block w-[60px] h-[60px] Labor"></i>
+    </span>
+    Labor and Employment Attorneys
     <span class="w-10 h-10 min-w-10 flex items-center justify-center rounded-full border ml-auto" :class="isExpanded ? 'border-LightBlue3'  : 'border-Green'">
       <svg :class="isExpanded ? 'hidden'  : ''" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path d="M20 10L0 10M10 0V20" stroke="#44B64B"/>

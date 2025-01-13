@@ -808,6 +808,9 @@ html {
 .z-\[3\]{
   z-index: 3;
 }
+.col-span-1{
+  grid-column: span 1 / span 1;
+}
 .col-span-12{
   grid-column: span 12 / span 12;
 }
@@ -1018,6 +1021,9 @@ html {
 .h-\[614px\]{
   height: 614px;
 }
+.h-\[681px\]{
+  height: 681px;
+}
 .h-\[6px\]{
   height: 6px;
 }
@@ -1172,6 +1178,9 @@ html {
 }
 .max-w-\[636px\]{
   max-width: 636px;
+}
+.max-w-\[642px\]{
+  max-width: 642px;
 }
 .max-w-\[746px\]{
   max-width: 746px;
@@ -2255,6 +2264,36 @@ a{
 
 .Debt-Collection {
   background: url("../img/icons/Debt-Collection-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Labor {
+  background: url("../img/icons/Labor-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Check {
+  background: url("../img/icons/Check-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Accident {
+  background: url("../img/icons/Accident-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Lawyer {
+  background: url("../img/icons/Lawyer-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Identity {
+  background: url("../img/icons/Identity-60.svg") no-repeat center center;
   background-size: 100% auto;
   display: block;
 }
