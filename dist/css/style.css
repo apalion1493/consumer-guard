@@ -1072,6 +1072,9 @@ html {
   height: -moz-min-content;
   height: min-content;
 }
+.h-\[753px\]{
+  height: 753px;
+}
 .max-h-44{
   max-height: 11rem;
 }
