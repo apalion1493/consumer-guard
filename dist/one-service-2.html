@@ -23,15 +23,23 @@
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
   <section class="pb-[59px] pt-[112px] hero-section relative bg-gradient1">
-    <header id="sticky-header" class="flex flex-col w-full absolute top-0 left-0 z-10 sticky-header  ">
+    <header id="sticky-header" class="flex flex-col w-full lg:bg-white absolute lg:fixed top-0 left-0 z-10 sticky-header  ">
   <div class="w-full flex flex-col">
-    <div class="py-6">
-      <div class="container flex items-center w-full">
-        <a class="lg:max-w-[171x] minlg:min-w-[140px] mr-3" href="index.html">
+    <div class="py-6 md:py-4">
+      <div class="container flex items-center w-full relative">
+        <button id="burger-button" class="minlg:hidden lg:absolute lg:top-0 lg:left-0 flex items-center justify-center p-2"
+                aria-label="Mobile Burger Button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-Blue100" fill="none" viewBox="0 0 24 24"
+               stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <a class="lg:max-w-[171px] minlg:min-w-[140px] mr-3 lg:mx-auto" href="index.html">
           <img width="140" height="48" src="img/Logo-header.svg" alt="Logo">
         </a>
-        <div class="flex items-center w-full">
-          <div class="ml-auto w-full lg:hidden">
+        <div class="flex items-center w-full lg:hidden">
+          <div class="ml-auto w-full">
             <div class="items-center minlg:h-14 flex justify-end relative">
               <nav class="mx-auto lg:hidden">
                 <div class="container px-0 mx-auto flex justify-center items-center gap-x-5 w-full">
@@ -50,19 +58,11 @@
               </nav>
             </div>
           </div>
-          <div class="flex items-center gap-x-3 ml-3 lg:ml-auto">
+          <div class="flex items-center gap-x-3 ml-3 lg:hidden">
             <button class="button shadow-v3" type="button" aria-label="Button">
   <span>Button</span>
 </button>
           </div>
-          <button id="burger-button" class="minlg:hidden ml-5 flex items-center justify-center p-2"
-                  aria-label="Mobile Burger Button">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24"
-                 stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
         </div>
       </div>
     </div>
@@ -241,9 +241,9 @@
         <div class="col-span-5">
           <div class="flex flex-col gap-y-14 max-w-[416px]">
             <div class="flex flex-col ">
-  <span class="uppercase text-body2 text-LightBlue3 block mb-3 hidden"></span>
-  <h3 class="text-h3 font-semibold text-Blue100">Visit us at your convenience</h3>
-  <span class="border-0 border-b-4 border-Green w-[86px] my-8 mb-0"></span>
+  <span class="uppercase text-body2 text-LightBlue3 block mb-3 lg:mb-2 hidden"></span>
+  <h3 class="text-h3 lg:text-Top6 font-semibold text-Blue100">Visit us at your convenience</h3>
+  <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:mt-4 mb-0"></span>
 </div>
             <p>In vero zril dictas eos, in esse summo aperiri sea. Errem constituam per in. In vix mucius nonumes
               intellegam, eum in homero vivendo explicari, deterruisset mediocritatem cu eum. Usu porro clita at. Mei
@@ -316,9 +316,9 @@
       <div class="row">
         <div class="col-span-12">
           <div class="flex flex-col mb-14">
-  <span class="uppercase text-body2 text-LightBlue3 block mb-3 hidden"></span>
-  <h3 class="text-h3 font-semibold text-Blue100">Attorney who are <br> ready to help you</h3>
-  <span class="border-0 border-b-4 border-Green w-[86px] my-8 mb-0"></span>
+  <span class="uppercase text-body2 text-LightBlue3 block mb-3 lg:mb-2 hidden"></span>
+  <h3 class="text-h3 lg:text-Top6 font-semibold text-Blue100">Attorney who are <br> ready to help you</h3>
+  <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:mt-4 mb-0"></span>
 </div>
         </div>
       </div>
@@ -451,9 +451,9 @@
       <div class="row">
         <div class="col-span-12">
           <div class="flex flex-col mb-14">
-  <span class="uppercase text-body2 text-LightBlue3 block mb-3 hidden"></span>
-  <h3 class="text-h3 font-semibold text-Blue100">Attorney who are <br> ready to help you</h3>
-  <span class="border-0 border-b-4 border-Green w-[86px] my-8 mb-0"></span>
+  <span class="uppercase text-body2 text-LightBlue3 block mb-3 lg:mb-2 hidden"></span>
+  <h3 class="text-h3 lg:text-Top6 font-semibold text-Blue100">Attorney who are <br> ready to help you</h3>
+  <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:mt-4 mb-0"></span>
 </div>
         </div>
       </div>
@@ -1164,18 +1164,18 @@
         <div class="col-span-12 flex">
           <div class="max-w-[400px] w-full flex flex-col relative">
             <div class="flex flex-col ">
-  <span class="uppercase text-body2 text-LightBlue3 block mb-3 Contact usStyle">Contact us</span>
-  <h3 class="text-h3 font-semibold text-Blue100">Contact us <br> with any <br>questions.</h3>
-  <span class="border-0 border-b-4 border-Green w-[86px] my-8 "></span>
+  <span class="uppercase text-body2 text-LightBlue3 block mb-3 lg:mb-2 Contact usStyle">Contact us</span>
+  <h3 class="text-h3 lg:text-Top6 font-semibold text-Blue100">Contact us <br> with any <br>questions.</h3>
+  <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:mt-4 "></span>
 </div>
             <div
               class="shadow-v1 w-[526px] h-[412px] rounded-15 absolute bottom-1 left-0 z-[1] img-filter-5 overflow-hidden block">
               <img width="526" height="412" class="object-cover rounded-15" src="img/img-9.png" alt="">
             </div>
           </div>
-          <div class="w-[808px] relative z-[2] mb-10 ml-auto shadow-v4 rounded-6xl overflow-hidden bg-white border border-Green py-16 px-[86px]">
-  <form class="row gap-x-6 gap-y-5">
-    <div class="col-span-6">
+          <div class="form-block w-[808px] relative z-[2] mb-10 md:mb-0 xl:px-10 lg:w-full md:px-3 md:py-8 sm:-mx-4 ml-auto shadow-v4 rounded-6xl overflow-hidden bg-white border border-Green py-16 px-[86px]">
+  <form class="row gap-x-6 gap-y-5 md:gap-x-0">
+    <div class="col-span-6 md:col-span-12">
       <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 " for="TextId1">First name</label>
   <input
@@ -1184,7 +1184,7 @@
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
     </div>
-    <div class="col-span-6">
+    <div class="col-span-6 md:col-span-12">
       <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 " for="TextId2">Last name</label>
   <input
@@ -1193,7 +1193,7 @@
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
     </div>
-    <div class="col-span-6">
+    <div class="col-span-6 md:col-span-12">
       <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 " for="MailId">Email</label>
   <input
@@ -1202,7 +1202,7 @@
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
     </div>
-    <div class="col-span-6">
+    <div class="col-span-6 md:col-span-12">
       <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 " for="PhoneId">Phone Number</label>
   <input
@@ -1263,7 +1263,7 @@
   <small class="text-body2 font-medium text-Error md:text-body4 mt-2 "></small>
 </div>
 
-      <button class="button shadow-v3 mt-14" type="submit" aria-label="Send">
+      <button class="button shadow-v3 mt-14 md:w-full" type="submit" aria-label="Send">
   <span>Send</span>
 </button>
     </div>
@@ -1341,15 +1341,15 @@
     </div>
   </div>
 </div>
-  <footer class="w-full mt-auto overflow-hidden bg-Blue100 pt-16 text-white shadow-3xl">
-  <div class="container pb-10">
+  <footer class="w-full mt-auto overflow-hidden bg-Blue100 pt-16 lg:pt-10 text-white shadow-3xl">
+  <div class="container pb-10 lg:pb-8">
     <div class="row">
-      <div class="col-span-12 flex justify-between gap-x-8">
+      <div class="col-span-12 flex justify-between gap-x-8 lg:gap-x-0 lg:flex-col">
         <div class="flex flex-col">
-          <a class="mb-8 block" href="index.html">
-            <img width="196" height="69" src="img/Logo-footer.svg" alt="Consumer Guard Footer Logo">
+          <a class="mb-8 block lg:mx-auto" href="index.html">
+            <img class="lg:w-[136px] lg:h-[48px]" width="196" height="69" src="img/Logo-footer.svg" alt="Consumer Guard Footer Logo">
           </a>
-          <p class="text-white text-body">&#169; 2024 Consumer Guard. <br>
+          <p class="text-white text-body lg:hidden">&#169; 2024 Consumer Guard. <br>
             All Rights Reserved.</p>
         </div>
         <div class="flex flex-col">
@@ -1369,7 +1369,7 @@
           </ul>
         </div>
         <div class="flex flex-col">
-          <ul class="flex flex-col gap-y-3">
+          <ul class="flex flex-col gap-y-3 lg:mt-3">
             <li class="flex items-center">
               <a class="text-white text-body transition-colors hover:text-Green" href="Terms&Conditions.html">Terms and Conditions</a>
             </li>
@@ -1379,7 +1379,7 @@
           </ul>
         </div>
         <div class="flex flex-col">
-          <ul class="flex flex-col gap-y-4 mb-8">
+          <ul class="flex flex-col gap-y-4 mb-8 lg:mt-8">
             <li class="flex items-center">
               <p class="flex items-center gap-x-4 text-white text-body">
                 <span class="flex items-center justify-center w-5 min-w-5 h-5">
@@ -1486,6 +1486,8 @@
       <div class="row">
         <div class="col-span-12">
           <p class="text-center text-body2 text-LightBlue4">Attorney Advertising, Prior Results Do Not Guarantee A Similar Outcome. This website is for informational purposes only and does not contain legal advice. Results may vary depending on your particular facts and legal circumstances.</p>
+          <p class="text-white text-body2 minlg:hidden text-center pt-[10px] w-full mt-[10px] border-t border-Blue100">&#169; 2024 Consumer Guard. <br>
+            All Rights Reserved.</p>
         </div>
       </div>
     </div>

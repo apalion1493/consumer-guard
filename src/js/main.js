@@ -7,15 +7,6 @@ window.addEventListener('DOMContentLoaded', () => {
       prevEl: '.swiper-button-prev',
     },
   });
-
-  const swiper2 = new Swiper('.swiper-container-sellers', {
-    slidesPerView: 4,
-    spaceBetween: 24,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
 });
 
 document.addEventListener('DOMContentLoaded', function() {

@@ -53,7 +53,7 @@ module.exports = {
     },
     screens: {
       '2xl': { max: '1549px' },
-      xl: { max: '1328px' },
+      xl: { max: '1344px' },
       lg: { max: '1023px' },
       md: { max: '767px' },
       sm: { max: '639px' },

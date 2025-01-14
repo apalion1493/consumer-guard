@@ -1,12 +1,20 @@
-<header id="sticky-header" class="flex flex-col w-full absolute top-0 left-0 z-10 sticky-header @@commonStyle">
+<header id="sticky-header" class="flex flex-col w-full lg:bg-white absolute lg:fixed top-0 left-0 z-10 sticky-header @@commonStyle">
   <div class="w-full flex flex-col">
-    <div class="py-6">
-      <div class="container flex items-center w-full">
-        <a class="lg:max-w-[171x] minlg:min-w-[140px] mr-3" href="index.html">
+    <div class="py-6 md:py-4">
+      <div class="container flex items-center w-full relative">
+        <button id="burger-button" class="minlg:hidden lg:absolute lg:top-0 lg:left-0 flex items-center justify-center p-2"
+                aria-label="Mobile Burger Button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-Blue100" fill="none" viewBox="0 0 24 24"
+               stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <a class="lg:max-w-[171px] minlg:min-w-[140px] mr-3 lg:mx-auto" href="index.html">
           <img width="140" height="48" src="img/Logo-header.svg" alt="Logo">
         </a>
-        <div class="flex items-center w-full">
-          <div class="ml-auto w-full lg:hidden">
+        <div class="flex items-center w-full lg:hidden">
+          <div class="ml-auto w-full">
             <div class="items-center minlg:h-14 flex justify-end relative">
               <nav class="mx-auto lg:hidden">
                 <div class="container px-0 mx-auto flex justify-center items-center gap-x-5 w-full">
@@ -25,7 +33,7 @@
               </nav>
             </div>
           </div>
-          <div class="flex items-center gap-x-3 ml-3 lg:ml-auto">
+          <div class="flex items-center gap-x-3 ml-3 lg:hidden">
             @@include('button.html', {
             'style': 'shadow-v3',
             'type': 'button',
@@ -33,14 +41,6 @@
             'title': 'Button',
             })
           </div>
-          <button id="burger-button" class="minlg:hidden ml-5 flex items-center justify-center p-2"
-                  aria-label="Mobile Burger Button">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24"
-                 stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
         </div>
       </div>
     </div>

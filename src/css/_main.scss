@@ -22,14 +22,14 @@
   }
 
   &.btn-icons {
-    @apply relative min-w-[415px]
+    @apply relative min-w-[415px] md:min-w-[200px]
   }
 
   &.btn-outline {
     @apply bg-transparent hover:bg-transparent focus:bg-transparent text-Green hover:text-LightGreen active:text-green600 disabled:text-Grey;
   }
 
-  @apply h-16 min-h-16 px-16 min-w-[102px] w-fit flex items-center justify-center rounded-5xl text-white text-Top3 text-center font-medium bg-Green border border-Green transition-all hover:bg-LightGreen hover:text-white hover:border-LightGreen active:bg-green600 disabled:bg-Grey disabled:border-Grey disabled:text-DarkGrey focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit;
+  @apply h-16 min-h-16 lg:h-[50px] lg:min-h-[50px] px-16 min-w-[102px] w-fit flex items-center justify-center rounded-5xl text-white text-Top3 lg:text-base text-center font-medium bg-Green border border-Green transition-all hover:bg-LightGreen hover:text-white hover:border-LightGreen active:bg-green600 disabled:bg-Grey disabled:border-Grey disabled:text-DarkGrey focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit;
 }
 
 // Button with arrow Style End
@@ -483,6 +483,10 @@
   background-repeat: no-repeat;
   background-position: center top;
   width: 100%;
+
+  @media (max-width: 767px) {
+    background-position: center bottom;
+  }
 }
 // Hero Section End
 
@@ -639,4 +643,24 @@
   width: 100%;
   background-color: white;
   @apply shadow-v1 z-50;
+}
+
+.bg-im-none {
+  @media (max-width: 1023.98px) {
+    background-image: none !important;
+  }
+}
+
+.hero-img-1 {
+  background-image: url(../img/Hero-img-1.png);
+
+  @media (max-width: 767px) {
+    background-image: url(../img/Hero-img-1-mob.png)
+  }
+}
+
+.form-block.lg\:w-full{
+  @media (max-width: 639px) {
+    width: calc(100% + 32px) !important;
+  }
 }

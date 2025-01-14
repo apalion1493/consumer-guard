@@ -1,6 +1,6 @@
-<div class="w-[808px] relative z-[2] mb-10 ml-auto shadow-v4 rounded-6xl overflow-hidden bg-white border border-Green py-16 px-[86px]">
-  <form class="row gap-x-6 gap-y-5">
-    <div class="col-span-6">
+<div class="form-block w-[808px] relative z-[2] mb-10 md:mb-0 xl:px-10 lg:w-full md:px-3 md:py-8 sm:-mx-4 ml-auto shadow-v4 rounded-6xl overflow-hidden bg-white border border-Green py-16 px-[86px]">
+  <form class="row gap-x-6 gap-y-5 md:gap-x-0">
+    <div class="col-span-6 md:col-span-12">
       @@include('input.html', {
       'common-style': 'input-icon',
       'StyleLabel': '',
@@ -12,7 +12,7 @@
       'placeholder': '',
       })
     </div>
-    <div class="col-span-6">
+    <div class="col-span-6 md:col-span-12">
       @@include('input.html', {
       'common-style': 'input-icon',
       'StyleLabel': '',
@@ -24,7 +24,7 @@
       'placeholder': '',
       })
     </div>
-    <div class="col-span-6">
+    <div class="col-span-6 md:col-span-12">
       @@include('input.html', {
       'common-style': 'input-icon',
       'StyleLabel': '',
@@ -36,7 +36,7 @@
       'placeholder': '',
       })
     </div>
-    <div class="col-span-6">
+    <div class="col-span-6 md:col-span-12">
       @@include('input.html', {
       'common-style': 'input-icon',
       'StyleLabel': '',
@@ -76,7 +76,7 @@
       })
 
       @@include('button.html', {
-      'style': 'shadow-v3 mt-14',
+      'style': 'shadow-v3 mt-14 md:w-full',
       'type': 'submit',
       'ariaLabel': 'Send',
       'title': 'Send',
