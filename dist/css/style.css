@@ -952,6 +952,9 @@ html {
 .grid{
   display: grid;
 }
+.contents{
+  display: contents;
+}
 .hidden{
   display: none;
 }
@@ -1214,11 +1217,11 @@ html {
 .max-w-\[748px\]{
   max-width: 748px;
 }
-.max-w-xs{
-  max-width: 20rem;
-}
 .max-w-full{
   max-width: 100%;
+}
+.max-w-xs{
+  max-width: 20rem;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -2118,10 +2121,38 @@ p{
 }
 
 .text-block a{
-  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(68 182 75 / var(--tw-text-opacity, 1));
   text-decoration-line: underline;
+}
+.text-block ul{
+  list-style-position: inside;
+  list-style-type: disc;
+  padding-left: 0.5rem;
+  font-size: 16px;
+  line-height: 130%;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+.text-block ul li{
+  font-size: 16px;
+  line-height: 130%;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+.text-block ol{
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  font-size: 16px;
+  line-height: 130%;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+.text-block ol li{
+  font-size: 16px;
+  line-height: 130%;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 a{
