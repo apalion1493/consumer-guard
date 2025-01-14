@@ -1581,6 +1581,9 @@ html {
 .pt-\[100px\]{
   padding-top: 100px;
 }
+.pt-\[112px\]{
+  padding-top: 112px;
+}
 .text-left{
   text-align: left;
 }
@@ -1780,9 +1783,6 @@ html {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-.duration-300{
-  transition-duration: 300ms;
 }
 .duration-100{
   transition-duration: 100ms;
@@ -3239,6 +3239,23 @@ a{
 
 .clear-button:hover {
   color: #333;
+}
+
+.sticky-header{
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sticky-header-active {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 50;
+  --tw-shadow: 0px 0px 25px 0px rgba(42, 43, 63, 0.15);;
+  --tw-shadow-colored: 0px 0px 25px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:border-Green:hover{

@@ -128,3 +128,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+window.addEventListener('scroll', function() {
+  const component = document.getElementById('sticky-header');
+  const componentHeight = component.offsetHeight;
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition >= componentHeight) {
+    component.classList.add('sticky-header-active');
+  } else {
+    component.classList.remove('sticky-header-active');
+  }
+});
+

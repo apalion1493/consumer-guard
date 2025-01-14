@@ -628,3 +628,15 @@
 .clear-button:hover {
   color: #333;
 }
+
+.sticky-header {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.sticky-header-active {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  @apply shadow-v1 z-50;
+}
