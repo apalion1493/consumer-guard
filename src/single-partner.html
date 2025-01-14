@@ -101,7 +101,15 @@
                 </div>
                 <div class="col-span-12">
                   <div class="relative">
-                    <input class="w-full" id="calendar" type="text" placeholder="Choose date" readonly />
+                    <div id="custom-input" class="custom-input input w-full" tabindex="0">
+                      <span id="selected-date" class="placeholder shadow-v6 h-[30px] flex items-center gap-x-1 text-body2 text-black px-2 py-1 border border-Green rounded">
+                        MM <span class="text-Green">/</span> DD <span class="text-Green">/</span> YY
+                      </span>
+                      <span id="selected-time" class="placeholder shadow-v6 h-[30px] flex items-center gap-x-1 text-body2 text-black px-2 py-1 border border-Green rounded">
+                        8:00 pm
+                      </span>
+                      <button id="clear-button" class="clear-button" aria-label="Clear">✕</button>
+                    </div>
                     <div id="calendar-container" class="w-[556px]" style="display: none; position: absolute; z-index: 100; border: 1px solid #ccc; background: #fff; padding: 10px; border-radius: 5px;">
                       <div id="vanilla-calendar" class="vanilla-calendar"></div>
                       <div id="time-picker">

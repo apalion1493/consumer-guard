@@ -581,3 +581,34 @@
 [data-vc-theme=light] .vc-date[data-vc-date-holiday] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-weekend] .vc-date__btn {
   @apply bg-LightBlue7 text-black
 }
+
+#time-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.custom-input {
+  position: relative;
+  @apply gap-x-2 cursor-pointer;
+}
+
+.custom-input .placeholder {
+  color: #B5B8D0 !important;
+}
+
+.clear-button {
+  border: none;
+  background: none;
+  color: #999;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.clear-button:hover {
+  color: #333;
+}

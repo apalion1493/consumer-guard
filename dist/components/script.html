@@ -5,36 +5,23 @@
   });
 
   document.addEventListener('DOMContentLoaded', () => {
-    // const options = {
-    //     inputMode: true,
-    //     positionToInput: 'auto',
-    //     onChangeToInput(self) {
-    //         if (!self.context.inputElement) return;
-    //         if (self.context.selectedDates[0]) {
-    //             self.context.inputElement.value = self.context.selectedDates[0];
-    //             // if you want to hide the calendar after picking a date
-    //             self.hide();
-    //         } else {
-    //             self.context.inputElement.value = '';
-    //         }
-    //     },
-    // };
-    // // Деструктуризация конструктора Calendar
-    // const { Calendar } = window.VanillaCalendarPro;
-    // // Создайте экземпляр календаря и инициализируйте его.
-    // const calendarInput = new Calendar('#calendar', options);
-    // calendarInput.init();
-
-    const calendarInput = document.getElementById('calendar');
+    const customInput = document.getElementById('custom-input');
+    const dateElement = document.getElementById('selected-date');
+    const timeElement = document.getElementById('selected-time');
+    const clearButton = document.getElementById('clear-button');
     const calendarContainer = document.getElementById('calendar-container');
     const calendarElement = document.getElementById('vanilla-calendar');
-    const timePicker = document.getElementById('time-picker');
     const timeOptions = document.getElementById('time-options');
     const { Calendar } = window.VanillaCalendarPro;
 
-// Инициализация календаря
+    // Инициализация календаря
     const calendar = new Calendar(calendarElement, {
       selectedTheme: 'light',
+      displayDateMin: '2025-01-01',
+      displayDateMax: '2025-12-30',
+      disableDates: ['2025-01-10:2025-01-13', '2025-01-22'],
+      selectedYear: 2025,
+      selectedMonth: 7,
       settings: {
         lang: 'en',
         iso8601: true,
@@ -44,38 +31,54 @@
       },
       onClickDate(self) {
         const selectedDate = self.context.selectedDates; // Получаем выбранную дату
-        calendarInput.value = selectedDate; // Устанавливаем дату в инпут
+        updateDate(selectedDate); // Обновляем дату в кастомном инпуте
         showTimePicker(); // Показываем выбор времени
       },
     });
 
-// Показываем контейнер с календарём при клике на инпут
-    calendarInput.addEventListener('click', (event) => {
+    // Показываем контейнер с календарём при клике на кастомный инпут
+    customInput.addEventListener('click', (event) => {
+      // Если клик по кнопке очистки, не показывать календарь
+      if (event.target === clearButton) return;
+
       calendarContainer.style.display = 'flex'; // Показываем контейнер
       calendarContainer.style.top = `50px`;
       calendarContainer.style.left = `0px`;
     });
 
-// Скрываем контейнер при клике вне его
+    // Скрываем контейнер при клике вне его
     document.addEventListener('click', (event) => {
       if (
         !calendarContainer.contains(event.target) && // Если клик вне календаря
-        event.target !== calendarInput // И не по самому инпуту
+        event.target !== customInput && // И не по кастомному инпуту
+        event.target.parentElement !== customInput // И не по его дочерним элементам
       ) {
         calendarContainer.style.display = 'none'; // Скрываем контейнер
       }
     });
 
-// Показываем выбор времени
+    // Обновляем дату
+    function updateDate(date) {
+      dateElement.textContent = date; // Устанавливаем выбранную дату
+      dateElement.classList.remove('placeholder'); // Убираем класс placeholder
+    }
+
+    // Обновляем время
+    function updateTime(time) {
+      timeElement.textContent = time; // Устанавливаем выбранное время
+      timeElement.classList.remove('placeholder'); // Убираем класс placeholder
+    }
+
+    // Показываем выбор времени
     function showTimePicker() {
       generateTimeSlots(); // Генерируем слоты времени
     }
 
-// Генерация временных слотов
+    // Генерация временных слотов
     function generateTimeSlots() {
       timeOptions.innerHTML = ''; // Очищаем предыдущие слоты
       const times = [
-        '09:00', '10:00', '11:00', '12:00', '13:00',
+        '09:00 am', '10:00 am', '11:00 am', '12:00 pm', '01:00 pm',
       ];
 
       times.forEach((time) => {
@@ -83,15 +86,24 @@
         timeButton.textContent = time;
         timeButton.classList.add('time-slot');
         timeButton.addEventListener('click', () => {
-          const currentValue = calendarInput.value.split(' ')[0]; // Извлекаем дату без времени
-          calendarInput.value = `${currentValue} ${time}`; // Добавляем новое время
+          updateTime(time); // Обновляем время в кастомном инпуте
           calendarContainer.style.display = 'none'; // Скрываем контейнер
         });
         timeOptions.appendChild(timeButton);
       });
     }
 
-// Инициализация календаря
+    // Очистка данных
+    clearButton.addEventListener('click', (event) => {
+      event.stopPropagation(); // Предотвращаем всплытие клика
+      dateElement.innerHTML = `${'MM <span class="text-Green">/</span> DD <span class="text-Green">/</span> YY'}`;
+      timeElement.textContent = ' 8:00 pm';
+      dateElement.classList.add('placeholder');
+      timeElement.classList.add('placeholder');
+    });
+
+    // Инициализация календаря
     calendar.init();
   });
+
 </script>
