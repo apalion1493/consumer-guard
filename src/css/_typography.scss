@@ -26,6 +26,13 @@ p {
   @apply text-body text-BlackText
 }
 
+.standard-ul {
+  li {
+    @apply text-body text-BlackText
+  }
+  @apply list-disc list-inside text-body text-BlackText pl-2
+}
+
 .text-block {
 
   a {

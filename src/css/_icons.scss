@@ -230,3 +230,27 @@
   background-size: 20px 20px;
   @apply block
 }
+
+.Location {
+  background: url("../img/icons/Location-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  @apply block
+}
+
+.Education {
+  background: url("../img/icons/Education-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  @apply block
+}
+
+.icon-check {
+  background: url("../img/icons/icon-check.svg") no-repeat center center;
+  background-size: 100% auto;
+  @apply block
+}
+
+.Practice-Areas {
+  background: url("../img/icons/Practice-Areas-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  @apply block
+}
