@@ -760,14 +760,8 @@ html {
 .top-1\/2{
   top: 50%;
 }
-.top-4{
-  top: 1rem;
-}
 .top-\[50px\]{
   top: 50px;
-}
-.-z-10{
-  z-index: -10;
 }
 .z-10{
   z-index: 10;
@@ -962,10 +956,6 @@ html {
   width: 1rem;
   height: 1rem;
 }
-.size-8{
-  width: 2rem;
-  height: 2rem;
-}
 .h-0{
   height: 0px;
 }
@@ -998,9 +988,6 @@ html {
 }
 .h-\[351px\]{
   height: 351px;
-}
-.h-\[40px\]{
-  height: 40px;
 }
 .h-\[412px\]{
   height: 412px;
@@ -1053,10 +1040,6 @@ html {
 .h-full{
   height: 100%;
 }
-.h-min{
-  height: -moz-min-content;
-  height: min-content;
-}
 .max-h-44{
   max-height: 11rem;
 }
@@ -1065,9 +1048,6 @@ html {
 }
 .max-h-screen{
   max-height: 100vh;
-}
-.min-h-\[56px\]{
-  min-height: 56px;
 }
 .min-h-\[600px\]{
   min-height: 600px;
@@ -1116,10 +1096,6 @@ html {
 }
 .w-\[86px\]{
   width: 86px;
-}
-.w-fit{
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .w-full{
   width: 100%;
@@ -1228,9 +1204,6 @@ html {
 }
 .flex-1{
   flex: 1 1 0%;
-}
-.flex-shrink-0{
-  flex-shrink: 0;
 }
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
@@ -1365,9 +1338,6 @@ html {
 .overflow-hidden{
   overflow: hidden;
 }
-.overflow-x-auto{
-  overflow-x: auto;
-}
 .overflow-y-auto{
   overflow-y: auto;
 }
@@ -1395,9 +1365,6 @@ html {
 .rounded-lg{
   border-radius: 0.5rem;
 }
-.rounded-none{
-  border-radius: 0px;
-}
 .rounded-xl{
   border-radius: 0.75rem;
 }
@@ -1410,9 +1377,6 @@ html {
 .border-b{
   border-bottom-width: 1px;
 }
-.border-b-2{
-  border-bottom-width: 2px;
-}
 .border-b-4{
   border-bottom-width: 4px;
 }
@@ -1422,20 +1386,9 @@ html {
 .border-r{
   border-right-width: 1px;
 }
-.border-none{
-  border-style: none;
-}
-.border-DarkBlue{
-  --tw-border-opacity: 1;
-  border-color: rgb(38 44 115 / var(--tw-border-opacity, 1));
-}
 .border-Green{
   --tw-border-opacity: 1;
   border-color: rgb(68 182 75 / var(--tw-border-opacity, 1));
-}
-.border-LightBlue{
-  --tw-border-opacity: 1;
-  border-color: rgb(248 248 255 / var(--tw-border-opacity, 1));
 }
 .border-LightBlue2{
   --tw-border-opacity: 1;
@@ -1477,9 +1430,6 @@ html {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
 }
-.bg-inherit{
-  background-color: inherit;
-}
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -1500,9 +1450,6 @@ html {
 .object-top{
   -o-object-position: top;
      object-position: top;
-}
-.p-1{
-  padding: 0.25rem;
 }
 .p-10{
   padding: 2.5rem;
@@ -1619,9 +1566,6 @@ html {
 .pl-\[86px\]{
   padding-left: 86px;
 }
-.pr-16{
-  padding-right: 4rem;
-}
 .pt-16{
   padding-top: 4rem;
 }
@@ -1701,9 +1645,6 @@ html {
 }
 .capitalize{
   text-transform: capitalize;
-}
-.leading-100{
-  line-height: 100%;
 }
 .text-BlackText{
   --tw-text-opacity: 1;
@@ -1835,6 +1776,17 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-transform{
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.duration-300{
+  transition-duration: 300ms;
+}
+.duration-100{
+  transition-duration: 100ms;
+}
 .border-none {
   border: none !important;
 }
@@ -1956,6 +1908,7 @@ select.select {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   appearance: none !important;
+  background-image: none;
   --tw-text-opacity: 1;
   color: rgb(38 44 115 / var(--tw-text-opacity, 1));
 }
@@ -3328,27 +3281,9 @@ a{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.focus\:border-0:focus{
-  border-width: 0px;
-}
-
-.focus\:shadow-none:focus{
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.focus\:ring-inherit:focus{
-  --tw-ring-color: inherit;
-}
-
-.focus-visible\:z-10:focus-visible{
-  z-index: 10;
 }
 
 .focus-visible\:bg-slate-800\/5:focus-visible{
@@ -3367,14 +3302,6 @@ a{
 .focus-visible\:outline-none:focus-visible{
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.focus-visible\:outline-0:focus-visible{
-  outline-width: 0px;
-}
-
-.focus-visible\:outline-offset-0:focus-visible{
-  outline-offset: 0px;
 }
 
 .group:hover .group-hover\:h-\[72px\]{
@@ -3426,9 +3353,6 @@ a{
   }
   .lg\:hidden{
     display: none;
-  }
-  .lg\:h-\[36px\]{
-    height: 36px;
   }
   .lg\:max-w-\[171x\]{
     max-width: 171x;

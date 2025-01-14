@@ -327,12 +327,27 @@
 </div>
     </div>
     <div class="col-span-12">
-      <div class="form-group flex flex-col items-start relative ">
+      <div x-data="{ isOpen: false }" class="form-group flex flex-col items-start relative ">
   <label class="mb-3 font-semibold text-body md:text-body2 " for="selectId">Select Service</label>
-  <svg class="absolute pointer-events-none right-4 bottom-6 h-[6px] w-[12px]" xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+
+  <svg
+    :class="{ 'rotate-180': isOpen }"
+    class="absolute pointer-events-none right-4 bottom-6 h-[6px] w-[12px] transition-transform duration-100"
+    xmlns="http://www.w3.org/2000/svg"
+    width="12"
+    height="7"
+    viewBox="0 0 12 7"
+    fill="none">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.414376 1.09205C0.673133 0.768607 1.1451 0.716166 1.46855 0.974923L6.00003 4.60011L10.5315 0.974923C10.855 0.716166 11.3269 0.768607 11.5857 1.09205C11.8444 1.4155 11.792 1.88747 11.4685 2.14623L6.46855 6.14623C6.19463 6.36536 5.80542 6.36536 5.53151 6.14623L0.531506 2.14623C0.20806 1.88747 0.155619 1.4155 0.414376 1.09205Z" fill="#44B64B"/>
   </svg>
-  <select id="selectId" required name="Select_Service" class="select w-full input">
+
+  <select
+    id="selectId"
+    required
+    name="Select_Service"
+    class="select w-full input"
+    @focus="isOpen = true"
+    @blur="isOpen = false">
     <option value="" selected disabled></option>
     <option value="Service1">Service 1</option>
     <option value="Service2">Service 2</option>
@@ -352,7 +367,7 @@
       <div class="flex flex-col">
   <label class="custom-checkbox">
     <span class="custom-checkbox__block w-5 min-w-5 h-5">
-      <i class="w-5 min-w-5 h-5 rounded bg-white border border-LightBlue2 flex"></i>
+      <i class="w-5 min-w-5 h-5 rounded bg-white border border-LightBlue3 flex"></i>
     </span>
     <input type="checkbox">
     <span class="checkmark">
