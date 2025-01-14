@@ -925,6 +925,12 @@ html {
 .mt-auto{
   margin-top: auto;
 }
+.mt-6{
+  margin-top: 1.5rem;
+}
+.mb-\[120px\]{
+  margin-bottom: 120px;
+}
 .line-clamp-5{
   overflow: hidden;
   display: -webkit-box;
