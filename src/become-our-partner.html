@@ -7,42 +7,283 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
-  <section class="pb-[59px] hero-section relative" style="background-image: url(img/Backgound-CU-page.png);">
+  <section class="pb-[59px] hero-section relative overflow-hidden" style="background-image: url(img/Hero-img-5.png)">
     @@include('components/Header.html', {
     'commonStyle': ' ',
     })
-    <div class="container pt-[100px]">
-      <div class="row gap-x-6">
-        <div class="col-span-12">
-          <div class="flex flex-col items-center mx-auto mb-6">
-            <h1 class="text-center text-Blue100 block font-semibold">About Us</h1>
-            <span class="border-0 border-b-4 border-Green w-[86px] my-8 @@StyleGreenLine"></span>
+    <span class="shadow-elem-hero-block-1 absolute -left-[281px] top-1/2 -translate-y-1/2"></span>
+    <span class="shadow-elem-hero-block-2 absolute -right-[390px] -top-[237px]"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-span-5 flex items-center">
+          <div class="flex flex-col max-w-[486px]">
+            <h1 class="text-h1 font-semibold text-Blue100 mb-8">Consumer Guard</h1>
+            <span class="text-Green text-h2-5 font-semibold mb-8">Where Partnerships <br>Drive Success.</span>
+            <p class="text-base text-BlackText">Become our partner to expand your
+              business and client relations.</p>
+            @@include('components/Link-icon.html', {
+            'style': 'mt-20 btn-icons',
+            'URL': '#',
+            'title': 'Apply',
+            })
           </div>
         </div>
-        <div class="col-span-6">
-
-        </div>
-        <div class="col-span-6">
-          <div class="relative max-w-[604px] w-full h-[780px] ml-auto">
-              <span class="absolute top-5 right-0 z-[1]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="263" height="537" viewBox="0 0 263 537" fill="none">
-                  <path d="M130.686 88.7548L261 2V66.5239L195.843 186.896L178.923 161.412M130.686 88.7548L2 2V66.5239L65.5283 186.896L82.4476 161.412M130.686 88.7548L82.4476 161.412M130.686 88.7548L178.923 161.412M82.4476 161.412L95.392 202.621M95.392 202.621H164.35M95.392 202.621L63.3564 441.739L130.686 535L196.929 441.739L164.35 202.621M164.35 202.621L178.923 161.412" stroke="#E7E9FC" stroke-width="3" stroke-linejoin="round"/>
-                </svg>
-              </span>
-            <div class="absolute top-0 right-[109px] z-[2] shadow-v1 overflow-hidden rounded-15 bg-gradient2">
-              <img src="img/img-4.png" alt="">
-            </div>
-            <div class="absolute top-[100px] left-0 z-[2] shadow-v1 overflow-hidden rounded-15 img-filter-1">
-              <img class="object-cover" width="276" height="354" src="img/img-5.png" alt="">
-            </div>
-            <div class="absolute bottom-6 right-0 z-[3] shadow-v1 overflow-hidden rounded-15 img-filter-2">
-              <img class="object-cover" width="281" height="202" src="img/img-6.png" alt="">
-            </div>
-          </div>
+        <div class="col-span-7 flex">
+          <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="530" height="693" viewBox="0 0 530 693"
+               fill="none">
+            <path
+              d="M2 203.605V66.113C57.9763 27.554 153.543 2 264.985 2C376.427 2 472.024 27.554 528 66.113V418.474C528 439.838 520.92 459.784 513.238 479.418C504.393 499.103 493.323 516.883 480.577 533.15M2 255.113V253.452M2 309.945V418.474C2 439.838 9.08022 459.784 16.7618 479.418C56.6792 568.254 141.935 618.324 222.117 665.414C236.684 673.969 251.085 682.427 265.015 691C278.936 682.433 293.325 673.982 307.88 665.433C342.34 645.193 377.734 624.404 410.065 600.225M446.213 570.259C446.808 569.707 447.4 569.153 447.99 568.597"
+              stroke="#44B64B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
         </div>
       </div>
     </div>
   </section>
+  <div class="bg-img-3" style="background-image: url(img/bg-img-2.png);">
+    <section class="section relative overflow-hidden">
+      <span class="shadow-elem-hero-block-1 absolute -left-[367px] top-1/2 -translate-y-1/2"></span>
+      <span class="shadow-elem-hero-block-3 absolute -right-[196px] -top-[20px]"></span>
+      <div class="container">
+        <div class="row gap-x-6">
+          <div class="col-span-5">
+            <div class="flex flex-col">
+              @@include('components/Title-block.html', {
+              'Style': '',
+              'SubtitleStyle': '',
+              'Subtitle': 'Benefits',
+              'Title': 'Benefits you get with us!',
+              'StyleGreenLine': '',
+              })
+              <p>At Consumer Guard, partners join a dedicated team that delivers a comprehensive suite of services focused
+                on credit reports.
+                This collaboration not only enhances the client experience by providing all necessary services in one
+                convenient location but also opens up opportunities for partners to boost their income through
+                cross-sales.
+                <br>
+                <br>
+                A commitment to exceptional service fosters long-term client relationships and repeat business.
+                Additionally, partners work together to address unique and non-standard client needs, ensuring tailored
+                solutions and high levels of satisfaction.</p>
+            </div>
+          </div>
+          <div class="col-span-1"></div>
+          <div class="col-span-6">
+            <div class="flex items-center justify-center overflow-hidden rounded-6xl w-full">
+              <img class="object-cover w-full" src="img/img-10.png" alt="Benefits you get with us!">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="row gap-6">
+          <div class="col-span-3">
+            @@include('components/Info-card.html', {
+            'Style': 'bg-LightBlue',
+            'Icon': 'Quick-solutions',
+            'Title': 'Quick solutions',
+            'Text': 'We guarantee the fastest resolution of any issue.',
+            })
+          </div>
+          <div class="col-span-3">
+            @@include('components/Info-card.html', {
+            'Style': 'bg-LightBlue',
+            'Icon': 'Reliability',
+            'Title': 'Reliability',
+            'Text': 'We are ready to be your reliable partners in all your matters.',
+            })
+          </div>
+          <div class="col-span-3">
+            @@include('components/Info-card.html', {
+            'Style': 'bg-LightBlue',
+            'Icon': 'Your-Secure',
+            'Title': 'Your Secure',
+            'Text': 'We guarantee your safety and the safety of your data.',
+            })
+          </div>
+          <div class="col-span-3">
+            @@include('components/Info-card.html', {
+            'Style': 'bg-LightBlue',
+            'Icon': 'Successful-Result',
+            'Title': 'Successful Result',
+            'Text': 'We will achieve the desired outcome in the shortest time.',
+            })
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="w-full bg-gradient1">
+    <section class="section">
+      <div class="container">
+        <div class="row gap-x-6">
+          <div class="col-span-6">
+            <div class="flex flex-col">
+              @@include('components/Title-block.html', {
+              'Style': '',
+              'SubtitleStyle': '',
+              'Subtitle': 'Locations',
+              'Title': 'Our Location',
+              'StyleGreenLine': '',
+              })
+              <div class="row gap-6">
+                <div class="col-span-6">
+                  @@include('components/Info-card.html', {
+                  'Style': 'bg-white',
+                  'Icon': 'Office',
+                  'Title': 'Comfortable Office',
+                  'Text': 'A 	comfortable office space in a busy plaza',
+                  })
+                </div>
+                <div class="col-span-6">
+                  @@include('components/Info-card.html', {
+                  'Style': 'bg-white',
+                  'Icon': 'Price',
+                  'Title': 'Affordable pricing',
+                  'Text': 'Affordable price in this particular location',
+                  })
+                </div>
+                <div class="col-span-6">
+                  @@include('components/Info-card.html', {
+                  'Style': 'bg-white',
+                  'Icon': 'Team',
+                  'Title': 'No competitors',
+                  'Text': 'No	competitors in that same location',
+                  })
+                </div>
+                <div class="col-span-6">
+                  @@include('components/Info-card.html', {
+                  'Style': 'bg-white',
+                  'Icon': 'Exclusivity',
+                  'Title': 'Exclusivity',
+                  'Text': 'Acquiring 	exclusivity because of limited sitting',
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-6">
+            <div class="flex items-center justify-center overflow-hidden rounded-15 max-w-[550px] ml-auto w-full h-full">
+              <img class="object-cover w-full h-full" src="img/img-11.png" alt="Our Location">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="row gap-x-6">
+          <div class="col-span-6">
+            <div class="flex items-center justify-center overflow-hidden rounded-15 max-w-[550px] mr-auto w-full h-full">
+              <img class="object-cover w-full h-full" src="img/img-12.png" alt="Referral Program">
+            </div>
+          </div>
+          <div class="col-span-6">
+            <div class="flex flex-col">
+              @@include('components/Title-block.html', {
+              'Style': '',
+              'SubtitleStyle': '',
+              'Subtitle': 'Referral program',
+              'Title': 'Referral Program',
+              'StyleGreenLine': '',
+              })
+              <div class="row gap-6">
+                <div class="col-span-6">
+                  @@include('components/Info-card.html', {
+                  'Style': 'bg-white',
+                  'Icon': 'Reliability',
+                  'Title': 'Referral Program',
+                  'Text': 'An opportunity to be a part of a beneficial referral program',
+                  })
+                </div>
+                <div class="col-span-6">
+                  @@include('components/Info-card.html', {
+                  'Style': 'bg-white',
+                  'Icon': 'Price',
+                  'Title': 'Finance',
+                  'Text': 'Opportunity to make extra money even on non-qualifiable leads',
+                  })
+                </div>
+                <div class="col-span-6">
+                  @@include('components/Info-card.html', {
+                  'Style': 'bg-white',
+                  'Icon': 'False-Deceased-Reporting',
+                  'Title': 'CRM System',
+                  'Text': 'Easy-to-use 	CRM system with 100% transparency',
+                  })
+                </div>
+                <div class="col-span-6">
+                  @@include('components/Info-card.html', {
+                  'Style': 'bg-white',
+                  'Icon': 'No-cost',
+                  'Title': 'No cost',
+                  'Text': 'No cost unless the lead becomes a client',
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="row gap-x-6">
+          <div class="col-span-6">
+            <div class="flex flex-col">
+              @@include('components/Title-block.html', {
+              'Style': '',
+              'SubtitleStyle': '',
+              'Subtitle': 'Marketing',
+              'Title': 'Marketing',
+              'StyleGreenLine': '',
+              })
+              <div class="row gap-6">
+                <div class="col-span-6">
+                  @@include('components/Info-card.html', {
+                  'Style': 'bg-white',
+                  'Icon': 'Marketing-icon',
+                  'Title': 'Marketing Services',
+                  'Text': 'Marketing 	services: targeting & Google ads',
+                  })
+                </div>
+                <div class="col-span-6">
+                  @@include('components/Info-card.html', {
+                  'Style': 'bg-white',
+                  'Icon': 'Brand-icon',
+                  'Title': 'Brand awareness',
+                  'Text': 'Brand awareness: display & social media',
+                  })
+                </div>
+                <div class="col-span-6">
+                  @@include('components/Info-card.html', {
+                  'Style': 'bg-white',
+                  'Icon': 'Statistics-icon',
+                  'Title': 'Statistics',
+                  'Text': 'Regularly 	provided statistics and reports',
+                  })
+                </div>
+                <div class="col-span-6">
+                  @@include('components/Info-card.html', {
+                  'Style': 'bg-white',
+                  'Icon': 'Icon-Attorney',
+                  'Title': 'No financial cost',
+                  'Text': 'No 	financial cost for human resources (marketing, designers)',
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-6">
+            <div class="flex items-center justify-center overflow-hidden rounded-15 max-w-[550px] ml-auto w-full h-full">
+              <img class="object-cover w-full h-full" src="img/img-13.png" alt="Marketing">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
 
   <section class="section relative bg-img-2" style="background-image: url(img/Background-footer.png);">
@@ -56,7 +297,8 @@
             'Title': 'Contact us <br> with any <br>questions.',
             'StyleGreenLine': '',
             })
-            <div class="shadow-v1 w-[526px] h-[412px] rounded-15 absolute bottom-1 left-0 z-[1] img-filter-5 overflow-hidden block">
+            <div
+              class="shadow-v1 w-[526px] h-[412px] rounded-15 absolute bottom-1 left-0 z-[1] img-filter-5 overflow-hidden block">
               <img width="526" height="412" class="object-cover rounded-15" src="img/img-9.png" alt="">
             </div>
           </div>

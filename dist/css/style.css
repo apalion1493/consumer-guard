@@ -709,8 +709,20 @@ html {
 .-left-\[280px\]{
   left: -280px;
 }
+.-left-\[281px\]{
+  left: -281px;
+}
+.-left-\[367px\]{
+  left: -367px;
+}
+.-right-\[196px\]{
+  right: -196px;
+}
 .-right-\[390px\]{
   right: -390px;
+}
+.-top-\[20px\]{
+  top: -20px;
 }
 .-top-\[237px\]{
   top: -237px;
@@ -742,9 +754,6 @@ html {
 .right-6{
   right: 1.5rem;
 }
-.right-\[109px\]{
-  right: 109px;
-}
 .top-0{
   top: 0px;
 }
@@ -753,12 +762,6 @@ html {
 }
 .top-4{
   top: 1rem;
-}
-.top-5{
-  top: 1.25rem;
-}
-.top-\[100px\]{
-  top: 100px;
 }
 .top-\[50px\]{
   top: 50px;
@@ -780,9 +783,6 @@ html {
 }
 .z-\[2\]{
   z-index: 2;
-}
-.z-\[3\]{
-  z-index: 3;
 }
 .col-span-1{
   grid-column: span 1 / span 1;
@@ -1195,6 +1195,9 @@ html {
 }
 .max-w-\[529px\]{
   max-width: 529px;
+}
+.max-w-\[550px\]{
+  max-width: 550px;
 }
 .max-w-\[561px\]{
   max-width: 561px;
@@ -2419,6 +2422,66 @@ a{
   display: block;
 }
 
+.Office {
+  background: url("../img/icons/Office.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Price {
+  background: url("../img/icons/Price.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Team {
+  background: url("../img/icons/Team.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Exclusivity {
+  background: url("../img/icons/Exclusivity.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Reliability {
+  background: url("../img/icons/Reliability-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.False-Deceased-Reporting {
+  background: url("../img/icons/False-Deceased-Reporting-60.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.No-cost {
+  background: url("../img/icons/No-cost.svg") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Marketing-icon {
+  background: url("../img/icons/Marketing-icon.png") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Brand-icon {
+  background: url("../img/icons/Brand-icon.png") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.Statistics-icon {
+  background: url("../img/icons/Statistics-icon.png") no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+}
+
 .button{
   display: flex;
   height: 4rem;
@@ -3038,6 +3101,15 @@ a{
   height: 780px;
 }
 
+.shadow-elem-hero-block-3 {
+  border-radius: 780px;
+  opacity: 0.2;
+  background: radial-gradient(61.92% 61.92% at 37.2% 45.12%, #44B64B 0%, #262C73 100%);
+  filter: blur(150px);
+  width: 393px;
+  height: 393px;
+}
+
 .hero-section {
   background-size: cover;
   background-repeat: no-repeat;
@@ -3112,6 +3184,13 @@ a{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+  width: 100%;
+}
+
+.bg-img-3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
   width: 100%;
 }
 

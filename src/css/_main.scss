@@ -468,6 +468,15 @@
   height: 780px;
 }
 
+.shadow-elem-hero-block-3 {
+  border-radius: 780px;
+  opacity: 0.2;
+  background: radial-gradient(61.92% 61.92% at 37.2% 45.12%, #44B64B 0%, #262C73 100%);
+  filter: blur(150px);
+  width: 393px;
+  height: 393px;
+}
+
 // Hero Section Start
 .hero-section {
   background-size: cover;
@@ -544,6 +553,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+  width: 100%;
+}
+
+.bg-img-3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
   width: 100%;
 }
 
