@@ -26,7 +26,7 @@
 <main id="content" class="flex flex-col items-center min-h-screen">
   <section class="pb-[59px] hero-section relative" style="background-image: url(img/Backgound-CU-page.png);">
     <header class="flex flex-col w-full relative z-10  ">
-  <div x-data="{dropdownOpen: false}" class="w-full flex flex-col">
+  <div class="w-full flex flex-col">
     <div class="py-6">
       <div class="container flex items-center w-full">
         <a class="lg:max-w-[171x] minlg:min-w-[140px] mr-3" href="index.html">
@@ -37,17 +37,11 @@
             <div class="items-center minlg:h-14 flex justify-end relative">
               <nav class="mx-auto lg:hidden">
                 <div class="container px-0 mx-auto flex justify-center items-center gap-x-5 w-full">
-                  <!--                  <button @click="dropdownOpen = !dropdownOpen"-->
-                  <!--                          class="inline-flex items-center py-2 text-center text-DarkBlue hover:text-LightBlue transition-colors text-base lg:text-body2"-->
-                  <!--                          :class="dropdownOpen ? 'text-LightBlue' : ''"-->
-                  <!--                          data-menu-target="menu1">Services <span-->
-                  <!--                    :class="dropdownOpen ? 'rotate-180' : ''"-->
-                  <!--                    class="check-icon-menu transition-all ml-2"></span></button>-->
-                  <a href="#"
+                  <a href="services.html"
                      class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Services</a>
-                  <a href="#"
+                  <a href="locations.html"
                      class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Locations</a>
-                  <a href="#"
+                  <a href="partners.html"
                      class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Partners</a>
                   <a href="About-us.html"
                      class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">About
@@ -71,122 +65,6 @@
                     d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
-        </div>
-      </div>
-    </div>
-    <div class="container md:hidden">
-      <!-- Mega Menus -->
-      <div style="display: none" x-cloak x-show="dropdownOpen" @click.outside="dropdownOpen = false"
-           x-transition.opacity.duration.200ms
-           x-trap.inert.noscroll="dropdownOpen" class="relative">
-        <div x-show="dropdownOpen"
-             x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity"
-             x-transition:enter-start="opacity-0 scale-50" x-transition:enter-end="opacity-100 scale-100"
-             id="menu1"
-             class="mega-menu min-w-[1204px] rounded-xl border border-primary border-solid absolute top-3 left-1/2 -translate-x-1/2 bg-white z-50 p-8">
-          <div class="grid grid-cols-3 minxl:grid-cols-5 gap-x-12 gap-y-4">
-            <div class="flex flex-col gap-4">
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Neurology-40 mr-3 min-w-10"></i>
-                Neurology
-              </a>
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Oncology-40 mr-3 min-w-10"></i>
-                Oncology
-              </a>
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Cardiology-40 mr-3 min-w-10"></i>
-                Cardiology
-              </a>
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Hematology-40 mr-3 min-w-10"></i>
-                Hematology
-              </a>
-            </div>
-            <div class="flex flex-col gap-4">
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Fertility-40 mr-3 min-w-10"></i>
-                Fertility
-              </a>
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Urology-40 mr-3 min-w-10"></i>
-                Urology
-              </a>
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Obgyn-40 mr-3 min-w-10"></i>
-                Obgyn
-              </a>
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Erectile-Disfunction-40 mr-3 min-w-10"></i>
-                Erectile Disfunction
-              </a>
-            </div>
-            <div class="flex flex-col gap-4">
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Pulmonology-40 mr-3 min-w-10"></i>
-                Pulmonology
-              </a>
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Endochrinology-40 mr-3 min-w-10"></i>
-                Endocrinology
-              </a>
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Rheymatology-40 mr-3 min-w-10"></i>
-                Rheymotology
-              </a>
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Gastroenterology-40 mr-3 min-w-10"></i>
-                Gastroenterology
-              </a>
-            </div>
-            <div class="flex flex-col gap-4">
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Allergy-40 mr-3 min-w-10"></i>
-                Allergy
-              </a>
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Infection-40 mr-3 min-w-10"></i>
-                Infection
-              </a>
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Weight-Loss-40 mr-3 min-w-10"></i>
-                Weight Loss
-              </a>
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Dermatology-40 mr-3 min-w-10"></i>
-                Dermatology
-              </a>
-            </div>
-            <div class="flex flex-col gap-4">
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Sugar-Control-40 mr-3 min-w-10"></i>
-                Sugar Control
-              </a>
-              <a href="#"
-                 class="text-DarkBlue text-Top3 inline-flex items-center transition-colors hover:text-LightBlue">
-                <i class="Ophtalmology-40 mr-3 min-w-10"></i>
-                Ophtalmology
-              </a>
-            </div>
-          </div>
-          <a href="#" class="text-body block mt-6 text-DarkBlue underline font-semibold md:text-body4">Show All</a>
         </div>
       </div>
     </div>
@@ -663,26 +541,26 @@
         <div class="flex flex-col">
           <ul class="flex flex-col gap-y-3">
             <li class="flex items-center">
-              <a class="text-white text-body transition-colors hover:text-Green" href="#">Services</a>
+              <a class="text-white text-body transition-colors hover:text-Green" href="services.html">Services</a>
             </li>
             <li class="flex items-center">
-              <a class="text-white text-body transition-colors hover:text-Green" href="#">Partners</a>
+              <a class="text-white text-body transition-colors hover:text-Green" href="partners.html">Partners</a>
             </li>
             <li class="flex items-center">
-              <a class="text-white text-body transition-colors hover:text-Green" href="#">About Us</a>
+              <a class="text-white text-body transition-colors hover:text-Green" href="about-us.html">About Us</a>
             </li>
             <li class="flex items-center">
-              <a class="text-white text-body transition-colors hover:text-Green" href="#">Contacts</a>
+              <a class="text-white text-body transition-colors hover:text-Green" href="contacts-us.html">Contacts</a>
             </li>
           </ul>
         </div>
         <div class="flex flex-col">
           <ul class="flex flex-col gap-y-3">
             <li class="flex items-center">
-              <a class="text-white text-body transition-colors hover:text-Green" href="#">Terms and Conditions</a>
+              <a class="text-white text-body transition-colors hover:text-Green" href="Terms&Conditions.html">Terms and Conditions</a>
             </li>
             <li class="flex items-center">
-              <a class="text-white text-body transition-colors hover:text-Green" href="#">Privacy Policy</a>
+              <a class="text-white text-body transition-colors hover:text-Green" href="Terms&Conditions.html">Privacy Policy</a>
             </li>
           </ul>
         </div>
