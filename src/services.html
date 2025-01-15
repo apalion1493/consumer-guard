@@ -7,7 +7,7 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
-  <section class="pb-[59px] pt-[112px] hero-section relative bg-gradient1">
+  <section class="pb-[59px] pt-[112px] lg:pt-[96px] md:pt-20 hero-section relative bg-gradient1">
     @@include('components/Header.html', {
     'commonStyle': ' ',
     })
@@ -77,7 +77,10 @@
     <div class="container">
       <div class="row gap-y-8">
         <div class="col-span-12">
-          @@include('components/Dropdown-services.html')
+          @@include('components/Dropdown-services.html', {
+          'Title': 'Credit Reporting Errors Attorneys',
+          'MainIcon': 'speed-2',
+          })
         </div>
         <div class="col-span-12">
           @@include('components/Dropdown-Practices.html', {
@@ -264,24 +267,26 @@
     </section>
   </div>
 
-
-  <section class="section relative bg-img-2" style="background-image: url(img/Background-footer.png);">
+  <section class="section relative bg-img-2 overflow-hidden bg-im-none"
+           style="background-image: url(img/Background-footer.png);">
     <div class="container">
       <div class="row">
-        <div class="col-span-12 flex">
+        <div class="col-span-12 flex lg:flex-col">
           <div class="max-w-[400px] w-full flex flex-col relative">
             @@include('components/Title-block.html', {
             'Style': '',
             'Subtitle': 'Contact us',
-            'Title': 'Contact us <br> with any <br>questions.',
+            'Title': 'Contact us <br> today',
             'StyleGreenLine': '',
             })
             <div
-              class="shadow-v1 w-[526px] h-[412px] rounded-15 absolute bottom-1 left-0 z-[1] img-filter-5 overflow-hidden block">
+              class="lg:hidden shadow-v1 w-[526px] h-[412px] rounded-15 absolute bottom-1 left-0 z-[1] img-filter-5 overflow-hidden block">
               <img width="526" height="412" class="object-cover rounded-15" src="img/img-9.png" alt="">
             </div>
           </div>
-          @@include('components/Form-block.html')
+          @@include('components/Form-block.html', {
+          'Style': 'ml-auto'
+          })
         </div>
       </div>
     </div>
