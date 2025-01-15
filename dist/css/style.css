@@ -3628,6 +3628,15 @@ a{
   .lg\:top-0{
     top: 0px;
   }
+  .lg\:order-1{
+    order: 1;
+  }
+  .lg\:order-2{
+    order: 2;
+  }
+  .lg\:order-3{
+    order: 3;
+  }
   .lg\:col-span-12{
     grid-column: span 12 / span 12;
   }
@@ -3718,11 +3727,17 @@ a{
   .lg\:max-w-full{
     max-width: 100%;
   }
+  .lg\:max-w-\[400px\]{
+    max-width: 400px;
+  }
   .lg\:flex-1{
     flex: 1 1 0%;
   }
   .lg\:flex-col{
     flex-direction: column;
+  }
+  .lg\:flex-col-reverse{
+    flex-direction: column-reverse;
   }
   .lg\:gap-x-0{
     -moz-column-gap: 0px;
@@ -3734,6 +3749,9 @@ a{
   .lg\:gap-y-8{
     row-gap: 2rem;
   }
+  .lg\:gap-y-4{
+    row-gap: 1rem;
+  }
   .lg\:rounded-none{
     border-radius: 0px;
   }
@@ -3743,6 +3761,10 @@ a{
   .lg\:bg-white{
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  }
+  .lg\:bg-LightBlue{
+    --tw-bg-opacity: 1;
+    background-color: rgb(248 248 255 / var(--tw-bg-opacity, 1));
   }
   .lg\:p-0{
     padding: 0px;
@@ -3836,6 +3858,9 @@ a{
   .md\:gap-y-8{
     row-gap: 2rem;
   }
+  .md\:gap-y-4{
+    row-gap: 1rem;
+  }
   .md\:overflow-y-scroll{
     overflow-y: scroll;
   }
@@ -3856,6 +3881,9 @@ a{
   }
   .md\:pt-20{
     padding-top: 5rem;
+  }
+  .md\:pb-12{
+    padding-bottom: 3rem;
   }
   .md\:text-center{
     text-align: center;

@@ -7,19 +7,19 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
-  <section class="pb-[59px] pt-[112px] hero-section relative" style="background-image: url(img/Backgound-CU-page.png);">
+  <section class="pb-[59px] pt-[112px] lg:pt-[96px] md:pt-20 md:pb-12 hero-section relative" style="background-image: url(img/Backgound-CU-page.png);">
     @@include('components/Header.html', {
     'commonStyle': ' ',
     })
-    <div class="container pt-[100px]">
-      <div class="row gap-x-6">
-        <div class="col-span-12">
+    <div class="container pt-[100px] lg:pt-12">
+      <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-8">
+        <div class="col-span-12 lg:order-1">
           <div class="flex flex-col items-center mx-auto mb-6">
-            <h1 class="text-center text-Blue100 block font-semibold">About Us</h1>
-            <span class="border-0 border-b-4 border-Green w-[86px] my-8 @@StyleGreenLine"></span>
+            <h1 class="text-center text-Blue100 block font-semibold lg:text-Top6">About Us</h1>
+            <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:mb-0 lg:mt-4"></span>
           </div>
         </div>
-        <div class="col-span-6">
+        <div class="col-span-6 lg:col-span-12 lg:order-3" md:col-span-12>
           <div class="flex flex-col">
             <!--            <h3 class="text-Top6 ">Admodum interesset quo an, ne vis dicit volutpat posidonium.</h3>-->
             <!--            <span class="border-0 border-b-4 border-Green w-[86px] my-8 @@StyleGreenLine"></span>-->
@@ -36,8 +36,8 @@
               services are accessed and managed. At Consumer Guard, we don’t just meet your expectations—we exceed them.
               Let us be your trusted partner in achieving your goals.
             </p>
-            <div class="row gap-6 mt-8">
-              <div class="col-span-6">
+            <div class="row gap-6 md:gap-x-0 md:gap-y-4 mt-8">
+              <div class="col-span-6 md:col-span-12">
                 @@include('components/Info-card.html', {
                 'Style': 'bg-white',
                 'Icon': 'Quick-solutions',
@@ -45,7 +45,7 @@
                 'Text': 'Trust us for tailored, dependable solutions.',
                 })
               </div>
-              <div class="col-span-6">
+              <div class="col-span-6 md:col-span-12">
                 @@include('components/Info-card.html', {
                 'Style': 'bg-white',
                 'Icon': 'Reliability',
@@ -53,7 +53,7 @@
                 'Text': 'Your data is protected with top-tier standards.',
                 })
               </div>
-              <div class="col-span-6">
+              <div class="col-span-6 md:col-span-12">
                 @@include('components/Info-card.html', {
                 'Style': 'bg-white',
                 'Icon': 'Your-Secure',
@@ -61,7 +61,7 @@
                 'Text': 'We deliver proven results every time.',
                 })
               </div>
-              <div class="col-span-6">
+              <div class="col-span-6 md:col-span-12">
                 @@include('components/Info-card.html', {
                 'Style': 'bg-white',
                 'Icon': 'Successful-Result',
@@ -72,18 +72,18 @@
             </div>
           </div>
         </div>
-        <div class="col-span-6">
-          <div class="relative max-w-[604px] w-full h-[780px] ml-auto">
+        <div class="col-span-6 lg:col-span-12 lg:order-2">
+          <div class="relative max-w-[604px] w-full h-[780px] ml-auto lg:mx-auto lg:max-w-[400px] lg:h-auto">
             <img src="img/hero-img-block-2.png" alt="About Us Img">
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="section relative">
+  <section class="section relative lg:bg-LightBlue">
     <div class="container">
-      <div class="bg-LightBlue rounded-6xl py-20 px-[86px]">
-        <div class="flex gap-x-3 justify-between">
+      <div class="bg-LightBlue rounded-6xl py-20 px-[86px] xl:px-10 lg:px-0 lg:py-0">
+        <div class="flex gap-x-3 justify-between lg:flex-col">
           <div class="flex flex-col max-w-[414px]">
             @@include('components/Title-block.html', {
             'Style': '',
@@ -101,7 +101,7 @@
             <img src="img/Imge-group-1.png" alt="">
           </div>
         </div>
-        <div class="flex gap-x-3 items-center justify-between">
+        <div class="flex gap-x-3 items-center justify-between lg:flex-col-reverse">
           <div class="relative max-w-[529px] w-full h-[565px] mr-auto">
             <img src="img/Imge-group-2.png" alt="">
           </div>
@@ -120,7 +120,7 @@
     <div class="container">
       <div class="row">
         <div class="col-span-12">
-          <div class="flex flex-col mb-6">
+          <div class="flex flex-col mb-6 lg:mb-0">
             @@include('components/Title-block.html', {
             'Style': '',
             'SubtitleStyle': 'hidden',
@@ -131,8 +131,8 @@
           </div>
         </div>
       </div>
-      <div class="row gap-6">
-        <div class="col-span-4">
+      <div class="row gap-6 lg:gap-x-0 lg:gap-y-4">
+        <div class="col-span-4 lg:col-span-12">
           @@include('components/Info-card-2.html', {
           'icon': 'Quick-solutions',
           'Style': 'bg-LightBlue',
@@ -140,7 +140,7 @@
           'Text': 'We build lasting relationships by being honest, transparent, and reliable in everything we do.',
           })
         </div>
-        <div class="col-span-4">
+        <div class="col-span-4 lg:col-span-12">
           @@include('components/Info-card-2.html', {
           'icon': 'Quick-solutions',
           'Style': 'bg-LightBlue',
@@ -148,7 +148,7 @@
           'Text': 'Your needs drive our actions. We are committed to delivering personalized solutions with the highest level of professionalism.',
           })
         </div>
-        <div class="col-span-4">
+        <div class="col-span-4 lg:col-span-12">
           @@include('components/Info-card-2.html', {
           'icon': 'Quick-solutions',
           'Style': 'bg-LightBlue',
@@ -159,25 +159,26 @@
       </div>
     </div>
   </section>
-
-
-  <section class="section relative bg-img-2" style="background-image: url(img/Background-footer.png);">
+  <section class="section relative bg-img-2 overflow-hidden bg-im-none"
+           style="background-image: url(img/Background-footer.png);">
     <div class="container">
       <div class="row">
-        <div class="col-span-12 flex">
+        <div class="col-span-12 flex lg:flex-col">
           <div class="max-w-[400px] w-full flex flex-col relative">
             @@include('components/Title-block.html', {
             'Style': '',
             'Subtitle': 'Contact us',
-            'Title': 'Contact us <br> with any <br>questions.',
+            'Title': 'Contact us <br> today',
             'StyleGreenLine': '',
             })
             <div
-              class="shadow-v1 w-[526px] h-[412px] rounded-15 absolute bottom-1 left-0 z-[1] img-filter-5 overflow-hidden block">
+              class="lg:hidden shadow-v1 w-[526px] h-[412px] rounded-15 absolute bottom-1 left-0 z-[1] img-filter-5 overflow-hidden block">
               <img width="526" height="412" class="object-cover rounded-15" src="img/img-9.png" alt="">
             </div>
           </div>
-          @@include('components/Form-block.html')
+          @@include('components/Form-block.html', {
+          'Style': 'ml-auto'
+          })
         </div>
       </div>
     </div>
