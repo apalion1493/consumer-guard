@@ -3359,7 +3359,7 @@ a{
 
 /* Если меню активно */
 #mobile-menu.show {
-  transform: translateX(11px); /* Показываем меню */
+  transform: translateX(0px); /* Показываем меню */
 }
 
 .burger-line.open:first-child {
@@ -3383,6 +3383,20 @@ a{
   overflow: visible;
   width: calc(100% + 12px);
   padding-bottom: 75px;
+}
+.swiperAreas.swiper .swiper-pagination-bullet{
+  height: 10px;
+  width: 10px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(213 213 221 / var(--tw-bg-opacity, 1));
+  opacity: 1;
+}
+.swiperAreas.swiper .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  width: 28px;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 182 75 / var(--tw-bg-opacity, 1));
 }
 .swiperAreas.swiper .swiper-slide {
   width: auto;

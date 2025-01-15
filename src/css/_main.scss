@@ -682,7 +682,7 @@
 
 /* Если меню активно */
 #mobile-menu.show {
-  transform: translateX(11px); /* Показываем меню */
+  transform: translateX(0px); /* Показываем меню */
 }
 
 .burger-line.open:first-child {
@@ -705,6 +705,14 @@
   overflow: visible;
   width: calc(100% + 12px);
   padding-bottom: 75px;
+
+  .swiper-pagination-bullet {
+    @apply w-[10px] h-[10px] rounded-full bg-Grey opacity-100
+  }
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    @apply w-[28px] rounded-xl bg-Green
+  }
 
   .swiper-slide {
     width: auto;
