@@ -664,3 +664,35 @@
     width: calc(100% + 32px) !important;
   }
 }
+
+.mobile-menu {
+  min-height: 100vh;
+}
+
+#mobile-menu {
+  position: fixed;
+  top: 79px;
+  left: 0;
+  width: 100%; /* Ширина меню */
+  height: 100%;
+  transform: translateX(-100%); /* По умолчанию скрыто за экраном */
+  transition: transform 0.3s ease; /* Анимация появления */
+  background: #fff;
+}
+
+/* Если меню активно */
+#mobile-menu.show {
+  transform: translateX(11px); /* Показываем меню */
+}
+
+.burger-line.open:first-child {
+  transform: rotate(45deg) translateY(6px) translateX(5px);
+}
+
+.burger-line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-line.open:last-child {
+  transform: rotate(-45deg) translateY(-6px) translateX(5px);
+}

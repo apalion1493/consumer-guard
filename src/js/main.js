@@ -12,54 +12,48 @@ window.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', function() {
   const burgerButton = document.getElementById('burger-button');
   const mobileMenu = document.getElementById('mobile-menu');
+  const burgerLines = document.querySelectorAll('.burger-line');
 
   const toggleMenu = () => {
-    mobileMenu.classList.toggle('active');
+    mobileMenu.classList.toggle('show');
     document.body.classList.toggle('overflow-hidden');
+    burgerLines.forEach((line) => {
+      line.classList.toggle('open');
+    });
   };
 
   burgerButton?.addEventListener('click', toggleMenu);
 });
 
-window.addEventListener('DOMContentLoaded', () => {
-  const modal = document.getElementById('modal');
-  const openModalBtn = document.getElementById('openModal');
-  const closeModalElements = document.querySelectorAll('.close-modal');
-
-  if (modal && openModalBtn && closeModalElements) {
-    const openModal = () => {
-      modal.classList.remove('hidden');
-    };
-
-    const closeModal = () => {
-      modal.classList.add('hidden');
-    };
-
-    openModalBtn.addEventListener('click', openModal);
-
-    closeModalElements.forEach(el => {
-      el.addEventListener('click', closeModal);
-    });
-
-    window.addEventListener('click', event => {
-      if (event.target === modal) {
-        closeModal();
-      }
-    });
-  } else {
-    // console.error('test')
-  }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  const burgerButton = document.getElementById('burger-button');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  burgerButton?.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
-    document.body.classList.toggle('overflow-hidden');
-  });
-});
+// window.addEventListener('DOMContentLoaded', () => {
+//   const modal = document.getElementById('modal');
+//   const openModalBtn = document.getElementById('openModal');
+//   const closeModalElements = document.querySelectorAll('.close-modal');
+//
+//   if (modal && openModalBtn && closeModalElements) {
+//     const openModal = () => {
+//       modal.classList.remove('hidden');
+//     };
+//
+//     const closeModal = () => {
+//       modal.classList.add('hidden');
+//     };
+//
+//     openModalBtn.addEventListener('click', openModal);
+//
+//     closeModalElements.forEach(el => {
+//       el.addEventListener('click', closeModal);
+//     });
+//
+//     window.addEventListener('click', event => {
+//       if (event.target === modal) {
+//         closeModal();
+//       }
+//     });
+//   } else {
+//     // console.error('test')
+//   }
+// });
 
 document.querySelectorAll('.menu-btn').forEach(button => {
   button.addEventListener('click', () => {
@@ -75,47 +69,6 @@ document.querySelectorAll('.menu-btn').forEach(button => {
         menu.classList.add('hidden');
       }
     });
-  });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  const wishlistButtonOpen = document.querySelector('#wishlist-open');
-  const wishlistBlock = document.querySelector('#wishlist');
-  const wishlistCloseBtn = document.querySelector('#wishlist-close');
-  const wishlistBg = document.querySelector('#wishlist-bg');
-
-  wishlistButtonOpen?.addEventListener('click', () => {
-    wishlistBlock.classList.add('active');
-    wishlistBg.classList.remove('hidden');
-    document.body.classList.add('overflow-hidden');
-  });
-
-  wishlistCloseBtn?.addEventListener('click', () => {
-    wishlistBlock.classList.remove('active');
-    wishlistBg.classList.add('hidden');
-    document.body.classList.remove('overflow-hidden');
-  });
-
-  wishlistBg?.addEventListener('click', () => {
-    wishlistBlock.classList.remove('active');
-    wishlistBg.classList.add('hidden');
-    document.body.classList.remove('overflow-hidden');
-  });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const buttonSearch = document.querySelector('#search-button');
-  const searchContainer = document.querySelector('.searchContainer');
-
-  buttonSearch?.addEventListener('click', (e) => {
-    e.stopPropagation(); // Остановить всплытие события, чтобы не сработал обработчик на document
-    searchContainer?.classList.toggle('active');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!searchContainer?.contains(e.target)) { // Если клик не внутри searchContainer
-      searchContainer?.classList.remove('active'); // Убрать класс active
-    }
   });
 });
 
