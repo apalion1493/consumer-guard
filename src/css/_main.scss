@@ -696,3 +696,7 @@
 .burger-line.open:last-child {
   transform: rotate(-45deg) translateY(-6px) translateX(5px);
 }
+
+.map-style-1 {
+  @apply  h-[800px] w-full lg:h-[500px]
+}
