@@ -38,7 +38,7 @@
     });
 
     // Показываем контейнер с календарём при клике на кастомный инпут
-    customInput.addEventListener('click', (event) => {
+    customInput?.addEventListener('click', (event) => {
       // Если клик по кнопке очистки, не показывать календарь
       if (event.target === clearButton) return;
 
@@ -86,7 +86,7 @@
         const timeButton = document.createElement('button');
         timeButton.textContent = time;
         timeButton.classList.add('time-slot');
-        timeButton.addEventListener('click', () => {
+        timeButton?.addEventListener('click', () => {
           updateTime(time); // Обновляем время в кастомном инпуте
           calendarContainer.style.display = 'none'; // Скрываем контейнер
         });
@@ -95,7 +95,7 @@
     }
 
     // Очистка данных
-    clearButton.addEventListener('click', (event) => {
+    clearButton?.addEventListener('click', (event) => {
       event.stopPropagation(); // Предотвращаем всплытие клика
       dateElement.innerHTML = `${'MM <span class="text-Green">/</span> DD <span class="text-Green">/</span> YY'}`;
       timeElement.textContent = ' 8:00 pm';

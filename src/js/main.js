@@ -1,7 +1,21 @@
 window.addEventListener('DOMContentLoaded', () => {
-  const swiper1 = new Swiper('.swiper-container-categories', {
-    slidesPerView: 4,
+  const swiper1 = new Swiper('.swiperAreas', {
+    // Optional parameters
+    slidesPerView: '3',
     spaceBetween: 24,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    scrollbar: false,
+    breakpoints: {
+      1024: {
+        slidesPerView: 2,
+      },
+
+      0: {
+        slidesPerView: 'auto',
+      },
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

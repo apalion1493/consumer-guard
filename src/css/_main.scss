@@ -698,5 +698,45 @@
 }
 
 .map-style-1 {
-  @apply  h-[800px] w-full lg:h-[500px]
+  @apply  h-[800px] w-full
+}
+
+.swiperAreas.swiper {
+  overflow: visible;
+  width: calc(100% + 12px);
+  padding-bottom: 75px;
+
+  .swiper-slide {
+    width: auto;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    @apply w-10 h-10 rounded-full flex justify-center items-center overflow-hidden text-none hover:cursor-pointer border border-Green
+    bottom-0 top-auto bg-Green
+  }
+
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    @apply text-Green text-body2
+  }
+
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    @apply text-Green text-body2
+  }
+
+  .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
+    background: #ffffff;
+  }
+}
+
+.swiperAreas.swiper .swiper-button-prev:after, .swiperAreas.swiper .swiper-rtl .swiper-button-next:after {
+  color: #ffffff !important;
+}
+
+.swiperAreas.swiper .swiper-button-next:after, .swiperAreas.swiper .swiper-rtl .swiper-button-prev:after {
+  color: #ffffff !important;
+}
+
+.swiperAreas.swiper .swiper-button-next.swiper-button-disabled:after, .swiperAreas.swiper .swiper-button-prev.swiper-button-disabled:after {
+  color: #44B64B !important;
 }

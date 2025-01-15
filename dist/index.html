@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
   <style>
 
@@ -107,8 +108,10 @@
       <div class="row gap-x-6 md:gap-x-0 md:pt-12">
         <div class="col-span-5 lg:col-span-7 md:col-span-12 flex items-center">
           <div class="flex flex-col max-w-[486px] lg:max-w-full">
-            <h1 class="text-h1 md:text-Top6 lg:text-h4 md:text-center font-semibold text-Blue100 mb-8">All Solutions in One Location</h1>
-            <p class="text-base text-BlackText md:text-center">Save Time, Solve Everything with Confidence and Convenience—Consumer
+            <h1 class="text-h1 md:text-Top6 lg:text-h4 md:text-center font-semibold text-Blue100 mb-8">All Solutions in
+              One Location</h1>
+            <p class="text-base text-BlackText md:text-center">Save Time, Solve Everything with Confidence and
+              Convenience—Consumer
               Guard Has You Covered.</p>
             <a class="button group relative mt-20 btn-icons md:hidden" href="#">
   <span class="">Button</span>
@@ -123,7 +126,8 @@
           </div>
         </div>
         <div class="col-span-7 lg:col-span-5 md:col-span-12 flex md:mt-14">
-          <svg class="ml-auto md:max-w-[296px] md:mx-auto md:h-auto" xmlns="http://www.w3.org/2000/svg" width="530" height="693" viewBox="0 0 530 693"
+          <svg class="ml-auto md:max-w-[296px] md:mx-auto md:h-auto" xmlns="http://www.w3.org/2000/svg" width="530"
+               height="693" viewBox="0 0 530 693"
                fill="none">
             <path
               d="M2 203.605V66.113C57.9763 27.554 153.543 2 264.985 2C376.427 2 472.024 27.554 528 66.113V418.474C528 439.838 520.92 459.784 513.238 479.418C504.393 499.103 493.323 516.883 480.577 533.15M2 255.113V253.452M2 309.945V418.474C2 439.838 9.08022 459.784 16.7618 479.418C56.6792 568.254 141.935 618.324 222.117 665.414C236.684 673.969 251.085 682.427 265.015 691C278.936 682.433 293.325 673.982 307.88 665.433C342.34 645.193 377.734 624.404 410.065 600.225M446.213 570.259C446.808 569.707 447.4 569.153 447.99 568.597"
@@ -151,9 +155,9 @@
 </a>
         </div>
       </div>
-      <div class="row gap-6 ">
+      <div class="row gap-6 lg:hidden">
         <div class="col-span-3 xl:col-span-4 lg:col-span-6 md:col-span-12">
-          <div class="rounded-6xl group overflow-hidden min-w-[306px] h-[306px] flex justify-center items-center relative p-5
+          <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
   bg-LightBlue transition-all hover:bg-Blue100 ">
   <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
@@ -171,7 +175,7 @@
 </div>
         </div>
         <div class="col-span-3 xl:col-span-4 lg:col-span-6 md:col-span-12">
-          <div class="rounded-6xl group overflow-hidden min-w-[306px] h-[306px] flex justify-center items-center relative p-5
+          <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
   bg-LightBlue transition-all hover:bg-Blue100 ">
   <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
@@ -189,7 +193,7 @@
 </div>
         </div>
         <div class="col-span-3 xl:col-span-4 lg:col-span-6 md:col-span-12">
-          <div class="rounded-6xl group overflow-hidden min-w-[306px] h-[306px] flex justify-center items-center relative p-5
+          <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
   bg-LightBlue transition-all hover:bg-Blue100 ">
   <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
@@ -207,7 +211,7 @@
 </div>
         </div>
         <div class="col-span-3 xl:col-span-4 lg:col-span-6 md:col-span-12">
-          <div class="rounded-6xl group overflow-hidden min-w-[306px] h-[306px] flex justify-center items-center relative p-5
+          <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
   bg-LightBlue transition-all hover:bg-Blue100 ">
   <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
@@ -225,7 +229,7 @@
 </div>
         </div>
         <div class="col-span-3 xl:col-span-4 lg:col-span-6 md:col-span-12">
-          <div class="rounded-6xl group overflow-hidden min-w-[306px] h-[306px] flex justify-center items-center relative p-5
+          <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
   bg-LightBlue transition-all hover:bg-Blue100 ">
   <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
@@ -243,7 +247,7 @@
 </div>
         </div>
         <div class="col-span-3 xl:col-span-4 lg:col-span-6 md:col-span-12">
-          <div class="rounded-6xl group overflow-hidden min-w-[306px] h-[306px] flex justify-center items-center relative p-5
+          <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
   bg-LightBlue transition-all hover:bg-Blue100 ">
   <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
@@ -261,7 +265,7 @@
 </div>
         </div>
         <div class="col-span-3 xl:col-span-4 lg:col-span-6 md:col-span-12">
-          <div class="rounded-6xl group overflow-hidden min-w-[306px] h-[306px] flex justify-center items-center relative p-5
+          <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
   bg-LightBlue transition-all hover:bg-Blue100 ">
   <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
@@ -278,6 +282,139 @@
   </div>
 </div>
         </div>
+      </div>
+      <div class="swiper swiperAreas minlg:hidden">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Consumer Attorneys</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] icon-speed"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Mortgage Brokers</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-money"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Insurance Providers</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Identity"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Rentals</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Attorney"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Personal Loans</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Car-Accident"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Auto Loans</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Check-Errors"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Certified Public Accountants</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Discrimination"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </section>
@@ -422,10 +559,12 @@
       <div class="container relative z-[2] lg:px-0">
         <div class="row">
           <div class="col-span-12">
-            <div class="img-section min-h-[600px] lg:min-h-[500px] overflow-hidden rounded-6xl lg:rounded-none px-20 flex minlg:items-center lg:px-3 lg:py-10"
-                 style="background-image: url('img/img-3.png')">
+            <div
+              class="img-section min-h-[600px] lg:min-h-[500px] overflow-hidden rounded-6xl lg:rounded-none px-20 flex minlg:items-center lg:px-3 lg:py-10"
+              style="background-image: url('img/img-3.png')">
               <div class="flex flex-col max-w-[374px] lg:mx-auto lg:min-h-[500px] lg:max-w-full">
-                <span class="text-h2-5 text-Blue100 font-semibold lg:text-center lg:text-Top6">Take the First Step Today—<span class="text-Green">Submit Your Application Now!</span></span>
+                <span class="text-h2-5 text-Blue100 font-semibold lg:text-center lg:text-Top6">Take the First Step Today—<span
+                  class="text-Green">Submit Your Application Now!</span></span>
                 <a class="button mt-14 shadow-v3 lg:mt-auto lg:mx-auto sm:w-full" href="@@url">
     <span class="">Apply</span>
 </a>
@@ -531,8 +670,9 @@
             </div>
           </div>
           <div class="col-span-8 xl:col-span-6 lg:col-span-12">
-            <div class="max-w-[746px] ml-auto lg:max-w-full p-4 rounded-6xl overflow-hidden flex items-center justify-center bg-white">
-<!--              <img src="img/Location-1.png" alt="Map">-->
+            <div
+              class="max-w-[746px] ml-auto lg:max-w-full p-4 rounded-6xl overflow-hidden flex items-center justify-center bg-white">
+              <!--              <img src="img/Location-1.png" alt="Map">-->
               <div class="map-style-1" id="map"></div>
             </div>
           </div>
@@ -578,7 +718,8 @@
         </div>
       </div>
     </section>
-    <section class="section relative bg-img-2 overflow-hidden bg-im-none" style="background-image: url(img/Background-footer.png);">
+    <section class="section relative bg-img-2 overflow-hidden bg-im-none"
+             style="background-image: url(img/Background-footer.png);">
       <div class="container">
         <div class="row">
           <div class="col-span-12 flex lg:flex-col">
@@ -694,7 +835,6 @@
       </div>
     </section>
   </div>
-
   <section class="my-20 hidden">
     <div class="container">
       <div class="row">
@@ -733,7 +873,7 @@
           <br>
           <br>
 
-          <div class="rounded-6xl group overflow-hidden min-w-[306px] h-[306px] flex justify-center items-center relative p-5
+          <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
   bg-LightBlue transition-all hover:bg-Blue100 ">
   <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
@@ -1003,75 +1143,6 @@
     </div>
   </section>
 
-
-  <div id="modal" class="fixed inset-0 z-[10000] bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
-  <div class="bg-white rounded-lg shadow-lg py-8 px-6 w-full max-w-[561px] max-h-screen md:overflow-y-scroll relative">
-    <div class="flex justify-between items-center mb-5">
-      <span class="text-Top5 text-DarkBlue font-semibold">Make a Request</span>
-      <button class="close-modal text-gray-500 ml-auto hover:text-gray-700 focus:outline-none text-2xl transition">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
-          <path d="M17.3998 1.11339C17.2765 0.989783 17.1299 0.891719 16.9686 0.824811C16.8073 0.757902 16.6344 0.723462 16.4598 0.723462C16.2852 0.723462 16.1123 0.757902 15.951 0.824811C15.7897 0.891719 15.6432 0.989783 15.5198 1.11339L8.99981 7.62005L2.47981 1.10005C2.35637 0.976611 2.20982 0.878691 2.04853 0.811885C1.88725 0.745078 1.71438 0.710693 1.53981 0.710693C1.36524 0.710693 1.19237 0.745078 1.03109 0.811885C0.8698 0.878691 0.723252 0.976611 0.59981 1.10005C0.476367 1.2235 0.378447 1.37004 0.31164 1.53133C0.244834 1.69261 0.210449 1.86548 0.210449 2.04005C0.210449 2.21463 0.244834 2.38749 0.31164 2.54878C0.378447 2.71006 0.476367 2.85661 0.59981 2.98005L7.11981 9.50005L0.59981 16.0201C0.476367 16.1435 0.378447 16.29 0.31164 16.4513C0.244834 16.6126 0.210449 16.7855 0.210449 16.9601C0.210449 17.1346 0.244834 17.3075 0.31164 17.4688C0.378447 17.6301 0.476367 17.7766 0.59981 17.9001C0.723252 18.0235 0.8698 18.1214 1.03109 18.1882C1.19237 18.255 1.36524 18.2894 1.53981 18.2894C1.71438 18.2894 1.88725 18.255 2.04853 18.1882C2.20982 18.1214 2.35637 18.0235 2.47981 17.9001L8.99981 11.3801L15.5198 17.9001C15.6433 18.0235 15.7898 18.1214 15.9511 18.1882C16.1124 18.255 16.2852 18.2894 16.4598 18.2894C16.6344 18.2894 16.8072 18.255 16.9685 18.1882C17.1298 18.1214 17.2764 18.0235 17.3998 17.9001C17.5233 17.7766 17.6212 17.6301 17.688 17.4688C17.7548 17.3075 17.7892 17.1346 17.7892 16.9601C17.7892 16.7855 17.7548 16.6126 17.688 16.4513C17.6212 16.29 17.5233 16.1435 17.3998 16.0201L10.8798 9.50005L17.3998 2.98005C17.9065 2.47339 17.9065 1.62005 17.3998 1.11339Z" fill="#1B3C74"/>
-        </svg>
-      </button>
-    </div>
-    <div class="flex flex-col">
-      <p class="mb-2 text-Top3 text-BlackText">Our professional team will assist you from the moment you place the
-        order till the moment you receive it.</p>
-      <p class="text-base text-DarkBlue font-medium">We sell to the certified doctors and companies only.</p>
-      <form class="row gap-y-5 gap-x-6 mt-10">
-        <div class="col-span-6">
-          <div class="form-group flex flex-col items-start ">
-  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 hidden" for="TextId1"></label>
-  <input
-    class="input  "
-    type="text" id="TextId1" placeholder="Your Name" required>
-  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
-</div>
-        </div>
-        <div class="col-span-6">
-          <div class="form-group flex flex-col items-start ">
-  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 hidden" for="EmailId1"></label>
-  <input
-    class="input  "
-    type="email" id="EmailId1" placeholder="Email" required>
-  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
-</div>
-        </div>
-        <div class="col-span-6">
-
-<!--          'commonStyle': '',-->
-<!--          'labelStyle': 'hidden',-->
-<!--          'idSelect': 'selectId1',-->
-<!--          'NameSelect': '',-->
-<!--          'label': '',-->
-<!--          })-->
-        </div>
-        <div class="col-span-6">
-          <div class="form-group flex flex-col items-start ">
-  <label class="mb-3 font-semibold text-body text-Blue100 md:text-body2 hidden" for="PhoneId1"></label>
-  <input
-    class="input  "
-    type="text" id="PhoneId1" placeholder="Phone" required>
-  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
-</div>
-        </div>
-        <div class="col-span-12">
-          <div class="form-group flex flex-col items-start overflow-hidden @@commonStyle">
-  <label class="mb-3 font-semibold text-body" for="@@idTextarea"></label>
-  <textarea
-    class="input "
-    id="@@idTextarea" placeholder="Message" rows="3"></textarea>
-</div>
-        </div>
-        <div class="col-span-12">
-          <button class="button w-full" type="submit" aria-label="Send Button">
-  <span>Send</span>
-</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
   <footer class="w-full mt-auto overflow-hidden bg-Blue100 pt-16 lg:pt-10 text-white shadow-3xl">
   <div class="container pb-10 lg:pb-8">
     <div class="row">
@@ -1266,7 +1337,7 @@
     });
 
     // Показываем контейнер с календарём при клике на кастомный инпут
-    customInput.addEventListener('click', (event) => {
+    customInput?.addEventListener('click', (event) => {
       // Если клик по кнопке очистки, не показывать календарь
       if (event.target === clearButton) return;
 
@@ -1314,7 +1385,7 @@
         const timeButton = document.createElement('button');
         timeButton.textContent = time;
         timeButton.classList.add('time-slot');
-        timeButton.addEventListener('click', () => {
+        timeButton?.addEventListener('click', () => {
           updateTime(time); // Обновляем время в кастомном инпуте
           calendarContainer.style.display = 'none'; // Скрываем контейнер
         });
@@ -1323,7 +1394,7 @@
     }
 
     // Очистка данных
-    clearButton.addEventListener('click', (event) => {
+    clearButton?.addEventListener('click', (event) => {
       event.stopPropagation(); // Предотвращаем всплытие клика
       dateElement.innerHTML = `${'MM <span class="text-Green">/</span> DD <span class="text-Green">/</span> YY'}`;
       timeElement.textContent = ' 8:00 pm';
