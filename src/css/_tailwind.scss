@@ -152,7 +152,8 @@ input[type='search']::-webkit-search-results-decoration {
 .custom-checkbox .checkmark {
   position: absolute;
   display: none;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   align-items: center;
   justify-content: center;
@@ -182,6 +183,11 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 @media (max-width: 639.98px) {
+  .width-no-p {
+    max-width: calc(100% + 24px) !important;
+    width: calc(100% + 24px) !important;
+    margin-left: -12px !important;
+  }
 }
 
 @media (max-width: 424.98px) {
