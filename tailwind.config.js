@@ -4,7 +4,7 @@ const allPlugins = {
   typography: require('@tailwindcss/typography'),
   forms: require('@tailwindcss/forms'),
   containerQueries: require('@tailwindcss/container-queries'),
-  "line-clamp": require('@tailwindcss/line-clamp'),
+  'line-clamp': require('@tailwindcss/line-clamp'),
 };
 
 const plugins = Object.keys(allPlugins)
@@ -35,7 +35,7 @@ module.exports = {
       base: ['18px', '130%'],
       h1: ['68px', '100%'],
       h2: ['52px', '120%'],
-      "h2-5": ['48px', '110%'],
+      'h2-5': ['48px', '110%'],
       h3: ['40px', '110%'],
       h4: ['32px', '130%'],
       h1Mob: ['56px', '120%'],
