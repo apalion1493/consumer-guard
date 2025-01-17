@@ -1,6 +1,6 @@
 <div x-data="{ isExpanded: false }" class="overflow-hidden rounded-6xl bg-white border p-8 md:p-3 border-LightBlue2 transition-shadow" :class="isExpanded ? 'shadow-v5'  : ''">
   <button id="controlsAccordionItemOne" type="button" class="flex w-full flex-col text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
-    <span class="flex w-full items-center gap-x-4">
+    <span class="flex w-full items-center gap-x-4 md:mb-2">
       <span class="flex items-center justify-center w-[60px] min-w-[60px] h-[60px]">
       <i class="@@MainIcon w-[60px] h-[60px]"></i>
     </span>

@@ -948,6 +948,9 @@ html {
 .inline-flex{
   display: inline-flex;
 }
+.inline-table{
+  display: inline-table;
+}
 .grid{
   display: grid;
 }
@@ -3945,6 +3948,13 @@ a{
   }
   .md\:gap-y-8{
     row-gap: 2rem;
+  }
+  .md\:gap-y-3{
+    row-gap: 0.75rem;
+  }
+  .md\:gap-x-3{
+    -moz-column-gap: 0.75rem;
+         column-gap: 0.75rem;
   }
   .md\:overflow-y-scroll{
     overflow-y: scroll;
