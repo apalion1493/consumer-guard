@@ -3882,6 +3882,9 @@ a{
   .md\:mt-4{
     margin-top: 1rem;
   }
+  .md\:mt-6{
+    margin-top: 1.5rem;
+  }
   .md\:hidden{
     display: none;
   }
@@ -3921,6 +3924,9 @@ a{
   .md\:min-w-\[128px\]{
     min-width: 128px;
   }
+  .md\:min-w-0{
+    min-width: 0px;
+  }
   .md\:max-w-\[126px\]{
     max-width: 126px;
   }
@@ -3929,6 +3935,12 @@ a{
   }
   .md\:max-w-\[128px\]{
     max-width: 128px;
+  }
+  .md\:max-w-\[277px\]{
+    max-width: 277px;
+  }
+  .md\:max-w-\[400px\]{
+    max-width: 400px;
   }
   .md\:flex-col{
     flex-direction: column;
@@ -3983,6 +3995,10 @@ a{
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+  .md\:py-5{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
   .md\:pb-12{
     padding-bottom: 3rem;
   }
@@ -4006,6 +4022,10 @@ a{
   .md\:text-body4{
     font-size: 12px;
     line-height: 120%;
+  }
+  .md\:text-body{
+    font-size: 16px;
+    line-height: 130%;
   }
 }
 

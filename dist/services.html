@@ -982,7 +982,7 @@
           <div class="col-span-6 xl:col-span-12">
             <div class="border-LightBlue2 border bg-white overflow-hidden rounded-6xl p-8 md:p-4 flex flex-col gap-y-6 transition-all hover:shadow-v1 ">
   <div class="flex justify-between gap-x-6 md:flex-col md:gap-y-6 md:gap-x-0">
-    <a href="single-partner.html" class="flex items-center justify-center overflow-hidden rounded-8xl md:mx-auto min-w-[277px] w-[277px] h-[351px] bg-Attorney-Card-img">
+    <a href="single-partner.html" class="flex items-center justify-center overflow-hidden rounded-8xl md:mx-auto min-w-[277px] w-[277px] h-[351px] md:min-w-0 md:max-w-[400px] md:w-full md:h-auto bg-Attorney-Card-img">
       <img class="w-full h-full object-cover object-top" src="img/Daniel-Cohen-v1.png" alt="Daniel Cohen">
     </a>
     <div class="flex flex-col items-start">
@@ -991,9 +991,9 @@
       <p class="text-body block mb-6 text-LightBlue4">Founding Partner</p>
       <p class="line-clamp-5 text-body text-BlackText">Daniel Cohen is the Founder of Consumer Attorneys. Daniel manages the firm’s branding, marketing, client
         intake and business development efforts...</p>
-      <div class="flex flex-col items-start mt-auto">
+      <div class="flex flex-col items-start mt-auto md:mt-6">
         <span class="block mb-3 text-base text-DarkBlue font-semibold">Contact Us</span>
-        <ul class="flex flex-col items-start gap-y-3">
+        <ul class="flex flex-col items-start gap-y-3 md:text-body">
           <li class="flex items-center">
             <a class="flex items-center gap-x-3 text-BlackText text-body font-medium hover:underline transition-all" href="tel:+11234567890">
                 <span class="w-5 h-5 flex items-center justify-center">
@@ -1024,7 +1024,7 @@
   </div>
   <div x-data="{ isExpanded: false }" class="overflow-hidden">
     <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-x-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? '1'  : '2'" :aria-expanded="isExpanded ? 'true' : 'false'">
-      <span>PRACTICE AREAS</span>
+      <span class="md:text-body2">PRACTICE AREAS</span>
       <span class="flex-1 border-b border-LightBlue2"></span>
       <span class="w-6 h-6 ml-auto flex items-center justify-center rounded-full border" :class="isExpanded  ?  'border-LightBlue4'  :  'border-Green'">
           <svg class="transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
@@ -1033,8 +1033,8 @@
         </span>
     </button>
     <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
-      <div class="flex items-center gap-x-6 pt-6">
-        <div class="flex-1 px-4 py-8 bg-LightBlue w-full flex items-center">
+      <div class="flex items-center gap-x-6 pt-6 md:flex-col md:gap-x-0 md:gap-y-3">
+        <div class="flex-1 px-4 py-8 md:py-5 md:px-3 bg-LightBlue w-full flex items-center">
             <span class="w-5 h-5 flex items-center justify-center mr-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
                 <path d="M9.83329 16.6667C10.938 16.6654 11.997 16.2259 12.7781 15.4448C13.5592 14.6637 13.9986 13.6047 14 12.5V5.20251C14.0013 4.76448 13.9156 4.33055 13.7479 3.92586C13.5803 3.52118 13.334 3.1538 13.0233 2.84501L11.155 0.976681C10.8462 0.665993 10.4788 0.419683 10.0741 0.252031C9.66943 0.0843791 9.23549 -0.00128163 8.79746 1.44913e-05H4.83329C3.72863 0.00133771 2.66959 0.440749 1.88848 1.22186C1.10736 2.00298 0.667949 3.06202 0.666626 4.16668V12.5C0.667949 13.6047 1.10736 14.6637 1.88848 15.4448C2.66959 16.2259 3.72863 16.6654 4.83329 16.6667H9.83329ZM2.33329 12.5V4.16668C2.33329 3.50364 2.59668 2.86776 3.06553 2.39891C3.53437 1.93007 4.17025 1.66668 4.83329 1.66668C4.83329 1.66668 8.93246 1.67835 8.99996 1.68668V3.33335C8.99996 3.77538 9.17556 4.1993 9.48812 4.51186C9.80068 4.82442 10.2246 5.00001 10.6666 5.00001H12.3133C12.3216 5.06751 12.3333 12.5 12.3333 12.5C12.3333 13.1631 12.0699 13.7989 11.6011 14.2678C11.1322 14.7366 10.4963 15 9.83329 15H4.83329C4.17025 15 3.53437 14.7366 3.06553 14.2678C2.59668 13.7989 2.33329 13.1631 2.33329 12.5ZM17.3333 6.66668V15.8333C17.332 16.938 16.8926 17.997 16.1114 18.7782C15.3303 19.5593 14.2713 19.9987 13.1666 20H5.66663C5.44561 20 5.23365 19.9122 5.07737 19.7559C4.92109 19.5997 4.83329 19.3877 4.83329 19.1667C4.83329 18.9457 4.92109 18.7337 5.07737 18.5774C5.23365 18.4211 5.44561 18.3333 5.66663 18.3333H13.1666C13.8297 18.3333 14.4656 18.07 14.9344 17.6011C15.4032 17.1323 15.6666 16.4964 15.6666 15.8333V6.66668C15.6666 6.44567 15.7544 6.23371 15.9107 6.07743C16.067 5.92114 16.2789 5.83335 16.5 5.83335C16.721 5.83335 16.9329 5.92114 17.0892 6.07743C17.2455 6.23371 17.3333 6.44567 17.3333 6.66668Z" fill="#44B64B"/>
@@ -1059,7 +1059,7 @@
           <div class="col-span-6 xl:col-span-12">
             <div class="border-LightBlue2 border bg-white overflow-hidden rounded-6xl p-8 md:p-4 flex flex-col gap-y-6 transition-all hover:shadow-v1 ">
   <div class="flex justify-between gap-x-6 md:flex-col md:gap-y-6 md:gap-x-0">
-    <a href="single-partner.html" class="flex items-center justify-center overflow-hidden rounded-8xl md:mx-auto min-w-[277px] w-[277px] h-[351px] bg-Attorney-Card-img">
+    <a href="single-partner.html" class="flex items-center justify-center overflow-hidden rounded-8xl md:mx-auto min-w-[277px] w-[277px] h-[351px] md:min-w-0 md:max-w-[400px] md:w-full md:h-auto bg-Attorney-Card-img">
       <img class="w-full h-full object-cover object-top" src="img/Dan-Cohen-edited-v1.png" alt="Kain Cardenas">
     </a>
     <div class="flex flex-col items-start">
@@ -1068,9 +1068,9 @@
       <p class="text-body block mb-6 text-LightBlue4">Founding Partner</p>
       <p class="line-clamp-5 text-body text-BlackText">Daniel Cohen is the Founder of Consumer Attorneys. Daniel manages the firm’s branding, marketing, client
         intake and business development efforts...</p>
-      <div class="flex flex-col items-start mt-auto">
+      <div class="flex flex-col items-start mt-auto md:mt-6">
         <span class="block mb-3 text-base text-DarkBlue font-semibold">Contact Us</span>
-        <ul class="flex flex-col items-start gap-y-3">
+        <ul class="flex flex-col items-start gap-y-3 md:text-body">
           <li class="flex items-center">
             <a class="flex items-center gap-x-3 text-BlackText text-body font-medium hover:underline transition-all" href="tel:+11234567890">
                 <span class="w-5 h-5 flex items-center justify-center">
@@ -1101,7 +1101,7 @@
   </div>
   <div x-data="{ isExpanded: false }" class="overflow-hidden">
     <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-x-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? '1'  : '2'" :aria-expanded="isExpanded ? 'true' : 'false'">
-      <span>PRACTICE AREAS</span>
+      <span class="md:text-body2">PRACTICE AREAS</span>
       <span class="flex-1 border-b border-LightBlue2"></span>
       <span class="w-6 h-6 ml-auto flex items-center justify-center rounded-full border" :class="isExpanded  ?  'border-LightBlue4'  :  'border-Green'">
           <svg class="transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
@@ -1110,8 +1110,8 @@
         </span>
     </button>
     <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
-      <div class="flex items-center gap-x-6 pt-6">
-        <div class="flex-1 px-4 py-8 bg-LightBlue w-full flex items-center">
+      <div class="flex items-center gap-x-6 pt-6 md:flex-col md:gap-x-0 md:gap-y-3">
+        <div class="flex-1 px-4 py-8 md:py-5 md:px-3 bg-LightBlue w-full flex items-center">
             <span class="w-5 h-5 flex items-center justify-center mr-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
                 <path d="M9.83329 16.6667C10.938 16.6654 11.997 16.2259 12.7781 15.4448C13.5592 14.6637 13.9986 13.6047 14 12.5V5.20251C14.0013 4.76448 13.9156 4.33055 13.7479 3.92586C13.5803 3.52118 13.334 3.1538 13.0233 2.84501L11.155 0.976681C10.8462 0.665993 10.4788 0.419683 10.0741 0.252031C9.66943 0.0843791 9.23549 -0.00128163 8.79746 1.44913e-05H4.83329C3.72863 0.00133771 2.66959 0.440749 1.88848 1.22186C1.10736 2.00298 0.667949 3.06202 0.666626 4.16668V12.5C0.667949 13.6047 1.10736 14.6637 1.88848 15.4448C2.66959 16.2259 3.72863 16.6654 4.83329 16.6667H9.83329ZM2.33329 12.5V4.16668C2.33329 3.50364 2.59668 2.86776 3.06553 2.39891C3.53437 1.93007 4.17025 1.66668 4.83329 1.66668C4.83329 1.66668 8.93246 1.67835 8.99996 1.68668V3.33335C8.99996 3.77538 9.17556 4.1993 9.48812 4.51186C9.80068 4.82442 10.2246 5.00001 10.6666 5.00001H12.3133C12.3216 5.06751 12.3333 12.5 12.3333 12.5C12.3333 13.1631 12.0699 13.7989 11.6011 14.2678C11.1322 14.7366 10.4963 15 9.83329 15H4.83329C4.17025 15 3.53437 14.7366 3.06553 14.2678C2.59668 13.7989 2.33329 13.1631 2.33329 12.5ZM17.3333 6.66668V15.8333C17.332 16.938 16.8926 17.997 16.1114 18.7782C15.3303 19.5593 14.2713 19.9987 13.1666 20H5.66663C5.44561 20 5.23365 19.9122 5.07737 19.7559C4.92109 19.5997 4.83329 19.3877 4.83329 19.1667C4.83329 18.9457 4.92109 18.7337 5.07737 18.5774C5.23365 18.4211 5.44561 18.3333 5.66663 18.3333H13.1666C13.8297 18.3333 14.4656 18.07 14.9344 17.6011C15.4032 17.1323 15.6666 16.4964 15.6666 15.8333V6.66668C15.6666 6.44567 15.7544 6.23371 15.9107 6.07743C16.067 5.92114 16.2789 5.83335 16.5 5.83335C16.721 5.83335 16.9329 5.92114 17.0892 6.07743C17.2455 6.23371 17.3333 6.44567 17.3333 6.66668Z" fill="#44B64B"/>
@@ -1136,7 +1136,7 @@
           <div class="col-span-6 xl:col-span-12">
             <div class="border-LightBlue2 border bg-white overflow-hidden rounded-6xl p-8 md:p-4 flex flex-col gap-y-6 transition-all hover:shadow-v1 ">
   <div class="flex justify-between gap-x-6 md:flex-col md:gap-y-6 md:gap-x-0">
-    <a href="single-partner.html" class="flex items-center justify-center overflow-hidden rounded-8xl md:mx-auto min-w-[277px] w-[277px] h-[351px] bg-Attorney-Card-img">
+    <a href="single-partner.html" class="flex items-center justify-center overflow-hidden rounded-8xl md:mx-auto min-w-[277px] w-[277px] h-[351px] md:min-w-0 md:max-w-[400px] md:w-full md:h-auto bg-Attorney-Card-img">
       <img class="w-full h-full object-cover object-top" src="img/Mike-edited-v1.png" alt="Mike Hooper">
     </a>
     <div class="flex flex-col items-start">
@@ -1145,9 +1145,9 @@
       <p class="text-body block mb-6 text-LightBlue4">Founding Partner</p>
       <p class="line-clamp-5 text-body text-BlackText">Daniel Cohen is the Founder of Consumer Attorneys. Daniel manages the firm’s branding, marketing, client
         intake and business development efforts...</p>
-      <div class="flex flex-col items-start mt-auto">
+      <div class="flex flex-col items-start mt-auto md:mt-6">
         <span class="block mb-3 text-base text-DarkBlue font-semibold">Contact Us</span>
-        <ul class="flex flex-col items-start gap-y-3">
+        <ul class="flex flex-col items-start gap-y-3 md:text-body">
           <li class="flex items-center">
             <a class="flex items-center gap-x-3 text-BlackText text-body font-medium hover:underline transition-all" href="tel:+11234567890">
                 <span class="w-5 h-5 flex items-center justify-center">
@@ -1178,7 +1178,7 @@
   </div>
   <div x-data="{ isExpanded: false }" class="overflow-hidden">
     <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-x-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? '1'  : '2'" :aria-expanded="isExpanded ? 'true' : 'false'">
-      <span>PRACTICE AREAS</span>
+      <span class="md:text-body2">PRACTICE AREAS</span>
       <span class="flex-1 border-b border-LightBlue2"></span>
       <span class="w-6 h-6 ml-auto flex items-center justify-center rounded-full border" :class="isExpanded  ?  'border-LightBlue4'  :  'border-Green'">
           <svg class="transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
@@ -1187,8 +1187,8 @@
         </span>
     </button>
     <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
-      <div class="flex items-center gap-x-6 pt-6">
-        <div class="flex-1 px-4 py-8 bg-LightBlue w-full flex items-center">
+      <div class="flex items-center gap-x-6 pt-6 md:flex-col md:gap-x-0 md:gap-y-3">
+        <div class="flex-1 px-4 py-8 md:py-5 md:px-3 bg-LightBlue w-full flex items-center">
             <span class="w-5 h-5 flex items-center justify-center mr-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
                 <path d="M9.83329 16.6667C10.938 16.6654 11.997 16.2259 12.7781 15.4448C13.5592 14.6637 13.9986 13.6047 14 12.5V5.20251C14.0013 4.76448 13.9156 4.33055 13.7479 3.92586C13.5803 3.52118 13.334 3.1538 13.0233 2.84501L11.155 0.976681C10.8462 0.665993 10.4788 0.419683 10.0741 0.252031C9.66943 0.0843791 9.23549 -0.00128163 8.79746 1.44913e-05H4.83329C3.72863 0.00133771 2.66959 0.440749 1.88848 1.22186C1.10736 2.00298 0.667949 3.06202 0.666626 4.16668V12.5C0.667949 13.6047 1.10736 14.6637 1.88848 15.4448C2.66959 16.2259 3.72863 16.6654 4.83329 16.6667H9.83329ZM2.33329 12.5V4.16668C2.33329 3.50364 2.59668 2.86776 3.06553 2.39891C3.53437 1.93007 4.17025 1.66668 4.83329 1.66668C4.83329 1.66668 8.93246 1.67835 8.99996 1.68668V3.33335C8.99996 3.77538 9.17556 4.1993 9.48812 4.51186C9.80068 4.82442 10.2246 5.00001 10.6666 5.00001H12.3133C12.3216 5.06751 12.3333 12.5 12.3333 12.5C12.3333 13.1631 12.0699 13.7989 11.6011 14.2678C11.1322 14.7366 10.4963 15 9.83329 15H4.83329C4.17025 15 3.53437 14.7366 3.06553 14.2678C2.59668 13.7989 2.33329 13.1631 2.33329 12.5ZM17.3333 6.66668V15.8333C17.332 16.938 16.8926 17.997 16.1114 18.7782C15.3303 19.5593 14.2713 19.9987 13.1666 20H5.66663C5.44561 20 5.23365 19.9122 5.07737 19.7559C4.92109 19.5997 4.83329 19.3877 4.83329 19.1667C4.83329 18.9457 4.92109 18.7337 5.07737 18.5774C5.23365 18.4211 5.44561 18.3333 5.66663 18.3333H13.1666C13.8297 18.3333 14.4656 18.07 14.9344 17.6011C15.4032 17.1323 15.6666 16.4964 15.6666 15.8333V6.66668C15.6666 6.44567 15.7544 6.23371 15.9107 6.07743C16.067 5.92114 16.2789 5.83335 16.5 5.83335C16.721 5.83335 16.9329 5.92114 17.0892 6.07743C17.2455 6.23371 17.3333 6.44567 17.3333 6.66668Z" fill="#44B64B"/>
@@ -1213,7 +1213,7 @@
           <div class="col-span-6 xl:col-span-12">
             <div class="border-LightBlue2 border bg-white overflow-hidden rounded-6xl p-8 md:p-4 flex flex-col gap-y-6 transition-all hover:shadow-v1 ">
   <div class="flex justify-between gap-x-6 md:flex-col md:gap-y-6 md:gap-x-0">
-    <a href="single-partner.html" class="flex items-center justify-center overflow-hidden rounded-8xl md:mx-auto min-w-[277px] w-[277px] h-[351px] bg-Attorney-Card-img">
+    <a href="single-partner.html" class="flex items-center justify-center overflow-hidden rounded-8xl md:mx-auto min-w-[277px] w-[277px] h-[351px] md:min-w-0 md:max-w-[400px] md:w-full md:h-auto bg-Attorney-Card-img">
       <img class="w-full h-full object-cover object-top" src="img/Henri-Rush-edite-1.png" alt="Henri Rush">
     </a>
     <div class="flex flex-col items-start">
@@ -1222,9 +1222,9 @@
       <p class="text-body block mb-6 text-LightBlue4">Founding Partner</p>
       <p class="line-clamp-5 text-body text-BlackText">Daniel Cohen is the Founder of Consumer Attorneys. Daniel manages the firm’s branding, marketing, client
         intake and business development efforts...</p>
-      <div class="flex flex-col items-start mt-auto">
+      <div class="flex flex-col items-start mt-auto md:mt-6">
         <span class="block mb-3 text-base text-DarkBlue font-semibold">Contact Us</span>
-        <ul class="flex flex-col items-start gap-y-3">
+        <ul class="flex flex-col items-start gap-y-3 md:text-body">
           <li class="flex items-center">
             <a class="flex items-center gap-x-3 text-BlackText text-body font-medium hover:underline transition-all" href="tel:+11234567890">
                 <span class="w-5 h-5 flex items-center justify-center">
@@ -1255,7 +1255,7 @@
   </div>
   <div x-data="{ isExpanded: false }" class="overflow-hidden">
     <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-x-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? '1'  : '2'" :aria-expanded="isExpanded ? 'true' : 'false'">
-      <span>PRACTICE AREAS</span>
+      <span class="md:text-body2">PRACTICE AREAS</span>
       <span class="flex-1 border-b border-LightBlue2"></span>
       <span class="w-6 h-6 ml-auto flex items-center justify-center rounded-full border" :class="isExpanded  ?  'border-LightBlue4'  :  'border-Green'">
           <svg class="transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
@@ -1264,8 +1264,8 @@
         </span>
     </button>
     <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
-      <div class="flex items-center gap-x-6 pt-6">
-        <div class="flex-1 px-4 py-8 bg-LightBlue w-full flex items-center">
+      <div class="flex items-center gap-x-6 pt-6 md:flex-col md:gap-x-0 md:gap-y-3">
+        <div class="flex-1 px-4 py-8 md:py-5 md:px-3 bg-LightBlue w-full flex items-center">
             <span class="w-5 h-5 flex items-center justify-center mr-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
                 <path d="M9.83329 16.6667C10.938 16.6654 11.997 16.2259 12.7781 15.4448C13.5592 14.6637 13.9986 13.6047 14 12.5V5.20251C14.0013 4.76448 13.9156 4.33055 13.7479 3.92586C13.5803 3.52118 13.334 3.1538 13.0233 2.84501L11.155 0.976681C10.8462 0.665993 10.4788 0.419683 10.0741 0.252031C9.66943 0.0843791 9.23549 -0.00128163 8.79746 1.44913e-05H4.83329C3.72863 0.00133771 2.66959 0.440749 1.88848 1.22186C1.10736 2.00298 0.667949 3.06202 0.666626 4.16668V12.5C0.667949 13.6047 1.10736 14.6637 1.88848 15.4448C2.66959 16.2259 3.72863 16.6654 4.83329 16.6667H9.83329ZM2.33329 12.5V4.16668C2.33329 3.50364 2.59668 2.86776 3.06553 2.39891C3.53437 1.93007 4.17025 1.66668 4.83329 1.66668C4.83329 1.66668 8.93246 1.67835 8.99996 1.68668V3.33335C8.99996 3.77538 9.17556 4.1993 9.48812 4.51186C9.80068 4.82442 10.2246 5.00001 10.6666 5.00001H12.3133C12.3216 5.06751 12.3333 12.5 12.3333 12.5C12.3333 13.1631 12.0699 13.7989 11.6011 14.2678C11.1322 14.7366 10.4963 15 9.83329 15H4.83329C4.17025 15 3.53437 14.7366 3.06553 14.2678C2.59668 13.7989 2.33329 13.1631 2.33329 12.5ZM17.3333 6.66668V15.8333C17.332 16.938 16.8926 17.997 16.1114 18.7782C15.3303 19.5593 14.2713 19.9987 13.1666 20H5.66663C5.44561 20 5.23365 19.9122 5.07737 19.7559C4.92109 19.5997 4.83329 19.3877 4.83329 19.1667C4.83329 18.9457 4.92109 18.7337 5.07737 18.5774C5.23365 18.4211 5.44561 18.3333 5.66663 18.3333H13.1666C13.8297 18.3333 14.4656 18.07 14.9344 17.6011C15.4032 17.1323 15.6666 16.4964 15.6666 15.8333V6.66668C15.6666 6.44567 15.7544 6.23371 15.9107 6.07743C16.067 5.92114 16.2789 5.83335 16.5 5.83335C16.721 5.83335 16.9329 5.92114 17.0892 6.07743C17.2455 6.23371 17.3333 6.44567 17.3333 6.66668Z" fill="#44B64B"/>
@@ -1290,7 +1290,7 @@
           <div class="col-span-6 xl:col-span-12">
             <div class="border-LightBlue2 border bg-white overflow-hidden rounded-6xl p-8 md:p-4 flex flex-col gap-y-6 transition-all hover:shadow-v1 ">
   <div class="flex justify-between gap-x-6 md:flex-col md:gap-y-6 md:gap-x-0">
-    <a href="single-partner.html" class="flex items-center justify-center overflow-hidden rounded-8xl md:mx-auto min-w-[277px] w-[277px] h-[351px] bg-Attorney-Card-img">
+    <a href="single-partner.html" class="flex items-center justify-center overflow-hidden rounded-8xl md:mx-auto min-w-[277px] w-[277px] h-[351px] md:min-w-0 md:max-w-[400px] md:w-full md:h-auto bg-Attorney-Card-img">
       <img class="w-full h-full object-cover object-top" src="img/Humza-Wolf-edited-1.png" alt="Humza Wolf">
     </a>
     <div class="flex flex-col items-start">
@@ -1299,9 +1299,9 @@
       <p class="text-body block mb-6 text-LightBlue4">Founding Partner</p>
       <p class="line-clamp-5 text-body text-BlackText">Daniel Cohen is the Founder of Consumer Attorneys. Daniel manages the firm’s branding, marketing, client
         intake and business development efforts...</p>
-      <div class="flex flex-col items-start mt-auto">
+      <div class="flex flex-col items-start mt-auto md:mt-6">
         <span class="block mb-3 text-base text-DarkBlue font-semibold">Contact Us</span>
-        <ul class="flex flex-col items-start gap-y-3">
+        <ul class="flex flex-col items-start gap-y-3 md:text-body">
           <li class="flex items-center">
             <a class="flex items-center gap-x-3 text-BlackText text-body font-medium hover:underline transition-all" href="tel:+11234567890">
                 <span class="w-5 h-5 flex items-center justify-center">
@@ -1332,7 +1332,7 @@
   </div>
   <div x-data="{ isExpanded: false }" class="overflow-hidden">
     <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-x-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? '1'  : '2'" :aria-expanded="isExpanded ? 'true' : 'false'">
-      <span>PRACTICE AREAS</span>
+      <span class="md:text-body2">PRACTICE AREAS</span>
       <span class="flex-1 border-b border-LightBlue2"></span>
       <span class="w-6 h-6 ml-auto flex items-center justify-center rounded-full border" :class="isExpanded  ?  'border-LightBlue4'  :  'border-Green'">
           <svg class="transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
@@ -1341,8 +1341,8 @@
         </span>
     </button>
     <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
-      <div class="flex items-center gap-x-6 pt-6">
-        <div class="flex-1 px-4 py-8 bg-LightBlue w-full flex items-center">
+      <div class="flex items-center gap-x-6 pt-6 md:flex-col md:gap-x-0 md:gap-y-3">
+        <div class="flex-1 px-4 py-8 md:py-5 md:px-3 bg-LightBlue w-full flex items-center">
             <span class="w-5 h-5 flex items-center justify-center mr-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
                 <path d="M9.83329 16.6667C10.938 16.6654 11.997 16.2259 12.7781 15.4448C13.5592 14.6637 13.9986 13.6047 14 12.5V5.20251C14.0013 4.76448 13.9156 4.33055 13.7479 3.92586C13.5803 3.52118 13.334 3.1538 13.0233 2.84501L11.155 0.976681C10.8462 0.665993 10.4788 0.419683 10.0741 0.252031C9.66943 0.0843791 9.23549 -0.00128163 8.79746 1.44913e-05H4.83329C3.72863 0.00133771 2.66959 0.440749 1.88848 1.22186C1.10736 2.00298 0.667949 3.06202 0.666626 4.16668V12.5C0.667949 13.6047 1.10736 14.6637 1.88848 15.4448C2.66959 16.2259 3.72863 16.6654 4.83329 16.6667H9.83329ZM2.33329 12.5V4.16668C2.33329 3.50364 2.59668 2.86776 3.06553 2.39891C3.53437 1.93007 4.17025 1.66668 4.83329 1.66668C4.83329 1.66668 8.93246 1.67835 8.99996 1.68668V3.33335C8.99996 3.77538 9.17556 4.1993 9.48812 4.51186C9.80068 4.82442 10.2246 5.00001 10.6666 5.00001H12.3133C12.3216 5.06751 12.3333 12.5 12.3333 12.5C12.3333 13.1631 12.0699 13.7989 11.6011 14.2678C11.1322 14.7366 10.4963 15 9.83329 15H4.83329C4.17025 15 3.53437 14.7366 3.06553 14.2678C2.59668 13.7989 2.33329 13.1631 2.33329 12.5ZM17.3333 6.66668V15.8333C17.332 16.938 16.8926 17.997 16.1114 18.7782C15.3303 19.5593 14.2713 19.9987 13.1666 20H5.66663C5.44561 20 5.23365 19.9122 5.07737 19.7559C4.92109 19.5997 4.83329 19.3877 4.83329 19.1667C4.83329 18.9457 4.92109 18.7337 5.07737 18.5774C5.23365 18.4211 5.44561 18.3333 5.66663 18.3333H13.1666C13.8297 18.3333 14.4656 18.07 14.9344 17.6011C15.4032 17.1323 15.6666 16.4964 15.6666 15.8333V6.66668C15.6666 6.44567 15.7544 6.23371 15.9107 6.07743C16.067 5.92114 16.2789 5.83335 16.5 5.83335C16.721 5.83335 16.9329 5.92114 17.0892 6.07743C17.2455 6.23371 17.3333 6.44567 17.3333 6.66668Z" fill="#44B64B"/>
@@ -1367,7 +1367,7 @@
           <div class="col-span-6 xl:col-span-12">
             <div class="border-LightBlue2 border bg-white overflow-hidden rounded-6xl p-8 md:p-4 flex flex-col gap-y-6 transition-all hover:shadow-v1 ">
   <div class="flex justify-between gap-x-6 md:flex-col md:gap-y-6 md:gap-x-0">
-    <a href="single-partner.html" class="flex items-center justify-center overflow-hidden rounded-8xl md:mx-auto min-w-[277px] w-[277px] h-[351px] bg-Attorney-Card-img">
+    <a href="single-partner.html" class="flex items-center justify-center overflow-hidden rounded-8xl md:mx-auto min-w-[277px] w-[277px] h-[351px] md:min-w-0 md:max-w-[400px] md:w-full md:h-auto bg-Attorney-Card-img">
       <img class="w-full h-full object-cover object-top" src="img/Paul-Francis-edited-1.png" alt="Paul Francis">
     </a>
     <div class="flex flex-col items-start">
@@ -1376,9 +1376,9 @@
       <p class="text-body block mb-6 text-LightBlue4">Founding Partner</p>
       <p class="line-clamp-5 text-body text-BlackText">Daniel Cohen is the Founder of Consumer Attorneys. Daniel manages the firm’s branding, marketing, client
         intake and business development efforts...</p>
-      <div class="flex flex-col items-start mt-auto">
+      <div class="flex flex-col items-start mt-auto md:mt-6">
         <span class="block mb-3 text-base text-DarkBlue font-semibold">Contact Us</span>
-        <ul class="flex flex-col items-start gap-y-3">
+        <ul class="flex flex-col items-start gap-y-3 md:text-body">
           <li class="flex items-center">
             <a class="flex items-center gap-x-3 text-BlackText text-body font-medium hover:underline transition-all" href="tel:+11234567890">
                 <span class="w-5 h-5 flex items-center justify-center">
@@ -1409,7 +1409,7 @@
   </div>
   <div x-data="{ isExpanded: false }" class="overflow-hidden">
     <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center gap-x-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? '1'  : '2'" :aria-expanded="isExpanded ? 'true' : 'false'">
-      <span>PRACTICE AREAS</span>
+      <span class="md:text-body2">PRACTICE AREAS</span>
       <span class="flex-1 border-b border-LightBlue2"></span>
       <span class="w-6 h-6 ml-auto flex items-center justify-center rounded-full border" :class="isExpanded  ?  'border-LightBlue4'  :  'border-Green'">
           <svg class="transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
@@ -1418,8 +1418,8 @@
         </span>
     </button>
     <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
-      <div class="flex items-center gap-x-6 pt-6">
-        <div class="flex-1 px-4 py-8 bg-LightBlue w-full flex items-center">
+      <div class="flex items-center gap-x-6 pt-6 md:flex-col md:gap-x-0 md:gap-y-3">
+        <div class="flex-1 px-4 py-8 md:py-5 md:px-3 bg-LightBlue w-full flex items-center">
             <span class="w-5 h-5 flex items-center justify-center mr-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
                 <path d="M9.83329 16.6667C10.938 16.6654 11.997 16.2259 12.7781 15.4448C13.5592 14.6637 13.9986 13.6047 14 12.5V5.20251C14.0013 4.76448 13.9156 4.33055 13.7479 3.92586C13.5803 3.52118 13.334 3.1538 13.0233 2.84501L11.155 0.976681C10.8462 0.665993 10.4788 0.419683 10.0741 0.252031C9.66943 0.0843791 9.23549 -0.00128163 8.79746 1.44913e-05H4.83329C3.72863 0.00133771 2.66959 0.440749 1.88848 1.22186C1.10736 2.00298 0.667949 3.06202 0.666626 4.16668V12.5C0.667949 13.6047 1.10736 14.6637 1.88848 15.4448C2.66959 16.2259 3.72863 16.6654 4.83329 16.6667H9.83329ZM2.33329 12.5V4.16668C2.33329 3.50364 2.59668 2.86776 3.06553 2.39891C3.53437 1.93007 4.17025 1.66668 4.83329 1.66668C4.83329 1.66668 8.93246 1.67835 8.99996 1.68668V3.33335C8.99996 3.77538 9.17556 4.1993 9.48812 4.51186C9.80068 4.82442 10.2246 5.00001 10.6666 5.00001H12.3133C12.3216 5.06751 12.3333 12.5 12.3333 12.5C12.3333 13.1631 12.0699 13.7989 11.6011 14.2678C11.1322 14.7366 10.4963 15 9.83329 15H4.83329C4.17025 15 3.53437 14.7366 3.06553 14.2678C2.59668 13.7989 2.33329 13.1631 2.33329 12.5ZM17.3333 6.66668V15.8333C17.332 16.938 16.8926 17.997 16.1114 18.7782C15.3303 19.5593 14.2713 19.9987 13.1666 20H5.66663C5.44561 20 5.23365 19.9122 5.07737 19.7559C4.92109 19.5997 4.83329 19.3877 4.83329 19.1667C4.83329 18.9457 4.92109 18.7337 5.07737 18.5774C5.23365 18.4211 5.44561 18.3333 5.66663 18.3333H13.1666C13.8297 18.3333 14.4656 18.07 14.9344 17.6011C15.4032 17.1323 15.6666 16.4964 15.6666 15.8333V6.66668C15.6666 6.44567 15.7544 6.23371 15.9107 6.07743C16.067 5.92114 16.2789 5.83335 16.5 5.83335C16.721 5.83335 16.9329 5.92114 17.0892 6.07743C17.2455 6.23371 17.3333 6.44567 17.3333 6.66668Z" fill="#44B64B"/>
