@@ -42,13 +42,13 @@
       </div>
     </div>
   </section>
-  <section class="py-5 pb-14 ">
+  <section class="py-5 pb-14 lg:py-10 lg:bg-LightBlue">
     <div class="container">
       <div class="row">
         <div class="col-span-12">
-          <div class="bg-LightBlue rounded-6xl overflow-hidden py-20 px-[86px] flex flex-col">
-            <span class="text-Top6 text-Blue100 font-semibold">If Someone Else's Data Ruined Your Credit, We Can Help! Mixed Credit Report Lawyers Are Your Key to a Full Recovery</span>
-            <span class="border-0 border-b-4 border-Green w-[86px] mt-8 mb-6 @@StyleGreenLine"></span>
+          <div class="py-20 px-[86px] bg-LightBlue lg:p-0 w-full rounded-6xl lg:rounded-none overflow-hidden flex justify-between flex-col">
+            <span class="text-Top6 text-Blue100 font-semibold lg:text-Top3">If Someone Else's Data Ruined Your Credit, We Can Help! Mixed Credit Report Lawyers Are Your Key to a Full Recovery</span>
+            <span class="border-0 border-b-4 border-Green w-[86px] mt-8 mb-6 lg:mt-4 lg:mb-8"></span>
             <p>If you’ve newly applied for a job, mortgage, auto financing, credit card, rental, insurance, government
               benefit, or other financial prospect only to be rejected due to red flags in your credit profile, you may
               be the victim of a mixed credit report. Most people only learn about mixed credit reports once their life
@@ -77,13 +77,12 @@
   </section>
   <section class="section relative">
     <div class="container">
-      <div class="row gap-x-6">
-        <div class="col-span-5">
-          <div class="flex flex-col gap-y-14 max-w-[416px]">
+      <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-8">
+        <div class="col-span-5 xl:col-span-6 lg:col-span-12">
+          <div class="flex flex-col gap-y-14 lg:gap-y-8 max-w-[416px] lg:max-w-full">
             @@include('components/Title-block.html', {
             'Style': '',
-            'SubtitleStyle': 'hidden',
-            'Subtitle': '',
+            'Subtitle': 'Locations',
             'Title': 'Visit us at your convenience',
             'StyleGreenLine': 'mb-0',
             })
@@ -140,11 +139,12 @@
             </div>
           </div>
         </div>
-        <div class="col-span-7">
-          <div class="max-w-[748px] ml-auto">
+        <div class="col-span-7 xl:col-span-6 lg:col-span-12">
+          <div
+            class="max-w-[746px] ml-auto width-no-p p-4 rounded-6xl overflow-hidden flex items-center justify-center sm:p-0 sm:h-[320px] sm:rounded-none bg-LightBlue">
             <iframe
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAOMhVrALnzqYT8bHJf7lS3jJKqkeC4RIc&q=East+14th+Street,+New+York,+NY+10003,+United+States"
-              class="w-full h-[543px]"
+              class="w-full h-[543px] sm:h-[320px]"
               allowfullscreen=""
               loading="lazy">
             </iframe>
@@ -233,7 +233,10 @@
       </div>
       <div class="row gap-y-8">
         <div class="col-span-12">
-          @@include('components/Dropdown-services.html')
+          @@include('components/Dropdown-services.html', {
+          'Title': 'Credit Reporting Errors Attorneys',
+          'MainIcon': 'speed-2',
+          })
         </div>
         <div class="col-span-12">
           @@include('components/Dropdown-Practices.html', {
@@ -274,28 +277,30 @@
       </div>
     </div>
   </section>
-  <section class="section relative bg-img-2" style="background-image: url(img/Background-footer.png);">
+  <section class="section relative bg-img-2 overflow-hidden bg-im-none"
+           style="background-image: url(img/Background-footer.png);">
     <div class="container">
       <div class="row">
-        <div class="col-span-12 flex">
+        <div class="col-span-12 flex lg:flex-col">
           <div class="max-w-[400px] w-full flex flex-col relative">
             @@include('components/Title-block.html', {
             'Style': '',
             'Subtitle': 'Contact us',
-            'Title': 'Contact us <br> with any <br>questions.',
+            'Title': 'Contact us <br> today',
             'StyleGreenLine': '',
             })
             <div
-              class="shadow-v1 w-[526px] h-[412px] rounded-15 absolute bottom-1 left-0 z-[1] img-filter-5 overflow-hidden block">
+              class="lg:hidden shadow-v1 w-[526px] h-[412px] rounded-15 absolute bottom-1 left-0 z-[1] img-filter-5 overflow-hidden block">
               <img width="526" height="412" class="object-cover rounded-15" src="img/img-9.png" alt="">
             </div>
           </div>
-          @@include('components/Form-block.html')
+          @@include('components/Form-block.html', {
+          'Style': 'ml-auto'
+          })
         </div>
       </div>
     </div>
   </section>
-  @@include('components/modal-window.html')
   @@include('components/Footer.html')
 </main>
 
