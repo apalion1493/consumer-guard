@@ -173,8 +173,14 @@ input[type='search']::-webkit-search-results-decoration {
 @media (max-width: 1023.98px) {
 
   .contact-color-block {
-    width: calc(100% + 32px) !important;
+    width: calc(100% + 24px) !important;
     background-size: cover !important;
+  }
+
+  .width-no-p {
+    width: calc(100% + 24px) !important;
+    margin-left: -12px !important;
+    margin-right: -12px !important;
   }
 
 }
