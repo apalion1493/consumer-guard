@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Terms & Conditions</title>
+  <title>Login Details</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
-  <section class="pb-[59px] pt-[112px] hero-section relative bg-gradient1">
+  <section class="pb-[59px] lg:pb-10 pt-[112px] lg:pt-[96px] md:pt-20 relative bg-gradient1">
     <header id="sticky-header" class="flex flex-col w-full lg:bg-white absolute lg:fixed top-0 left-0 z-10 sticky-header  ">
   <div class="w-full flex flex-col">
     <div class="py-6 md:py-4">
@@ -102,80 +102,56 @@
     </div>
   </div>
 </header>
-    <div class="container pt-[100px]">
+    <div class="container pt-20 lg:pt-12">
       <div class="row gap-y-10">
         <div class="col-span-12">
           <div class="flex flex-col items-center">
-            <h1 class="text-center text-Blue100 block font-semibold">Terms & Conditions</h1>
-            <span class="border-0 border-b-4 border-Green w-[86px] mt-8 @@StyleGreenLine"></span>
+            <h1 class="text-center text-Blue100 block font-semibold">Login Details</h1>
+            <span class="border-0 border-b-4 border-Green w-[86px] mt-8"></span>
           </div>
         </div>
         <div class="col-span-12">
-          <div class="flex flex-col text-block">
-            <p>The information contained on the Website is provided for educational and informational purposes only and
-              the contents of the Website are not and should not be construed as legal advice. Nothing on the Website is
-              legal advice or should supplement or inform in anyway your legal decisions or a decision to seek legal
-              advice. The Website is not an offer to perform services on any matter. The Website contains general
-              information from a variety of sources and might not reflect current legal developments, verdicts or
-              settlements. We do not undertake to update material in our Site to reflect subsequent legal or other
-              developments. See “Disclaimer of Legal Advice” for furt her information.</p>
-            <br>
+          <div class="form-block w-[746px] mx-auto xl:px-10 lg:w-full md:px-3 md:py-8 sm:-mx-4 shadow-v4
+          rounded-6xl overflow-hidden bg-white border border-Green p-12">
+            <form class="row gap-x-6 gap-y-5 md:gap-x-0">
+              <div class="col-span-6 md:col-span-12">
+                <div class="form-group flex flex-col items-start input-icon">
+  <label class="mb-3 text-body text-Blue100 md:text-body2 " for="MailId">Email</label>
+  <input
+    class="input message-icon input-icon "
+    type="email" id="MailId" placeholder="" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+              </div>
+              <div class="col-span-6 md:col-span-12">
+                <div class="form-group flex flex-col items-start input-icon">
+  <label class="mb-3 text-body text-Blue100 md:text-body2 " for="PasswordId">Password</label>
+  <input
+    class="input password-icon input-icon "
+    type="password" id="PasswordId" placeholder="" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+              </div>
+              <div class="col-span-12">
+                <div class="flex flex-col">
+  <label class="custom-checkbox">
+    <span class="custom-checkbox__block w-5 min-w-5 h-5">
+      <i class="w-5 min-w-5 h-5 rounded bg-white border border-LightBlue3 flex"></i>
+    </span>
+    <input type="checkbox">
+    <span class="checkmark">
+      <i class="Check-box-on"></i>
+    </span>
+    <span class="ml-2 text-body2 text-DarkBlue md:text-body4 ">I have read and agree to the <a href="Terms&Conditions.html" class="">Privacy Policy</a>, <a href="Terms&Conditions.html">Investigation</a></span>
+  </label>
+  <small class="text-body2 font-medium text-Error md:text-body4 mt-2 "></small>
+</div>
 
-            <span class="text-Top3 font-semibold text-Blue100">Privacy Policy.</span>
-            <p>The Company respects your privacy and adheres to all applicable laws regarding the privacy of information
-              submitted by users of the site. A full statement of the Company’s Privacy Policy can be found on the
-              homepage of the Website. Please carefully read the Privacy Policy, which is incorporated herein and also
-              governs your use of the Website.
-              <br>
-              All information we collect on this Website is subject to our Privacy Policy. By using the Website, you
-              consent to all actions taken by us with respect to your information in compliance with the Privacy Policy
-            </p>
-            <br>
-            <span class="text-Top3 font-semibold text-Blue100">Changes to the Terms of Use.</span>
-            <p>We may revise and update these Terms of Use from time to time in our sole discretion. All changes are
-              effective immediately when we post them, and apply to all access to and use of the Website thereafter.
-              Your continued use of the Website following the posting of revised Terms of Use means that you accept and
-              agree to the changes. You are expected to check this page each time you access this Website so you are
-              aware of any changes, as they are binding on you.</p>
-            <br>
-
-            <span class="text-Top3 font-semibold text-Blue100">Accessing the Website and Account Security.</span>
-            <p>We reserve the right to withdraw or amend this Website, and any service or material we provide on the
-              Website, in our sole discretion without notice. We will not be liable if for any reason all or any part of
-              the Website is unavailable at any time or for any period. From time to time, we may restrict access to
-              some parts of the Website, or the entire Website, to users, including registered users.</p>
-            <br>
-            <span class="text-Top3 font-semibold text-Blue100">Ownership and Intellectual Property Rights.</span>
-            <p>The Website and its entire contents, features, and functionality (including but not limited to all
-              information, software, text, displays, images, video, and audio, and the design, selection, and
-              arrangement thereof), as well as Company software, systems, technology, and know-how, (collectively,
-              “Company IP”) are owned by the Company, its licensors, or other providers of such material and are
-              protected by United States and international copyright, trademark, patent, trade secret, and other
-              intellectual property or proprietary rights laws.
-              <br>
-              The Company name, terms, the Company logo, and all related names, logos, product and service names,
-              designs, and slogans are trademarks of the Company or its affiliates or licensors. You must not use such
-              marks without the prior written consent of the Company. All other names, logos, product and service names,
-              designs, and slogans on this Website are the trademarks of their respective owners.
-              <br>
-              These Terms of Use permit you to use the Website for your personal, non-commercial use only. You shall not
-              reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish,
-              download, store, or transmit any of the material on our Website or other Company IP, unless written
-              consent is given by Company (“IP Prohibited Uses”).</p>
-
-            <a href="#">Link Example</a>
-            <ul>
-              <li>123</li>
-              <li>123</li>
-              <li>123</li>
-            </ul>
-
-            <ol>
-              <li>123</li>
-              <li>123</li>
-              <li>123</li>
-              <li>123</li>
-            </ol>
+                <button class="button shadow-v3 mt-8 md:w-full lg:mt-6" type="submit" aria-label="Continue">
+  <span>Continue</span>
+</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

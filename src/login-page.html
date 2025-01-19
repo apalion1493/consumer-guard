@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Login Details'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen">
+  <section class="pb-[59px] lg:pb-10 pt-[112px] lg:pt-[96px] md:pt-20 relative bg-gradient1">
+    @@include('components/Header.html', {
+    'commonStyle': ' ',
+    })
+    <div class="container pt-20 lg:pt-12">
+      <div class="row gap-y-10">
+        <div class="col-span-12">
+          <div class="flex flex-col items-center">
+            <h1 class="text-center text-Blue100 block font-semibold">Login Details</h1>
+            <span class="border-0 border-b-4 border-Green w-[86px] mt-8"></span>
+          </div>
+        </div>
+        <div class="col-span-12">
+          <div class="form-block w-[746px] mx-auto xl:px-10 lg:w-full md:px-3 md:py-8 sm:-mx-4 shadow-v4
+          rounded-6xl overflow-hidden bg-white border border-Green p-12">
+            <form class="row gap-x-6 gap-y-5 md:gap-x-0">
+              <div class="col-span-6 md:col-span-12">
+                @@include('components/input.html', {
+                'common-style': 'input-icon',
+                'StyleLabel': '',
+                'idInput': 'MailId',
+                'label': 'Email',
+                'styleInput': 'message-icon input-icon',
+                'type': 'email',
+                'errorStyle': 'hidden',
+                'placeholder': '',
+                })
+              </div>
+              <div class="col-span-6 md:col-span-12">
+                @@include('components/input.html', {
+                'common-style': 'input-icon',
+                'StyleLabel': '',
+                'idInput': 'PasswordId',
+                'label': 'Password',
+                'styleInput': 'password-icon input-icon',
+                'type': 'password',
+                'errorStyle': 'hidden',
+                'placeholder': '',
+                })
+              </div>
+              <div class="col-span-12">
+                @@include('components/checkbox.html', {
+                'styleText': '',
+                'text': 'I have read and agree to the <a href="Terms&Conditions.html" class="">Privacy Policy</a>, <a href="Terms&Conditions.html">Investigation</a>',
+                'errorStyle': '',
+                'errorText': '',
+                })
+
+                @@include('components/button.html', {
+                'style': 'shadow-v3 mt-8 md:w-full lg:mt-6',
+                'type': 'submit',
+                'ariaLabel': 'Continue',
+                'title': 'Continue',
+                })
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  @@include('components/modal-window.html')
+  @@include('components/Footer.html')
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>

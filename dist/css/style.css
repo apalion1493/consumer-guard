@@ -948,9 +948,6 @@ html {
 .inline-flex{
   display: inline-flex;
 }
-.inline-table{
-  display: inline-table;
-}
 .grid{
   display: grid;
 }
@@ -1101,6 +1098,9 @@ html {
 }
 .w-\[60px\]{
   width: 60px;
+}
+.w-\[746px\]{
+  width: 746px;
 }
 .w-\[75px\]{
   width: 75px;
@@ -1516,6 +1516,9 @@ html {
 .p-8{
   padding: 2rem;
 }
+.p-12{
+  padding: 3rem;
+}
 .px-0{
   padding-left: 0px;
   padding-right: 0px;
@@ -1592,6 +1595,10 @@ html {
   padding-top: 72px;
   padding-bottom: 72px;
 }
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1633,6 +1640,9 @@ html {
 }
 .pt-\[112px\]{
   padding-top: 112px;
+}
+.pt-20{
+  padding-top: 5rem;
 }
 .text-left{
   text-align: left;
@@ -2490,6 +2500,11 @@ a{
   background: url("../img/icons/speed-2.svg") no-repeat center center;
   background-size: 100% auto;
   display: block;
+}
+
+.password-icon {
+  background: url("../img/icons/Lock.svg") no-repeat calc(100% - 16px) center;
+  background-size: 20px 20px;
 }
 
 .button{
@@ -3879,17 +3894,14 @@ a{
   .md\:mt-14{
     margin-top: 3.5rem;
   }
-  .md\:mt-4{
-    margin-top: 1rem;
-  }
   .md\:mt-6{
     margin-top: 1.5rem;
   }
   .md\:hidden{
     display: none;
   }
-  .md\:h-\[126px\]{
-    height: 126px;
+  .md\:h-\[128px\]{
+    height: 128px;
   }
   .md\:h-\[150px\]{
     height: 150px;
@@ -3903,9 +3915,6 @@ a{
   .md\:h-auto{
     height: auto;
   }
-  .md\:h-\[128px\]{
-    height: 128px;
-  }
   .md\:w-\[150px\]{
     width: 150px;
   }
@@ -3918,26 +3927,17 @@ a{
   .md\:w-full{
     width: 100%;
   }
-  .md\:min-w-\[126px\]{
-    min-width: 126px;
+  .md\:min-w-0{
+    min-width: 0px;
   }
   .md\:min-w-\[128px\]{
     min-width: 128px;
   }
-  .md\:min-w-0{
-    min-width: 0px;
-  }
-  .md\:max-w-\[126px\]{
-    max-width: 126px;
-  }
-  .md\:max-w-\[296px\]{
-    max-width: 296px;
-  }
   .md\:max-w-\[128px\]{
     max-width: 128px;
   }
-  .md\:max-w-\[277px\]{
-    max-width: 277px;
+  .md\:max-w-\[296px\]{
+    max-width: 296px;
   }
   .md\:max-w-\[400px\]{
     max-width: 400px;
@@ -3952,6 +3952,13 @@ a{
     -moz-column-gap: 0px;
          column-gap: 0px;
   }
+  .md\:gap-x-3{
+    -moz-column-gap: 0.75rem;
+         column-gap: 0.75rem;
+  }
+  .md\:gap-y-3{
+    row-gap: 0.75rem;
+  }
   .md\:gap-y-4{
     row-gap: 1rem;
   }
@@ -3960,13 +3967,6 @@ a{
   }
   .md\:gap-y-8{
     row-gap: 2rem;
-  }
-  .md\:gap-y-3{
-    row-gap: 0.75rem;
-  }
-  .md\:gap-x-3{
-    -moz-column-gap: 0.75rem;
-         column-gap: 0.75rem;
   }
   .md\:overflow-y-scroll{
     overflow-y: scroll;
@@ -3977,11 +3977,11 @@ a{
   .md\:p-2{
     padding: 0.5rem;
   }
-  .md\:p-4{
-    padding: 1rem;
-  }
   .md\:p-3{
     padding: 0.75rem;
+  }
+  .md\:p-4{
+    padding: 1rem;
   }
   .md\:px-3{
     padding-left: 0.75rem;
@@ -3991,13 +3991,13 @@ a{
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  .md\:py-8{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
   .md\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+  .md\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   .md\:pb-12{
     padding-bottom: 3rem;
@@ -4008,12 +4008,19 @@ a{
   .md\:pt-20{
     padding-top: 5rem;
   }
+  .md\:pt-10{
+    padding-top: 2.5rem;
+  }
   .md\:text-center{
     text-align: center;
   }
   .md\:text-Top6{
     font-size: 28px;
     line-height: 120%;
+  }
+  .md\:text-body{
+    font-size: 16px;
+    line-height: 130%;
   }
   .md\:text-body2{
     font-size: 14px;
@@ -4022,10 +4029,6 @@ a{
   .md\:text-body4{
     font-size: 12px;
     line-height: 120%;
-  }
-  .md\:text-body{
-    font-size: 16px;
-    line-height: 130%;
   }
 }
 
