@@ -1,26 +1,30 @@
-<div class="rounded-6xl overflow-hidden bg-white border border-LightBlue2 py-[72px] px-[86px] flex flex-col gap-y-16">
-  <div class="flex w-full gap-x-6">
+<div class="rounded-6xl overflow-hidden bg-white border
+border-LightBlue2 py-[72px] px-[86px] xl:p-16 md:p-4 flex flex-col gap-y-16 lg:gap-y-6">
+  <div class="flex lg:flex-col lg:gap-x-0 lg:gap-y-6 w-full gap-x-6">
     <div
-      class="flex items-center justify-center overflow-hidden rounded-8xl min-w-[440px] w-[440px] h-[440px] bg-Attorney-Card-img">
+      class="flex items-center justify-center overflow-hidden rounded-8xl min-w-[440px] w-[440px] h-[440px] md:max-w-[440px] md:min-w-0 md:w-full md:h-auto md:max-h-[440px] bg-Attorney-Card-img lg:mx-auto relative">
       <img class="w-full h-full object-cover object-top" src="@@ImgURL" alt="@@Alt">
+      <div class="minlg:hidden absolute top-0 left-0 bg-white rounded-br-8xl flex items-center justify-center overflow-hidden">
+        <img src="img/icons/CG-logo-mob.svg" alt="Consumer Guard Logo">
+      </div>
     </div>
     <div class="flex flex-col">
-      <div class="flex justify-between items-start mb-6">
+      <div class="flex justify-between items-start mb-6 gap-x-4">
         <div class="flex flex-col">
-          <h3 class="text-h3 font-semibold text-Blue100">@@Title</h3>
-          <span class="border-0 border-b-4 border-Green w-[86px] my-3 @@StyleGreenLine"></span>
+          <h3 class="text-h3 font-semibold text-Blue100 lg:text-Top3">@@TitleMain</h3>
+          <span class="border-0 border-b-4 border-Green w-[86px] my-3"></span>
           <span class="text-body text-LightBlue4">Founding Partner</span>
         </div>
-        <img width="195" src="img/CA-logo-1.svg" alt="Logo">
+        <img class="lg:hidden" width="195" src="img/CA-logo-1.svg" alt="Logo">
       </div>
       <p class="mb-auto">Daniel has a proven record of effectively representing consumers across the United States in class action
         lawsuits, securing both monetary awards and non-monetary relief on their behalf in numerous cases. </p>
-      <div class="mt-20 flex flex-col">
+      <div class="mt-20 lg:mt-6 flex flex-col">
         <span class="text-Top3 text-Blue100 mb-3 block font-semibold">Contact Us</span>
         <ul class="flex flex-col gap-y-2">
           <li class="flex items-center">
-            <a class="flex items-center text-base text-black hover:text-Green transition-colors"
-               href="tel:+1234567890">
+            <a class="flex items-center text-base lg:text-body text-black hover:text-Green transition-colors"
+               href="tel:811111111">
                       <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                           <path
@@ -28,11 +32,11 @@
                             fill="#44B64B" />
                         </svg>
                       </span>
-              <span class="font-medium">+1 123 4567 890</span>
+              <span class="font-medium">811111111</span>
             </a>
           </li>
           <li class="flex items-center">
-            <a class="flex items-center text-base text-black hover:text-Green transition-colors"
+            <a class="flex items-center text-base lg:text-body text-black hover:text-Green transition-colors"
                href="mailto:info@consumerguard.com">
                       <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
@@ -45,7 +49,7 @@
             </a>
           </li>
           <li class="flex items-center">
-            <div class="flex items-center text-base text-black">
+            <div class="flex items-center text-base lg:text-body text-black">
                     <span class="w-5 h-5 min-w-5 mr-2 flex items-center self-start">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M10 0C8.02219 0 6.08879 0.58649 4.4443 1.6853C2.79981 2.78412 1.51809 4.3459 0.761209 6.17317C0.0043329 8.00043 -0.193701 10.0111 0.192152 11.9509C0.578004 13.8907 1.53041 15.6725 2.92894 17.0711C4.32746 18.4696 6.10929 19.422 8.0491 19.8079C9.98891 20.1937 11.9996 19.9957 13.8268 19.2388C15.6541 18.4819 17.2159 17.2002 18.3147 15.5557C19.4135 13.9112 20 11.9778 20 10C19.9971 7.34871 18.9426 4.80684 17.0679 2.9321C15.1932 1.05736 12.6513 0.00286757 10 0ZM10 18.3333C8.35183 18.3333 6.74066 17.8446 5.37025 16.9289C3.99984 16.0132 2.93174 14.7117 2.30101 13.189C1.67028 11.6663 1.50525 9.99076 1.82679 8.37425C2.14834 6.75774 2.94201 5.27288 4.10745 4.10744C5.27289 2.94201 6.75774 2.14833 8.37425 1.82679C9.99076 1.50525 11.6663 1.67027 13.189 2.301C14.7118 2.93173 16.0132 3.99984 16.9289 5.37025C17.8446 6.74066 18.3333 8.35182 18.3333 10C18.3309 12.2094 17.4522 14.3276 15.8899 15.8899C14.3276 17.4522 12.2094 18.3309 10 18.3333Z" fill="#44B64B"/>
@@ -53,7 +57,7 @@
                       </svg>
                     </span>
               <span class="font-medium">
-                Working Hours <br>
+                <span class="font-semibold">Working Hours</span> <br>
                 Monday - Friday <br>
                 7:00 AM to 5:00 PM
               </span>
@@ -64,84 +68,39 @@
     </div>
   </div>
   <div class="flex flex-col">
-    <span class="text-Blue100 block font-semibold text-Top1">Practice Areas</span>
-    <span class="border-0 border-b-4 border-Green w-[86px] mt-3"></span>
-    <div class="mt-8 flex flex-wrap gap-x-8">
-      <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
-  bg-LightBlue transition-all hover:bg-Blue100">
-        <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
-          <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
-        </svg>
-        <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
-          <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
-            <i class="Identity-Theft w-[60px] h-[60px] relative z-[2]"></i>
-            <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
-              <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
-            </svg>
-          </div>
-          <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Identity Theft</h3>
-        </div>
-      </a>
-      <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
-  bg-LightBlue transition-all hover:bg-Blue100">
-        <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
-          <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
-        </svg>
-        <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
-          <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
-            <i class="Mixed-File w-[60px] h-[60px] relative z-[2]"></i>
-            <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
-              <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
-            </svg>
-          </div>
-          <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Mixed File</h3>
-        </div>
-      </a>
-      <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
-  bg-LightBlue transition-all hover:bg-Blue100">
-        <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
-          <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
-        </svg>
-        <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
-          <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
-            <i class="Hard-Inquiry w-[60px] h-[60px] relative z-[2]"></i>
-            <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
-              <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
-            </svg>
-          </div>
-          <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Hard Inquiry</h3>
-        </div>
-      </a>
-      <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
-  bg-LightBlue transition-all hover:bg-Blue100">
-        <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
-          <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
-        </svg>
-        <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
-          <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
-            <i class="Fraud-Alert w-[60px] h-[60px] relative z-[2]"></i>
-            <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
-              <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
-            </svg>
-          </div>
-          <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Fraud Alert</h3>
-        </div>
-      </a>
-      <a href="#" class="rounded-6xl group overflow-hidden min-w-[196px] max-w-[196px] h-[196px] flex justify-center items-center relative p-3
-  bg-LightBlue transition-all hover:bg-Blue100">
-        <svg class="absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169" fill="none">
-          <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="45" cy="45" r="123" stroke="#E7E9FC" stroke-width="2"/>
-        </svg>
-        <div class="flex flex-col items-center border border-Green rounded-xl h-full w-full p-2 relative z-[1px]">
-          <div class="mt-[29px] w-[60px] h-[60px] relative mb-4">
-            <i class="Late-Payments w-[60px] h-[60px] relative z-[2]"></i>
-            <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="40" height="51" viewBox="0 0 40 51" fill="none">
-              <path class="group-hover:stroke-DarkBlue transition-all" d="M19.9988 1.43935C28.0616 1.43935 34.9041 3.15521 39 5.66743V30.5484C39 31.8839 38.5417 33.1693 37.9611 34.5953C36.2697 38.194 33.433 40.9083 30.1032 43.2466C27.7829 44.876 25.2956 46.2779 22.8214 47.6725C21.876 48.2053 20.9326 48.737 20.0012 49.28C19.0689 48.7365 18.1245 48.2043 17.1783 47.6711C14.7047 46.277 12.2179 44.8755 9.89786 43.2465C6.56754 40.9083 3.73025 38.194 2.0389 34.5953C1.45832 33.1693 1 31.8839 1 30.5484V5.66743C5.09581 3.15519 11.9361 1.43935 19.9988 1.43935Z" stroke="#F0F1FE" stroke-width="2"/>
-            </svg>
-          </div>
-          <h3 class="text-body text-Blue100 group-hover:text-white transition-all font-medium text-center block">Late Payments</h3>
-        </div>
-      </a>
+    <span class="text-Blue100 block font-semibold text-Top1 lg:hidden">Practice Areas</span>
+    <span class="border-0 border-b-4 border-Green w-[86px] mt-3 lg:hidden"></span>
+    <div class="mt-8 flex flex-wrap md:justify-center gap-8 lg:gap-6 md:gap-3 lg:mt-0">
+      @@include('Services-Card.html', {
+      'Style': '',
+      'URL': '#',
+      'Title': 'Identity Theft',
+      'Icon': 'Identity-Theft',
+      })
+      @@include('Services-Card.html', {
+      'Style': '',
+      'URL': '#',
+      'Title': 'Mixed File',
+      'Icon': 'Mixed-File',
+      })
+      @@include('Services-Card.html', {
+      'Style': '',
+      'URL': '#',
+      'Title': 'Hard Inquiry',
+      'Icon': 'Hard-Inquiry',
+      })
+      @@include('Services-Card.html', {
+      'Style': '',
+      'URL': '#',
+      'Title': 'Fraud Alert',
+      'Icon': 'Fraud-Alert',
+      })
+      @@include('Services-Card.html', {
+      'Style': '',
+      'URL': '#',
+      'Title': 'Late Payments',
+      'Icon': 'Late-Payments',
+      })
     </div>
   </div>
 </div>
