@@ -16,7 +16,7 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
-  <section class="pt-[112px] lg:pt-[96px] md:pt-20 hero-section relative" style="background-image: url(img/Backgound-CU-page.png);">
+  <section class="pt-[112px] lg:pt-[96px] md:pt-20 hero-section relative bg-gradient1">
     <header id="sticky-header" class="flex flex-col w-full bg-white fixed top-0 left-0 z-10 sticky-header shadow-v1 border-b border-LightBlue2  ">
   <div class="w-full flex flex-col">
     <div class="py-6 md:py-4">
@@ -97,14 +97,12 @@
 </header>
     <div class="container pt-[100px] lg:pt-12">
       <div class="row gap-x-6 xl:gap-x-0 xl:gap-y-12">
-        <div class="col-span-12">
-          <div class="flex flex-col items-center mx-auto mb-6 lg:mb-0">
-            <h1 class="text-center lg:text-Top6 text-Blue100 block font-semibold">Contact Us</h1>
-            <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:mt-4 lg:mb-0"></span>
-          </div>
-        </div>
         <div class="col-span-4 xl:col-span-12">
           <div class="flex flex-col">
+            <div class="flex flex-col xl:items-center mb-0">
+              <h1 class="lg:text-Top6 text-Blue100 block font-semibold">Contact Us</h1>
+              <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:my-4"></span>
+            </div>
             <p class="text-black text-body">We’re here to help you every step of the way. Whether you have questions,
               need more information, or are ready to get started, our team is ready to assist. At Consumer Guard, we
               make it easy to connect with experts who understand your needs. Simply reach out, and we’ll guide you
@@ -114,7 +112,7 @@
             <span class="text-Top3 text-Blue100 mb-3 mt-6 block font-semibold">Get in Touch Today</span>
             <p>Fill out the contact form below, and one of our specialists will reach out to you shortly. At Consumer
               Guard, your convenience and satisfaction are our top priorities.</p>
-            <div class="mt-6 mb-[120px] xl:hidden">
+            <div class="mt-6 mb-12 xl:hidden">
               <span class="text-Top3 text-Blue100 mb-3 block font-semibold">Contact Details:</span>
               <ul class="flex flex-col gap-y-2">
                 <li class="flex items-center">
@@ -226,11 +224,12 @@
             </div>
           </div>
         </div>
-        <div class="col-span-8 xl:col-span-12 relative">
-          <div class="absolute top-0 right-0 z-10 xl:relative xl:flex xl:flex-col xl:pb-8">
+        <div class="col-span-1 xl:hidden"></div>
+        <div class="col-span-7 xl:col-span-12 relative">
+          <div class="absolute w-full top-0 right-0 z-10 xl:relative xl:flex xl:flex-col xl:pb-8">
             <div class="form-block max-w-[746px] relative z-[2] xl:px-10 w-full lg:w-full
 md:px-3 md:py-8 sm:-mx-3 shadow-v4 rounded-6xl overflow-hidden
-bg-white border border-Green p-12 ml-auto xl:mx-auto">
+bg-white border border-Green p-12 w-full xl:mx-auto">
   <form class="row gap-x-6 gap-y-5 md:gap-x-0">
     <div class="col-span-6 md:col-span-12">
       <div class="form-group flex flex-col items-start input-icon">
@@ -326,7 +325,6 @@ bg-white border border-Green p-12 ml-auto xl:mx-auto">
     </div>
   </form>
 </div>
-
             <div class="mt-8 minxl:hidden">
               <span class="text-Top3 text-Blue100 mb-3 block font-semibold">Contact Details:</span>
               <ul class="flex flex-col gap-y-2">
@@ -442,10 +440,10 @@ bg-white border border-Green p-12 ml-auto xl:mx-auto">
       </div>
     </div>
   </section>
-  <section class="w-full h-[700px]">
+  <section class="w-full h-[700px] lg:h-[400px] lg:mb-10">
     <iframe
       src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAOMhVrALnzqYT8bHJf7lS3jJKqkeC4RIc&q=East+14th+Street,+New+York,+NY+10003,+United+States"
-      class="w-full h-[700px]"
+      class="w-full h-[700px] lg:h-[400px]"
       allowfullscreen=""
       loading="lazy">
     </iframe>
