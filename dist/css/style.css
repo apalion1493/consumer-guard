@@ -3687,6 +3687,9 @@ a{
   .lg\:col-span-7{
     grid-column: span 7 / span 7;
   }
+  .lg\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
   .lg\:mx-auto{
     margin-left: auto;
     margin-right: auto;
@@ -3787,6 +3790,9 @@ a{
   }
   .lg\:flex-col-reverse{
     flex-direction: column-reverse;
+  }
+  .lg\:items-start{
+    align-items: flex-start;
   }
   .lg\:items-center{
     align-items: center;
@@ -4055,6 +4061,9 @@ a{
 @media (max-width: 639px){
   .sm\:col-span-12{
     grid-column: span 12 / span 12;
+  }
+  .sm\:col-span-6{
+    grid-column: span 6 / span 6;
   }
   .sm\:-mx-4{
     margin-left: -1rem;
