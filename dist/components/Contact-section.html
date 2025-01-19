@@ -24,8 +24,8 @@ bg-white border border-Green p-12 ">
       <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 " for="TextId1">First name</label>
   <input
-    class="input user-icon input-icon "
-    type="text" id="TextId1" placeholder="" required>
+    class="input user-icon input-icon"
+    type="text" id="TextId1" placeholder="" name="@@Name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
     </div>
@@ -33,8 +33,8 @@ bg-white border border-Green p-12 ">
       <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 " for="TextId2">Last name</label>
   <input
-    class="input user-icon input-icon "
-    type="text" id="TextId2" placeholder="" required>
+    class="input user-icon input-icon"
+    type="text" id="TextId2" placeholder="" name="@@Name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
     </div>
@@ -42,8 +42,8 @@ bg-white border border-Green p-12 ">
       <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 " for="MailId">Email</label>
   <input
-    class="input message-icon input-icon "
-    type="email" id="MailId" placeholder="" required>
+    class="input message-icon input-icon"
+    type="email" id="MailId" placeholder="" name="@@Name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
     </div>
@@ -51,8 +51,8 @@ bg-white border border-Green p-12 ">
       <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 " for="PhoneId">Phone Number</label>
   <input
-    class="input phone-call-icon input-icon "
-    type="text" id="PhoneId" placeholder="" required>
+    class="input phone-call-icon input-icon"
+    type="text" id="PhoneId" placeholder="" name="@@Name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
     </div>
@@ -87,10 +87,10 @@ bg-white border border-Green p-12 ">
     </div>
     <div class="col-span-12">
       <div class="form-group flex flex-col items-start overflow-hidden ">
-  <label class="mb-3 font-semibold text-body" for="CommentId"></label>
+  <label class="mb-3 font-semibold text-body hidden" for="CommentId"></label>
   <textarea
     class="input "
-    id="CommentId" placeholder="Text message..." rows="3"></textarea>
+    id="CommentId" placeholder="Text message..." rows="3" name="@@Name"></textarea>
 </div>
     </div>
     <div class="col-span-12">

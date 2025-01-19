@@ -105,6 +105,7 @@ module.exports = {
         Blue100: '#30367A',
         Green: '#44B64B',
         LightGreen: '#69C56F',
+        LightGreen2: '#44B64B33',
         green600: '#31A438',
         Grey: '#D5D5DD',
         DarkGrey: '#9A9AA2',
@@ -119,7 +120,7 @@ module.exports = {
 
       },
       letterSpacing: {
-        '018': '-0.18px',
+        '072': '0.72pxx',
       },
       padding: {
         '1/4': '25%',

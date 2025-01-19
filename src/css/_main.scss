@@ -101,15 +101,15 @@
 .text-content {
 
   p {
-    @apply text-base md:text-body -tracking-018 text-DarkBlue
+    @apply text-base md:text-body text-DarkBlue
   }
 
   ol {
-    @apply list-decimal text-base -tracking-018 text-DarkBlue font-medium pl-6
+    @apply list-decimal text-base text-DarkBlue font-medium pl-6
   }
 
   ul {
-    @apply list-disc text-base -tracking-018 text-DarkBlue font-medium pl-6
+    @apply list-disc text-base text-DarkBlue font-medium pl-6
   }
 
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -579,15 +579,34 @@
 }
 
 .time-slot {
-  @apply flex items-center justify-center text-body2 font-medium text-Green h-[34px] w-[177px] border border-Green rounded-lg
+  @apply flex items-center justify-center text-body2 font-medium
+  text-Green h-[34px] w-[177px] border border-Green rounded-lg
+  hover:bg-Green hover:text-white transition-all
 }
 
 #time-picker {
-  @apply flex flex-col items-center ml-6
+  @apply flex flex-col items-center ml-6 lg:ml-0 lg:pt-5 lg:border-t lg:border-LightBlue2
 }
 
-[data-vc-date] .vc-date__btn {
-  @apply w-[41px] h-[41px] min-w-[41px] rounded-full bg-LightBlue7 text-body2 text-black
+[data-vc-date] .vc-date__btn,
+[data-vc-theme=light] .vc-date[data-vc-date-holiday] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-weekend] .vc-date__btn,
+[data-vc-theme=light] .vc-date[data-vc-date-holiday][data-vc-date-today] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-weekend][data-vc-date-today] .vc-date__btn {
+  border-radius: 100% !important;
+  @apply w-[41px] h-[41px] min-w-[41px] bg-LightGreen2 hover:bg-LightGreen2 text-body2 text-green600 overflow-hidden
+}
+
+[data-vc-theme=light] .vc-date[data-vc-date-holiday][data-vc-date-selected] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-weekend][data-vc-date-selected] .vc-date__btn {
+  @apply bg-Green hover:bg-Green
+}
+
+[data-vc-theme=light] .vc-date[data-vc-date-disabled] .vc-date__btn {
+  color: black;
+  @apply bg-LightBlue7
+}
+
+[data-vc-theme=light] .vc-date[data-vc-date-holiday][data-vc-date-disabled] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-weekend][data-vc-date-disabled] .vc-date__btn {
+  color: black;
+  @apply bg-LightBlue7
 }
 
 .vc-dates {
@@ -598,8 +617,36 @@
   @apply bg-Green hover:bg-Green
 }
 
-[data-vc-theme=light] .vc-date[data-vc-date-holiday] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-weekend] .vc-date__btn {
-  @apply bg-LightBlue7 text-black
+[data-vc-theme=light] .vc-date[data-vc-date-holiday][data-vc-date-selected] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-weekend][data-vc-date-selected] .vc-date__btn {
+  @apply text-white
+}
+
+[data-vc-theme=light] .vc-date[data-vc-date-holiday][data-vc-date-month=next] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-holiday][data-vc-date-month=prev] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-weekend][data-vc-date-month=next] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-weekend][data-vc-date-month=prev] .vc-date__btn {
+  pointer-events: none;
+}
+
+[data-vc-theme=light].vc {
+  @apply p-0
+}
+
+.calendar-container-block {
+  padding: 16px !important;
+
+  [data-vc=month], [data-vc=year] {
+    @apply text-body2 font-medium text-black
+  }
+
+  @media (max-width: 1023.98px) {
+    flex-direction: column;
+    width: 296px;
+    padding: 12px !important;
+
+    [data-vc-date] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-holiday] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-weekend] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-holiday][data-vc-date-today] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-weekend][data-vc-date-today] .vc-date__btn {
+      @apply w-[32px] h-[32px] min-w-[32px]
+    }
+
+    @apply gap-y-5
+  }
 }
 
 #time-options {

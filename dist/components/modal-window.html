@@ -17,8 +17,8 @@
           <div class="form-group flex flex-col items-start ">
   <label class="mb-3 text-body text-Blue100 md:text-body2 hidden" for="TextId1"></label>
   <input
-    class="input  "
-    type="text" id="TextId1" placeholder="Your Name" required>
+    class="input "
+    type="text" id="TextId1" placeholder="Your Name" name="@@Name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
         </div>
@@ -26,8 +26,8 @@
           <div class="form-group flex flex-col items-start ">
   <label class="mb-3 text-body text-Blue100 md:text-body2 hidden" for="EmailId1"></label>
   <input
-    class="input  "
-    type="email" id="EmailId1" placeholder="Email" required>
+    class="input "
+    type="email" id="EmailId1" placeholder="Email" name="@@Name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
         </div>
@@ -44,17 +44,17 @@
           <div class="form-group flex flex-col items-start ">
   <label class="mb-3 text-body text-Blue100 md:text-body2 hidden" for="PhoneId1"></label>
   <input
-    class="input  "
-    type="text" id="PhoneId1" placeholder="Phone" required>
+    class="input "
+    type="text" id="PhoneId1" placeholder="Phone" name="@@Name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
         </div>
         <div class="col-span-12">
           <div class="form-group flex flex-col items-start overflow-hidden @@commonStyle">
-  <label class="mb-3 font-semibold text-body" for="@@idTextarea"></label>
+  <label class="mb-3 font-semibold text-body hidden" for="@@idTextarea"></label>
   <textarea
     class="input "
-    id="@@idTextarea" placeholder="Message" rows="3"></textarea>
+    id="@@idTextarea" placeholder="Message" rows="3" name="@@Name"></textarea>
 </div>
         </div>
         <div class="col-span-12">

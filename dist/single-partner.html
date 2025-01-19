@@ -16,7 +16,7 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
-  <section class="pb-[59px] pt-[112px] hero-section relative bg-gradient1">
+  <section class="pb-[59px] pt-[112px] lg:pt-[96px] md:pt-20 lg:pb-8 hero-section relative bg-gradient1">
     <header id="sticky-header" class="flex flex-col w-full lg:bg-white absolute lg:fixed top-0 left-0 z-10 sticky-header  ">
   <div class="w-full flex flex-col">
     <div class="py-6 md:py-4">
@@ -95,25 +95,34 @@
     </div>
   </div>
 </header>
-    <div class="container pt-[100px]">
-      <div class="row gap-x-6">
-        <div class="col-span-6">
+    <div class="container pt-14 lg:pt-12">
+      <div class="row gap-x-6 lg:gap-x-0">
+        <div class="col-span-6 lg:col-span-12">
           <div class="flex flex-col gap-y-10">
-            <a class="text-black text-body flex items-center gap-x-4 mb-6" href="#">
-            <span class="w-10 h-10 min-w-10 flex items-center justify-center rounded-full border border-Green">
-              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M9.40826 1.08002C9.09584 0.767598 8.58931 0.767598 8.27689 1.08002L0.357297 8.99961L8.27689 16.9192C8.58931 17.2316 9.09584 17.2316 9.40826 16.9192C9.72068 16.6068 9.72068 16.1003 9.40826 15.7878L2.62004 8.99961L9.40826 2.21139C9.72068 1.89897 9.72068 1.39244 9.40826 1.08002Z"
-                      fill="#44B64B" />
-              </svg>
-            </span>
+            <a class="text-black text-body flex items-center gap-x-4 mb-6 lg:mb-0" href="#">
+              <span class="w-10 h-10 min-w-10 flex items-center justify-center rounded-full border border-Green">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.40826 1.08002C9.09584 0.767598 8.58931 0.767598 8.27689 1.08002L0.357297 8.99961L8.27689 16.9192C8.58931 17.2316 9.09584 17.2316 9.40826 16.9192C9.72068 16.6068 9.72068 16.1003 9.40826 15.7878L2.62004 8.99961L9.40826 2.21139C9.72068 1.89897 9.72068 1.39244 9.40826 1.08002Z"
+                        fill="#44B64B" />
+                </svg>
+              </span>
               Back
             </a>
             <div class="flex flex-col">
               <div class="flex flex-col">
-                <h1 class="text-h1 font-semibold text-Blue100 block">Daniel Cohen</h1>
-                <span class="border-0 border-b-4 border-Green w-[86px] my-8 @@StyleGreenLine"></span>
+                <h1 class="text-h1 lg:text-Top6 font-semibold text-Blue100 block">Daniel Cohen</h1>
+                <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:my-4"></span>
                 <p class="text-base text-LightBlue4">Founding Partner</p>
+              </div>
+              <div class="flex flex-col minlg:hidden">
+                <div class="w-full mt-8 max-w-[245px] h-[326px] mb-6 mx-auto sm2:ml-0 relative">
+                  <svg class="absolute -right-[51px] -bottom-6 z-[1] h-auto" xmlns="http://www.w3.org/2000/svg" width="243" height="310" viewBox="0 0 243 310" fill="none">
+                    <path d="M121.755 0.723504C172.845 0.723504 216.613 12.1804 242.303 29.4059V186.679C242.303 196.192 239.093 205.1 235.554 213.979C224.751 237.567 206.696 255.102 186.084 269.904C171.796 280.165 156.329 289.081 141.217 297.793C134.625 301.593 128.1 305.355 121.769 309.172C115.435 305.352 108.904 301.588 102.306 297.785C87.1973 289.075 71.7334 280.161 57.4476 269.904C36.8324 255.102 18.7734 237.567 7.97045 213.979C4.43137 205.1 1.22155 196.192 1.22155 186.679V29.4059C26.9114 12.1804 70.6656 0.723504 121.755 0.723504Z" stroke="#44B64B" stroke-width="1.39623"/>
+                  </svg>
+                  <img src="img/Daniel-Cohen-3.png" alt="Daniel-Cohen avatar"
+                       class="object-cover relative z-[2] rounded-6xl object-top max-w-[245px] w-full h-[326px]">
+                </div>
               </div>
               <div class="flex flex-col mt-8 gap-y-6">
                 <p>Daniel Cohen is the Founder of Consumer Attorneys. Daniel manages the firm’s branding, marketing,
@@ -130,44 +139,46 @@
                   2017.</p>
               </div>
             </div>
-            <div class="rounded-6xl shadow-v4 border border-Green w-full p-10">
-              <div class="row gap-5">
-                <div class="col-span-12 flex justify-center">
-                  <span>CONTACT US</span>
+            <div class="rounded-6xl form-block lg:w-full shadow-v4 border border-Green w-full p-10 lg:px-3 lg:pt-8 sm:-mx-4">
+              <form class="row gap-5">
+                <div class="col-span-12 flex justify-center items-center gap-x-4 lg:hidden">
+                  <span class="border-b border-LightBlue3 block w-full"></span>
+                  <span class="text-nowrap text-body4 uppercase text-Blue100 tracking-072">CONTACT US</span>
+                  <span class="border-b border-LightBlue3 block w-full"></span>
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 lg:col-span-12">
                   <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 hidden" for="TextId1">First name</label>
   <input
-    class="input user-icon input-icon "
-    type="text" id="TextId1" placeholder="First name" required>
+    class="input user-icon input-icon"
+    type="text" id="TextId1" placeholder="First name" name="first_name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 lg:col-span-12">
                   <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 hidden" for="TextId2">Last name</label>
   <input
-    class="input user-icon input-icon "
-    type="text" id="TextId2" placeholder="Last name" required>
+    class="input user-icon input-icon"
+    type="text" id="TextId2" placeholder="Last name" name="last_name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 lg:col-span-12">
                   <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 hidden" for="MailId">Email</label>
   <input
-    class="input message-icon input-icon "
-    type="email" id="MailId" placeholder="Email" required>
+    class="input message-icon input-icon"
+    type="email" id="MailId" placeholder="Email" name="email" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 lg:col-span-12">
                   <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 hidden" for="PhoneId">Phone Number</label>
   <input
-    class="input phone-call-icon input-icon "
-    type="text" id="PhoneId" placeholder="Phone" required>
+    class="input phone-call-icon input-icon"
+    type="text" id="PhoneId" placeholder="Phone" name="phone" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
                 </div>
@@ -182,27 +193,58 @@
                             class="placeholder shadow-v6 h-[30px] flex items-center gap-x-1 text-body2 text-black px-2 py-1 border border-Green rounded">
                         8:00 pm
                       </span>
-                      <button id="clear-button" class="clear-button" aria-label="Clear">✕</button>
+                      <i class="Dropdown-up-down block ml-auto w-5 h-5 min-w-5 mr-3"></i>
+                      <span id="clear-button" class="clear-button cursor-pointer" aria-label="Clear">✕</span>
                     </div>
-                    <div id="calendar-container" class="w-[556px]"
+                    <input type="hidden" id="hidden-input" name="datetime" value="">
+                    <div id="calendar-container" class="w-[556px] calendar-container-block"
                          style="display: none; position: absolute; z-index: 100; border: 1px solid #ccc; background: #fff; padding: 10px; border-radius: 5px;">
                       <div id="vanilla-calendar" class="vanilla-calendar"></div>
-                      <div id="time-picker">
-                        <div class="flex flex-col gap-y-2" id="time-options"></div>
+                      <div id="time-picker" class="w-[177px] lg:w-full">
+                        <div class="flex flex-col gap-y-2" id="time-options">
+                          <span class="text-center text-body2 font-medium text-black block p-1">Select date</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+                <div class="col-span-12">
+                  <div class="form-group flex flex-col items-start overflow-hidden ">
+  <label class="mb-3 font-semibold text-body hidden" for="CommentId"></label>
+  <textarea
+    class="input "
+    id="CommentId" placeholder="Text message..." rows="3" name="comment"></textarea>
+</div>
+                </div>
+                <div class="col-span-12">
+                  <div class="flex flex-col">
+  <label class="custom-checkbox">
+    <span class="custom-checkbox__block w-5 min-w-5 h-5">
+      <i class="w-5 min-w-5 h-5 rounded bg-white border border-LightBlue3 flex"></i>
+    </span>
+    <input type="checkbox">
+    <span class="checkmark">
+      <i class="Check-box-on"></i>
+    </span>
+    <span class="ml-2 text-body2 text-DarkBlue md:text-body4 ">I have read and agree to the <a href="Terms&Conditions.html" class="">Privacy Policy</a>, <a href="Terms&Conditions.html">Investigation</a></span>
+  </label>
+  <small class="text-body2 font-medium text-Error md:text-body4 mt-2 "></small>
+</div>
+
+                  <button class="button shadow-v3 mt-8 md:w-full lg:mt-4" type="submit" aria-label="Send">
+  <span>Send</span>
+</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-        <div class="col-span-1"></div>
-        <div class="col-span-5">
+        <div class="col-span-1 lg:hidden"></div>
+        <div class="col-span-5 lg:hidden">
           <div class="flex flex-col">
             <img class="ml-auto" width="195" src="img/CA-logo-1.svg" alt="Logo">
             <div class="w-full mt-16 h-[565px] mb-6 relative">
-              <svg class="absolute right-0 top-0 z-[1] h-auto" xmlns="http://www.w3.org/2000/svg" width="440" height="562"
+              <svg class="absolute right-0 top-0 xl:right-auto xl:left-0 z-[1] h-auto" xmlns="http://www.w3.org/2000/svg" width="440" height="562"
                    viewBox="0 0 440 562" fill="none">
                 <path
                   d="M219.987 1.5C312.6 1.5 391.921 22.2374 438.5 53.3959V338.426C438.5 355.622 432.694 371.734 426.272 387.833C406.693 430.546 373.966 462.309 336.583 489.133C310.665 507.73 282.616 523.887 255.198 539.68C243.275 546.548 231.47 553.347 220.013 560.248C208.546 553.342 196.732 546.537 184.799 539.664C157.387 523.876 129.343 507.724 103.43 489.133C66.0404 462.308 33.3073 430.546 13.7276 387.832C7.3063 371.734 1.5 355.622 1.5 338.426V53.3959C48.0787 22.2374 127.375 1.5 219.987 1.5Z"
@@ -254,10 +296,10 @@
       </div>
     </div>
   </section>
-  <section class="section">
+  <section class="section lg:py-0">
     <div class="container">
-      <div class="row gap-6">
-        <div class="col-span-3">
+      <div class="row gap-6 sm:gap-x-0">
+        <div class="col-span-3 lg:col-span-6 sm:col-span-12">
           <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-LightBlue">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -270,7 +312,7 @@
   <p class="text-center block text-BlackText text-body2">We guarantee the fastest resolution of any issue.</p>
 </div>
         </div>
-        <div class="col-span-3">
+        <div class="col-span-3 lg:col-span-6 sm:col-span-12">
           <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-LightBlue">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -283,7 +325,7 @@
   <p class="text-center block text-BlackText text-body2">We are ready to be your reliable partners in all your matters.</p>
 </div>
         </div>
-        <div class="col-span-3">
+        <div class="col-span-3 lg:col-span-6 sm:col-span-12">
           <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-LightBlue">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -296,7 +338,7 @@
   <p class="text-center block text-BlackText text-body2">We guarantee your safety and the safety of your data.</p>
 </div>
         </div>
-        <div class="col-span-3">
+        <div class="col-span-3 lg:col-span-6 sm:col-span-12">
           <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-LightBlue">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -312,9 +354,143 @@
       </div>
     </div>
   </section>
-  <section class="section">
+  <section class="section lg:py-4">
     <div class="container">
-      <div class="row">
+      <div class="row gap-y-4">
+        <div class="col-span-12 minlg:hidden">
+          <div x-data="{ isExpanded: false }" class="overflow-hidden rounded-6xl bg-white border p-8 md:p-3 border-LightBlue2 transition-shadow" :class="isExpanded ? 'shadow-v5'  : ''">
+  <button id="controlsAccordionItemOne" type="button" class="flex w-full flex-col text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
+    <span class="flex w-full items-center gap-x-4 md:mb-2">
+      <span class="flex items-center justify-center w-[60px] min-w-[60px] h-[60px]">
+      <i class="block w-[60px] h-[60px] Education"></i>
+    </span>
+      <span class="md:hidden">Education</span>
+      <span class="w-10 h-10 min-w-10 flex items-center justify-center rounded-full border ml-auto" :class="isExpanded ? 'border-LightBlue3'  : 'border-Green'">
+        <svg :class="isExpanded ? 'hidden'  : ''" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M20 10L0 10M10 0V20" stroke="#44B64B"/>
+        </svg>
+        <svg :class="isExpanded ? ''  : 'hidden'" xmlns="http://www.w3.org/2000/svg" width="20" height="2" viewBox="0 0 20 2" fill="none">
+          <path d="M20 1L0 0.999999" stroke="#B5B8D0"/>
+        </svg>
+      </span>
+    </span>
+    <span class="minmd:hidden text-body pr-8">Education</span>
+  </button>
+  <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
+    <div class="pt-8">
+      <div class="row gap-8 md:gap-x-0 md:gap-y-3">
+        <div class="col-span-6 md:col-span-12">
+          <div class="flex gap-x-5 md:gap-x-3">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body lg:text-body2">Sandra Day O’Connor College of Law, Arizona State University – J.D.</p>
+          </div>
+        </div>
+        <div class="col-span-6 md:col-span-12">
+          <div class="flex gap-x-5 md:gap-x-3">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body lg:text-body2">Sandra Day O’Connor College of Law, Arizona State University – J.D.</p>
+          </div>
+        </div>
+        <div class="col-span-6 md:col-span-12">
+          <div class="flex gap-x-5 md:gap-x-3">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body lg:text-body2">Thomas Edison State College – B.A.</p>
+          </div>
+        </div>
+        <div class="col-span-6 md:col-span-12">
+          <div class="flex gap-x-5 md:gap-x-3">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body lg:text-body2">Thomas Edison State College – B.A.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-span-12 minlg:hidden">
+          <div x-data="{ isExpanded: false }" class="overflow-hidden rounded-6xl bg-white border p-8 md:p-3 border-LightBlue2 transition-shadow" :class="isExpanded ? 'shadow-v5'  : ''">
+  <button id="controlsAccordionItemOne" type="button" class="flex w-full flex-col text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
+    <span class="flex w-full items-center gap-x-4 md:mb-2">
+      <span class="flex items-center justify-center w-[60px] min-w-[60px] h-[60px]">
+      <i class="block w-[60px] h-[60px] Location"></i>
+    </span>
+      <span class="md:hidden">Admissions</span>
+      <span class="w-10 h-10 min-w-10 flex items-center justify-center rounded-full border ml-auto" :class="isExpanded ? 'border-LightBlue3'  : 'border-Green'">
+        <svg :class="isExpanded ? 'hidden'  : ''" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M20 10L0 10M10 0V20" stroke="#44B64B"/>
+        </svg>
+        <svg :class="isExpanded ? ''  : 'hidden'" xmlns="http://www.w3.org/2000/svg" width="20" height="2" viewBox="0 0 20 2" fill="none">
+          <path d="M20 1L0 0.999999" stroke="#B5B8D0"/>
+        </svg>
+      </span>
+    </span>
+    <span class="minmd:hidden text-body pr-8">Admissions</span>
+  </button>
+  <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
+    <div class="pt-8">
+      <div class="row gap-8 md:gap-x-0 md:gap-y-3">
+        <div class="col-span-6 md:col-span-12">
+          <div class="flex gap-x-5 md:gap-x-3">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body lg:text-body2">Sandra Day O’Connor College of Law, Arizona State University – J.D.</p>
+          </div>
+        </div>
+        <div class="col-span-6 md:col-span-12">
+          <div class="flex gap-x-5 md:gap-x-3">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body lg:text-body2">Sandra Day O’Connor College of Law, Arizona State University – J.D.</p>
+          </div>
+        </div>
+        <div class="col-span-6 md:col-span-12">
+          <div class="flex gap-x-5 md:gap-x-3">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body lg:text-body2">Thomas Edison State College – B.A.</p>
+          </div>
+        </div>
+        <div class="col-span-6 md:col-span-12">
+          <div class="flex gap-x-5 md:gap-x-3">
+            <span class="flex items-center justify-center w-6 h-6 min-w-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                <path d="M7.8 17.1419C7.40612 17.1426 7.01599 17.0655 6.652 16.915C6.28801 16.7645 5.95735 16.5436 5.679 16.2649L0.0859985 10.6729L1.5 9.25791L7.093 14.8509C7.28053 15.0384 7.53483 15.1437 7.8 15.1437C8.06516 15.1437 8.31947 15.0384 8.507 14.8509L22.5 0.85791L23.914 2.27191L9.921 16.2649C9.64265 16.5436 9.31199 16.7645 8.948 16.915C8.58401 17.0655 8.19387 17.1426 7.8 17.1419Z" fill="#44B64B"/>
+              </svg>
+            </span>
+            <p class="text-black text-body lg:text-body2">Thomas Edison State College – B.A.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
         <div class="col-span-12">
           <div x-data="{ isExpanded: false }" class="overflow-hidden rounded-6xl bg-white border p-8 md:p-3 border-LightBlue2 transition-shadow" :class="isExpanded ? 'shadow-v5'  : ''">
   <button id="controlsAccordionItemOne" type="button" class="flex w-full flex-col text-left text-Top1 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -637,58 +813,60 @@
   <div class="w-full bg-gradient1">
     <section class="section relative">
       <div class="container">
-        <div class="row gap-x-6">
-          <div class="col-span-5">
-            <div class="flex flex-col gap-y-14 max-w-[416px]">
+        <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-8">
+          <div class="col-span-5 xl:col-span-6 lg:col-span-12">
+            <div class="flex flex-col gap-y-14 lg:gap-y-8 max-w-[416px] lg:max-w-full">
               <div class="flex flex-col ">
-  <span class="uppercase text-body2 text-LightBlue3 block mb-3 lg:mb-2 hidden"></span>
-  <h3 class="text-h3 lg:text-Top6 font-semibold text-Blue100">Contact <br> Directly</h3>
+  <span class="uppercase text-body2 text-LightBlue3 block mb-3 lg:mb-2 LocationsStyle">Locations</span>
+  <h3 class="text-h3 lg:text-Top6 font-semibold text-Blue100">Visit us at your convenience</h3>
   <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:mt-4 mb-0"></span>
 </div>
-              <p>In vero zril dictas eos, in esse summo aperiri sea. Errem constituam per in. In vix mucius nonumes intellegam, eum in homero vivendo explicari, deterruisset mediocritatem cu eum. Usu porro clita at. Mei prima civibus accumsan at, eu qui quas saepe intellegam.</p>
+              <p>In vero zril dictas eos, in esse summo aperiri sea. Errem constituam per in. In vix mucius nonumes
+                intellegam, eum in homero vivendo explicari, deterruisset mediocritatem cu eum. Usu porro clita at. Mei
+                prima civibus accumsan at, eu qui quas saepe intellegam.</p>
               <div class="flex flex-col">
                 <span class="text-Top3 text-Blue100 mb-3 block font-semibold">Head Office</span>
                 <ul class="flex flex-col gap-y-2">
                   <li class="flex items-center">
                     <div class="flex items-center text-base text-black">
-                      <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
-                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
-                          <path
-                            d="M8 20L7.44506 19.502C6.68002 18.8315 0 12.7922 0 8.37462C0 3.74945 3.58173 0 8 0C12.4183 0 16 3.74945 16 8.37462C16 12.7922 9.31998 18.8315 8.55811 19.5054L8 20ZM8 1.81084C4.53873 1.81494 1.73379 4.75123 1.72987 8.37458C1.72987 11.1498 5.83968 15.5832 8 17.6123C10.1604 15.5823 14.2701 11.1464 14.2701 8.37458C14.2662 4.75123 11.4613 1.81498 8 1.81084Z"
-                            fill="#44B64B" />
-                          <path
-                            d="M8.00009 11.694C6.24873 11.694 4.82896 10.2077 4.82896 8.37433C4.82896 6.54095 6.24873 5.0547 8.00009 5.0547C9.75146 5.0547 11.1712 6.54095 11.1712 8.37433C11.1712 10.2077 9.7515 11.694 8.00009 11.694ZM8.00009 6.71448C7.12441 6.71448 6.41453 7.4576 6.41453 8.37429C6.41453 9.29098 7.12441 10.0341 8.00009 10.0341C8.87578 10.0341 9.58566 9.29098 9.58566 8.37429C9.58566 7.4576 8.87581 6.71448 8.00009 6.71448Z"
-                            fill="#44B64B" />
-                       </svg>
-                      </span>
+                    <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                        <path
+                          d="M8 20L7.44506 19.502C6.68002 18.8315 0 12.7922 0 8.37462C0 3.74945 3.58173 0 8 0C12.4183 0 16 3.74945 16 8.37462C16 12.7922 9.31998 18.8315 8.55811 19.5054L8 20ZM8 1.81084C4.53873 1.81494 1.73379 4.75123 1.72987 8.37458C1.72987 11.1498 5.83968 15.5832 8 17.6123C10.1604 15.5823 14.2701 11.1464 14.2701 8.37458C14.2662 4.75123 11.4613 1.81498 8 1.81084Z"
+                          fill="#44B64B" />
+                        <path
+                          d="M8.00009 11.694C6.24873 11.694 4.82896 10.2077 4.82896 8.37433C4.82896 6.54095 6.24873 5.0547 8.00009 5.0547C9.75146 5.0547 11.1712 6.54095 11.1712 8.37433C11.1712 10.2077 9.7515 11.694 8.00009 11.694ZM8.00009 6.71448C7.12441 6.71448 6.41453 7.4576 6.41453 8.37429C6.41453 9.29098 7.12441 10.0341 8.00009 10.0341C8.87578 10.0341 9.58566 9.29098 9.58566 8.37429C9.58566 7.4576 8.87581 6.71448 8.00009 6.71448Z"
+                          fill="#44B64B" />
+                     </svg>
+                    </span>
                       <span>
-                         East 14th Street, New York, <br>NY 10003, United State
-                      </span>
+                       East 14th Street, New York, <br>NY 10003, United State
+                    </span>
                     </div>
                   </li>
                   <li class="flex items-center">
                     <a class="flex items-center text-base text-black hover:text-Green transition-colors"
                        href="tel:+1234567890">
-                        <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                            <path
-                              d="M9.98256 5.18462V2.51796C9.98256 2.34115 10.0528 2.17158 10.1778 2.04655C10.3028 1.92153 10.4724 1.85129 10.6492 1.85129C10.826 1.85129 10.9956 1.92153 11.1206 2.04655C11.2457 2.17158 11.3159 2.34115 11.3159 2.51796V4.25862C11.7359 3.83596 14.4499 1.10796 14.8446 0.713291C14.9061 0.649618 14.9796 0.59883 15.061 0.56389C15.1423 0.528951 15.2298 0.51056 15.3183 0.509791C15.4068 0.509022 15.4946 0.525889 15.5765 0.55941C15.6585 0.592931 15.7329 0.642433 15.7955 0.705028C15.8581 0.767623 15.9076 0.842058 15.9411 0.923988C15.9746 1.00592 15.9915 1.09371 15.9907 1.18223C15.99 1.27074 15.9716 1.35822 15.9366 1.43956C15.9017 1.5209 15.8509 1.59446 15.7872 1.65596C15.3926 2.05062 12.6926 4.76596 12.2752 5.18462H13.9826C14.1594 5.18462 14.3289 5.25486 14.454 5.37989C14.579 5.50491 14.6492 5.67448 14.6492 5.85129C14.6492 6.0281 14.579 6.19767 14.454 6.3227C14.3289 6.44772 14.1594 6.51796 13.9826 6.51796H11.3159C10.9623 6.51796 10.6231 6.37748 10.3731 6.12743C10.123 5.87739 9.98256 5.53825 9.98256 5.18462ZM15.3792 11.6773C15.7656 12.0647 15.9825 12.5895 15.9825 13.1366C15.9825 13.6837 15.7656 14.2085 15.3792 14.596L14.7712 15.296C9.31056 20.5213 -3.97478 7.23996 1.17122 1.76262L1.93789 1.09596C2.32565 0.720321 2.84571 0.51245 3.38556 0.517316C3.9254 0.522182 4.44163 0.739393 4.82256 1.12196C4.84322 1.14196 6.07789 2.74729 6.07789 2.74729C6.44317 3.13299 6.64642 3.64421 6.64567 4.17542C6.64493 4.70664 6.44025 5.21729 6.07389 5.60196L5.30189 6.57262C5.72922 7.61064 6.35739 8.55402 7.15035 9.34857C7.9433 10.1431 8.8854 10.7732 9.92256 11.2026L10.8992 10.426C11.2831 10.0586 11.7938 9.85327 12.3251 9.85253C12.8564 9.85178 13.3676 10.0557 13.7526 10.422C13.7526 10.422 15.3586 11.6573 15.3792 11.6773ZM14.4626 12.6466C14.4626 12.6466 12.8672 11.4186 12.8466 11.3986C12.7092 11.2624 12.5236 11.186 12.3302 11.186C12.1368 11.186 11.9512 11.2624 11.8139 11.3986C11.7959 11.416 10.4512 12.488 10.4512 12.488C10.3606 12.5601 10.2528 12.6074 10.1383 12.6251C10.0239 12.6429 9.90678 12.6305 9.79856 12.5893C8.45417 12.0891 7.23304 11.3057 6.21795 10.2922C5.20286 9.27877 4.41754 8.05888 3.91522 6.71529C3.87069 6.60559 3.85617 6.48602 3.87316 6.36885C3.89015 6.25168 3.93803 6.14115 4.01189 6.04862C4.01189 6.04862 5.08389 4.70596 5.10189 4.68862C5.23807 4.55128 5.31448 4.3657 5.31448 4.17229C5.31448 3.97888 5.23807 3.7933 5.10189 3.65596C5.08189 3.63596 3.85389 2.03929 3.85389 2.03929C3.71449 1.9143 3.53256 1.84735 3.34539 1.85219C3.15822 1.85702 2.97998 1.93327 2.84722 2.06529L2.08056 2.73196C-1.68078 7.25396 9.83389 18.13 13.7959 14.3873L14.4039 13.6866C14.5472 13.5551 14.6336 13.3728 14.6445 13.1785C14.6555 12.9843 14.5902 12.7935 14.4626 12.6466Z"
-                              fill="#44B64B" />
-                          </svg>
-                        </span>
+                      <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                          <path
+                            d="M9.98256 5.18462V2.51796C9.98256 2.34115 10.0528 2.17158 10.1778 2.04655C10.3028 1.92153 10.4724 1.85129 10.6492 1.85129C10.826 1.85129 10.9956 1.92153 11.1206 2.04655C11.2457 2.17158 11.3159 2.34115 11.3159 2.51796V4.25862C11.7359 3.83596 14.4499 1.10796 14.8446 0.713291C14.9061 0.649618 14.9796 0.59883 15.061 0.56389C15.1423 0.528951 15.2298 0.51056 15.3183 0.509791C15.4068 0.509022 15.4946 0.525889 15.5765 0.55941C15.6585 0.592931 15.7329 0.642433 15.7955 0.705028C15.8581 0.767623 15.9076 0.842058 15.9411 0.923988C15.9746 1.00592 15.9915 1.09371 15.9907 1.18223C15.99 1.27074 15.9716 1.35822 15.9366 1.43956C15.9017 1.5209 15.8509 1.59446 15.7872 1.65596C15.3926 2.05062 12.6926 4.76596 12.2752 5.18462H13.9826C14.1594 5.18462 14.3289 5.25486 14.454 5.37989C14.579 5.50491 14.6492 5.67448 14.6492 5.85129C14.6492 6.0281 14.579 6.19767 14.454 6.3227C14.3289 6.44772 14.1594 6.51796 13.9826 6.51796H11.3159C10.9623 6.51796 10.6231 6.37748 10.3731 6.12743C10.123 5.87739 9.98256 5.53825 9.98256 5.18462ZM15.3792 11.6773C15.7656 12.0647 15.9825 12.5895 15.9825 13.1366C15.9825 13.6837 15.7656 14.2085 15.3792 14.596L14.7712 15.296C9.31056 20.5213 -3.97478 7.23996 1.17122 1.76262L1.93789 1.09596C2.32565 0.720321 2.84571 0.51245 3.38556 0.517316C3.9254 0.522182 4.44163 0.739393 4.82256 1.12196C4.84322 1.14196 6.07789 2.74729 6.07789 2.74729C6.44317 3.13299 6.64642 3.64421 6.64567 4.17542C6.64493 4.70664 6.44025 5.21729 6.07389 5.60196L5.30189 6.57262C5.72922 7.61064 6.35739 8.55402 7.15035 9.34857C7.9433 10.1431 8.8854 10.7732 9.92256 11.2026L10.8992 10.426C11.2831 10.0586 11.7938 9.85327 12.3251 9.85253C12.8564 9.85178 13.3676 10.0557 13.7526 10.422C13.7526 10.422 15.3586 11.6573 15.3792 11.6773ZM14.4626 12.6466C14.4626 12.6466 12.8672 11.4186 12.8466 11.3986C12.7092 11.2624 12.5236 11.186 12.3302 11.186C12.1368 11.186 11.9512 11.2624 11.8139 11.3986C11.7959 11.416 10.4512 12.488 10.4512 12.488C10.3606 12.5601 10.2528 12.6074 10.1383 12.6251C10.0239 12.6429 9.90678 12.6305 9.79856 12.5893C8.45417 12.0891 7.23304 11.3057 6.21795 10.2922C5.20286 9.27877 4.41754 8.05888 3.91522 6.71529C3.87069 6.60559 3.85617 6.48602 3.87316 6.36885C3.89015 6.25168 3.93803 6.14115 4.01189 6.04862C4.01189 6.04862 5.08389 4.70596 5.10189 4.68862C5.23807 4.55128 5.31448 4.3657 5.31448 4.17229C5.31448 3.97888 5.23807 3.7933 5.10189 3.65596C5.08189 3.63596 3.85389 2.03929 3.85389 2.03929C3.71449 1.9143 3.53256 1.84735 3.34539 1.85219C3.15822 1.85702 2.97998 1.93327 2.84722 2.06529L2.08056 2.73196C-1.68078 7.25396 9.83389 18.13 13.7959 14.3873L14.4039 13.6866C14.5472 13.5551 14.6336 13.3728 14.6445 13.1785C14.6555 12.9843 14.5902 12.7935 14.4626 12.6466Z"
+                            fill="#44B64B" />
+                        </svg>
+                      </span>
                       <span class="font-medium">+1 123 4567 890</span>
                     </a>
                   </li>
                   <li class="flex items-center">
                     <a class="flex items-center text-base text-black hover:text-Green transition-colors"
                        href="mailto:info@consumerguard.com">
-                        <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
-                            <path
-                              d="M14.25 0.5H3.75C2.7558 0.501155 1.80267 0.884641 1.09966 1.56634C0.396661 2.24804 0.00119089 3.17229 0 4.13636L0 12.8636C0.00119089 13.8277 0.396661 14.752 1.09966 15.4337C1.80267 16.1154 2.7558 16.4988 3.75 16.5H14.25C15.2442 16.4988 16.1973 16.1154 16.9003 15.4337C17.6033 14.752 17.9988 13.8277 18 12.8636V4.13636C17.9988 3.17229 17.6033 2.24804 16.9003 1.56634C16.1973 0.884641 15.2442 0.501155 14.25 0.5ZM3.75 1.95455H14.25C14.6991 1.9554 15.1376 2.08656 15.5092 2.33113C15.8808 2.5757 16.1684 2.92251 16.335 3.32691L10.5915 8.89709C10.1688 9.30532 9.59656 9.53452 9 9.53452C8.40344 9.53452 7.83118 9.30532 7.4085 8.89709L1.665 3.32691C1.83161 2.92251 2.11921 2.5757 2.49079 2.33113C2.86236 2.08656 3.30091 1.9554 3.75 1.95455ZM14.25 15.0455H3.75C3.15326 15.0455 2.58097 14.8156 2.15901 14.4064C1.73705 13.9972 1.5 13.4423 1.5 12.8636V5.22727L6.348 9.92546C7.05197 10.6064 8.00569 10.9888 9 10.9888C9.99431 10.9888 10.948 10.6064 11.652 9.92546L16.5 5.22727V12.8636C16.5 13.4423 16.2629 13.9972 15.841 14.4064C15.419 14.8156 14.8467 15.0455 14.25 15.0455Z"
-                              fill="#44B64B" />
-                          </svg>
-                        </span>
+                      <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                          <path
+                            d="M14.25 0.5H3.75C2.7558 0.501155 1.80267 0.884641 1.09966 1.56634C0.396661 2.24804 0.00119089 3.17229 0 4.13636L0 12.8636C0.00119089 13.8277 0.396661 14.752 1.09966 15.4337C1.80267 16.1154 2.7558 16.4988 3.75 16.5H14.25C15.2442 16.4988 16.1973 16.1154 16.9003 15.4337C17.6033 14.752 17.9988 13.8277 18 12.8636V4.13636C17.9988 3.17229 17.6033 2.24804 16.9003 1.56634C16.1973 0.884641 15.2442 0.501155 14.25 0.5ZM3.75 1.95455H14.25C14.6991 1.9554 15.1376 2.08656 15.5092 2.33113C15.8808 2.5757 16.1684 2.92251 16.335 3.32691L10.5915 8.89709C10.1688 9.30532 9.59656 9.53452 9 9.53452C8.40344 9.53452 7.83118 9.30532 7.4085 8.89709L1.665 3.32691C1.83161 2.92251 2.11921 2.5757 2.49079 2.33113C2.86236 2.08656 3.30091 1.9554 3.75 1.95455ZM14.25 15.0455H3.75C3.15326 15.0455 2.58097 14.8156 2.15901 14.4064C1.73705 13.9972 1.5 13.4423 1.5 12.8636V5.22727L6.348 9.92546C7.05197 10.6064 8.00569 10.9888 9 10.9888C9.99431 10.9888 10.948 10.6064 11.652 9.92546L16.5 5.22727V12.8636C16.5 13.4423 16.2629 13.9972 15.841 14.4064C15.419 14.8156 14.8467 15.0455 14.25 15.0455Z"
+                            fill="#44B64B" />
+                        </svg>
+                      </span>
                       <span class="font-medium">info@consumerguard.com</span>
                     </a>
                   </li>
@@ -696,11 +874,12 @@
               </div>
             </div>
           </div>
-          <div class="col-span-7">
-            <div class="max-w-[748px] ml-auto">
+          <div class="col-span-7 xl:col-span-6 lg:col-span-12">
+            <div
+              class="max-w-[746px] ml-auto width-no-p p-4 rounded-6xl overflow-hidden flex items-center justify-center sm:p-0 sm:h-[320px] sm:rounded-none bg-white">
               <iframe
                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAOMhVrALnzqYT8bHJf7lS3jJKqkeC4RIc&q=East+14th+Street,+New+York,+NY+10003,+United+States"
-                class="w-full h-[543px]"
+                class="w-full h-[543px] sm:h-[320px]"
                 allowfullscreen=""
                 loading="lazy">
               </iframe>
@@ -735,8 +914,8 @@ bg-white border border-Green p-12 ">
       <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 " for="TextId1">First name</label>
   <input
-    class="input user-icon input-icon "
-    type="text" id="TextId1" placeholder="" required>
+    class="input user-icon input-icon"
+    type="text" id="TextId1" placeholder="" name="@@Name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
     </div>
@@ -744,8 +923,8 @@ bg-white border border-Green p-12 ">
       <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 " for="TextId2">Last name</label>
   <input
-    class="input user-icon input-icon "
-    type="text" id="TextId2" placeholder="" required>
+    class="input user-icon input-icon"
+    type="text" id="TextId2" placeholder="" name="@@Name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
     </div>
@@ -753,8 +932,8 @@ bg-white border border-Green p-12 ">
       <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 " for="MailId">Email</label>
   <input
-    class="input message-icon input-icon "
-    type="email" id="MailId" placeholder="" required>
+    class="input message-icon input-icon"
+    type="email" id="MailId" placeholder="" name="@@Name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
     </div>
@@ -762,8 +941,8 @@ bg-white border border-Green p-12 ">
       <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 " for="PhoneId">Phone Number</label>
   <input
-    class="input phone-call-icon input-icon "
-    type="text" id="PhoneId" placeholder="" required>
+    class="input phone-call-icon input-icon"
+    type="text" id="PhoneId" placeholder="" name="@@Name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
     </div>
@@ -798,10 +977,10 @@ bg-white border border-Green p-12 ">
     </div>
     <div class="col-span-12">
       <div class="form-group flex flex-col items-start overflow-hidden ">
-  <label class="mb-3 font-semibold text-body" for="CommentId"></label>
+  <label class="mb-3 font-semibold text-body hidden" for="CommentId"></label>
   <textarea
     class="input "
-    id="CommentId" placeholder="Text message..." rows="3"></textarea>
+    id="CommentId" placeholder="Text message..." rows="3" name="@@Name"></textarea>
 </div>
     </div>
     <div class="col-span-12">
@@ -991,6 +1170,141 @@ bg-white border border-Green p-12 ">
     Alpine.data('data', () => ({}));
   });
 
+  // document.addEventListener('DOMContentLoaded', () => {
+  //   const customInput = document.getElementById('custom-input');
+  //   const dateElement = document.getElementById('selected-date');
+  //   const timeElement = document.getElementById('selected-time');
+  //   const clearButton = document.getElementById('clear-button');
+  //   const calendarContainer = document.getElementById('calendar-container');
+  //   const calendarElement = document.getElementById('vanilla-calendar');
+  //   const timeOptions = document.getElementById('time-options');
+  //   const hiddenInput = document.getElementById('hidden-input'); // Скрытый инпут
+  //   const { Calendar } = window.VanillaCalendarPro;
+  //
+  //   // Инициализация календаря
+  //   const calendar = new Calendar(calendarElement, {
+  //     selectedTheme: 'light',
+  //     displayDateMin: '2025-01-01',
+  //     displayDateMax: '2025-12-30',
+  //     disableDates: ['2025-01-10:2025-01-13', '2025-01-22'],
+  //     selectedYear: 2025,
+  //     selectedMonth: 0,
+  //     settings: {
+  //       lang: 'en',
+  //       iso8601: true,
+  //       selection: {
+  //         day: 'single',
+  //       },
+  //     },
+  //     onClickDate(self) {
+  //       const selectedDate = self.context.selectedDates[0]; // Получаем выбранную дату (формат YYYY-MM-DD)
+  //       updateDate(selectedDate); // Обновляем дату в кастомном инпуте
+  //       showTimePicker(selectedDate); // Показываем выбор времени
+  //     },
+  //   });
+  //
+  //   // Показываем контейнер с календарём при клике на кастомный инпут
+  //   customInput?.addEventListener('click', (event) => {
+  //     if (event.target === clearButton) return;
+  //     calendarContainer.style.display = 'flex';
+  //     calendarContainer.style.top = `50px`;
+  //     calendarContainer.style.left = `0px`;
+  //   });
+  //
+  //   // Скрываем контейнер при клике вне его
+  //   document.addEventListener('click', (event) => {
+  //     if (
+  //       !calendarContainer.contains(event.target) &&
+  //       event.target !== customInput &&
+  //       event.target.parentElement !== customInput
+  //     ) {
+  //       calendarContainer.style.display = 'none';
+  //     }
+  //   });
+  //
+  //   // Обновляем дату
+  //   function updateDate(date) {
+  //     const [year, month, day] = date.split('-'); // Разбиваем дату
+  //     const dateObj = new Date(year, month - 1, day); // Создаем объект даты
+  //     const formattedDate = dateObj.toLocaleDateString('en-US', {
+  //       weekday: 'long',
+  //       month: 'long',
+  //       day: 'numeric',
+  //     }); // Форматируем дату (например, "Friday, January 10")
+  //
+  //     dateElement.textContent = formattedDate; // Устанавливаем дату в кастомном инпуте
+  //     dateElement.classList.remove('placeholder');
+  //
+  //     // Обновляем значение скрытого инпута (только дата)
+  //     updateHiddenInput(date, null);
+  //   }
+  //
+  //   // Обновляем время
+  //   function updateTime(time) {
+  //     timeElement.textContent = time;
+  //     timeElement.classList.remove('placeholder');
+  //
+  //     // Обновляем значение скрытого инпута (дата + время)
+  //     const currentHiddenValue = hiddenInput.value.split(' ');
+  //     const date = currentHiddenValue[0] || ''; // Берем текущую дату
+  //     updateHiddenInput(date, time);
+  //   }
+  //
+  //   // Обновление скрытого инпута
+  //   function updateHiddenInput(date, time) {
+  //     hiddenInput.value = `${date || ''} ${time || ''}`.trim(); // Формат: "YYYY-MM-DD HH:mm am/pm"
+  //   }
+  //
+  //   // Показываем выбор времени
+  //   function showTimePicker(date) {
+  //     generateTimeSlots(date); // Генерируем слоты времени
+  //   }
+  //
+  //   // Генерация временных слотов с заголовком
+  //   function generateTimeSlots(date) {
+  //     timeOptions.innerHTML = ''; // Очищаем предыдущие слоты
+  //
+  //     // Добавляем заголовок с датой
+  //     const dateHeader = document.createElement('div');
+  //     const dateObj = new Date(date); // Создаем объект даты
+  //     const formattedDate = dateObj.toLocaleDateString('en-US', {
+  //       weekday: 'long',
+  //       month: 'long',
+  //       day: 'numeric',
+  //     });
+  //     dateHeader.textContent = formattedDate; // Устанавливаем форматированную дату
+  //     dateHeader.classList.add('text-center', 'text-body', 'font-semibold', 'text-Blue100', 'mb-2');
+  //     timeOptions.appendChild(dateHeader);
+  //
+  //     // Генерируем временные слоты
+  //     const times = ['09:00 am', '10:00 am', '11:00 am', '12:00 pm', '01:00 pm'];
+  //
+  //     times.forEach((time) => {
+  //       const timeButton = document.createElement('span');
+  //       timeButton.textContent = time;
+  //       timeButton.classList.add('time-slot', 'cursor-pointer');
+  //       timeButton?.addEventListener('click', () => {
+  //         updateTime(time); // Обновляем время в кастомном инпуте
+  //         calendarContainer.style.display = 'none'; // Скрываем контейнер
+  //       });
+  //       timeOptions.appendChild(timeButton);
+  //     });
+  //   }
+  //
+  //   // Очистка данных
+  //   clearButton?.addEventListener('click', (event) => {
+  //     event.stopPropagation();
+  //     dateElement.innerHTML = `${'MM <span class="text-Green">/</span> DD <span class="text-Green">/</span> YY'}`;
+  //     timeElement.textContent = ' 8:00 pm';
+  //     dateElement.classList.add('placeholder');
+  //     timeElement.classList.add('placeholder');
+  //     hiddenInput.value = ''; // Очищаем скрытый инпут
+  //   });
+  //
+  //   // Инициализация календаря
+  //   calendar.init();
+  // });
+
   document.addEventListener('DOMContentLoaded', () => {
     const customInput = document.getElementById('custom-input');
     const dateElement = document.getElementById('selected-date');
@@ -999,6 +1313,7 @@ bg-white border border-Green p-12 ">
     const calendarContainer = document.getElementById('calendar-container');
     const calendarElement = document.getElementById('vanilla-calendar');
     const timeOptions = document.getElementById('time-options');
+    const hiddenInput = document.getElementById('hidden-input'); // Скрытый инпут
     const { Calendar } = window.VanillaCalendarPro;
 
     // Инициализация календаря
@@ -1017,18 +1332,16 @@ bg-white border border-Green p-12 ">
         },
       },
       onClickDate(self) {
-        const selectedDate = self.context.selectedDates; // Получаем выбранную дату
+        const selectedDate = self.context.selectedDates[0]; // Получаем выбранную дату (формат YYYY-MM-DD)
         updateDate(selectedDate); // Обновляем дату в кастомном инпуте
-        showTimePicker(); // Показываем выбор времени
+        showTimePicker(selectedDate); // Показываем выбор времени
       },
     });
 
     // Показываем контейнер с календарём при клике на кастомный инпут
     customInput?.addEventListener('click', (event) => {
-      // Если клик по кнопке очистки, не показывать календарь
       if (event.target === clearButton) return;
-
-      calendarContainer.style.display = 'flex'; // Показываем контейнер
+      calendarContainer.style.display = 'flex';
       calendarContainer.style.top = `50px`;
       calendarContainer.style.left = `0px`;
     });
@@ -1036,42 +1349,67 @@ bg-white border border-Green p-12 ">
     // Скрываем контейнер при клике вне его
     document.addEventListener('click', (event) => {
       if (
-        !calendarContainer.contains(event.target) && // Если клик вне календаря
-        event.target !== customInput && // И не по кастомному инпуту
-        event.target.parentElement !== customInput // И не по его дочерним элементам
+        !calendarContainer.contains(event.target) &&
+        event.target !== customInput &&
+        event.target.parentElement !== customInput
       ) {
-        calendarContainer.style.display = 'none'; // Скрываем контейнер
+        calendarContainer.style.display = 'none';
       }
     });
 
     // Обновляем дату
     function updateDate(date) {
-      dateElement.textContent = date; // Устанавливаем выбранную дату
-      dateElement.classList.remove('placeholder'); // Убираем класс placeholder
+      const [year, month, day] = date.split('-'); // Разбиваем дату
+      const formattedDate = `${month}-${day}-${year.slice(-2)}`; // Форматируем дату в MM-DD-YY
+
+      dateElement.textContent = formattedDate; // Устанавливаем дату в кастомном инпуте
+      dateElement.classList.remove('placeholder');
+
+      // Обновляем значение скрытого инпута (только дата)
+      updateHiddenInput(formattedDate, null);
     }
 
     // Обновляем время
     function updateTime(time) {
-      timeElement.textContent = time; // Устанавливаем выбранное время
-      timeElement.classList.remove('placeholder'); // Убираем класс placeholder
+      timeElement.textContent = time;
+      timeElement.classList.remove('placeholder');
+
+      // Обновляем значение скрытого инпута (дата + время)
+      const currentHiddenValue = hiddenInput.value.split(' ');
+      const date = currentHiddenValue[0] || ''; // Берем текущую дату
+      updateHiddenInput(date, time);
+    }
+
+    // Обновление скрытого инпута
+    function updateHiddenInput(date, time) {
+      hiddenInput.value = `${date || ''} ${time || ''}`.trim(); // Формат: "MM-DD-YY HH:mm am/pm"
     }
 
     // Показываем выбор времени
-    function showTimePicker() {
-      generateTimeSlots(); // Генерируем слоты времени
+    function showTimePicker(date) {
+      generateTimeSlots(date); // Генерируем слоты времени
     }
 
-    // Генерация временных слотов
-    function generateTimeSlots() {
+    // Генерация временных слотов с заголовком
+    function generateTimeSlots(date) {
       timeOptions.innerHTML = ''; // Очищаем предыдущие слоты
-      const times = [
-        '09:00 am', '10:00 am', '11:00 am', '12:00 pm', '01:00 pm',
-      ];
+
+      // Добавляем заголовок с датой в формате "Day, Month Date"
+      const dateHeader = document.createElement('div');
+      const options = { weekday: 'long', month: 'long', day: 'numeric' };
+      const formattedHeader = new Date(date).toLocaleDateString('en-US', options); // Прежний формат
+
+      dateHeader.textContent = formattedHeader; // Устанавливаем отформатированную дату
+      dateHeader.classList.add('text-center', 'text-body', 'font-semibold', 'text-Blue100', 'mb-2');
+      timeOptions.appendChild(dateHeader);
+
+      // Генерируем временные слоты
+      const times = ['09:00 am', '10:00 am', '11:00 am', '12:00 pm', '01:00 pm'];
 
       times.forEach((time) => {
-        const timeButton = document.createElement('button');
+        const timeButton = document.createElement('span');
         timeButton.textContent = time;
-        timeButton.classList.add('time-slot');
+        timeButton.classList.add('time-slot', 'cursor-pointer');
         timeButton?.addEventListener('click', () => {
           updateTime(time); // Обновляем время в кастомном инпуте
           calendarContainer.style.display = 'none'; // Скрываем контейнер
@@ -1082,11 +1420,12 @@ bg-white border border-Green p-12 ">
 
     // Очистка данных
     clearButton?.addEventListener('click', (event) => {
-      event.stopPropagation(); // Предотвращаем всплытие клика
+      event.stopPropagation();
       dateElement.innerHTML = `${'MM <span class="text-Green">/</span> DD <span class="text-Green">/</span> YY'}`;
       timeElement.textContent = ' 8:00 pm';
       dateElement.classList.add('placeholder');
       timeElement.classList.add('placeholder');
+      hiddenInput.value = ''; // Очищаем скрытый инпут
     });
 
     // Инициализация календаря

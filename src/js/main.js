@@ -39,36 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
   burgerButton?.addEventListener('click', toggleMenu);
 });
 
-// window.addEventListener('DOMContentLoaded', () => {
-//   const modal = document.getElementById('modal');
-//   const openModalBtn = document.getElementById('openModal');
-//   const closeModalElements = document.querySelectorAll('.close-modal');
-//
-//   if (modal && openModalBtn && closeModalElements) {
-//     const openModal = () => {
-//       modal.classList.remove('hidden');
-//     };
-//
-//     const closeModal = () => {
-//       modal.classList.add('hidden');
-//     };
-//
-//     openModalBtn.addEventListener('click', openModal);
-//
-//     closeModalElements.forEach(el => {
-//       el.addEventListener('click', closeModal);
-//     });
-//
-//     window.addEventListener('click', event => {
-//       if (event.target === modal) {
-//         closeModal();
-//       }
-//     });
-//   } else {
-//     // console.error('test')
-//   }
-// });
-
 document.querySelectorAll('.menu-btn').forEach(button => {
   button.addEventListener('click', () => {
     const submenu = button.nextElementSibling;
