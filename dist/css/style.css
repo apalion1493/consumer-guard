@@ -1495,6 +1495,9 @@ html {
 .p-10{
   padding: 2.5rem;
 }
+.p-12{
+  padding: 3rem;
+}
 .p-2{
   padding: 0.5rem;
 }
@@ -1515,9 +1518,6 @@ html {
 }
 .p-8{
   padding: 2rem;
-}
-.p-12{
-  padding: 3rem;
 }
 .px-0{
   padding-left: 0px;
@@ -1595,10 +1595,6 @@ html {
   padding-top: 72px;
   padding-bottom: 72px;
 }
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1623,6 +1619,9 @@ html {
 .pt-16{
   padding-top: 4rem;
 }
+.pt-20{
+  padding-top: 5rem;
+}
 .pt-3{
   padding-top: 0.75rem;
 }
@@ -1640,9 +1639,6 @@ html {
 }
 .pt-\[112px\]{
   padding-top: 112px;
-}
-.pt-20{
-  padding-top: 5rem;
 }
 .text-left{
   text-align: left;
@@ -2143,6 +2139,10 @@ p{
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
+.text-block h1, .text-block h2, .text-block h3, .text-block h4, .text-block h5, .text-block h6, .text-block .h1, .text-block .h2, .text-block .h3, .text-block .h4, .text-block .h5, .text-block .h6{
+  margin-bottom: 0.75rem;
+  display: block;
+}
 .text-block a{
   --tw-text-opacity: 1;
   color: rgb(68 182 75 / var(--tw-text-opacity, 1));
@@ -3999,6 +3999,10 @@ a{
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+  .md\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
   .md\:pb-12{
     padding-bottom: 3rem;
   }
@@ -4007,9 +4011,6 @@ a{
   }
   .md\:pt-20{
     padding-top: 5rem;
-  }
-  .md\:pt-10{
-    padding-top: 2.5rem;
   }
   .md\:text-center{
     text-align: center;
