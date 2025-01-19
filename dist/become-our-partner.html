@@ -12,18 +12,11 @@
   <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
-  <style>
-
-
-
-
-
-  </style>
 </head>
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
-  <section class="pb-[59px] pt-[112px] hero-section relative overflow-hidden" style="background-image: url(img/Hero-img-5.png)">
+  <section class="pb-[59px] pt-[112px] lg:pt-[96px] md:pt-20 lg:pb-12 hero-section relative overflow-hidden hero-img-1" style="background-image: url(img/Hero-img-5.png)">
     <header id="sticky-header" class="flex flex-col w-full lg:bg-white absolute lg:fixed top-0 left-0 z-10 sticky-header  ">
   <div class="w-full flex flex-col">
     <div class="py-6 md:py-4">
@@ -102,17 +95,17 @@
     </div>
   </div>
 </header>
-    <span class="shadow-elem-hero-block-1 absolute -left-[281px] top-1/2 -translate-y-1/2"></span>
-    <span class="shadow-elem-hero-block-2 absolute -right-[390px] -top-[237px]"></span>
+    <span class="shadow-elem-hero-block-1 absolute -left-[281px] top-1/2 -translate-y-1/2 lg:hidden"></span>
+    <span class="shadow-elem-hero-block-2 absolute -right-[390px] -top-[237px] lg:hidden"></span>
     <div class="container">
-      <div class="row">
-        <div class="col-span-5 flex items-center">
-          <div class="flex flex-col max-w-[486px]">
-            <h1 class="text-h1 font-semibold text-Blue100 mb-8">Consumer Guard</h1>
-            <span class="text-Green text-h2-5 font-semibold mb-8">Where Partnerships <br>Drive Success.</span>
-            <p class="text-base text-BlackText">Become our partner to expand your
+      <div class="row gap-x-6 md:gap-x-0 md:pt-12">
+        <div class="col-span-5 lg:col-span-7 md:col-span-12 flex items-center">
+          <div class="flex flex-col max-w-[486px] w-full lg:max-w-full">
+            <h1 class="text-h1 md:text-Top6 lg:text-h4 md:text-center font-semibold text-Blue100 mb-8">Consumer Guard</h1>
+            <span class="text-Green text-h2-5 md:text-Top6 lg:text-h4 md:text-center font-semibold mb-8">Where Partnerships <br>Drive Success.</span>
+            <p class="text-base text-BlackText md:text-center">Become our partner to expand your
               business and client relations.</p>
-            <a class="button group relative mt-20 btn-icons" href="#">
+            <a class="button group relative mt-20 btn-icons md:w-full md:mt-8" href="#">
   <span class="">Apply</span>
   <svg class="absolute right-5 top-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 35 30" fill="none">
     <path class="group-disabled:fill-DarkGrey" fill-rule="evenodd" clip-rule="evenodd" d="M20.3602 1.33758C13.9099 1.33758 8.52797 6.0309 7.29254 12.2668C7.22083 12.6288 6.8763 12.8627 6.52301 12.7892C6.16972 12.7157 5.94146 12.3627 6.01317 12.0007C7.36967 5.15371 13.2768 0 20.3602 0C28.4455 0 35 6.71573 35 15C35 23.2843 28.4455 30 20.3602 30C13.2768 30 7.36967 24.8463 6.01317 17.9993C5.94146 17.6373 6.16972 17.2843 6.52301 17.2108C6.8763 17.1373 7.22083 17.3712 7.29254 17.7332C8.52797 23.9691 13.9099 28.6624 20.3602 28.6624C27.7245 28.6624 33.6945 22.5455 33.6945 15C33.6945 7.45445 27.7245 1.33758 20.3602 1.33758Z" fill="white"/>
@@ -121,8 +114,8 @@
 </a>
           </div>
         </div>
-        <div class="col-span-7 flex">
-          <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="530" height="693" viewBox="0 0 530 693"
+        <div class="col-span-7 flex lg:col-span-5 md:col-span-12 md:mt-14">
+          <svg class="ml-auto md:max-w-[296px] md:mx-auto md:h-auto" xmlns="http://www.w3.org/2000/svg" width="530" height="693" viewBox="0 0 530 693"
                fill="none">
             <path
               d="M2 203.605V66.113C57.9763 27.554 153.543 2 264.985 2C376.427 2 472.024 27.554 528 66.113V418.474C528 439.838 520.92 459.784 513.238 479.418C504.393 499.103 493.323 516.883 480.577 533.15M2 255.113V253.452M2 309.945V418.474C2 439.838 9.08022 459.784 16.7618 479.418C56.6792 568.254 141.935 618.324 222.117 665.414C236.684 673.969 251.085 682.427 265.015 691C278.936 682.433 293.325 673.982 307.88 665.433C342.34 645.193 377.734 624.404 410.065 600.225M446.213 570.259C446.808 569.707 447.4 569.153 447.99 568.597"
@@ -137,8 +130,8 @@
       <span class="shadow-elem-hero-block-1 absolute -left-[367px] top-1/2 -translate-y-1/2"></span>
       <span class="shadow-elem-hero-block-3 absolute -right-[196px] -top-[20px]"></span>
       <div class="container">
-        <div class="row gap-x-6">
-          <div class="col-span-5">
+        <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-6">
+          <div class="col-span-5 xl:col-span-6 lg:col-span-12">
             <div class="flex flex-col">
               <div class="flex flex-col ">
   <span class="uppercase text-body2 text-LightBlue3 block mb-3 lg:mb-2 ">Benefits</span>
@@ -157,10 +150,10 @@
                 solutions and high levels of satisfaction.</p>
             </div>
           </div>
-          <div class="col-span-1"></div>
-          <div class="col-span-6">
-            <div class="flex items-center justify-center overflow-hidden rounded-6xl w-full">
-              <img class="object-cover w-full" src="img/img-10.png" alt="Benefits you get with us!">
+          <div class="col-span-1 xl:hidden"></div>
+          <div class="col-span-6 xl:col-span-6 lg:col-span-12">
+            <div class="flex items-center justify-center overflow-hidden rounded-6xl w-full h-full lg:max-h-[342px]">
+              <img class="object-cover w-full h-full" src="img/img-10.png" alt="Benefits you get with us!">
             </div>
           </div>
         </div>
@@ -168,8 +161,8 @@
     </section>
     <section class="section">
       <div class="container">
-        <div class="row gap-6">
-          <div class="col-span-3">
+        <div class="row gap-6 sm:gap-x-0">
+          <div class="col-span-3 lg:col-span-6 sm:col-span-12">
             <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-LightBlue">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -182,7 +175,7 @@
   <p class="text-center block text-BlackText text-body2">We guarantee the fastest resolution of any issue.</p>
 </div>
           </div>
-          <div class="col-span-3">
+          <div class="col-span-3 lg:col-span-6 sm:col-span-12">
             <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-LightBlue">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -195,7 +188,7 @@
   <p class="text-center block text-BlackText text-body2">We are ready to be your reliable partners in all your matters.</p>
 </div>
           </div>
-          <div class="col-span-3">
+          <div class="col-span-3 lg:col-span-6 sm:col-span-12">
             <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-LightBlue">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -208,7 +201,7 @@
   <p class="text-center block text-BlackText text-body2">We guarantee your safety and the safety of your data.</p>
 </div>
           </div>
-          <div class="col-span-3">
+          <div class="col-span-3 lg:col-span-6 sm:col-span-12">
             <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-LightBlue">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -228,16 +221,16 @@
   <div class="w-full bg-gradient1">
     <section class="section">
       <div class="container">
-        <div class="row gap-x-6">
-          <div class="col-span-6">
+        <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-6">
+          <div class="col-span-6 lg:col-span-12">
             <div class="flex flex-col">
               <div class="flex flex-col ">
   <span class="uppercase text-body2 text-LightBlue3 block mb-3 lg:mb-2 ">Locations</span>
   <h3 class="text-h3 lg:text-Top6 font-semibold text-Blue100">Our Location</h3>
   <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:mt-4 "></span>
 </div>
-              <div class="row gap-6">
-                <div class="col-span-6">
+              <div class="row gap-6 sm:gap-x-0">
+                <div class="col-span-6 sm:col-span-12">
                   <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-white">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -250,7 +243,7 @@
   <p class="text-center block text-BlackText text-body2">A 	comfortable office space in a busy plaza</p>
 </div>
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 sm:col-span-12">
                   <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-white">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -263,7 +256,7 @@
   <p class="text-center block text-BlackText text-body2">Affordable price in this particular location</p>
 </div>
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 sm:col-span-12">
                   <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-white">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -276,7 +269,7 @@
   <p class="text-center block text-BlackText text-body2">No	competitors in that same location</p>
 </div>
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 sm:col-span-12">
                   <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-white">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -292,8 +285,8 @@
               </div>
             </div>
           </div>
-          <div class="col-span-6">
-            <div class="flex items-center justify-center overflow-hidden rounded-15 max-w-[550px] ml-auto w-full h-full">
+          <div class="col-span-6 lg:col-span-12">
+            <div class="flex items-center justify-center overflow-hidden rounded-15 max-w-[550px] lg:max-w-full lg:max-h-[550px] ml-auto w-full h-full">
               <img class="object-cover w-full h-full" src="img/img-11.png" alt="Our Location">
             </div>
           </div>
@@ -302,21 +295,21 @@
     </section>
     <section class="section">
       <div class="container">
-        <div class="row gap-x-6">
-          <div class="col-span-6">
-            <div class="flex items-center justify-center overflow-hidden rounded-15 max-w-[550px] mr-auto w-full h-full">
+        <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-6">
+          <div class="col-span-6 lg:col-span-12 lg:order-2">
+            <div class="flex items-center justify-center overflow-hidden rounded-15 max-w-[550px] lg:max-w-full lg:max-h-[550px] mr-auto w-full h-full">
               <img class="object-cover w-full h-full" src="img/img-12.png" alt="Referral Program">
             </div>
           </div>
-          <div class="col-span-6">
+          <div class="col-span-6 lg:col-span-12 lg:order-1">
             <div class="flex flex-col">
               <div class="flex flex-col ">
   <span class="uppercase text-body2 text-LightBlue3 block mb-3 lg:mb-2 ">Referral program</span>
   <h3 class="text-h3 lg:text-Top6 font-semibold text-Blue100">Referral Program</h3>
   <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:mt-4 "></span>
 </div>
-              <div class="row gap-6">
-                <div class="col-span-6">
+              <div class="row gap-6 sm:gap-x-0">
+                <div class="col-span-6 sm:col-span-12">
                   <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-white">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -329,7 +322,7 @@
   <p class="text-center block text-BlackText text-body2">An opportunity to be a part of a beneficial referral program</p>
 </div>
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 sm:col-span-12">
                   <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-white">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -342,7 +335,7 @@
   <p class="text-center block text-BlackText text-body2">Opportunity to make extra money even on non-qualifiable leads</p>
 </div>
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 sm:col-span-12">
                   <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-white">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -355,7 +348,7 @@
   <p class="text-center block text-BlackText text-body2">Easy-to-use 	CRM system with 100% transparency</p>
 </div>
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 sm:col-span-12">
                   <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-white">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -376,16 +369,16 @@
     </section>
     <section class="section">
       <div class="container">
-        <div class="row gap-x-6">
-          <div class="col-span-6">
+        <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-6">
+          <div class="col-span-6 lg:col-span-12">
             <div class="flex flex-col">
               <div class="flex flex-col ">
   <span class="uppercase text-body2 text-LightBlue3 block mb-3 lg:mb-2 ">Marketing</span>
   <h3 class="text-h3 lg:text-Top6 font-semibold text-Blue100">Marketing</h3>
   <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:mt-4 "></span>
 </div>
-              <div class="row gap-6">
-                <div class="col-span-6">
+              <div class="row gap-6 sm:gap-x-0">
+                <div class="col-span-6 sm:col-span-12">
                   <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-white">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -398,7 +391,7 @@
   <p class="text-center block text-BlackText text-body2">Marketing 	services: targeting & Google ads</p>
 </div>
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 sm:col-span-12">
                   <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-white">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -411,7 +404,7 @@
   <p class="text-center block text-BlackText text-body2">Brand awareness: display & social media</p>
 </div>
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 sm:col-span-12">
                   <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-white">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -424,7 +417,7 @@
   <p class="text-center block text-BlackText text-body2">Regularly 	provided statistics and reports</p>
 </div>
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 sm:col-span-12">
                   <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
  hover:border-Green transition-all flex flex-col items-center bg-white">
   <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
@@ -440,8 +433,8 @@
               </div>
             </div>
           </div>
-          <div class="col-span-6">
-            <div class="flex items-center justify-center overflow-hidden rounded-15 max-w-[550px] ml-auto w-full h-full">
+          <div class="col-span-6 lg:col-span-12">
+            <div class="flex items-center justify-center overflow-hidden rounded-15 max-w-[550px] lg:max-w-full lg:max-h-[550px] ml-auto w-full h-full">
               <img class="object-cover w-full h-full" src="img/img-13.png" alt="Marketing">
             </div>
           </div>
@@ -449,8 +442,6 @@
       </div>
     </section>
   </div>
-
-
   <section class="section relative bg-img-2 overflow-hidden bg-im-none"
          style="background-image: url(img/Background-footer.png);">
   <div class="container">
