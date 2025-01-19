@@ -1595,6 +1595,10 @@ html {
   padding-top: 72px;
   padding-bottom: 72px;
 }
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 .pb-10{
   padding-bottom: 2.5rem;
 }

@@ -277,30 +277,7 @@
       </div>
     </div>
   </section>
-  <section class="section relative bg-img-2 overflow-hidden bg-im-none"
-           style="background-image: url(img/Background-footer.png);">
-    <div class="container">
-      <div class="row">
-        <div class="col-span-12 flex lg:flex-col">
-          <div class="max-w-[400px] w-full flex flex-col relative">
-            @@include('components/Title-block.html', {
-            'Style': '',
-            'Subtitle': 'Contact us',
-            'Title': 'Contact us <br> today',
-            'StyleGreenLine': '',
-            })
-            <div
-              class="lg:hidden shadow-v1 w-[526px] h-[412px] rounded-15 absolute bottom-1 left-0 z-[1] img-filter-5 overflow-hidden block">
-              <img width="526" height="412" class="object-cover rounded-15" src="img/img-9.png" alt="">
-            </div>
-          </div>
-          @@include('components/Form-block.html', {
-          'Style': 'ml-auto'
-          })
-        </div>
-      </div>
-    </div>
-  </section>
+  @@include('components/Contact-section.html')
   @@include('components/Footer.html')
 </main>
 
