@@ -85,6 +85,7 @@ module.exports = {
         'v4': '0px 0px 25px 0px rgba(180, 183, 207, 0.25);',
         'v5': '0px 0px 40px 0px rgba(42, 43, 63, 0.10);',
         'v6': '0px 1px 2px 0px rgba(15, 23, 42, 0.04);',
+        'v7': '0px 1px 12px 0px rgba(48, 54, 122, 0.30);',
       },
       borderRadius: {
         '4xl': '32px',

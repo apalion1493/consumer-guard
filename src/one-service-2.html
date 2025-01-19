@@ -7,11 +7,11 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
-  <section class="pb-[59px] pt-[112px] hero-section relative bg-gradient1">
+  <section class="pb-[59px] pt-[112px] lg:pt-[96px] md:pt-20 lg:pb-12 hero-section relative bg-gradient1">
     @@include('components/Header.html', {
     'commonStyle': ' ',
     })
-    <div class="container pt-[100px]">
+    <div class="container pt-10">
       <div class="row">
         <div class="col-span-12">
           <a class="text-black text-body flex items-center gap-x-4 mb-6" href="#">
@@ -27,15 +27,15 @@
         </div>
       </div>
       <div class="row gap-x-6">
-        <div class="col-span-6 flex">
-          <div class="flex flex-col my-auto">
-            <h1 class="text-h1 text-Blue100 font-semibold">Wrong Name on Credit Report? Dispute Credit Denials with
+        <div class="col-span-6 lg:col-span-12 flex">
+          <div class="flex flex-col my-auto lg:max-w-[500px] lg:mx-auto">
+            <h1 class="text-h1 lg:text-Top6 lg:text-center text-Blue100 font-semibold">Wrong Name on Credit Report? Dispute Credit Denials with
               Us</h1>
-            <span class="border-0 border-b-4 border-Green w-[86px] mt-8 @@StyleGreenLine"></span>
+            <span class="border-0 border-b-4 border-Green w-[86px] mt-8 block lg:mx-auto"></span>
           </div>
         </div>
-        <div class="col-span-6">
-          <div class="relative max-w-[526px] w-full h-[467px] ml-auto">
+        <div class="col-span-6 lg:col-span-12">
+          <div class="relative max-w-[526px] w-full h-[467px] ml-auto lg:h-auto lg:max-w-[296px] lg:mx-auto lg:mt-8">
             <img src="img/hero-img-block-4.png" alt="One Service Image">
           </div>
         </div>
@@ -75,7 +75,7 @@
       </div>
     </div>
   </section>
-  <section class="section relative">
+  <section class="section relative lg:pb-2">
     <div class="container">
       <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-8">
         <div class="col-span-5 xl:col-span-6 lg:col-span-12">
@@ -141,7 +141,7 @@
         </div>
         <div class="col-span-7 xl:col-span-6 lg:col-span-12">
           <div
-            class="max-w-[746px] ml-auto width-no-p p-4 rounded-6xl overflow-hidden flex items-center justify-center sm:p-0 sm:h-[320px] sm:rounded-none bg-LightBlue">
+            class="max-w-full ml-auto width-no-p p-4 rounded-6xl overflow-hidden flex items-center justify-center sm:p-0 sm:h-[320px] sm:rounded-none bg-LightBlue">
             <iframe
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAOMhVrALnzqYT8bHJf7lS3jJKqkeC4RIc&q=East+14th+Street,+New+York,+NY+10003,+United+States"
               class="w-full h-[543px] sm:h-[320px]"
@@ -153,7 +153,7 @@
       </div>
     </div>
   </section>
-  <section class="section">
+  <section class="section overflow-hidden">
     <div class="container">
       <div class="row">
         <div class="col-span-12">
@@ -166,8 +166,8 @@
           })
         </div>
       </div>
-      <div class="row gap-x-6 gap-y-8">
-        <div class="col-span-4">
+      <div class="row gap-x-6 gap-y-8 lg:hidden">
+        <div class="col-span-4 xl:col-span-6 xl:flex xl:justify-center">
           @@include('components/Attorney-Card-v2.html', {
           'Style': '',
           'ImageURL': 'img/Daniel-Cohen-2.png',
@@ -175,7 +175,7 @@
           'name': 'Daniel Cohen',
           })
         </div>
-        <div class="col-span-4">
+        <div class="col-span-4 xl:col-span-6 xl:flex xl:justify-center">
           @@include('components/Attorney-Card-v2.html', {
           'Style': '',
           'ImageURL': 'img/Kain-avatar.png',
@@ -183,7 +183,7 @@
           'name': 'Kain Cardenas',
           })
         </div>
-        <div class="col-span-4">
+        <div class="col-span-4 xl:col-span-6 xl:flex xl:justify-center">
           @@include('components/Attorney-Card-v2.html', {
           'Style': '',
           'ImageURL': 'img/Henri-Rush-2.png',
@@ -191,7 +191,7 @@
           'name': 'Henri Rush',
           })
         </div>
-        <div class="col-span-4">
+        <div class="col-span-4 xl:col-span-6 xl:flex xl:justify-center">
           @@include('components/Attorney-Card-v2.html', {
           'Style': '',
           'ImageURL': 'img/Mike-Hooper-2.png',
@@ -199,7 +199,7 @@
           'name': 'Mike Hooper',
           })
         </div>
-        <div class="col-span-4">
+        <div class="col-span-4 xl:col-span-6 xl:flex xl:justify-center">
           @@include('components/Attorney-Card-v2.html', {
           'Style': '',
           'ImageURL': 'img/Humza-Wolf-2.png',
@@ -207,13 +207,72 @@
           'name': 'Humza Wolf',
           })
         </div>
-        <div class="col-span-4">
+        <div class="col-span-4 xl:col-span-6 xl:flex xl:justify-center">
           @@include('components/Attorney-Card-v2.html', {
           'Style': '',
           'ImageURL': 'img/Paul-Francis-2.png',
           'alt': 'Paul Francis',
           'name': 'Paul Francis',
           })
+        </div>
+      </div>
+      <div class="row minlg:hidden">
+        <div class="col-span-12">
+          <div class="swiper swiperAreas attorneyList1 minlg:hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                @@include('components/Attorney-Card-v2.html', {
+                'Style': '',
+                'ImageURL': 'img/Daniel-Cohen-2.png',
+                'alt': 'Daniel Cohen',
+                'name': 'Daniel Cohen',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Attorney-Card-v2.html', {
+                'Style': '',
+                'ImageURL': 'img/Kain-avatar.png',
+                'alt': 'Kain Cardenas',
+                'name': 'Kain Cardenas',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Attorney-Card-v2.html', {
+                'Style': '',
+                'ImageURL': 'img/Henri-Rush-2.png',
+                'alt': 'Henri Rush',
+                'name': 'Henri Rush',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Attorney-Card-v2.html', {
+                'Style': '',
+                'ImageURL': 'img/Mike-Hooper-2.png',
+                'alt': 'Mike Hooper',
+                'name': 'Mike Hooper',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Attorney-Card-v2.html', {
+                'Style': '',
+                'ImageURL': 'img/Humza-Wolf-2.png',
+                'alt': 'Humza Wolf',
+                'name': 'Humza Wolf',
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Attorney-Card-v2.html', {
+                'Style': '',
+                'ImageURL': 'img/Paul-Francis-2.png',
+                'alt': 'Paul Francis',
+                'name': 'Paul Francis',
+                })
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </div>
       </div>
     </div>

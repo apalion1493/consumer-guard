@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-  const swiper1 = new Swiper('.swiperAreas', {
+  const swiper1 = new Swiper('.areas-list', {
     // Optional parameters
     slidesPerView: '3',
     spaceBetween: 24,
@@ -21,6 +21,29 @@ window.addEventListener('DOMContentLoaded', () => {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  const swiper2 = new Swiper('.attorneyList1', {
+// Optional parameters
+    slidesPerView: '3',
+    spaceBetween: 24,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    scrollbar: false,
+    breakpoints: {
+      1024: {
+        slidesPerView: 2,
+      },
+
+      0: {
+        slidesPerView: 'auto',
+      },
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
 });
 
 document.addEventListener('DOMContentLoaded', function() {
