@@ -163,8 +163,8 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 .gradient-css {
-  background: rgb(247,242,231);
-  background: linear-gradient(90deg, rgba(247,242,231,1) 0%, rgba(241,237,225,1) 40%, rgba(232,242,250,1) 100%);
+  background: rgb(247, 242, 231);
+  background: linear-gradient(90deg, rgba(247, 242, 231, 1) 0%, rgba(241, 237, 225, 1) 40%, rgba(232, 242, 250, 1) 100%);
 }
 
 @media (max-width: 1279.98px) {
@@ -181,6 +181,30 @@ input[type='search']::-webkit-search-results-decoration {
     width: calc(100% + 24px) !important;
     margin-left: -12px !important;
     margin-right: -12px !important;
+  }
+
+  .white-shadow::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+                    to bottom right,
+                    rgba(255, 255, 255, 0.8) 0%,
+                    rgba(255, 255, 255, 0) 60%
+    );
+    pointer-events: none;
+  }
+
+  .white-shadow-hero:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+                    to bottom,
+                    rgba(255, 255, 255, 0.8) 40%,
+                    rgba(255, 255, 255, 0) 60%
+    );
+    pointer-events: none;
   }
 
 }
