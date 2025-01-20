@@ -1637,6 +1637,9 @@ html {
 .pt-\[112px\]{
   padding-top: 112px;
 }
+.pb-\[200px\]{
+  padding-bottom: 200px;
+}
 .text-left{
   text-align: left;
 }
