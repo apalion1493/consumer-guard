@@ -3358,16 +3358,6 @@ a{
   gap: 6px;
 }
 
-[data-vc-theme=light] .vc-date[data-vc-date-selected] .vc-date__btn{
-  --tw-bg-opacity: 1;
-  background-color: rgb(68 182 75 / var(--tw-bg-opacity, 1));
-}
-
-[data-vc-theme=light] .vc-date[data-vc-date-selected] .vc-date__btn:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(68 182 75 / var(--tw-bg-opacity, 1));
-}
-
 [data-vc-theme=light] .vc-date[data-vc-date-holiday][data-vc-date-selected] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-weekend][data-vc-date-selected] .vc-date__btn{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -3379,6 +3369,32 @@ a{
 
 [data-vc-theme=light].vc{
   padding: 0px;
+}
+
+[data-vc-theme=light] .vc-date[data-vc-date-today] .vc-date__btn{
+  background-color: #44B64B33;
+  --tw-text-opacity: 1;
+  color: rgb(49 164 56 / var(--tw-text-opacity, 1));
+}
+
+[data-vc-theme=light] .vc-date[data-vc-date-today] .vc-date__btn:hover{
+  background-color: #44B64B33;
+  --tw-text-opacity: 1;
+  color: rgb(49 164 56 / var(--tw-text-opacity, 1));
+}
+
+[data-vc-theme=light] .vc-date[data-vc-date-selected] .vc-date__btn{
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 182 75 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+[data-vc-theme=light] .vc-date[data-vc-date-selected] .vc-date__btn:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 182 75 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .calendar-container-block {

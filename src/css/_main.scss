@@ -613,10 +613,6 @@
   @apply gap-[6px]
 }
 
-[data-vc-theme=light] .vc-date[data-vc-date-selected] .vc-date__btn {
-  @apply bg-Green hover:bg-Green
-}
-
 [data-vc-theme=light] .vc-date[data-vc-date-holiday][data-vc-date-selected] .vc-date__btn, [data-vc-theme=light] .vc-date[data-vc-date-weekend][data-vc-date-selected] .vc-date__btn {
   @apply text-white
 }
@@ -627,6 +623,14 @@
 
 [data-vc-theme=light].vc {
   @apply p-0
+}
+
+[data-vc-theme=light] .vc-date[data-vc-date-today] .vc-date__btn {
+  @apply bg-LightGreen2 hover:bg-LightGreen2 text-green600 hover:text-green600
+}
+
+[data-vc-theme=light] .vc-date[data-vc-date-selected] .vc-date__btn {
+  @apply bg-Green hover:bg-Green text-white hover:text-white
 }
 
 .calendar-container-block {
