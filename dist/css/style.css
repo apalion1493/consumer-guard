@@ -1592,11 +1592,11 @@ html {
 .pb-14{
   padding-bottom: 3.5rem;
 }
-.pb-28{
-  padding-bottom: 7rem;
-}
 .pb-8{
   padding-bottom: 2rem;
+}
+.pb-\[200px\]{
+  padding-bottom: 200px;
 }
 .pb-\[59px\]{
   padding-bottom: 59px;
@@ -1636,9 +1636,6 @@ html {
 }
 .pt-\[112px\]{
   padding-top: 112px;
-}
-.pb-\[200px\]{
-  padding-bottom: 200px;
 }
 .text-left{
   text-align: left;
