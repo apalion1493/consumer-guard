@@ -227,48 +227,50 @@
         <div class="col-span-1 xl:hidden"></div>
         <div class="col-span-7 xl:col-span-12 relative">
           <div class="absolute w-full top-0 right-0 z-10 xl:relative xl:flex xl:flex-col xl:pb-8">
-            <div class="form-block max-w-[746px] relative z-[2] xl:px-10 w-full lg:w-full
+            <div x-data="{formSubmitted: false, isCheckboxChecked: true}"
+     class="form-block max-w-[746px] relative z-[2] xl:px-10 w-full lg:w-full
 md:px-3 md:py-8 sm:-mx-3 shadow-v4 rounded-6xl overflow-hidden
 bg-white border border-Green p-12 w-full xl:mx-auto">
-  <form class="row gap-x-6 gap-y-5 md:gap-x-0">
-    <div class="col-span-6 md:col-span-12">
-      <div class="form-group flex flex-col items-start input-icon">
+  <div x-show="!formSubmitted">
+    <form @submit.prevent="formSubmitted = true" class="row gap-x-6 gap-y-5 md:gap-x-0">
+      <div class="col-span-6 md:col-span-12">
+        <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 " for="TextId1">First name</label>
   <input
     class="input user-icon input-icon"
     type="text" id="TextId1" placeholder="" name="@@Name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
-    </div>
-    <div class="col-span-6 md:col-span-12">
-      <div class="form-group flex flex-col items-start input-icon">
+      </div>
+      <div class="col-span-6 md:col-span-12">
+        <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 " for="TextId2">Last name</label>
   <input
     class="input user-icon input-icon"
     type="text" id="TextId2" placeholder="" name="@@Name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
-    </div>
-    <div class="col-span-6 md:col-span-12">
-      <div class="form-group flex flex-col items-start input-icon">
+      </div>
+      <div class="col-span-6 md:col-span-12">
+        <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 " for="MailId">Email</label>
   <input
     class="input message-icon input-icon"
     type="email" id="MailId" placeholder="" name="@@Name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
-    </div>
-    <div class="col-span-6 md:col-span-12">
-      <div class="form-group flex flex-col items-start input-icon">
+      </div>
+      <div class="col-span-6 md:col-span-12">
+        <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 " for="PhoneId">Phone Number</label>
   <input
     class="input phone-call-icon input-icon"
     type="text" id="PhoneId" placeholder="" name="@@Name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
-    </div>
-    <div class="col-span-12">
-      <div x-data="{ isOpen: false }" class="form-group flex flex-col items-start relative ">
+      </div>
+      <div class="col-span-12">
+        <div x-data="{ isOpen: false }" class="form-group flex flex-col items-start relative ">
   <label class="mb-3 text-body md:text-body2 " for="selectId">Select Service</label>
 
   <svg
@@ -295,35 +297,43 @@ bg-white border border-Green p-12 w-full xl:mx-auto">
   </select>
 </div>
 
-    </div>
-    <div class="col-span-12">
-      <div class="form-group flex flex-col items-start overflow-hidden ">
+      </div>
+      <div class="col-span-12">
+        <div class="form-group flex flex-col items-start overflow-hidden ">
   <label class="mb-3 font-semibold text-body hidden" for="CommentId"></label>
   <textarea
     class="input "
     id="CommentId" placeholder="Text message..." rows="3" name="@@Name"></textarea>
 </div>
-    </div>
-    <div class="col-span-12">
-      <div class="flex flex-col">
+      </div>
+      <div class="col-span-12">
+        <div class="flex flex-col">
   <label class="custom-checkbox">
     <span class="custom-checkbox__block w-5 min-w-5 h-5">
       <i class="w-5 min-w-5 h-5 rounded bg-white border border-LightBlue3 flex"></i>
     </span>
-    <input type="checkbox">
+    <input type="checkbox" required @change="isCheckboxChecked = $event.target.checked">
     <span class="checkmark">
       <i class="Check-box-on"></i>
     </span>
     <span class="ml-2 text-body2 text-DarkBlue md:text-body4 ">I have read and agree to the <a href="Terms&Conditions.html" class="">Privacy Policy</a>, <a href="Terms&Conditions.html">Investigation</a></span>
   </label>
-  <small class="text-body2 font-medium text-Error md:text-body4 mt-2 "></small>
+  <small x-show="!isCheckboxChecked" class="text-body2 font-medium text-Error md:text-body4 mt-2 ">Error</small>
 </div>
 
-      <button class="button shadow-v3 mt-8 md:w-full lg:mt-6" type="submit" aria-label="Send">
+        <button class="button shadow-v3 mt-8 md:w-full lg:mt-6" type="submit" aria-label="Send">
   <span>Send</span>
 </button>
-    </div>
-  </form>
+      </div>
+    </form>
+  </div>
+  <div x-show="formSubmitted" class="flex flex-">
+
+    <button @click="formSubmitted = false"
+            class="w-full bg-gray-600 text-white py-2 px-4 rounded-md shadow-sm hover:bg-gray-700">
+      Вернуться к форме
+    </button>
+  </div>
 </div>
             <div class="mt-8 minxl:hidden">
               <span class="text-Top3 text-Blue100 mb-3 block font-semibold">Contact Details:</span>
@@ -604,7 +614,6 @@ bg-white border border-Green p-12 w-full xl:mx-auto">
 </main>
 
 <script src="./js/scripts.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOMhVrALnzqYT8bHJf7lS3jJKqkeC4RIc&q&callback=initMap" async defer></script>
 <script>
   document.addEventListener('alpine:init', () => {
     Alpine.data('data', () => ({}));

@@ -1,88 +1,98 @@
-<div class="form-block max-w-[746px] relative z-[2] xl:px-10 w-full lg:w-full
+<div x-data="{formSubmitted: false, isCheckboxChecked: true}"
+     class="form-block max-w-[746px] relative z-[2] xl:px-10 w-full lg:w-full
 md:px-3 md:py-8 sm:-mx-3 shadow-v4 rounded-6xl overflow-hidden
 bg-white border border-Green p-12 @@Style">
-  <form class="row gap-x-6 gap-y-5 md:gap-x-0">
-    <div class="col-span-6 md:col-span-12">
-      @@include('input.html', {
-      'common-style': 'input-icon',
-      'StyleLabel': '',
-      'idInput': 'TextId1',
-      'label': 'First name',
-      'styleInput': 'user-icon input-icon',
-      'type': 'text',
-      'errorStyle': 'hidden',
-      'placeholder': '',
-      })
-    </div>
-    <div class="col-span-6 md:col-span-12">
-      @@include('input.html', {
-      'common-style': 'input-icon',
-      'StyleLabel': '',
-      'idInput': 'TextId2',
-      'label': 'Last name',
-      'styleInput': 'user-icon input-icon',
-      'type': 'text',
-      'errorStyle': 'hidden',
-      'placeholder': '',
-      })
-    </div>
-    <div class="col-span-6 md:col-span-12">
-      @@include('input.html', {
-      'common-style': 'input-icon',
-      'StyleLabel': '',
-      'idInput': 'MailId',
-      'label': 'Email',
-      'styleInput': 'message-icon input-icon',
-      'type': 'email',
-      'errorStyle': 'hidden',
-      'placeholder': '',
-      })
-    </div>
-    <div class="col-span-6 md:col-span-12">
-      @@include('input.html', {
-      'common-style': 'input-icon',
-      'StyleLabel': '',
-      'idInput': 'PhoneId',
-      'label': 'Phone Number',
-      'styleInput': 'phone-call-icon input-icon',
-      'type': 'text',
-      'errorStyle': 'hidden',
-      'placeholder': '',
-      })
-    </div>
-    <div class="col-span-12">
-      @@include('Select.html', {
-      'commonStyle': '',
-      'labelStyle': '',
-      'label': 'Select Service',
-      'idSelect': 'selectId',
-      'NameSelect': 'Select_Service',
-      })
-    </div>
-    <div class="col-span-12">
-      @@include('textarea.html', {
-      'commonStyle': '',
-      'idTextarea': 'CommentId',
-      'label': '',
-      'styleTextarea': '',
-      'placeholder': 'Text message...',
-      'rows': '3',
-      })
-    </div>
-    <div class="col-span-12">
-      @@include('checkbox.html', {
-      'styleText': '',
-      'text': 'I have read and agree to the <a href="Terms&Conditions.html" class="">Privacy Policy</a>, <a href="Terms&Conditions.html">Investigation</a>',
-      'errorStyle': '',
-      'errorText': '',
-      })
+  <div x-show="!formSubmitted">
+    <form @submit.prevent="formSubmitted = true" class="row gap-x-6 gap-y-5 md:gap-x-0">
+      <div class="col-span-6 md:col-span-12">
+        @@include('input.html', {
+        'common-style': 'input-icon',
+        'StyleLabel': '',
+        'idInput': 'TextId1',
+        'label': 'First name',
+        'styleInput': 'user-icon input-icon',
+        'type': 'text',
+        'errorStyle': 'hidden',
+        'placeholder': '',
+        })
+      </div>
+      <div class="col-span-6 md:col-span-12">
+        @@include('input.html', {
+        'common-style': 'input-icon',
+        'StyleLabel': '',
+        'idInput': 'TextId2',
+        'label': 'Last name',
+        'styleInput': 'user-icon input-icon',
+        'type': 'text',
+        'errorStyle': 'hidden',
+        'placeholder': '',
+        })
+      </div>
+      <div class="col-span-6 md:col-span-12">
+        @@include('input.html', {
+        'common-style': 'input-icon',
+        'StyleLabel': '',
+        'idInput': 'MailId',
+        'label': 'Email',
+        'styleInput': 'message-icon input-icon',
+        'type': 'email',
+        'errorStyle': 'hidden',
+        'placeholder': '',
+        })
+      </div>
+      <div class="col-span-6 md:col-span-12">
+        @@include('input.html', {
+        'common-style': 'input-icon',
+        'StyleLabel': '',
+        'idInput': 'PhoneId',
+        'label': 'Phone Number',
+        'styleInput': 'phone-call-icon input-icon',
+        'type': 'text',
+        'errorStyle': 'hidden',
+        'placeholder': '',
+        })
+      </div>
+      <div class="col-span-12">
+        @@include('Select.html', {
+        'commonStyle': '',
+        'labelStyle': '',
+        'label': 'Select Service',
+        'idSelect': 'selectId',
+        'NameSelect': 'Select_Service',
+        })
+      </div>
+      <div class="col-span-12">
+        @@include('textarea.html', {
+        'commonStyle': '',
+        'idTextarea': 'CommentId',
+        'label': '',
+        'styleTextarea': '',
+        'placeholder': 'Text message...',
+        'rows': '3',
+        })
+      </div>
+      <div class="col-span-12">
+        @@include('checkbox.html', {
+        'styleText': '',
+        'text': 'I have read and agree to the <a href="Terms&Conditions.html" class="">Privacy Policy</a>, <a href="Terms&Conditions.html">Investigation</a>',
+        'errorStyle': '',
+        'errorText': 'Error',
+        })
 
-      @@include('button.html', {
-      'style': 'shadow-v3 mt-8 md:w-full lg:mt-6',
-      'type': 'submit',
-      'ariaLabel': 'Send',
-      'title': 'Send',
-      })
-    </div>
-  </form>
+        @@include('button.html', {
+        'style': 'shadow-v3 mt-8 md:w-full lg:mt-6',
+        'type': 'submit',
+        'ariaLabel': 'Send',
+        'title': 'Send',
+        })
+      </div>
+    </form>
+  </div>
+  <div x-show="formSubmitted" class="flex flex-">
+
+    <button @click="formSubmitted = false"
+            class="w-full bg-gray-600 text-white py-2 px-4 rounded-md shadow-sm hover:bg-gray-700">
+      Вернуться к форме
+    </button>
+  </div>
 </div>
