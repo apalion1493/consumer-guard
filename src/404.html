@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': '404'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen">
+  <section class="pb-10 pt-[112px] lg:pt-[96px] md:pt-20 lg:pb-0 bg-gradient1">
+    @@include('components/Header.html', {
+    'commonStyle': 'bg-white shadow-v1 border-b',
+    })
+  </section>
+  <section class="my-auto">
+    <div class="container pt-5 pb-10 lg:py-10">
+      <div class="row">
+        <div class="col-span-12">
+          <div class="flex flex-col lg:flex-col-reverse items-center gap-y-12 lg:gap-y-8">
+            <img class="" width="494" src="img/Error-icon-404.svg" alt="404 Error">
+            <div class="flex flex-col gap-y-4 mx-auto">
+              <h1 class="text-center font-semibold">Page Not Found.</h1>
+              <p class="text-center text-base lg:text-body text-Blue100">We can’t seem to find the page you’re looking for.</p>
+              <span class="border-0 border-b-4 border-Green block mx-auto w-[86px]"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('components/Footer.html')
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>

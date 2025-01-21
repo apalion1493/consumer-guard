@@ -9,3 +9,4 @@ https://apalion1493.github.io/consumer-guard/dist/services.html <br>
 https://apalion1493.github.io/consumer-guard/dist/single-partner.html <br>
 https://apalion1493.github.io/consumer-guard/dist/Terms&Conditions.html <br>
 https://apalion1493.github.io/consumer-guard/dist/login-page.html <br>
+https://apalion1493.github.io/consumer-guard/dist/404.html <br>
