@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const formattedHeader = new Date(date).toLocaleDateString('en-US', options); // Прежний формат
 
     dateHeader.textContent = formattedHeader; // Устанавливаем отформатированную дату
-    dateHeader.classList.add('text-center', 'text-body', 'font-semibold', 'text-Blue100', 'mb-2');
+    dateHeader.classList.add('text-center', 'text-body2', 'text-black', 'mb-2', 'p-1');
     timeOptions.appendChild(dateHeader);
 
     // Генерируем временные слоты
