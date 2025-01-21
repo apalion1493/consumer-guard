@@ -23,7 +23,7 @@
               business and client relations.</p>
             @@include('components/Link-icon.html', {
             'style': 'mt-20 btn-icons md:w-full md:mt-8',
-            'URL': '#',
+            'URL': '#form-block-section',
             'title': 'Apply',
             })
           </div>
@@ -227,7 +227,7 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section pb0">
       <div class="container">
         <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-6">
           <div class="col-span-6 lg:col-span-12">
@@ -284,7 +284,117 @@
       </div>
     </section>
   </div>
-  @@include('components/Contact-section.html')
+  <section id="form-block-section" class="section pt112 relative bg-img-2 overflow-hidden bg-im-none"
+           style="background-image: url(img/Background-footer.png);">
+    <div class="container">
+      <div class="row gap-x-6 lg:gap-x-0">
+        <div class="col-span-5 lg:col-span-12 flex flex-col">
+          <div class="max-w-[440px] w-full flex flex-col h-full relative">
+            @@include('components/Title-block.html', {
+            'Style': '',
+            'Subtitle': 'Contact us',
+            'Title': 'Contact us <br> today',
+            'StyleGreenLine': '',
+            })
+            <div
+              class="lg:hidden w-full rounded-15 mt-auto overflow-hidden block">
+              <img class="object-cover rounded-15 w-full" src="img/img-9.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-span-7 lg:col-span-12">
+          <div class="form-block max-w-[746px] relative z-[2] xl:px-10 w-full lg:w-full
+md:px-3 md:py-8 sm:-mx-3 shadow-v4 rounded-6xl overflow-hidden
+bg-white border border-Green p-12 @@Style">
+            <form class="row gap-x-6 gap-y-5 md:gap-x-0">
+              <div class="col-span-6 md:col-span-12">
+                @@include('components/input.html', {
+                'common-style': 'input-icon',
+                'StyleLabel': '',
+                'idInput': 'TextId1',
+                'label': 'Full name',
+                'styleInput': 'user-icon input-icon',
+                'type': 'text',
+                'errorStyle': 'hidden',
+                'placeholder': '',
+                })
+              </div>
+              <div class="col-span-6 md:col-span-12">
+                @@include('components/input.html', {
+                'common-style': 'input-icon',
+                'StyleLabel': '',
+                'idInput': 'PhoneId',
+                'label': 'Phone Number',
+                'styleInput': 'phone-call-icon input-icon',
+                'type': 'text',
+                'errorStyle': 'hidden',
+                'placeholder': '',
+                })
+              </div>
+              <div class="col-span-6 md:col-span-12">
+                @@include('components/input.html', {
+                'common-style': 'input-icon',
+                'StyleLabel': '',
+                'idInput': 'MailId',
+                'label': 'Email',
+                'styleInput': 'message-icon input-icon',
+                'type': 'email',
+                'errorStyle': 'hidden',
+                'placeholder': '',
+                })
+              </div>
+              <div class="col-span-6 md:col-span-12">
+                @@include('components/input.html', {
+                'common-style': 'input-icon',
+                'StyleLabel': '',
+                'idInput': 'websiteId',
+                'label': 'Website',
+                'styleInput': 'website-icon input-icon',
+                'type': 'text',
+                'errorStyle': 'hidden',
+                'placeholder': '',
+                })
+              </div>
+              <div class="col-span-12">
+                @@include('components/Select.html', {
+                'commonStyle': '',
+                'labelStyle': '',
+                'label': 'Practice Area',
+                'idSelect': 'selectId',
+                'NameSelect': 'Select_Service',
+                })
+              </div>
+              <div class="col-span-12">
+                @@include('components/textarea.html', {
+                'commonStyle': '',
+                'idTextarea': 'CommentId',
+                'label': '',
+                'styleTextarea': '',
+                'placeholder': 'Text message...',
+                'rows': '3',
+                })
+              </div>
+              <div class="col-span-12">
+                @@include('components/checkbox.html', {
+                'styleText': '',
+                'text': 'I have read and agree to the <a href="Terms&Conditions.html" class="">Privacy Policy</a>, <a href="Terms&Conditions.html">Investigation</a>',
+                'errorStyle': '',
+                'errorText': '',
+                })
+
+                @@include('components/button.html', {
+                'style': 'shadow-v3 mt-8 md:w-full lg:mt-6',
+                'type': 'submit',
+                'ariaLabel': 'Send',
+                'title': 'Send',
+                })
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   @@include('components/Footer.html')
 </main>
 

@@ -752,10 +752,30 @@
   @apply  h-[800px] w-full
 }
 
+.pb0 {
+  padding-bottom: 0 !important;
+}
+
+.pt112 {
+  padding-top: 112px;
+
+  @media (max-width: 1023.98px) {
+    padding-top: 80px;
+  }
+}
+
 .swiperAreas.swiper {
   overflow: visible;
   width: calc(100% + 12px);
   padding-bottom: 75px;
+
+  .swiper-button-prev {
+    left: 0;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
 
   .swiper-pagination-bullet {
     @apply w-[10px] h-[10px] rounded-full bg-Grey opacity-100

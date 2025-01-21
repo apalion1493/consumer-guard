@@ -2530,6 +2530,11 @@ a{
   background-size: 20px 20px;
 }
 
+.website-icon {
+  background: url("../img/icons/website.svg") no-repeat calc(100% - 16px) center;
+  background-size: 20px 20px;
+}
+
 .button{
   display: flex;
   height: 4rem;
@@ -3529,10 +3534,29 @@ a{
     width: 100%;
   }
 
+.pb0 {
+  padding-bottom: 0 !important;
+}
+
+.pt112 {
+  padding-top: 112px;
+}
+@media (max-width: 1023.98px) {
+  .pt112 {
+    padding-top: 80px;
+  }
+}
+
 .swiperAreas.swiper {
   overflow: visible;
   width: calc(100% + 12px);
   padding-bottom: 75px;
+}
+.swiperAreas.swiper .swiper-button-prev {
+  left: 0;
+}
+.swiperAreas.swiper .swiper-button-next {
+  right: 0;
 }
 .swiperAreas.swiper .swiper-pagination-bullet{
   height: 10px;
@@ -3642,10 +3666,6 @@ a{
 .hover\:text-gray-700:hover{
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity, 1));
-}
-
-.hover\:underline:hover{
-  text-decoration-line: underline;
 }
 
 .hover\:shadow-v1:hover{
