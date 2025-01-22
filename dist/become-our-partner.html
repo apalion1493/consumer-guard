@@ -464,7 +464,7 @@
 md:px-3 md:py-8 sm:-mx-3 shadow-v4 rounded-6xl overflow-hidden
 bg-white border border-Green p-12">
             <div x-show="!formSubmitted">
-              <form @submit.prevent="formSubmitted = true"  class="row gap-x-6 gap-y-5 md:gap-x-0">
+              <form @submit.prevent="submitForm"  class="row gap-x-6 gap-y-5 md:gap-x-0">
                 <div class="col-span-6 md:col-span-12">
                   <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 " for="TextId1">Full name</label>
@@ -749,6 +749,29 @@ bg-white border border-Green p-12">
   document.addEventListener('alpine:init', () => {
     Alpine.data('data', () => ({}));
   });
+
+  function submitForm() {
+    const formData = new FormData(document.querySelector('form'));
+
+    fetch('/your-endpoint', {
+      method: 'POST',
+      body: formData
+    })
+      .then(response => {
+        if (!response.ok) {
+          this.formSubmitted = true; //Test
+          throw new Error('Error');
+        }
+        return response.json();
+      })
+      .then(data => {
+        this.formSubmitted = true;
+      })
+      .catch(error => {
+        console.error(error);
+      })
+      .finally(() => {});
+  }
 </script>
 </body>
 

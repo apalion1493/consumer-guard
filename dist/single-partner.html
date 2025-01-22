@@ -139,85 +139,86 @@
                   2017.</p>
               </div>
             </div>
-            <div class="rounded-6xl form-block lg:w-full shadow-v4 border border-Green bg-white w-full p-10 lg:px-3 lg:pt-8 sm:-mx-4">
-              <form class="row gap-5">
-                <div class="col-span-12 flex justify-center items-center gap-x-4 lg:hidden">
-                  <span class="border-b border-LightBlue3 block w-full"></span>
-                  <span class="text-nowrap text-body4 uppercase text-Blue100 tracking-072">CONTACT US</span>
-                  <span class="border-b border-LightBlue3 block w-full"></span>
-                </div>
-                <div class="col-span-6 lg:col-span-12">
-                  <div class="form-group flex flex-col items-start input-icon">
+            <div x-data="{formSubmitted: false}" class="rounded-6xl form-block lg:w-full shadow-v4 border border-Green bg-white w-full p-10 lg:px-3 lg:pt-8 sm:-mx-4">
+              <div x-show="!formSubmitted">
+                <form @submit.prevent="submitForm" class="row gap-5">
+                  <div class="col-span-12 flex justify-center items-center gap-x-4 lg:hidden">
+                    <span class="border-b border-LightBlue3 block w-full"></span>
+                    <span class="text-nowrap text-body4 uppercase text-Blue100 tracking-072">CONTACT US</span>
+                    <span class="border-b border-LightBlue3 block w-full"></span>
+                  </div>
+                  <div class="col-span-6 lg:col-span-12">
+                    <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 hidden" for="TextId1">First name</label>
   <input
     class="input user-icon input-icon"
     type="text" id="TextId1" placeholder="First name" name="first_name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
-                </div>
-                <div class="col-span-6 lg:col-span-12">
-                  <div class="form-group flex flex-col items-start input-icon">
+                  </div>
+                  <div class="col-span-6 lg:col-span-12">
+                    <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 hidden" for="TextId2">Last name</label>
   <input
     class="input user-icon input-icon"
     type="text" id="TextId2" placeholder="Last name" name="last_name" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
-                </div>
-                <div class="col-span-6 lg:col-span-12">
-                  <div class="form-group flex flex-col items-start input-icon">
+                  </div>
+                  <div class="col-span-6 lg:col-span-12">
+                    <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 hidden" for="MailId">Email</label>
   <input
     class="input message-icon input-icon"
     type="email" id="MailId" placeholder="Email" name="email" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
-                </div>
-                <div class="col-span-6 lg:col-span-12">
-                  <div class="form-group flex flex-col items-start input-icon">
+                  </div>
+                  <div class="col-span-6 lg:col-span-12">
+                    <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 hidden" for="PhoneId">Phone Number</label>
   <input
     class="input phone-call-icon input-icon"
     type="text" id="PhoneId" placeholder="Phone" name="phone" required>
   <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
 </div>
-                </div>
-                <div class="col-span-12">
-                  <div class="relative">
-                    <div id="custom-input" class="custom-input input w-full" tabindex="0">
+                  </div>
+                  <div class="col-span-12">
+                    <div class="relative">
+                      <div id="custom-input" class="custom-input input w-full" tabindex="0">
                       <span id="selected-date"
                             class="placeholder shadow-v6 h-[30px] flex items-center gap-x-1 text-body2 text-black px-2 py-1 border border-Green rounded">
                         MM <span class="text-Green">/</span> DD <span class="text-Green">/</span> YY
                       </span>
-                      <span id="selected-time"
-                            class="placeholder shadow-v6 h-[30px] flex items-center gap-x-1 text-body2 text-black px-2 py-1 border border-Green rounded">
+                        <span id="selected-time"
+                              class="placeholder shadow-v6 h-[30px] flex items-center gap-x-1 text-body2 text-black px-2 py-1 border border-Green rounded">
                         8:00 pm
                       </span>
-                      <i class="Dropdown-up-down block ml-auto w-5 h-5 min-w-5 mr-3"></i>
-                      <span id="clear-button" class="clear-button cursor-pointer" aria-label="Clear">✕</span>
-                    </div>
-                    <input type="hidden" id="hidden-input" name="datetime" value="">
-                    <div id="calendar-container" class="w-[556px] calendar-container-block"
-                         style="display: none; position: absolute; z-index: 100; border: 1px solid #ccc; background: #fff; padding: 10px; border-radius: 5px;">
-                      <div id="vanilla-calendar" class="vanilla-calendar"></div>
-                      <div id="time-picker" class="w-[177px] lg:w-full">
-                        <div class="flex flex-col gap-y-2" id="time-options">
-                          <span class="text-center text-body2 font-medium text-black block p-1">Select date</span>
+                        <i class="Dropdown-up-down block ml-auto w-5 h-5 min-w-5 mr-3"></i>
+                        <span id="clear-button" class="clear-button cursor-pointer" aria-label="Clear">✕</span>
+                      </div>
+                      <input type="hidden" id="hidden-input" name="datetime" value="">
+                      <div id="calendar-container" class="w-[556px] calendar-container-block"
+                           style="display: none; position: absolute; z-index: 100; border: 1px solid #ccc; background: #fff; padding: 10px; border-radius: 5px;">
+                        <div id="vanilla-calendar" class="vanilla-calendar"></div>
+                        <div id="time-picker" class="w-[177px] lg:w-full">
+                          <div class="flex flex-col gap-y-2" id="time-options">
+                            <span class="text-center text-body2 font-medium text-black block p-1">Select date</span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-span-12">
-                  <div class="form-group flex flex-col items-start overflow-hidden ">
+                  <div class="col-span-12">
+                    <div class="form-group flex flex-col items-start overflow-hidden ">
   <label class="mb-3 font-semibold text-body hidden" for="CommentId"></label>
   <textarea
     class="input "
     id="CommentId" placeholder="Text message..." rows="3" name="comment"></textarea>
 </div>
-                </div>
-                <div class="col-span-12">
-                  <div class="flex flex-col">
+                  </div>
+                  <div class="col-span-12">
+                    <div class="flex flex-col">
   <label class="custom-checkbox">
     <span class="custom-checkbox__block w-5 min-w-5 h-5">
       <i class="w-5 min-w-5 h-5 rounded bg-white border border-LightBlue3 flex"></i>
@@ -231,11 +232,38 @@
   <small class="text-body2 text-right font-medium text-Error md:text-body4 mt-2 "></small>
 </div>
 
-                  <button class="button shadow-v3 mt-8 md:w-full lg:mt-4" type="submit" aria-label="Send">
+                    <button class="button shadow-v3 mt-8 md:w-full lg:mt-4" type="submit" aria-label="Send">
   <span>Send</span>
 </button>
+                  </div>
+                </form>
+              </div>
+              <div x-show="formSubmitted" class="flex flex-col lg:items-center min-h-[600px] lg:min-h-0 h-full">
+                <div class="flex items-center lg:justify-center mb-10 lg:mb-6">
+                  <img class="lg:max-w-[224px]" src="img/mail-big-icon.svg" alt="Return to the Form img">
                 </div>
-              </form>
+                <div class="h-full flex flex-col">
+                  <div class="flex flex-col gap-y-6 mb-8">
+                    <span class="text-h3 font-semibold lg:text-center lg:text-Top6">Thank you for Contacting Us!</span>
+                    <p class="lg:text-center lg:text-body">We will contact you with a few minutes for consultation and for answering
+                      questions you need.</p>
+                    <span class="border-0 border-b-4 border-Green w-[86px] lg:mx-auto block"></span>
+                  </div>
+                  <button @click="formSubmitted = false" class="button group btn-icons mt-auto lg:mx-auto" type="button"
+                          aria-label="Return to the Form button">
+                    <svg class="rotate-180 mr-3" xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 35 30"
+                         fill="none">
+                      <path class="group-disabled:fill-DarkGrey" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M20.3602 1.33758C13.9099 1.33758 8.52797 6.0309 7.29254 12.2668C7.22083 12.6288 6.8763 12.8627 6.52301 12.7892C6.16972 12.7157 5.94146 12.3627 6.01317 12.0007C7.36967 5.15371 13.2768 0 20.3602 0C28.4455 0 35 6.71573 35 15C35 23.2843 28.4455 30 20.3602 30C13.2768 30 7.36967 24.8463 6.01317 17.9993C5.94146 17.6373 6.16972 17.2843 6.52301 17.2108C6.8763 17.1373 7.22083 17.3712 7.29254 17.7332C8.52797 23.9691 13.9099 28.6624 20.3602 28.6624C27.7245 28.6624 33.6945 22.5455 33.6945 15C33.6945 7.45445 27.7245 1.33758 20.3602 1.33758Z"
+                            fill="white" />
+                      <path class="group-disabled:fill-DarkGrey" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M20.5873 10.1989L24.8058 14.5199C25.0647 14.785 25.0647 15.215 24.8058 15.4801L20.5873 19.8011C20.3284 20.0663 19.9087 20.0663 19.6499 19.8011C19.391 19.536 19.391 19.1061 19.6499 18.8409L22.7368 15.679H0.662879C0.296781 15.679 0 15.375 0 15C0 14.625 0.296781 14.321 0.662879 14.321H22.7368L19.6499 11.1591C19.391 10.8939 19.391 10.464 19.6499 10.1989C19.9087 9.93371 20.3284 9.93371 20.5873 10.1989Z"
+                            fill="white" />
+                    </svg>
+                    <span class="">Return to the Form</span>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -911,7 +939,7 @@
 md:px-3 md:py-8 sm:-mx-3 shadow-v4 rounded-6xl overflow-hidden
 bg-white border border-Green p-12 ">
   <div x-show="!formSubmitted">
-    <form @submit.prevent="formSubmitted = true" class="row gap-x-6 gap-y-5 md:gap-x-0">
+    <form @submit.prevent="submitForm" class="row gap-x-6 gap-y-5 md:gap-x-0">
       <div class="col-span-6 md:col-span-12">
         <div class="form-group flex flex-col items-start input-icon">
   <label class="mb-3 text-body text-Blue100 md:text-body2 " for="TextId1">First name</label>
@@ -1033,6 +1061,9 @@ bg-white border border-Green p-12 ">
     </div>
   </div>
 </div>
+<script>
+
+</script>
       </div>
     </div>
   </div>
@@ -1197,6 +1228,29 @@ bg-white border border-Green p-12 ">
   document.addEventListener('alpine:init', () => {
     Alpine.data('data', () => ({}));
   });
+
+  function submitForm() {
+    const formData = new FormData(document.querySelector('form'));
+
+    fetch('/your-endpoint', {
+      method: 'POST',
+      body: formData
+    })
+      .then(response => {
+        if (!response.ok) {
+          this.formSubmitted = true; //Test
+          throw new Error('Error');
+        }
+        return response.json();
+      })
+      .then(data => {
+        this.formSubmitted = true;
+      })
+      .catch(error => {
+        console.error(error);
+      })
+      .finally(() => {});
+  }
 </script>
 </body>
 
