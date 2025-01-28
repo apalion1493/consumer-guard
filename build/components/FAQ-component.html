@@ -1,0 +1,16 @@
+<div x-data="{ isExpanded: false }" class="overflow-hidden rounded-8xl bg-white border border-LightBlue2 p-8">
+  <button id="controlsAccordionItemOne" type="button" class="flex justify-between w-full items-center gap-2 text-left text-Top3 text-Blue100 font-semibold" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? ''  : ''" :aria-expanded="isExpanded ? 'true' : 'false'">
+    What is a mixed credit file?
+    <span class="flex items-center justify-center w-10 h-10 rounded-full border transition" :class="isExpanded  ?  'border-LightBlue3'  :  'border-Green'">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none" class="transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''">
+        <path :class="isExpanded  ?  'fill-LightBlue3'  :  ''" fill-rule="evenodd" clip-rule="evenodd" d="M1.0804 0.591737C0.76798 0.904156 0.76798 1.41069 1.0804 1.72311L8.99999 9.6427L16.9196 1.72311C17.232 1.41069 17.232 0.904156 16.9196 0.591737C16.6072 0.279318 16.1006 0.279318 15.7882 0.591737L8.99999 7.37996L2.21177 0.591737C1.89935 0.279317 1.39282 0.279317 1.0804 0.591737Z" fill="#44B64B"/>
+      </svg>
+    </span>
+  </button>
+  <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
+    <div class="pt-3">
+      <p class="text-body text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<script src="./js/scripts.js"></script>
+<script>
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('data', () => ({}));
+  });
+
+  function submitForm() {
+    const formData = new FormData(document.querySelector('form'));
+
+    fetch('/your-endpoint', {
+      method: 'POST',
+      body: formData
+    })
+      .then(response => {
+        if (!response.ok) {
+          this.formSubmitted = true; //Test
+          throw new Error('Error');
+        }
+        return response.json();
+      })
+      .then(data => {
+        this.formSubmitted = true;
+      })
+      .catch(error => {
+        console.error(error);
+      })
+      .finally(() => {});
+  }
+</script>

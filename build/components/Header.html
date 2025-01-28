@@ -1,0 +1,78 @@
+<header id="sticky-header" class="flex flex-col w-full fixed top-0 left-0 z-10 sticky-header lg:bg-white lg:shadow-v1 lg:border-b border-LightBlue2 @@commonStyle">
+  <div class="w-full flex flex-col">
+    <div class="py-6 md:py-4">
+      <div class="container flex items-center w-full relative">
+        <button id="burger-button" class="relative z-10 flex flex-col items-center justify-center w-10 h-10 focus:outline-none minlg:hidden lg:absolute lg:top-0 lg:left-2 p-2"
+                aria-label="Mobile Burger Button">
+          <span class="block w-6 border-b-[2px] border-Blue100  transition-transform duration-300 origin-center burger-line"></span>
+          <span class="block w-6 border-b-[2px] border-Blue100  transition-opacity duration-300 mt-1.5 burger-line"></span>
+          <span class="block w-6 border-b-[2px] border-Blue100  transition-transform duration-300 origin-center mt-1.5 burger-line"></span>
+        </button>
+        <a class="lg:max-w-[171px] minlg:min-w-[140px] mr-3 lg:mx-auto" href="index.html">
+          <img width="140" height="48" src="img/Logo-header.svg" alt="Logo" loading="lazy">
+        </a>
+        <div class="flex items-center w-full lg:hidden">
+          <div class="ml-auto w-full">
+            <div class="items-center minlg:h-14 flex justify-end relative">
+              <nav class="mx-auto lg:hidden">
+                <div class="container px-0 mx-auto flex justify-center items-center gap-x-5 w-full">
+                  <a href="services.html"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Services</a>
+                  <a href="locations.html"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Locations</a>
+                  <a href="partners.html"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Partners</a>
+                  <a href="about-us.html"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">About
+                    Us</a>
+                  <a href="contacts-us.html"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Contacts</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="flex items-center gap-x-3 ml-3 lg:hidden">
+            <a class="button shadow-v3 text-nowrap" href="@@url">
+    <span class="">Contact Us</span>
+</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu minlg:hidden">
+    <div class="flex flex-col container px-3 gap-y-6 h-full pb-[200px] max-h-full overflow-y-scroll">
+      <nav class="w-full mb-4">
+        <ul class="flex flex-col">
+          <li class="border-y border-LightBlue2 py-5">
+            <a href="services.html"
+               class="block w-full text-left text-body text-Blue100 hover:text-Green transition-colors">
+              Services
+            </a>
+          </li>
+          <li class="border-b border-LightBlue2 py-5">
+            <a href="locations.html"
+               class="block w-full text-left text-body text-Blue100 hover:text-Green transition-colors">
+              Locations
+            </a>
+          </li>
+          <li class="border-b border-LightBlue2 py-5">
+            <a href="partners.html"
+               class="block w-full text-left text-body text-Blue100 hover:text-Green transition-colors">
+              Partners
+            </a>
+          </li>
+          <li class="border-b border-LightBlue2 py-5">
+            <a href="about-us.html"
+               class="block w-full text-left text-body text-Blue100 hover:text-Green transition-colors">
+              About Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="button shadow-v3 mt-auto w-full" href="@@url">
+    <span class="">Contact Us</span>
+</a>
+    </div>
+  </div>
+</header>

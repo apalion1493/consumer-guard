@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen">
+  <section class="pb-[59px] pt-[112px] lg:pt-[96px] md:pt-20 lg:pb-12 hero-section relative overflow-hidden hero-img-1 white-shadow-hero">
+    <header id="sticky-header" class="flex flex-col w-full fixed top-0 left-0 z-10 sticky-header lg:bg-white lg:shadow-v1 lg:border-b border-LightBlue2  ">
+  <div class="w-full flex flex-col">
+    <div class="py-6 md:py-4">
+      <div class="container flex items-center w-full relative">
+        <button id="burger-button" class="relative z-10 flex flex-col items-center justify-center w-10 h-10 focus:outline-none minlg:hidden lg:absolute lg:top-0 lg:left-2 p-2"
+                aria-label="Mobile Burger Button">
+          <span class="block w-6 border-b-[2px] border-Blue100  transition-transform duration-300 origin-center burger-line"></span>
+          <span class="block w-6 border-b-[2px] border-Blue100  transition-opacity duration-300 mt-1.5 burger-line"></span>
+          <span class="block w-6 border-b-[2px] border-Blue100  transition-transform duration-300 origin-center mt-1.5 burger-line"></span>
+        </button>
+        <a class="lg:max-w-[171px] minlg:min-w-[140px] mr-3 lg:mx-auto" href="index.html">
+          <img width="140" height="48" src="img/Logo-header.svg" alt="Logo" loading="lazy">
+        </a>
+        <div class="flex items-center w-full lg:hidden">
+          <div class="ml-auto w-full">
+            <div class="items-center minlg:h-14 flex justify-end relative">
+              <nav class="mx-auto lg:hidden">
+                <div class="container px-0 mx-auto flex justify-center items-center gap-x-5 w-full">
+                  <a href="services.html"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Services</a>
+                  <a href="locations.html"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Locations</a>
+                  <a href="partners.html"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Partners</a>
+                  <a href="about-us.html"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">About
+                    Us</a>
+                  <a href="contacts-us.html"
+                     class="py-2 text-center text-Blue100 hover:text-Green transition-colors text-body lg:text-body2">Contacts</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="flex items-center gap-x-3 ml-3 lg:hidden">
+            <a class="button shadow-v3 text-nowrap" href="@@url">
+    <span class="">Contact Us</span>
+</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu minlg:hidden">
+    <div class="flex flex-col container px-3 gap-y-6 h-full pb-[200px] max-h-full overflow-y-scroll">
+      <nav class="w-full mb-4">
+        <ul class="flex flex-col">
+          <li class="border-y border-LightBlue2 py-5">
+            <a href="services.html"
+               class="block w-full text-left text-body text-Blue100 hover:text-Green transition-colors">
+              Services
+            </a>
+          </li>
+          <li class="border-b border-LightBlue2 py-5">
+            <a href="locations.html"
+               class="block w-full text-left text-body text-Blue100 hover:text-Green transition-colors">
+              Locations
+            </a>
+          </li>
+          <li class="border-b border-LightBlue2 py-5">
+            <a href="partners.html"
+               class="block w-full text-left text-body text-Blue100 hover:text-Green transition-colors">
+              Partners
+            </a>
+          </li>
+          <li class="border-b border-LightBlue2 py-5">
+            <a href="about-us.html"
+               class="block w-full text-left text-body text-Blue100 hover:text-Green transition-colors">
+              About Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="button shadow-v3 mt-auto w-full" href="@@url">
+    <span class="">Contact Us</span>
+</a>
+    </div>
+  </div>
+</header>
+    <span class="shadow-elem-hero-block-1 absolute -left-[280px] -bottom-[260px] lg:hidden"></span>
+    <span class="shadow-elem-hero-block-2 absolute -right-[390px] -top-[237px] lg:hidden"></span>
+    <div class="container relative z-[2]">
+      <div class="row gap-x-6 md:gap-x-0 md:pt-12">
+        <div class="col-span-5 lg:col-span-7 md:col-span-12 flex items-center">
+          <div class="flex flex-col max-w-[486px] lg:max-w-full">
+            <h1 class="text-h1 md:text-Top6 lg:text-h4 md:text-center font-semibold text-Blue100 mb-8">All Solutions in
+              One Location</h1>
+            <p class="text-base text-BlackText md:text-center">Save Time, Solve Everything with Confidence and
+              Convenience—Consumer
+              Guard Has You Covered.</p>
+            <a class="button group relative mt-20 btn-icons md:hidden" href="#">
+  <span class="">Button</span>
+  <svg class="absolute right-5 top-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 35 30" fill="none">
+    <path class="group-disabled:fill-DarkGrey" fill-rule="evenodd" clip-rule="evenodd" d="M20.3602 1.33758C13.9099 1.33758 8.52797 6.0309 7.29254 12.2668C7.22083 12.6288 6.8763 12.8627 6.52301 12.7892C6.16972 12.7157 5.94146 12.3627 6.01317 12.0007C7.36967 5.15371 13.2768 0 20.3602 0C28.4455 0 35 6.71573 35 15C35 23.2843 28.4455 30 20.3602 30C13.2768 30 7.36967 24.8463 6.01317 17.9993C5.94146 17.6373 6.16972 17.2843 6.52301 17.2108C6.8763 17.1373 7.22083 17.3712 7.29254 17.7332C8.52797 23.9691 13.9099 28.6624 20.3602 28.6624C27.7245 28.6624 33.6945 22.5455 33.6945 15C33.6945 7.45445 27.7245 1.33758 20.3602 1.33758Z" fill="white"/>
+    <path class="group-disabled:fill-DarkGrey" fill-rule="evenodd" clip-rule="evenodd" d="M20.5873 10.1989L24.8058 14.5199C25.0647 14.785 25.0647 15.215 24.8058 15.4801L20.5873 19.8011C20.3284 20.0663 19.9087 20.0663 19.6499 19.8011C19.391 19.536 19.391 19.1061 19.6499 18.8409L22.7368 15.679H0.662879C0.296781 15.679 0 15.375 0 15C0 14.625 0.296781 14.321 0.662879 14.321H22.7368L19.6499 11.1591C19.391 10.8939 19.391 10.464 19.6499 10.1989C19.9087 9.93371 20.3284 9.93371 20.5873 10.1989Z" fill="white"/>
+  </svg>
+</a>
+            <a class="button mt-8 minmd:hidden md:w-full" href="#">
+    <span class="">Button</span>
+</a>
+          </div>
+        </div>
+        <div class="col-span-7 lg:col-span-5 md:col-span-12 flex md:mt-14">
+          <svg class="ml-auto md:max-w-[296px] md:mx-auto md:h-auto" xmlns="http://www.w3.org/2000/svg" width="530"
+               height="693" viewBox="0 0 530 693"
+               fill="none">
+            <path
+              d="M2 203.605V66.113C57.9763 27.554 153.543 2 264.985 2C376.427 2 472.024 27.554 528 66.113V418.474C528 439.838 520.92 459.784 513.238 479.418C504.393 499.103 493.323 516.883 480.577 533.15M2 255.113V253.452M2 309.945V418.474C2 439.838 9.08022 459.784 16.7618 479.418C56.6792 568.254 141.935 618.324 222.117 665.414C236.684 673.969 251.085 682.427 265.015 691C278.936 682.433 293.325 673.982 307.88 665.433C342.34 645.193 377.734 624.404 410.065 600.225M446.213 570.259C446.808 569.707 447.4 569.153 447.99 568.597"
+              stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pt-16 lg:py-10 pb-14 overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="col-span-12 flex items-end justify-between mb-14 lg:mb-8">
+          <div class="flex flex-col ">
+  <span class="uppercase text-body2 text-LightBlue3 block mb-3 lg:mb-2 PRACTICE AREASStyle">PRACTICE AREAS</span>
+  <h3 class="text-h3 lg:text-Top6 font-semibold text-Blue100">We can help you with...</h3>
+  <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:mt-4 hidden"></span>
+</div>
+          <a href="#" class="button btn-link group lg:hidden">
+  <span>All PRACTICE AREAS</span>
+  <svg class="ml-5" xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 35 30" fill="none">
+    <path class="group-hover:fill-LightGreen group-active:fill-green600" fill-rule="evenodd" clip-rule="evenodd" d="M20.3602 1.33758C13.9099 1.33758 8.52797 6.0309 7.29254 12.2668C7.22083 12.6288 6.8763 12.8627 6.52301 12.7892C6.16972 12.7157 5.94146 12.3627 6.01317 12.0007C7.36967 5.15371 13.2768 0 20.3602 0C28.4455 0 35 6.71573 35 15C35 23.2843 28.4455 30 20.3602 30C13.2768 30 7.36967 24.8463 6.01317 17.9993C5.94146 17.6373 6.16972 17.2843 6.52301 17.2108C6.8763 17.1373 7.22083 17.3712 7.29254 17.7332C8.52797 23.9691 13.9099 28.6624 20.3602 28.6624C27.7245 28.6624 33.6945 22.5455 33.6945 15C33.6945 7.45445 27.7245 1.33758 20.3602 1.33758Z" fill="#44B64B"/>
+    <path class="group-hover:fill-LightGreen group-active:fill-green600" fill-rule="evenodd" clip-rule="evenodd" d="M20.5873 10.1989L24.8058 14.5199C25.0647 14.785 25.0647 15.215 24.8058 15.4801L20.5873 19.8011C20.3284 20.0663 19.9087 20.0663 19.6499 19.8011C19.391 19.536 19.391 19.1061 19.6499 18.8409L22.7368 15.679H0.662879C0.296781 15.679 0 15.375 0 15C0 14.625 0.296781 14.321 0.662879 14.321H22.7368L19.6499 11.1591C19.391 10.8939 19.391 10.464 19.6499 10.1989C19.9087 9.93371 20.3284 9.93371 20.5873 10.1989Z" fill="#44B64B"/>
+  </svg>
+</a>
+        </div>
+      </div>
+      <div class="row gap-6 lg:hidden">
+        <div class="col-span-3 xl:col-span-4 lg:col-span-6 md:col-span-12">
+          <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Consumer Attorneys</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] icon-speed"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-span-3 xl:col-span-4 lg:col-span-6 md:col-span-12">
+          <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Mortgage Brokers</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-money"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-span-3 xl:col-span-4 lg:col-span-6 md:col-span-12">
+          <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Insurance Providers</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Identity"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-span-3 xl:col-span-4 lg:col-span-6 md:col-span-12">
+          <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Rentals</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Attorney"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-span-3 xl:col-span-4 lg:col-span-6 md:col-span-12">
+          <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Personal Loans</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Car-Accident"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-span-3 xl:col-span-4 lg:col-span-6 md:col-span-12">
+          <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Auto Loans</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Check-Errors"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-span-3 xl:col-span-4 lg:col-span-6 md:col-span-12">
+          <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Certified Public Accountants</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Discrimination"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+      <div class="swiper swiperAreas areas-list minlg:hidden">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Consumer Attorneys</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] icon-speed"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Mortgage Brokers</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-money"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Insurance Providers</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Identity"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Rentals</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Attorney"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Personal Loans</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Car-Accident"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Auto Loans</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Check-Errors"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-6xl group overflow-hidden min-w-[306px] max-w-[306px] h-[306px] flex justify-center items-center relative p-5
+  bg-LightBlue transition-all hover:bg-Blue100 ">
+  <svg class="absolute top-0 left-0" width="266" height="200" viewBox="0 0 266 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" cx="66" r="198.5" stroke="#E7E9FC" stroke-width="3"/>
+  </svg>
+  <div class="flex flex-col border border-Green rounded-xl h-full w-full p-6 relative z-[1px]">
+    <h3 class="text-Top3 max-w-[194px] text-Blue100 group-hover:text-white transition-all font-semibold mb-5 block">Certified Public Accountants</h3>
+    <span class="border-b-[4px] w-[60px] block border-Green mb-6"></span>
+    <div class="relative w-full h-full self-end">
+      <i class="absolute right-6 bottom-6 w-[75px] h-[75px] z-[2] Icon-Discrimination"></i>
+      <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="60" height="75" viewBox="0 0 60 75" fill="none">
+        <path class="group-hover:stroke-DarkBlue transition-all" opacity="0.5" d="M29.9982 1.5C42.0924 1.5 52.3561 4.07379 58.5 7.84213V45.1636C58.5 47.1668 57.8125 49.095 56.9416 51.234C54.4045 56.6321 50.1494 60.7035 45.1549 64.2108C41.6743 66.655 37.9433 68.7579 34.232 70.8497C32.8141 71.6489 31.3989 72.4465 30.0018 73.2609C28.6033 72.4458 27.1868 71.6475 25.7675 70.8476C22.057 68.7564 18.3269 66.6542 14.8468 64.2108C9.85132 60.7034 5.59541 56.632 3.05837 51.234C2.18749 49.0949 1.5 47.1668 1.5 45.1636V7.84212C7.64371 4.07376 17.9042 1.5 29.9982 1.5Z" stroke="#E7E9FC" stroke-width="3"/>
+      </svg>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-3">
+        <div class="col-span-5 lg:col-span-12">
+          <div class="flex flex-col">
+            <div class="flex flex-col ">
+  <span class="uppercase text-body2 text-LightBlue3 block mb-3 lg:mb-2 ABout usStyle">ABout us</span>
+  <h3 class="text-h3 lg:text-Top6 font-semibold text-Blue100">Consumer Guard: Your One-Stop Solution</h3>
+  <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:mt-4 "></span>
+</div>
+            <p class="text-body text-BlackText">t Consumer Guard, we bring together mortgage brokers, auto loans,
+              insurance providers, personal loan services, and consumer attorneys all under one roof. Unlike others, we
+              simplify the process—no need to visit multiple offices or navigate confusing systems. With our team of
+              experts in one location, you’ll save time, reduce stress, and get tailored solutions that meet your unique
+              needs. Consumer Guard: convenience and expertise, redefined.</p>
+          </div>
+        </div>
+        <div class="col-span-7 lg:col-span-12">
+          <div class="relative max-w-[636px] lg:max-w-[400px] w-full h-full ml-auto lg:mx-auto">
+            <img class="w-full" src="img/Image-group-3.png" loading="lazy" alt="Alt text">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row gap-6 sm:gap-x-0">
+        <div class="col-span-3 lg:col-span-6 sm:col-span-12">
+          <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
+ hover:border-Green transition-all flex flex-col items-center ">
+  <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
+    <i class="relative z-[2] w-[60px] h-[60px] Quick-solutions"></i>
+<!--    <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="37" height="46" viewBox="0 0 37 46" fill="none">-->
+<!--      <path d="M18.5395 1.04688C25.7543 1.04688 31.8703 2.57625 35.5405 4.80825V27.145C35.5405 28.3247 35.136 29.4646 34.6139 30.7471C33.1019 33.9627 30.5647 36.3927 27.576 38.4915C25.4918 39.9552 23.2604 41.2128 21.0358 42.4666C20.2007 42.9373 19.3666 43.4074 18.5416 43.8877C17.7158 43.407 16.8808 42.9364 16.0449 42.4653C13.8209 41.2119 11.59 39.9546 9.50606 38.4915C6.51677 36.3927 3.97918 33.9627 2.46717 30.7471C1.9451 29.4646 1.54053 28.3247 1.54053 27.145V4.80825C5.21066 2.57623 11.3247 1.04688 18.5395 1.04688Z" stroke="#F3F4FF" stroke-width="2"/>-->
+<!--    </svg>-->
+  </div>
+  <span class="block text-center text-Blue100 text-Top3 font-semibold mb-2">Quick solutions</span>
+  <p class="text-center block text-BlackText text-body2">We guarantee the fastest resolution of any issue.</p>
+</div>
+        </div>
+        <div class="col-span-3 lg:col-span-6 sm:col-span-12">
+          <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
+ hover:border-Green transition-all flex flex-col items-center ">
+  <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
+    <i class="relative z-[2] w-[60px] h-[60px] Reliability"></i>
+<!--    <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="37" height="46" viewBox="0 0 37 46" fill="none">-->
+<!--      <path d="M18.5395 1.04688C25.7543 1.04688 31.8703 2.57625 35.5405 4.80825V27.145C35.5405 28.3247 35.136 29.4646 34.6139 30.7471C33.1019 33.9627 30.5647 36.3927 27.576 38.4915C25.4918 39.9552 23.2604 41.2128 21.0358 42.4666C20.2007 42.9373 19.3666 43.4074 18.5416 43.8877C17.7158 43.407 16.8808 42.9364 16.0449 42.4653C13.8209 41.2119 11.59 39.9546 9.50606 38.4915C6.51677 36.3927 3.97918 33.9627 2.46717 30.7471C1.9451 29.4646 1.54053 28.3247 1.54053 27.145V4.80825C5.21066 2.57623 11.3247 1.04688 18.5395 1.04688Z" stroke="#F3F4FF" stroke-width="2"/>-->
+<!--    </svg>-->
+  </div>
+  <span class="block text-center text-Blue100 text-Top3 font-semibold mb-2">Reliability</span>
+  <p class="text-center block text-BlackText text-body2">We are ready to be your reliable partners in all your matters.</p>
+</div>
+        </div>
+        <div class="col-span-3 lg:col-span-6 sm:col-span-12">
+          <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
+ hover:border-Green transition-all flex flex-col items-center ">
+  <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
+    <i class="relative z-[2] w-[60px] h-[60px] Your-Secure"></i>
+<!--    <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="37" height="46" viewBox="0 0 37 46" fill="none">-->
+<!--      <path d="M18.5395 1.04688C25.7543 1.04688 31.8703 2.57625 35.5405 4.80825V27.145C35.5405 28.3247 35.136 29.4646 34.6139 30.7471C33.1019 33.9627 30.5647 36.3927 27.576 38.4915C25.4918 39.9552 23.2604 41.2128 21.0358 42.4666C20.2007 42.9373 19.3666 43.4074 18.5416 43.8877C17.7158 43.407 16.8808 42.9364 16.0449 42.4653C13.8209 41.2119 11.59 39.9546 9.50606 38.4915C6.51677 36.3927 3.97918 33.9627 2.46717 30.7471C1.9451 29.4646 1.54053 28.3247 1.54053 27.145V4.80825C5.21066 2.57623 11.3247 1.04688 18.5395 1.04688Z" stroke="#F3F4FF" stroke-width="2"/>-->
+<!--    </svg>-->
+  </div>
+  <span class="block text-center text-Blue100 text-Top3 font-semibold mb-2">Your Secure</span>
+  <p class="text-center block text-BlackText text-body2">We guarantee your safety and the safety of your data.</p>
+</div>
+        </div>
+        <div class="col-span-3 lg:col-span-6 sm:col-span-12">
+          <div class="p-8 overflow-hidden rounded-2xl border border-LightBlue2 h-full
+ hover:border-Green transition-all flex flex-col items-center ">
+  <div class="relative w-[60px] h-[60px] mx-auto mb-3 flex justify-center items-center">
+    <i class="relative z-[2] w-[60px] h-[60px] Successful-Result"></i>
+<!--    <svg class="absolute right-0 bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="37" height="46" viewBox="0 0 37 46" fill="none">-->
+<!--      <path d="M18.5395 1.04688C25.7543 1.04688 31.8703 2.57625 35.5405 4.80825V27.145C35.5405 28.3247 35.136 29.4646 34.6139 30.7471C33.1019 33.9627 30.5647 36.3927 27.576 38.4915C25.4918 39.9552 23.2604 41.2128 21.0358 42.4666C20.2007 42.9373 19.3666 43.4074 18.5416 43.8877C17.7158 43.407 16.8808 42.9364 16.0449 42.4653C13.8209 41.2119 11.59 39.9546 9.50606 38.4915C6.51677 36.3927 3.97918 33.9627 2.46717 30.7471C1.9451 29.4646 1.54053 28.3247 1.54053 27.145V4.80825C5.21066 2.57623 11.3247 1.04688 18.5395 1.04688Z" stroke="#F3F4FF" stroke-width="2"/>-->
+<!--    </svg>-->
+  </div>
+  <span class="block text-center text-Blue100 text-Top3 font-semibold mb-2">Successful Result</span>
+  <p class="text-center block text-BlackText text-body2">We will achieve the desired outcome in the shortest time.</p>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section relative">
+    <div class="container relative z-[2] lg:px-0">
+      <div class="row">
+        <div class="col-span-12">
+          <div
+            class="img-section white-shadow min-h-[479px] lg:min-h-[364px] overflow-hidden rounded-6xl lg:rounded-none px-20 flex minlg:items-center lg:px-3 lg:py-10"
+            style="background-image: url('img/img-3.png')">
+            <div class="relative z-[1] flex flex-col max-w-[445px] lg:mx-auto lg:min-h-[364px] lg:max-w-full">
+                <span class="text-h2-5 text-Blue100 font-semibold lg:text-Top6">Take the First Step Today— <br><span
+                  class="text-Green">Submit Your Application Now!</span></span>
+              <a class="button mt-14 shadow-v3 lg:mt-auto lg:mx-auto sm:w-full" href="#">
+    <span class="">Apply</span>
+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="w-full bg-gradient1">
+    <section class="section relative">
+      <div class="container">
+        <div class="row gap-x-6 lg:gap-x-0 lg:gap-y-8">
+          <div class="col-span-4 xl:col-span-6 lg:col-span-12">
+            <div class="flex flex-col gap-y-14 lg:gap-y-8">
+              <div class="flex flex-col ">
+  <span class="uppercase text-body2 text-LightBlue3 block mb-3 lg:mb-2 LocationsStyle">Locations</span>
+  <h3 class="text-h3 lg:text-Top6 font-semibold text-Blue100">The best place <br> near you</h3>
+  <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:mt-4 minlg:hidden lg:mb-0"></span>
+</div>
+              <div class="bg-white rounded-2xl py-8 px-5 lg:px-6 lg:py-5 flex items-center gap-x-10 overflow-hidden">
+                <div class="flex items-center lg:flex-1 lg:flex-col">
+                  <span class="w-[60px] min-w-[60px] mr-3 lg:mr-0 lg:mb-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="46" height="51" viewBox="0 0 46 51" fill="none">
+                      <path
+                        d="M26.793 0.75C26.5488 0.876953 26.207 1.15039 26.041 1.35547C25.5625 1.93164 25.4453 2.48828 25.4453 4.1875V5.68164H23.8828V4.94922C23.8828 4.53906 23.8242 4.07031 23.7461 3.89453C23.5508 3.41602 22.9844 2.9668 22.4961 2.89844C22.2617 2.86914 20.6699 2.84961 18.9512 2.86914C15.8652 2.89844 15.8262 2.89844 15.4551 3.13281C14.9082 3.46484 14.7031 3.95312 14.7031 4.89062V5.66211L12.6328 5.70117C10.3281 5.74023 10.2109 5.75977 9.64453 6.4043C9.47852 6.59961 9.29297 6.91211 9.24414 7.11719C9.09766 7.63477 9.09766 18.1914 9.24414 18.7188C9.3125 18.9629 9.50781 19.2656 9.77148 19.5195C10.3477 20.0664 10.8164 20.1641 12.7793 20.1152C14.2734 20.0859 14.3418 20.0762 14.5176 19.8516C14.7617 19.5488 14.7617 19.0215 14.5078 18.7676C14.332 18.5918 14.1855 18.5723 12.7012 18.5723C10.5332 18.5723 10.6992 18.7871 10.6992 16.0527V13.9336H27.8867V16.0527C27.8867 18.0547 27.877 18.1914 27.6914 18.377C27.4961 18.5723 27.3691 18.5723 22.2715 18.5723C17.1738 18.5723 17.0469 18.5723 16.8516 18.7676C16.5586 19.0605 16.5586 19.5781 16.8613 19.8906C17.0469 20.0762 17.2031 20.0859 22.2812 20.1152C25.6211 20.1348 27.6426 20.1055 27.877 20.0371C28.4336 19.8906 28.8828 19.5391 29.1562 19.0605L29.4004 18.6211L29.459 11.541H32.2129C34.8984 11.541 34.9766 11.5313 35.4648 11.3066C36.0703 11.0234 36.5391 10.4863 36.7246 9.8418C36.9394 9.13867 36.9394 2.9082 36.7246 2.20508C36.5488 1.58984 36.0312 0.984375 35.4551 0.710938C35.0352 0.515625 34.8984 0.505859 31.1387 0.505859L27.252 0.515625L26.793 0.75ZM34.5566 2.07812C34.8105 2.14648 34.9863 2.2832 35.1133 2.48828C35.2988 2.78125 35.3086 3.00586 35.3086 6.00391C35.3086 9.41211 35.2793 9.63672 34.8301 9.88086C34.7031 9.93945 33.3555 9.97852 31.1582 9.97852C28.9609 9.97852 27.6133 9.93945 27.4863 9.88086C27.0371 9.63672 27.0078 9.41211 27.0078 6.00391C27.0078 2.99609 27.0176 2.78125 27.2031 2.48828C27.3203 2.29297 27.5156 2.13672 27.7109 2.07812C28.1602 1.95117 34.0879 1.94141 34.5566 2.07812ZM22.3301 5.68164H16.2656V4.41211L19.2734 4.43164L22.2715 4.46094L22.3301 5.68164ZM25.4453 8.29883C25.4453 9.53906 25.6016 10.1641 26.0508 10.7012C26.373 11.0918 27.1836 11.541 27.5742 11.541C27.8867 11.541 27.8477 11.834 27.4863 12.1855L27.1934 12.4688L25.4355 12.498L23.6875 12.5371V11.6387C23.6875 10.8281 23.668 10.7305 23.4434 10.5156C23.2969 10.3594 23.0918 10.2715 22.9062 10.2715C22.7207 10.2715 22.5156 10.3594 22.3691 10.5156C22.1445 10.7305 22.125 10.8281 22.125 11.6387V12.5176H16.4609V11.6387C16.4609 10.8281 16.4414 10.7305 16.2168 10.5156C15.9043 10.1934 15.4551 10.1934 15.1426 10.5156C14.918 10.7305 14.8984 10.8281 14.8984 11.6387V12.5371L13.1699 12.498C11.7051 12.4785 11.3926 12.4395 11.1777 12.293C10.7383 12 10.6992 11.7656 10.6992 9.58789C10.6992 7.58594 10.6992 7.54688 10.9141 7.40039C11.1094 7.26367 11.9688 7.24414 18.2871 7.24414H25.4453V8.29883Z"
+                        fill="#44B64B" />
+                      <path
+                        d="M31.646 5.09563L30.4839 6.25774L29.9761 5.77922C29.3706 5.20305 28.9995 5.14446 28.6187 5.53508C28.1597 5.9843 28.2671 6.27727 29.2241 7.25383C30.0151 8.06438 30.0933 8.12297 30.4644 8.12297C30.8452 8.12297 30.9233 8.06438 32.3979 6.58001C33.8335 5.14446 33.9409 5.01751 33.9409 4.67571C33.9409 4.19719 33.6675 3.92376 33.1792 3.92376C32.8472 3.92376 32.73 4.01165 31.646 5.09563Z"
+                        fill="#44B64B" />
+                      <path
+                        d="M4.43896 21.5019C4.07764 21.6093 3.63818 21.9511 3.45264 22.2636C3.23779 22.6249 0.151855 36.5702 0.151855 37.1659C0.151855 37.83 0.503418 38.4159 1.05029 38.6698C1.59717 38.9335 4.99561 39.6659 5.64014 39.6659C6.32373 39.6659 6.8999 39.3241 7.17334 38.7577C7.29053 38.5234 7.37842 38.289 7.37842 38.2206C7.37842 37.996 7.59326 38.0058 8.7749 38.3085L9.98584 38.6113L12.3491 41.1894C14.771 43.8261 15.3667 44.3925 16.5874 45.2226C16.978 45.4765 19.3804 46.7558 21.9292 48.0644C26.2749 50.2909 26.6069 50.4472 27.1831 50.4863C27.5151 50.5058 27.9839 50.4765 28.2085 50.4179C29.2339 50.1249 30.0347 49.1288 30.064 48.1034C30.0835 47.6249 30.103 47.5761 30.3081 47.5761C30.9624 47.5761 31.939 46.7948 32.2808 45.9941C32.4565 45.5937 32.4858 45.3593 32.4565 44.8222C32.4272 44.2655 32.4468 44.1484 32.5835 44.1093C32.9448 43.9921 33.5503 43.4648 33.7847 43.0546C34.0972 42.5273 34.2437 41.7948 34.146 41.2675C34.0679 40.8769 34.0776 40.8671 34.3901 40.7499C34.8296 40.5937 35.5718 39.7441 35.7183 39.246C35.7769 39.0214 35.8843 38.7773 35.9429 38.7089C36.0601 38.582 38.1011 38.0155 38.4429 38.0058C38.5503 38.0058 38.6284 38.123 38.6675 38.3476C38.7456 38.7382 39.2046 39.3144 39.6147 39.5292C39.7612 39.5976 40.103 39.6659 40.3569 39.6659C40.8452 39.6659 44.6343 38.8749 44.9468 38.6991C45.1714 38.582 45.6011 38.1132 45.7476 37.8398C45.9233 37.4882 45.8745 36.707 45.562 35.3105C45.2397 33.8749 45.1616 33.6698 44.9175 33.5722C44.6147 33.455 44.1265 33.5136 43.98 33.6796C43.6968 34.0019 43.7065 34.2558 43.9995 35.5546C44.1558 36.2675 44.2925 36.9413 44.2925 37.039C44.2925 37.2831 44.1655 37.332 42.105 37.7714C40.5425 38.1034 40.3472 38.123 40.2495 37.9863C40.0542 37.7226 37.0171 24.0507 37.1343 23.9335C37.1831 23.8847 38.0815 23.6406 39.1265 23.4062C40.6304 23.0546 41.0405 22.996 41.1382 23.0937C41.1968 23.1523 41.6558 25.0077 42.144 27.205C42.6323 29.3925 43.0718 31.2675 43.1206 31.3652C43.3745 31.8437 44.2925 31.7363 44.4976 31.1991C44.6343 30.8378 42.8179 22.6738 42.4858 22.1757C42.2222 21.7753 41.5581 21.4042 41.0991 21.4042C40.7378 21.4042 36.646 22.332 36.3921 22.4784C36.0601 22.6542 35.6108 23.2499 35.5425 23.6015C35.5132 23.7968 35.5034 24.1484 35.5229 24.3827C35.5718 24.8027 35.5718 24.8124 35.3179 24.7636C35.1812 24.7441 32.7104 24.4804 29.8394 24.1777C24.0386 23.5722 23.6382 23.5624 19.3413 23.9042C17.4956 24.0507 11.314 24.6757 10.7476 24.7734L10.4448 24.8222L10.4839 24.2167C10.5229 23.4941 10.3472 23.0741 9.81982 22.664C9.53662 22.4394 9.09717 22.3027 7.31982 21.9023C5.11279 21.3945 4.88818 21.3652 4.43896 21.5019ZM7.08545 23.4648C8.02295 23.6796 8.8335 23.8945 8.88232 23.9433C8.97021 24.0312 5.9917 37.5468 5.79639 37.9277C5.6792 38.162 5.60107 38.1523 3.75537 37.7616C1.90967 37.3613 1.71436 37.2929 1.71436 37.0585C1.71436 36.7167 4.75146 23.2206 4.85889 23.0937C4.90771 23.0253 5.0542 22.9863 5.17139 23.0156C5.27881 23.0448 6.14795 23.2402 7.08545 23.4648ZM30.728 25.8476C33.5405 26.1503 35.8745 26.4238 35.9038 26.4628C36.0112 26.5702 38.1792 36.3359 38.1108 36.4042C38.0815 36.4335 37.4858 36.6093 36.7925 36.7851L35.5229 37.0976L35.4253 36.8827C35.3667 36.7558 35.1714 36.5312 34.9858 36.3847C34.8003 36.2382 32.3882 34.9687 29.6245 33.5527C24.0972 30.7304 23.853 30.5741 23.3647 29.539C23.0718 28.8945 22.8862 28.7284 22.4858 28.7284C22.3491 28.7284 21.1089 29.2753 19.7319 29.9491C18.1011 30.7402 17.105 31.1698 16.8999 31.1698C16.4995 31.1698 15.9722 30.8183 15.7378 30.3788C15.5034 29.9394 15.5815 29.4218 15.9526 29.0214C16.0991 28.8652 17.2905 27.9667 18.6089 27.0292L21.0015 25.3202H23.3062C25.4448 25.3105 25.9819 25.3495 30.728 25.8476ZM17.8179 25.6425C17.7983 25.662 17.2124 26.082 16.5093 26.58C14.9565 27.6835 14.6538 27.957 14.3413 28.5722C13.7944 29.6464 13.9702 30.8769 14.8101 31.7948C15.4546 32.5077 16.1187 32.7714 17.0952 32.7128C17.73 32.6738 17.9448 32.5859 19.9272 31.6191L22.0757 30.5741L22.2124 30.7988C22.2905 30.9257 22.6421 31.3066 22.9937 31.6581C23.6089 32.2734 23.8335 32.3905 28.6187 34.8222C31.3628 36.2187 33.7163 37.4394 33.8628 37.537C34.6147 38.0546 34.3022 39.1874 33.3452 39.4218C33.1401 39.4706 32.6714 39.2753 31.0601 38.455C29.9468 37.8886 28.9312 37.4198 28.8042 37.4198C28.2378 37.4198 27.896 38.1816 28.2378 38.6698C28.3257 38.7968 29.2046 39.3046 30.2495 39.8222C31.2651 40.33 32.2124 40.8573 32.3394 40.9843C32.7886 41.4335 32.5835 42.332 31.9585 42.6249C31.5093 42.8398 31.3726 42.7909 29.2339 41.6777C28.2378 41.1601 27.3198 40.7402 27.1831 40.7402C26.7632 40.7402 26.4214 41.0917 26.4214 41.5214C26.4214 42.0195 26.5874 42.1464 28.8433 43.2792C30.3862 44.0507 30.6499 44.2167 30.7866 44.4999C31.0015 44.9394 30.894 45.4472 30.5132 45.7597C30.0151 46.1894 29.7417 46.121 27.6519 45.037C25.4644 43.9042 25.1323 43.8359 24.8003 44.4609C24.644 44.7734 24.6929 45.1445 24.937 45.3593C25.0347 45.4472 25.7964 45.8671 26.646 46.3066C27.4858 46.746 28.2476 47.1952 28.3257 47.3124C28.6187 47.7323 28.4429 48.5038 27.9937 48.7968C27.5054 49.1093 27.5054 49.1093 23.0132 46.8241C20.6206 45.6132 18.3647 44.4511 18.0034 44.2363C16.812 43.5527 15.9233 42.7226 13.355 39.9296L10.8257 37.1757L9.43896 36.8339C8.67725 36.6484 8.00342 36.4726 7.94482 36.4335C7.80811 36.3456 9.99561 26.4823 10.1616 26.4238C10.2593 26.3847 17.2124 25.6327 17.6226 25.6132C17.7495 25.6034 17.8374 25.623 17.8179 25.6425Z"
+                        fill="#44B64B" />
+                    </svg>
+                  </span>
+                  <div class="flex flex-col gap-y-1">
+                    <span class="text-h3 text-Blue100 lg:text-center">544</span>
+                    <p class="text-BlackText text-body lg:text-center">Services</p>
+                  </div>
+                </div>
+                <span class="h-12 border-r border-LightBlue6 block lg:h-[117px]"></span>
+                <div class="flex items-center lg:flex-1 lg:flex-col">
+                  <span class="w-[60px] min-w-[60px] mr-3 lg:mr-0 lg:mb-3">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="39" viewBox="0 0 50 39" fill="none">
+                      <path
+                        d="M22.3477 0.787221C21.4199 0.963003 20.2578 1.43175 19.7109 1.85167C19.252 2.20324 19.1348 2.63292 19.3887 3.03331C19.6523 3.43371 20.0527 3.43371 20.7461 3.05285C21.8203 2.44738 22.5723 2.25207 23.793 2.26183C24.7012 2.26183 24.9844 2.31066 25.6289 2.5255C26.5957 2.8673 27.2793 3.29699 27.875 3.96105C28.6465 4.82042 29.2129 6.15832 29.2129 7.11535V7.48644L28.8516 7.19347C28.1777 6.66613 27.6113 6.71496 26.8008 7.36925L26.4297 7.66222L21.6348 7.72082L20.8926 8.09191C19.5547 8.75597 18.7051 9.91808 18.4512 11.4415C18.334 12.1056 18.2852 12.213 18.1191 12.2423C17.9336 12.2716 17.8848 12.1837 17.7285 11.6075C17.582 11.09 17.543 10.6114 17.543 9.4298C17.543 7.75011 17.6699 7.14464 18.334 5.74816C18.7246 4.90832 18.7441 4.61535 18.4219 4.30285C18.1582 4.02941 17.9238 4.00011 17.543 4.17589C17.2305 4.32238 16.625 5.51378 16.2539 6.74425C16.0098 7.56457 15.9902 7.74035 15.9902 9.47863C15.9902 11.2267 16.0098 11.3829 16.2539 12.2032C16.498 12.9747 16.5078 13.0821 16.3809 13.2286C16.0977 13.5314 15.9121 14.1466 15.9121 14.7716C15.9023 15.8849 16.5664 16.8419 17.582 17.1935C17.8164 17.2716 18.1191 17.34 18.2363 17.34C18.4121 17.34 18.4805 17.4181 18.5586 17.7013C18.6172 17.9064 18.666 18.1212 18.666 18.1798C18.666 18.2482 18.8711 18.7071 19.1152 19.2052C19.4766 19.9083 19.7402 20.2794 20.3359 20.8849L21.1074 21.6661L21.0977 22.3107V22.9552L20.4727 23.4337C19.4473 24.2247 19.0664 24.6446 18.998 25.045C18.9395 25.3868 18.832 25.4747 17.1719 26.6173C16.0879 27.3595 15.1406 28.0919 14.7402 28.5021C14.0957 29.1564 14.0762 29.1661 13.8125 29.0294C13.666 28.9513 13.002 28.7071 12.3477 28.4728C10.9023 27.9747 10.873 27.9064 11.7227 27.1446C12.4062 26.5196 12.8652 25.8361 13.0996 25.0841L13.2754 24.5177L13.8711 24.4005C14.8672 24.1954 15.3555 23.8341 15.7266 23.004C16.0488 22.3009 15.9414 21.1778 15.5117 20.6798C15.3945 20.5431 15.3848 20.3673 15.4629 19.6837C15.7949 16.6271 14.5742 14.1271 12.1328 12.8575C11.0977 12.3204 10.3164 12.1349 9.14453 12.1349C8.02148 12.1349 7.40625 12.2814 6.07812 12.8478C5.57031 13.0626 5.10156 13.2384 5.04297 13.2384C4.98438 13.2384 4.62305 13.3946 4.22266 13.5802C2.91406 14.2052 2.00586 15.4357 1.76172 16.9103C1.67383 17.4864 1.68359 17.7989 1.85937 19.0196L2.05469 20.4552L1.82031 20.8751C1.49805 21.4708 1.42969 22.0861 1.61523 22.7306C1.89844 23.6974 2.62109 24.2833 3.69531 24.4298C4.16406 24.4884 4.20312 24.5177 4.25195 24.8009C4.37891 25.4454 4.89648 26.3439 5.48242 26.92C5.93164 27.3595 6.06836 27.5548 6.06836 27.7696C6.06836 28.0431 6.0293 28.0724 5.01367 28.4239C2.96289 29.1564 2.65039 29.3517 2.65039 29.8986C2.65039 30.3478 2.93359 30.6505 3.34375 30.6505C3.5293 30.6505 4.24219 30.4259 4.94531 30.1525L6.21484 29.6544L6.36133 29.8693C6.98633 30.7677 7.64062 31.1388 8.60742 31.1486C9.55469 31.1486 10.3652 30.6798 10.9023 29.8107C10.9902 29.6739 11.127 29.7032 12.1523 30.0743C12.7871 30.3087 13.3242 30.5236 13.3535 30.5528C13.3828 30.5821 13.3242 30.8165 13.2363 31.0802C12.9824 31.754 12.9043 37.34 13.1387 37.6915C13.4316 38.1505 14.2227 38.0919 14.457 37.5939C14.5254 37.4278 14.5645 36.4806 14.5645 34.7911C14.5645 32.0275 14.623 31.6368 15.1016 30.6798C15.541 29.8204 16.0488 29.3321 17.8262 28.1017C18.7734 27.4474 19.584 26.9103 19.6328 26.9103C19.6816 26.9103 20.0234 27.3204 20.4043 27.8282C20.9902 28.5997 21.166 28.7755 21.5469 28.922C21.9961 29.088 22.0059 29.088 22.9434 28.8146C23.4609 28.6681 23.9688 28.5216 24.0664 28.5021C24.2227 28.4532 24.2324 28.7169 24.2324 33.1505V37.8575L24.4766 38.0919C24.7207 38.3458 24.8867 38.3751 25.2871 38.2775C25.7852 38.1407 25.7949 38.0235 25.7949 33.0626C25.7949 28.7267 25.8047 28.463 25.9707 28.5118C26.0586 28.5411 26.5176 28.6778 26.9863 28.8146C28.3438 29.215 28.6563 29.088 29.6816 27.7208L30.3359 26.8419L31.9375 27.9454C34.1543 29.4689 34.7012 30.045 35.1895 31.3634C35.3848 31.8907 35.4043 32.1837 35.4531 34.7814C35.502 36.8907 35.541 37.6622 35.6387 37.7794C35.8242 37.9943 36.2344 38.0724 36.5469 37.9454C37.0156 37.7501 37.0449 37.5255 36.9863 34.5079C36.957 32.9845 36.9277 31.6173 36.9082 31.4708C36.8789 31.1974 36.9082 31.1778 38.0996 30.6993C38.9102 30.3771 39.3301 30.2501 39.3496 30.3282C39.3789 30.3966 39.5156 30.5919 39.6816 30.7677C40.707 31.9493 42.7871 31.7247 43.5488 30.3673C43.6172 30.2403 43.7832 30.2794 44.6523 30.6212C46.4883 31.3536 46.9961 31.7345 47.543 32.7892C47.7773 33.2482 47.8066 33.4532 47.8555 34.5275C47.8945 35.2208 47.9727 35.8458 48.041 35.963C48.2168 36.2853 48.7832 36.3634 49.1152 36.1193C49.3691 35.9337 49.3789 35.8849 49.4082 34.8107C49.4473 33.5411 49.3301 32.8771 48.9395 32.0372C48.3145 30.7189 47.4355 30.0255 45.3457 29.2052C43.9395 28.6486 43.8613 28.6095 43.8613 28.3556C43.8613 28.1505 43.959 28.0236 44.2715 27.8087C44.5059 27.6525 44.7793 27.4278 44.877 27.3107C45.0137 27.1642 45.1797 27.1056 45.4727 27.1056C47.25 27.1056 48.8223 26.1486 49.5938 24.5958C49.916 23.9415 49.9648 23.7657 49.9941 22.9454C50.043 21.8028 49.9648 21.4806 49.1836 19.6739C48.8418 18.8829 48.4512 17.7892 48.3145 17.2521C47.9531 15.797 47.4258 14.84 46.4004 13.8243C45.7461 13.1603 45.3945 12.9064 44.7402 12.5743C42.8457 11.6368 40.8926 11.5294 38.9688 12.2716C36.791 13.1114 35.2578 14.9376 34.7012 17.3888C34.5938 17.8673 34.2324 18.8634 33.9102 19.6056C33.168 21.3048 33.0215 21.8028 33.0215 22.672C33.0215 25.1427 35.0332 27.1056 37.5625 27.1056C37.875 27.1056 38.0215 27.1642 38.207 27.3595C38.334 27.4962 38.5879 27.6915 38.7637 27.8087C39.0273 27.9747 39.0859 28.0528 39.0566 28.3068C39.0273 28.59 38.9688 28.629 37.6211 29.1759C36.8496 29.4884 36.2051 29.7325 36.1953 29.7228C36.1855 29.7032 36.0391 29.4982 35.873 29.254C35.375 28.5118 34.6035 27.8575 32.8359 26.6271C31.1953 25.4943 31.127 25.4357 30.9805 24.9864C30.8438 24.5861 30.6875 24.4103 29.877 23.7364L28.9297 22.9552L28.9199 22.2911V21.6173L29.5449 21.0216C29.8867 20.6896 30.3262 20.1525 30.5313 19.84C30.9023 19.254 31.459 17.8771 31.459 17.5353C31.459 17.379 31.5273 17.34 31.7813 17.34C32.1816 17.34 32.9922 16.9591 33.3535 16.5978C33.5098 16.4415 33.7441 16.0802 33.8809 15.7872C34.0859 15.3478 34.1152 15.1622 34.0762 14.6056C34.0371 14.1759 33.9492 13.8146 33.8027 13.5509L33.5781 13.1505L33.8418 11.2169C33.9785 10.1525 34.0957 8.99035 34.0957 8.63878C34.0957 6.6466 32.7285 4.78136 30.7949 4.09777C30.4336 3.97081 30.0625 3.86339 29.9746 3.86339C29.8867 3.86339 29.6719 3.66808 29.5156 3.43371C29.0469 2.75988 28.002 1.86144 27.2305 1.49035C25.7461 0.757924 23.9102 0.494253 22.3477 0.787221ZM31.5566 6.41222C32.1035 6.97863 32.4648 7.77941 32.5137 8.51183C32.5723 9.32238 32.1523 12.2618 31.9863 12.2618C31.6641 12.2618 31.5566 12.1349 31.5566 11.7345C31.5566 11.1485 31.3027 10.2696 30.9219 9.50792C30.5996 8.87316 30.5898 8.8341 30.6875 8.28722C30.7949 7.72082 30.7559 6.21691 30.6191 5.87511C30.5508 5.7091 30.5605 5.7091 30.8633 5.86535C31.0391 5.95324 31.3516 6.19738 31.5566 6.41222ZM28.6172 9.09777C29.0469 9.48839 29.3203 9.85949 29.5742 10.3868L29.9453 11.129L29.9746 14.0392C30.0039 16.5196 29.9844 17.047 29.8477 17.5157C29.2031 19.7325 27.2402 21.2462 25.0234 21.2462C23.0801 21.2462 21.3223 20.1427 20.4922 18.4142C19.9844 17.3595 19.916 16.7735 19.9551 13.922C19.9844 11.5685 19.9941 11.4025 20.209 10.9435C20.502 10.3087 21.0391 9.75206 21.6445 9.46886C22.1133 9.24425 22.2109 9.23449 24.4473 9.23449C25.7949 9.23449 26.8691 9.19542 27.0254 9.13683C27.1719 9.07824 27.416 8.92199 27.5723 8.79503C27.7285 8.65831 27.8945 8.55089 27.9434 8.55089C27.9922 8.55089 28.2949 8.79503 28.6172 9.09777ZM42.6797 13.4825C44.7988 13.9903 46.4004 15.67 46.8496 17.8673C46.9473 18.3263 47.2988 19.3028 47.7285 20.3087C48.3926 21.8419 48.4512 22.0372 48.4512 22.6427C48.4512 23.4728 48.1484 24.1759 47.543 24.7325C47.1523 25.0939 46.2637 25.5333 46.1562 25.4259C46.127 25.4064 46.1562 25.2306 46.2051 25.045C46.2637 24.8693 46.3027 24.5079 46.3027 24.254C46.3027 23.8829 46.2539 23.7657 46.0488 23.5997C45.4824 23.1505 44.916 23.4728 44.7402 24.3517C44.5059 25.4454 43.8516 26.3243 42.8945 26.7833C42.4258 27.0177 42.2305 27.0568 41.5176 27.0568C40.8438 27.0568 40.5996 27.0079 40.1992 26.8126C39.4766 26.4611 38.7539 25.6993 38.5 25.006C38.2949 24.4591 38.2852 24.3126 38.3145 21.8907C38.3438 19.4493 38.3535 19.3224 38.5781 18.8243C38.7051 18.5509 38.832 18.3165 38.8516 18.3165C38.8809 18.3165 39.2617 18.4923 39.6914 18.7071C40.7852 19.2443 41.5469 19.3907 43.3535 19.3907H44.8379V20.4161C44.8379 21.3146 44.8672 21.4708 45.0332 21.6368C45.2969 21.9005 45.8438 21.9005 46.1074 21.6368C46.2832 21.4611 46.3027 21.3146 46.3027 20.1232C46.3027 17.965 46.2734 17.9454 43.4316 17.838C41.1953 17.7501 40.8047 17.6427 39.7988 16.92C39.3203 16.5782 39.1445 16.5099 38.7637 16.5099C38.1875 16.5099 37.8652 16.7931 37.377 17.7208C36.8008 18.8341 36.7324 19.2638 36.7324 22.0372C36.7324 23.4044 36.7812 24.713 36.8398 24.9474C36.8887 25.1818 36.9082 25.3966 36.8887 25.4259C36.7812 25.5236 35.9707 25.1427 35.5996 24.8204C35.3848 24.6349 35.082 24.254 34.9258 23.9708C34.6719 23.5118 34.6328 23.3458 34.6328 22.6622C34.6328 21.9103 34.6523 21.8224 35.3457 20.2501C35.7266 19.3517 36.1172 18.3165 36.1953 17.9454C36.5859 16.0509 37.5039 14.8009 39.1055 13.961C40.2285 13.3751 41.4785 13.1993 42.6797 13.4825ZM10.1016 13.7755C12.5625 14.2931 14.2422 16.6466 13.9395 19.1368C13.8711 19.6642 13.8516 19.6837 13.5781 19.6837C13.3926 19.6837 13.2949 19.6349 13.2949 19.5372C13.2949 19.2931 13.002 18.9025 12.6992 18.7462C12.5039 18.6486 12.084 18.6095 11.2051 18.6095C9.23242 18.6095 8.04102 18.2872 6.76172 17.3986C6.05859 16.92 5.50195 16.9103 5.08203 17.3497C4.74023 17.7208 4.33984 18.5411 4.20312 19.1857C4.10547 19.6446 4.07617 19.6837 3.82227 19.6837C3.50977 19.6837 3.53906 19.7618 3.33398 18.297C3.27539 17.8868 3.25586 17.379 3.29492 17.1739C3.46094 16.2462 4.18359 15.2989 4.94531 14.9864C8.31445 13.6095 8.79297 13.4923 10.1016 13.7755ZM18.334 15.7482C18.2559 15.8263 17.6992 15.4845 17.5918 15.2794C17.3184 14.7911 17.5527 14.1271 18.0898 13.8536L18.3242 13.7364L18.3535 14.7228C18.3633 15.2599 18.3633 15.7286 18.334 15.7482ZM32.2891 14.1173C32.377 14.215 32.4746 14.4786 32.5039 14.6935C32.5527 15.045 32.5234 15.1232 32.2109 15.4357C31.6348 16.0118 31.5566 15.9337 31.5566 14.7618V13.7364L31.8398 13.8341C31.9961 13.8927 32.2012 14.0196 32.2891 14.1173ZM7.16211 19.4591C8.01172 19.8693 9.03711 20.0743 10.4922 20.1427L11.8496 20.2013L11.8105 22.213C11.752 24.5372 11.6738 24.8693 10.9902 25.631C10.3457 26.3439 9.63281 26.6661 8.70508 26.6564C8.13867 26.6564 7.86523 26.5978 7.48438 26.422C6.77148 26.0802 6.13672 25.3966 5.88281 24.713C5.67773 24.1661 5.66797 24.0099 5.69727 21.7345C5.7168 19.9278 5.76562 19.2736 5.86328 19.0782L6 18.8048L6.33203 19.0099C6.51758 19.1271 6.88867 19.3321 7.16211 19.4591ZM4.11523 22.0763C4.11523 22.9845 4.07617 23.0431 3.53906 22.7599C3.1875 22.5841 3.00195 22.1544 3.12891 21.8126C3.24609 21.5001 3.59766 21.2462 3.89062 21.2462C4.10547 21.2462 4.11523 21.2755 4.11523 22.0763ZM14.0859 21.5294C14.252 21.6954 14.3691 21.92 14.3691 22.0665C14.3691 22.379 14.0078 22.7794 13.666 22.8673L13.3926 22.9259V22.0861C13.3926 21.3048 13.4023 21.2462 13.5977 21.2462C13.7051 21.2462 13.9297 21.3732 14.0859 21.5294ZM24.6719 22.7794C25.6777 22.8282 26.5176 22.7208 27.1914 22.4669C27.3281 22.4083 27.3574 22.4571 27.3574 22.7989V23.1993L26.1953 23.7853L25.0332 24.3614L23.8516 23.8146L22.6699 23.2579V22.4376L23.1387 22.5841C23.3926 22.6622 24.0859 22.7501 24.6719 22.7794ZM24.2324 26.7931L23.5781 26.9884C22.2598 27.379 22.084 27.4278 22.0449 27.3888C22.0352 27.3693 21.6934 26.92 21.293 26.3829L20.5801 25.4259L21.6348 24.4884L22.9336 25.1329L24.2324 25.7872V26.7931ZM28.8906 24.9767C29.1445 25.2013 29.3496 25.4161 29.3301 25.465C29.2813 25.6505 27.9141 27.3986 27.8262 27.3986C27.7676 27.3986 27.2988 27.2618 26.7617 27.0958L25.7949 26.7931V25.7286L26.9961 25.1525C27.6504 24.8302 28.2363 24.5763 28.3047 24.5763C28.3633 24.5665 28.627 24.7521 28.8906 24.9767ZM9.58398 28.5997C9.58398 28.8829 9.51562 29.0489 9.30078 29.254C8.91992 29.6446 8.58789 29.713 8.19727 29.4786C7.82617 29.2638 7.63086 28.9415 7.63086 28.5118V28.2091L9.58398 28.2286V28.5997ZM42.2988 28.9903C42.2988 29.4689 42.1719 29.7032 41.8105 29.8888C41.2246 30.1915 40.6387 29.7618 40.6387 29.0196V28.6193H42.2988V28.9903Z"
+                        fill="#44B64B" />
+                      <path
+                        d="M0.755859 31.6173C0.628906 31.7443 0.423828 32.1056 0.296875 32.4278C0.0917969 32.9552 0.0722656 33.2091 0.0332031 35.0743L-0.00585938 37.1349L0.267578 37.3497C0.589844 37.6036 0.892578 37.6134 1.20508 37.3595C1.44922 37.1739 1.44922 37.1446 1.49805 35.4357C1.54688 33.8829 1.57617 33.6193 1.81055 32.9454C2.09375 32.1251 2.07422 31.7833 1.74219 31.5489C1.43945 31.3341 1.03906 31.3732 0.755859 31.6173Z"
+                        fill="#44B64B" />
+                      <path
+                        d="M17.3376 32.3889C17.1716 32.5744 17.1521 32.7893 17.1228 34.7033C17.0935 36.9592 17.1325 37.2522 17.5525 37.4475C17.904 37.6037 18.1189 37.5842 18.4118 37.3498L18.6657 37.1545V34.8596C18.6657 32.7014 18.656 32.5647 18.4704 32.3791C18.197 32.1057 17.5915 32.1154 17.3376 32.3889Z"
+                        fill="#44B64B" />
+                      <path
+                        d="M31.4688 32.4376C31.2734 32.6818 31.2637 32.8185 31.2637 34.7911C31.2637 37.1935 31.3125 37.3985 31.9082 37.5157C32.1719 37.5646 32.3184 37.5353 32.5137 37.3888L32.7773 37.1935L32.8066 34.8888C32.8262 32.6818 32.8164 32.5646 32.6309 32.379C32.3281 32.0763 31.7227 32.1153 31.4688 32.4376Z"
+                        fill="#44B64B" />
+                    </svg>
+                  </span>
+                  <div class="flex flex-col gap-y-1">
+                    <span class="text-h3 text-Blue100 lg:text-center">120</span>
+                    <p class="text-BlackText text-body lg:text-center">Attorneys</p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-body text-black">Our office is designed for your convenience, bringing together all the
+                services you need in one modern, comfortable space. From financial consultations to legal advice,
+                everything is streamlined to save you time and make the process as effortless as possible. At Consumer
+                Guard, we’ve created an environment where expertise, efficiency, and customer care come together under
+                one roof.</p>
+              <div class="flex flex-col">
+                <span class="text-Top3 text-Blue100 mb-3 block font-semibold">Contacts US</span>
+                <ul class="flex flex-col gap-y-2">
+                  <li class="flex items-center">
+                    <a class="flex items-center text-base text-black hover:text-Green transition-colors"
+                       href="tel:+1234567890">
+                      <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                          <path
+                            d="M9.98256 5.18462V2.51796C9.98256 2.34115 10.0528 2.17158 10.1778 2.04655C10.3028 1.92153 10.4724 1.85129 10.6492 1.85129C10.826 1.85129 10.9956 1.92153 11.1206 2.04655C11.2457 2.17158 11.3159 2.34115 11.3159 2.51796V4.25862C11.7359 3.83596 14.4499 1.10796 14.8446 0.713291C14.9061 0.649618 14.9796 0.59883 15.061 0.56389C15.1423 0.528951 15.2298 0.51056 15.3183 0.509791C15.4068 0.509022 15.4946 0.525889 15.5765 0.55941C15.6585 0.592931 15.7329 0.642433 15.7955 0.705028C15.8581 0.767623 15.9076 0.842058 15.9411 0.923988C15.9746 1.00592 15.9915 1.09371 15.9907 1.18223C15.99 1.27074 15.9716 1.35822 15.9366 1.43956C15.9017 1.5209 15.8509 1.59446 15.7872 1.65596C15.3926 2.05062 12.6926 4.76596 12.2752 5.18462H13.9826C14.1594 5.18462 14.3289 5.25486 14.454 5.37989C14.579 5.50491 14.6492 5.67448 14.6492 5.85129C14.6492 6.0281 14.579 6.19767 14.454 6.3227C14.3289 6.44772 14.1594 6.51796 13.9826 6.51796H11.3159C10.9623 6.51796 10.6231 6.37748 10.3731 6.12743C10.123 5.87739 9.98256 5.53825 9.98256 5.18462ZM15.3792 11.6773C15.7656 12.0647 15.9825 12.5895 15.9825 13.1366C15.9825 13.6837 15.7656 14.2085 15.3792 14.596L14.7712 15.296C9.31056 20.5213 -3.97478 7.23996 1.17122 1.76262L1.93789 1.09596C2.32565 0.720321 2.84571 0.51245 3.38556 0.517316C3.9254 0.522182 4.44163 0.739393 4.82256 1.12196C4.84322 1.14196 6.07789 2.74729 6.07789 2.74729C6.44317 3.13299 6.64642 3.64421 6.64567 4.17542C6.64493 4.70664 6.44025 5.21729 6.07389 5.60196L5.30189 6.57262C5.72922 7.61064 6.35739 8.55402 7.15035 9.34857C7.9433 10.1431 8.8854 10.7732 9.92256 11.2026L10.8992 10.426C11.2831 10.0586 11.7938 9.85327 12.3251 9.85253C12.8564 9.85178 13.3676 10.0557 13.7526 10.422C13.7526 10.422 15.3586 11.6573 15.3792 11.6773ZM14.4626 12.6466C14.4626 12.6466 12.8672 11.4186 12.8466 11.3986C12.7092 11.2624 12.5236 11.186 12.3302 11.186C12.1368 11.186 11.9512 11.2624 11.8139 11.3986C11.7959 11.416 10.4512 12.488 10.4512 12.488C10.3606 12.5601 10.2528 12.6074 10.1383 12.6251C10.0239 12.6429 9.90678 12.6305 9.79856 12.5893C8.45417 12.0891 7.23304 11.3057 6.21795 10.2922C5.20286 9.27877 4.41754 8.05888 3.91522 6.71529C3.87069 6.60559 3.85617 6.48602 3.87316 6.36885C3.89015 6.25168 3.93803 6.14115 4.01189 6.04862C4.01189 6.04862 5.08389 4.70596 5.10189 4.68862C5.23807 4.55128 5.31448 4.3657 5.31448 4.17229C5.31448 3.97888 5.23807 3.7933 5.10189 3.65596C5.08189 3.63596 3.85389 2.03929 3.85389 2.03929C3.71449 1.9143 3.53256 1.84735 3.34539 1.85219C3.15822 1.85702 2.97998 1.93327 2.84722 2.06529L2.08056 2.73196C-1.68078 7.25396 9.83389 18.13 13.7959 14.3873L14.4039 13.6866C14.5472 13.5551 14.6336 13.3728 14.6445 13.1785C14.6555 12.9843 14.5902 12.7935 14.4626 12.6466Z"
+                            fill="#44B64B" />
+                        </svg>
+                      </span>
+                      <span class="font-medium">811111111</span>
+                    </a>
+                  </li>
+                  <li class="flex items-center">
+                    <a class="flex items-center text-base text-black hover:text-Green transition-colors"
+                       href="mailto:info@consumerguard.com">
+                      <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                          <path
+                            d="M14.25 0.5H3.75C2.7558 0.501155 1.80267 0.884641 1.09966 1.56634C0.396661 2.24804 0.00119089 3.17229 0 4.13636L0 12.8636C0.00119089 13.8277 0.396661 14.752 1.09966 15.4337C1.80267 16.1154 2.7558 16.4988 3.75 16.5H14.25C15.2442 16.4988 16.1973 16.1154 16.9003 15.4337C17.6033 14.752 17.9988 13.8277 18 12.8636V4.13636C17.9988 3.17229 17.6033 2.24804 16.9003 1.56634C16.1973 0.884641 15.2442 0.501155 14.25 0.5ZM3.75 1.95455H14.25C14.6991 1.9554 15.1376 2.08656 15.5092 2.33113C15.8808 2.5757 16.1684 2.92251 16.335 3.32691L10.5915 8.89709C10.1688 9.30532 9.59656 9.53452 9 9.53452C8.40344 9.53452 7.83118 9.30532 7.4085 8.89709L1.665 3.32691C1.83161 2.92251 2.11921 2.5757 2.49079 2.33113C2.86236 2.08656 3.30091 1.9554 3.75 1.95455ZM14.25 15.0455H3.75C3.15326 15.0455 2.58097 14.8156 2.15901 14.4064C1.73705 13.9972 1.5 13.4423 1.5 12.8636V5.22727L6.348 9.92546C7.05197 10.6064 8.00569 10.9888 9 10.9888C9.99431 10.9888 10.948 10.6064 11.652 9.92546L16.5 5.22727V12.8636C16.5 13.4423 16.2629 13.9972 15.841 14.4064C15.419 14.8156 14.8467 15.0455 14.25 15.0455Z"
+                            fill="#44B64B" />
+                        </svg>
+                      </span>
+                      <span class="font-medium">info@consumerguard.com</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a class="button btn-outline md:w-full" href="contacts-us.html">
+    <span class="">Contact us</span>
+</a>
+            </div>
+          </div>
+          <div class="col-span-8 xl:col-span-6 lg:col-span-12">
+            <div class="max-w-[746px] ml-auto lg:max-w-full p-4 width-no-p rounded-6xl overflow-hidden flex items-center justify-center sm:p-0 sm:h-[600px] sm:rounded-none bg-white">
+              <div class="map-style-1" id="map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section relative">
+      <div class="container">
+        <div class="bg-white py-20 px-[86px] xl:px-10 lg:px-0 lg:py-0 lg:bg-inherit">
+          <div class="flex gap-x-3 justify-between lg:flex-col">
+            <div class="flex flex-col max-w-[440px] lg:max-w-full mb-8">
+              <div class="flex flex-col ">
+  <span class="uppercase text-body2 text-LightBlue3 block mb-3 lg:mb-2 Aditional InfoStyle">Aditional Info</span>
+  <h3 class="text-h3 lg:text-Top6 font-semibold text-Blue100">Your One-Stop Solution for Financial and Legal Services</h3>
+  <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:mt-4 "></span>
+</div>
+              <div class="relative w-full mx-auto max-w-[400px] minlg:hidden mb-8">
+                <img src="img/Imge-group-4.png" alt="Alt text" loading="lazy">
+              </div>
+              <p>At Consumer Guard, we revolutionize the way you manage your financial and
+                legal needs. Our unique approach brings mortgage brokers, auto loans, insurance providers, rental
+                services, personal loan experts, and consumer attorneys together in one convenient location. No more
+                running from office to office—our all-in-one service hub saves you time and simplifies the entire
+                process, offering tailored solutions under one roof.</p>
+            </div>
+            <div class="relative max-w-[574px] w-full ml-auto lg:hidden">
+              <img src="img/Imge-group-4.png" alt="Alt text" loading="lazy">
+            </div>
+          </div>
+          <div class="flex gap-x-3 items-center justify-between lg:flex-col">
+            <div class="relative max-w-[465px] w-full min-w-[440px] lg:min-w-0 mr-auto lg:max-w-[400px] lg:mx-auto lg:h-auto lg:mb-8">
+              <img class="w-full" src="img/Imge-group-5.png" alt="Alt text" loading="lazy">
+            </div>
+            <div class="max-w-[574px] lg:max-w-full">
+              <p>
+                We prioritize your convenience, security, and success. Our expert team is committed to delivering
+                reliable, results-driven solutions quickly and efficiently. With top-tier data protection and
+                personalized service, you can trust us to handle your needs with professionalism and care. Consumer
+                Guard is where convenience meets expertise, ensuring you get the best outcomes with minimal hassle.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section relative bg-img-2 overflow-hidden bg-im-none"
+         style="background-image: url(img/Background-footer.png);">
+  <div class="container">
+    <div class="row gap-x-6 lg:gap-x-0">
+      <div class="col-span-5 lg:col-span-12 flex flex-col">
+        <div class="max-w-[440px] w-full flex flex-col h-full relative">
+          <div class="flex flex-col ">
+  <span class="uppercase text-body2 text-LightBlue3 block mb-3 lg:mb-2 Contact usStyle">Contact us</span>
+  <h3 class="text-h3 lg:text-Top6 font-semibold text-Blue100">Contact us <br> today</h3>
+  <span class="border-0 border-b-4 border-Green w-[86px] my-8 lg:mt-4 "></span>
+</div>
+          <div
+            class="lg:hidden w-full rounded-15 mt-auto overflow-hidden block">
+            <img class="object-cover rounded-15 w-full" src="img/img-9.png" alt="Alt text" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="col-span-7 lg:col-span-12">
+        <div x-data="{formSubmitted: false}"
+     class="form-block max-w-[746px] relative z-[2] xl:px-10 w-full lg:w-full
+md:px-3 md:py-8 sm:-mx-3 shadow-v4 rounded-6xl overflow-hidden
+bg-white border border-Green p-12 ">
+  <div x-show="!formSubmitted">
+    <form @submit.prevent="submitForm" class="row gap-x-6 gap-y-5 md:gap-x-0">
+      <div class="col-span-6 md:col-span-12">
+        <div class="form-group flex flex-col items-start input-icon">
+  <label class="mb-3 text-body text-Blue100 md:text-body2 " for="TextId1">First name</label>
+  <input
+    class="input user-icon input-icon"
+    type="text" id="TextId1" placeholder="" name="@@Name" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+      </div>
+      <div class="col-span-6 md:col-span-12">
+        <div class="form-group flex flex-col items-start input-icon">
+  <label class="mb-3 text-body text-Blue100 md:text-body2 " for="TextId2">Last name</label>
+  <input
+    class="input user-icon input-icon"
+    type="text" id="TextId2" placeholder="" name="@@Name" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+      </div>
+      <div class="col-span-6 md:col-span-12">
+        <div class="form-group flex flex-col items-start input-icon">
+  <label class="mb-3 text-body text-Blue100 md:text-body2 " for="MailId">Email</label>
+  <input
+    class="input message-icon input-icon"
+    type="email" id="MailId" placeholder="" name="@@Name" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+      </div>
+      <div class="col-span-6 md:col-span-12">
+        <div class="form-group flex flex-col items-start input-icon">
+  <label class="mb-3 text-body text-Blue100 md:text-body2 " for="PhoneId">Phone Number</label>
+  <input
+    class="input phone-call-icon input-icon"
+    type="text" id="PhoneId" placeholder="" name="@@Name" required>
+  <small class="self-end text-body text-Error mt-1 hidden">Name is required.</small>
+</div>
+      </div>
+      <div class="col-span-12">
+        <div x-data="{ isOpen: false }" class="form-group flex flex-col items-start relative ">
+  <label class="mb-3 text-body md:text-body2 " for="selectId">Select Service</label>
+
+  <svg
+    :class="{ 'rotate-180': isOpen }"
+    class="absolute pointer-events-none right-4 bottom-6 h-[6px] w-[12px] transition-transform duration-100"
+    xmlns="http://www.w3.org/2000/svg"
+    width="12"
+    height="7"
+    viewBox="0 0 12 7"
+    fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.414376 1.09205C0.673133 0.768607 1.1451 0.716166 1.46855 0.974923L6.00003 4.60011L10.5315 0.974923C10.855 0.716166 11.3269 0.768607 11.5857 1.09205C11.8444 1.4155 11.792 1.88747 11.4685 2.14623L6.46855 6.14623C6.19463 6.36536 5.80542 6.36536 5.53151 6.14623L0.531506 2.14623C0.20806 1.88747 0.155619 1.4155 0.414376 1.09205Z" fill="#44B64B"/>
+  </svg>
+
+  <select
+    id="selectId"
+    required
+    name="Select_Service"
+    class="select w-full input"
+    @focus="isOpen = true"
+    @blur="isOpen = false">
+    <option value="" selected disabled></option>
+    <option value="Service1">Service 1</option>
+    <option value="Service2">Service 2</option>
+  </select>
+</div>
+
+      </div>
+      <div class="col-span-12">
+        <div class="form-group flex flex-col items-start overflow-hidden ">
+  <label class="mb-3 font-semibold text-body hidden" for="CommentId"></label>
+  <textarea
+    class="input "
+    id="CommentId" placeholder="Text message..." rows="3" name="@@Name"></textarea>
+</div>
+      </div>
+      <div class="col-span-12">
+        <div class="flex flex-col">
+  <label class="custom-checkbox">
+    <span class="custom-checkbox__block w-5 min-w-5 h-5">
+      <i class="w-5 min-w-5 h-5 rounded bg-white border border-LightBlue3 flex"></i>
+    </span>
+    <input type="checkbox" required>
+    <span class="checkmark">
+      <i class="Check-box-on"></i>
+    </span>
+    <span class="ml-2 text-body2 text-DarkBlue md:text-body4 ">I have read and agree to the <a href="Terms&Conditions.html" class="">Privacy Policy</a>, <a href="Terms&Conditions.html">Investigation</a></span>
+  </label>
+  <small class="text-body2 text-right font-medium text-Error md:text-body4 mt-2 hidden">Error</small>
+</div>
+
+        <button class="button shadow-v3 mt-8 md:w-full lg:mt-6" type="submit" aria-label="Send">
+  <span>Send</span>
+</button>
+      </div>
+    </form>
+  </div>
+  <div x-show="formSubmitted" class="flex flex-col lg:items-center min-h-[600px] lg:min-h-0 h-full">
+    <div class="flex items-center lg:justify-center mb-10 lg:mb-6">
+      <img class="lg:max-w-[224px]" src="img/mail-big-icon.svg" alt="Return to the Form img" loading="lazy">
+    </div>
+    <div class="h-full flex flex-col">
+      <div class="flex flex-col gap-y-6 mb-8">
+        <span class="text-h3 font-semibold lg:text-center lg:text-Top6">Thank you for Contacting Us!</span>
+        <p class="lg:text-center lg:text-body">We will contact you with a few minutes for consultation and for answering
+          questions you need.</p>
+        <span class="border-0 border-b-4 border-Green w-[86px] lg:mx-auto block"></span>
+      </div>
+      <button @click="formSubmitted = false" class="button group btn-icons mt-auto lg:mx-auto" type="button"
+              aria-label="Return to the Form button">
+        <svg class="rotate-180 mr-3" xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 35 30"
+             fill="none">
+          <path class="group-disabled:fill-DarkGrey" fill-rule="evenodd" clip-rule="evenodd"
+                d="M20.3602 1.33758C13.9099 1.33758 8.52797 6.0309 7.29254 12.2668C7.22083 12.6288 6.8763 12.8627 6.52301 12.7892C6.16972 12.7157 5.94146 12.3627 6.01317 12.0007C7.36967 5.15371 13.2768 0 20.3602 0C28.4455 0 35 6.71573 35 15C35 23.2843 28.4455 30 20.3602 30C13.2768 30 7.36967 24.8463 6.01317 17.9993C5.94146 17.6373 6.16972 17.2843 6.52301 17.2108C6.8763 17.1373 7.22083 17.3712 7.29254 17.7332C8.52797 23.9691 13.9099 28.6624 20.3602 28.6624C27.7245 28.6624 33.6945 22.5455 33.6945 15C33.6945 7.45445 27.7245 1.33758 20.3602 1.33758Z"
+                fill="white" />
+          <path class="group-disabled:fill-DarkGrey" fill-rule="evenodd" clip-rule="evenodd"
+                d="M20.5873 10.1989L24.8058 14.5199C25.0647 14.785 25.0647 15.215 24.8058 15.4801L20.5873 19.8011C20.3284 20.0663 19.9087 20.0663 19.6499 19.8011C19.391 19.536 19.391 19.1061 19.6499 18.8409L22.7368 15.679H0.662879C0.296781 15.679 0 15.375 0 15C0 14.625 0.296781 14.321 0.662879 14.321H22.7368L19.6499 11.1591C19.391 10.8939 19.391 10.464 19.6499 10.1989C19.9087 9.93371 20.3284 9.93371 20.5873 10.1989Z"
+                fill="white" />
+        </svg>
+        <span class="">Return to the Form</span>
+      </button>
+    </div>
+  </div>
+</div>
+<script>
+
+</script>
+      </div>
+    </div>
+  </div>
+</section>
+  </div>
+
+  <footer class="w-full mt-auto overflow-hidden bg-Blue100 pt-16 lg:pt-10 text-white shadow-3xl">
+  <div class="container pb-10 lg:pb-8">
+    <div class="row">
+      <div class="col-span-12 flex justify-between gap-x-8 lg:gap-x-0 lg:flex-col">
+        <div class="flex flex-col">
+          <a class="mb-8 block lg:mx-auto" href="index.html">
+            <img class="lg:w-[136px] lg:h-[48px]" width="196" height="69" src="img/Logo-footer.svg" alt="Consumer Guard Footer Logo" loading="lazy">
+          </a>
+          <p class="text-white text-body lg:hidden">&#169; 2024 Consumer Guard. <br>
+            All Rights Reserved.</p>
+        </div>
+        <div class="flex flex-col">
+          <ul class="flex flex-col gap-y-3">
+            <li class="flex items-center">
+              <a class="text-white text-body transition-colors hover:text-Green" href="services.html">Services</a>
+            </li>
+            <li class="flex items-center">
+              <a class="text-white text-body transition-colors hover:text-Green" href="partners.html">Partners</a>
+            </li>
+            <li class="flex items-center">
+              <a class="text-white text-body transition-colors hover:text-Green" href="about-us.html">About Us</a>
+            </li>
+            <li class="flex items-center">
+              <a class="text-white text-body transition-colors hover:text-Green" href="contacts-us.html">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col">
+          <ul class="flex flex-col gap-y-3 lg:mt-3">
+            <li class="flex items-center">
+              <a class="text-white text-body transition-colors hover:text-Green" href="Terms&Conditions.html">Terms and Conditions</a>
+            </li>
+            <li class="flex items-center">
+              <a class="text-white text-body transition-colors hover:text-Green" href="Terms&Conditions.html">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col">
+          <ul class="flex flex-col gap-y-4 mb-8 lg:mt-8">
+            <li class="flex items-center">
+              <p class="flex items-center gap-x-4 text-white text-body">
+                <span class="flex items-center justify-center w-5 min-w-5 h-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" viewBox="0 0 16 21" fill="none">
+                  <path
+                    d="M8 20.0605L7.44506 19.5626C6.68002 18.892 0 12.8527 0 8.43517C0 3.81 3.58173 0.0605469 8 0.0605469C12.4183 0.0605469 16 3.81 16 8.43517C16 12.8528 9.31998 18.892 8.55811 19.5659L8 20.0605ZM8 1.87138C4.53873 1.87549 1.73379 4.81177 1.72987 8.43513C1.72987 11.2104 5.83968 15.6437 8 17.6728C10.1604 15.6429 14.2701 11.207 14.2701 8.43513C14.2662 4.81177 11.4613 1.87553 8 1.87138Z"
+                    fill="#44B64B" />
+                  <path
+                    d="M8.00009 11.7545C6.24873 11.7545 4.82896 10.2683 4.82896 8.43488C4.82896 6.6015 6.24873 5.11525 8.00009 5.11525C9.75146 5.11525 11.1712 6.6015 11.1712 8.43488C11.1712 10.2683 9.7515 11.7545 8.00009 11.7545ZM8.00009 6.77502C7.12441 6.77502 6.41453 7.51815 6.41453 8.43484C6.41453 9.35153 7.12441 10.0947 8.00009 10.0947C8.87578 10.0947 9.58566 9.35153 9.58566 8.43484C9.58566 7.51815 8.87581 6.77502 8.00009 6.77502Z"
+                    fill="#44B64B" />
+                </svg>
+                </span>
+                <span>8245 N. 85th Way Scottsdale, AZ 85258</span>
+              </p>
+            </li>
+            <li class="flex items-center">
+              <a class="flex items-center gap-x-4 text-white text-body transition-colors hover:text-Green"
+                 href="tel:+18776151725">
+                <span class="flex items-center justify-center w-5 min-w-5 h-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                  <path
+                    d="M9.73533 0.826393C9.73533 0.627481 9.81435 0.436715 9.955 0.296063C10.0957 0.155411 10.2864 0.076393 10.4853 0.076393C12.4738 0.0785767 14.3802 0.869454 15.7862 2.2755C17.1923 3.68155 17.9831 5.58794 17.9853 7.57639C17.9853 7.77531 17.9063 7.96607 17.7656 8.10672C17.625 8.24738 17.4342 8.32639 17.2353 8.32639C17.0364 8.32639 16.8456 8.24738 16.705 8.10672C16.5643 7.96607 16.4853 7.77531 16.4853 7.57639C16.4835 5.98564 15.8508 4.46056 14.726 3.33573C13.6012 2.21089 12.0761 1.57818 10.4853 1.57639C10.2864 1.57639 10.0957 1.49738 9.955 1.35672C9.81435 1.21607 9.73533 1.02531 9.73533 0.826393ZM10.4853 4.57639C11.281 4.57639 12.044 4.89246 12.6066 5.45507C13.1693 6.01768 13.4853 6.78074 13.4853 7.57639C13.4853 7.77531 13.5643 7.96607 13.705 8.10672C13.8456 8.24738 14.0364 8.32639 14.2353 8.32639C14.4342 8.32639 14.625 8.24738 14.7657 8.10672C14.9063 7.96607 14.9853 7.77531 14.9853 7.57639C14.9841 6.38329 14.5096 5.23938 13.666 4.39573C12.8223 3.55207 11.6784 3.07758 10.4853 3.07639C10.2864 3.07639 10.0957 3.15541 9.955 3.29606C9.81435 3.43672 9.73533 3.62748 9.73533 3.82639C9.73533 4.02531 9.81435 4.21607 9.955 4.35672C10.0957 4.49738 10.2864 4.57639 10.4853 4.57639ZM17.3051 12.6306C17.7397 13.0665 17.9838 13.6569 17.9838 14.2724C17.9838 14.8879 17.7397 15.4783 17.3051 15.9141L16.6226 16.7009C10.4801 22.5816 -4.4674 7.63789 1.32259 1.47589L2.18509 0.725893C2.62141 0.303401 3.20654 0.0696798 3.81386 0.0752942C4.42119 0.0809085 5.00189 0.325407 5.43033 0.755893C5.45358 0.779143 6.84333 2.58439 6.84333 2.58439C7.2557 3.01761 7.48526 3.59309 7.48428 4.1912C7.4833 4.7893 7.25187 5.36402 6.83808 5.79589L5.96958 6.88789C6.45022 8.05573 7.15688 9.11708 8.04896 10.011C8.94105 10.9049 10.001 11.6137 11.1678 12.0966L12.2666 11.2229C12.6985 10.8094 13.2731 10.5783 13.871 10.5774C14.469 10.5766 15.0442 10.8061 15.4773 11.2184C15.4773 11.2184 17.2818 12.6074 17.3051 12.6306ZM16.2731 13.7211C16.2731 13.7211 14.4783 12.3404 14.4551 12.3171C14.3006 12.1639 14.0918 12.078 13.8742 12.078C13.6566 12.078 13.4478 12.1639 13.2933 12.3171C13.2731 12.3381 11.7603 13.5434 11.7603 13.5434C11.6584 13.6245 11.5371 13.6777 11.4083 13.6977C11.2796 13.7177 11.1478 13.7038 11.0261 13.6574C9.51442 13.0946 8.14138 12.2134 6.99996 11.0737C5.85853 9.93396 4.97539 8.56222 4.41034 7.05139C4.36023 6.92799 4.3439 6.79346 4.36301 6.66165C4.38213 6.52983 4.436 6.40549 4.51909 6.30139C4.51909 6.30139 5.72433 4.78789 5.74458 4.76839C5.89778 4.61388 5.98374 4.40511 5.98374 4.18752C5.98374 3.96993 5.89778 3.76115 5.74458 3.60664C5.72133 3.58414 4.34059 1.78789 4.34059 1.78789C4.18376 1.64727 3.97909 1.57196 3.76852 1.5774C3.55796 1.58284 3.35744 1.66862 3.20809 1.81714L2.34559 2.56714C-1.88591 7.65514 11.0673 19.8899 15.5261 15.6764L16.2093 14.8889C16.3694 14.7406 16.4656 14.5358 16.4775 14.3179C16.4894 14.1 16.4161 13.886 16.2731 13.7211Z"
+                    fill="#44B64B" />
+                </svg>
+                </span>
+                <span>+1 877-615-1725</span>
+              </a>
+            </li>
+            <li class="flex items-center">
+              <a class="flex items-center gap-x-4 text-white text-body transition-colors hover:text-Green"
+                 href="mailto:info@consumerguard.com">
+                <span class="flex items-center justify-center w-5 min-w-5 h-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                  <path
+                    d="M14.25 0.0605469H3.75C2.7558 0.0617017 1.80267 0.445188 1.09966 1.12689C0.396661 1.80859 0.00119089 2.73284 0 3.69691L0 12.4242C0.00119089 13.3883 0.396661 14.3125 1.09966 14.9942C1.80267 15.6759 2.7558 16.0594 3.75 16.0605H14.25C15.2442 16.0594 16.1973 15.6759 16.9003 14.9942C17.6033 14.3125 17.9988 13.3883 18 12.4242V3.69691C17.9988 2.73284 17.6033 1.80859 16.9003 1.12689C16.1973 0.445188 15.2442 0.0617017 14.25 0.0605469ZM3.75 1.51509H14.25C14.6991 1.51595 15.1376 1.6471 15.5092 1.89168C15.8808 2.13625 16.1684 2.48305 16.335 2.88746L10.5915 8.45764C10.1688 8.86587 9.59656 9.09507 9 9.09507C8.40344 9.09507 7.83118 8.86587 7.4085 8.45764L1.665 2.88746C1.83161 2.48305 2.11921 2.13625 2.49079 1.89168C2.86236 1.6471 3.30091 1.51595 3.75 1.51509ZM14.25 14.606H3.75C3.15326 14.606 2.58097 14.3761 2.15901 13.967C1.73705 13.5578 1.5 13.0028 1.5 12.4242V4.78782L6.348 9.486C7.05197 10.1669 8.00569 10.5493 9 10.5493C9.99431 10.5493 10.948 10.1669 11.652 9.486L16.5 4.78782V12.4242C16.5 13.0028 16.2629 13.5578 15.841 13.967C15.419 14.3761 14.8467 14.606 14.25 14.606Z"
+                    fill="#44B64B" />
+                </svg>
+                </span>
+                <span>info@consumerguard.com</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="flex items-center gap-x-4">
+            <li class="flex items-center">
+              <a href="#" target="_blank" class="group text-none">
+                Facebook
+                <span class="flex items-center justify-center group-hover:border-Green transition-all w-8 min-w-8 h-8 rounded-full border border-LightBlue4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17" fill="none">
+                    <g clip-path="url(#clip0_166_1295)">
+                      <path class="group-hover:fill-Green transition-all" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.51367 9.90643V16.5155H6.11807V9.90643H8.80584L9.36514 6.86754H6.11807V5.79244C6.11807 4.18599 6.74885 3.57076 8.37704 3.57076C8.88352 3.57076 9.29057 3.58319 9.52672 3.60804V0.851918C9.08239 0.730735 7.99485 0.606445 7.36719 0.606445C4.04554 0.606445 2.51367 2.1756 2.51367 5.55939V6.86754H0.462891V9.90643H2.51367Z"
+                        fill="#B4B7CF" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_166_1295">
+                        <rect width="9.94318" height="15.9091" fill="white" transform="translate(0.0283203 0.606445)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="flex items-center">
+              <a href="#" target="_blank" class="group text-none">
+                Instagram
+                <span class="flex items-center justify-center group-hover:border-Green transition-all w-8 min-w-8 h-8 rounded-full border border-LightBlue4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <g clip-path="url(#clip0_166_1298)">
+                      <path class="group-hover:fill-Green transition-all" d="M7.00326 4.98804C5.02706 4.98804 3.43304 6.58205 3.43304 8.55826C3.43304 10.5345 5.02706 12.1285 7.00326 12.1285C8.97947 12.1285 10.5735 10.5345 10.5735 8.55826C10.5735 6.58205 8.97947 4.98804 7.00326 4.98804ZM7.00326 10.8794C5.72619 10.8794 4.68215 9.83845 4.68215 8.55826C4.68215 7.27808 5.72308 6.23715 7.00326 6.23715C8.28345 6.23715 9.32437 7.27808 9.32437 8.55826C9.32437 9.83845 8.28034 10.8794 7.00326 10.8794ZM11.5523 4.842C11.5523 5.30498 11.1794 5.67474 10.7195 5.67474C10.2565 5.67474 9.88679 5.30187 9.88679 4.842C9.88679 4.38212 10.2597 4.00925 10.7195 4.00925C11.1794 4.00925 11.5523 4.38212 11.5523 4.842ZM13.9169 5.68717C13.8641 4.57167 13.6093 3.58356 12.7921 2.76946C11.978 1.95537 10.9899 1.70057 9.87436 1.64464C8.72468 1.57939 5.27874 1.57939 4.12906 1.64464C3.01667 1.69747 2.02856 1.95226 1.21136 2.76636C0.394154 3.58046 0.142467 4.56856 0.0865368 5.68406C0.0212846 6.83374 0.0212846 10.2797 0.0865368 11.4294C0.13936 12.5449 0.394154 13.533 1.21136 14.3471C2.02856 15.1612 3.01356 15.4159 4.12906 15.4719C5.27874 15.5371 8.72468 15.5371 9.87436 15.4719C10.9899 15.4191 11.978 15.1643 12.7921 14.3471C13.6062 13.533 13.861 12.5449 13.9169 11.4294C13.9821 10.2797 13.9821 6.83685 13.9169 5.68717ZM12.4316 12.6629C12.1893 13.2719 11.7201 13.7411 11.1079 13.9866C10.1913 14.3502 8.01622 14.2663 7.00326 14.2663C5.9903 14.2663 3.81212 14.3471 2.89859 13.9866C2.28957 13.7443 1.82038 13.2751 1.57491 12.6629C1.21136 11.7463 1.29525 9.57122 1.29525 8.55826C1.29525 7.5453 1.21447 5.36712 1.57491 4.45359C1.81727 3.84457 2.28647 3.37538 2.89859 3.1299C3.81523 2.76636 5.9903 2.85025 7.00326 2.85025C8.01622 2.85025 10.1944 2.76946 11.1079 3.1299C11.717 3.37227 12.1861 3.84146 12.4316 4.45359C12.7952 5.37023 12.7113 7.5453 12.7113 8.55826C12.7113 9.57122 12.7952 11.7494 12.4316 12.6629Z" fill="#B4B7CF"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_166_1298">
+                        <rect width="13.9205" height="15.9091" fill="white" transform="translate(0.0395508 0.606445)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="flex items-center">
+              <a href="#" target="_blank" class="group text-none">
+                Linkedin
+                <span class="flex items-center justify-center group-hover:border-Green transition-all w-8 min-w-8 h-8 rounded-full border border-LightBlue4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <g clip-path="url(#clip0_166_1301)">
+                      <path class="group-hover:fill-Green transition-all" d="M3.15612 14.5269H0.269487V5.23313H3.15612V14.5269ZM1.71125 3.96538C0.788397 3.96538 0.0395508 3.20099 0.0395508 2.27814C0.0395508 1.83478 0.215676 1.40958 0.52918 1.09607C0.842684 0.78257 1.26789 0.606445 1.71125 0.606445C2.15461 0.606445 2.57981 0.78257 2.89332 1.09607C3.20682 1.40958 3.38295 1.83478 3.38295 2.27814C3.38295 3.20099 2.6341 3.96538 1.71125 3.96538ZM13.9569 14.5269H11.0765V10.0028C11.0765 8.92454 11.0547 7.54181 9.57568 7.54181C8.07488 7.54181 7.84495 8.71325 7.84495 9.92507V14.5269H4.96143V5.23313H7.72998V6.50089H7.77037C8.15567 5.77069 9.09717 5.00009 10.5016 5.00009C13.4225 5.00009 13.96 6.92347 13.96 9.4217V14.5269H13.9569Z" fill="#B4B7CF"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_166_1301">
+                        <rect width="13.9205" height="15.9091" fill="white" transform="translate(0.0395508 0.606445)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full bg-DarkBlue py-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-span-12">
+          <p class="text-center text-body2 text-LightBlue4">Attorney Advertising, Prior Results Do Not Guarantee A Similar Outcome. This website is for informational purposes only and does not contain legal advice. Results may vary depending on your particular facts and legal circumstances.</p>
+          <p class="text-white text-body2 minlg:hidden text-center pt-[10px] w-full mt-[10px] border-t border-Blue100">&#169; 2024 Consumer Guard. <br>
+            All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</main>
+
+<script src="./js/scripts.js"></script>
+<script>
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('data', () => ({}));
+  });
+
+  function submitForm() {
+    const formData = new FormData(document.querySelector('form'));
+
+    fetch('/your-endpoint', {
+      method: 'POST',
+      body: formData
+    })
+      .then(response => {
+        if (!response.ok) {
+          this.formSubmitted = true; //Test
+          throw new Error('Error');
+        }
+        return response.json();
+      })
+      .then(data => {
+        this.formSubmitted = true;
+      })
+      .catch(error => {
+        console.error(error);
+      })
+      .finally(() => {});
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOMhVrALnzqYT8bHJf7lS3jJKqkeC4RIc&q&callback=initMap" async defer></script>
+<script async defer>
+  function initMap() {
+    const location = { lat: 40.729509, lng: -73.821321 };
+
+    // Создание карты
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: location,
+    });
+
+    const contentString = `
+        <div class="flex gap-x-5 overflow-hidden p-5 lg:p-0 lg:flex-col lg:gap-y-5 lg:gap-x-0">
+          <div class="w-[102px] h-[102px] overflow-hidden flex justify-center items-center lg:max-w-[264px] lg:w-full lg:h-auto">
+            <img src="img/image-map.png" alt="Мap" class="object-cover w-full lg:hidden">
+            <img src="img/image-map-mob.png" alt="Мap" class="object-cover w-full minlg:hidden">
+          </div>
+          <ul class="flex flex-col gap-y-2 max-w-[236px]">
+                <li class="flex items-center">
+                  <div class="flex items-center text-body2 text-black">
+                    <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                        <path
+                          d="M8 20L7.44506 19.502C6.68002 18.8315 0 12.7922 0 8.37462C0 3.74945 3.58173 0 8 0C12.4183 0 16 3.74945 16 8.37462C16 12.7922 9.31998 18.8315 8.55811 19.5054L8 20ZM8 1.81084C4.53873 1.81494 1.73379 4.75123 1.72987 8.37458C1.72987 11.1498 5.83968 15.5832 8 17.6123C10.1604 15.5823 14.2701 11.1464 14.2701 8.37458C14.2662 4.75123 11.4613 1.81498 8 1.81084Z"
+                          fill="#44B64B" />
+                        <path
+                          d="M8.00009 11.694C6.24873 11.694 4.82896 10.2077 4.82896 8.37433C4.82896 6.54095 6.24873 5.0547 8.00009 5.0547C9.75146 5.0547 11.1712 6.54095 11.1712 8.37433C11.1712 10.2077 9.7515 11.694 8.00009 11.694ZM8.00009 6.71448C7.12441 6.71448 6.41453 7.4576 6.41453 8.37429C6.41453 9.29098 7.12441 10.0341 8.00009 10.0341C8.87578 10.0341 9.58566 9.29098 9.58566 8.37429C9.58566 7.4576 8.87581 6.71448 8.00009 6.71448Z"
+                          fill="#44B64B" />
+                     </svg>
+                    </span>
+                    <span>
+                       68-29 Main Street, Flushing, NY 11367
+                    </span>
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <a class="flex items-center text-body2 text-black hover:text-Green transition-colors"
+                     href="tel:+1811111111">
+                      <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                          <path
+                            d="M9.98256 5.18462V2.51796C9.98256 2.34115 10.0528 2.17158 10.1778 2.04655C10.3028 1.92153 10.4724 1.85129 10.6492 1.85129C10.826 1.85129 10.9956 1.92153 11.1206 2.04655C11.2457 2.17158 11.3159 2.34115 11.3159 2.51796V4.25862C11.7359 3.83596 14.4499 1.10796 14.8446 0.713291C14.9061 0.649618 14.9796 0.59883 15.061 0.56389C15.1423 0.528951 15.2298 0.51056 15.3183 0.509791C15.4068 0.509022 15.4946 0.525889 15.5765 0.55941C15.6585 0.592931 15.7329 0.642433 15.7955 0.705028C15.8581 0.767623 15.9076 0.842058 15.9411 0.923988C15.9746 1.00592 15.9915 1.09371 15.9907 1.18223C15.99 1.27074 15.9716 1.35822 15.9366 1.43956C15.9017 1.5209 15.8509 1.59446 15.7872 1.65596C15.3926 2.05062 12.6926 4.76596 12.2752 5.18462H13.9826C14.1594 5.18462 14.3289 5.25486 14.454 5.37989C14.579 5.50491 14.6492 5.67448 14.6492 5.85129C14.6492 6.0281 14.579 6.19767 14.454 6.3227C14.3289 6.44772 14.1594 6.51796 13.9826 6.51796H11.3159C10.9623 6.51796 10.6231 6.37748 10.3731 6.12743C10.123 5.87739 9.98256 5.53825 9.98256 5.18462ZM15.3792 11.6773C15.7656 12.0647 15.9825 12.5895 15.9825 13.1366C15.9825 13.6837 15.7656 14.2085 15.3792 14.596L14.7712 15.296C9.31056 20.5213 -3.97478 7.23996 1.17122 1.76262L1.93789 1.09596C2.32565 0.720321 2.84571 0.51245 3.38556 0.517316C3.9254 0.522182 4.44163 0.739393 4.82256 1.12196C4.84322 1.14196 6.07789 2.74729 6.07789 2.74729C6.44317 3.13299 6.64642 3.64421 6.64567 4.17542C6.64493 4.70664 6.44025 5.21729 6.07389 5.60196L5.30189 6.57262C5.72922 7.61064 6.35739 8.55402 7.15035 9.34857C7.9433 10.1431 8.8854 10.7732 9.92256 11.2026L10.8992 10.426C11.2831 10.0586 11.7938 9.85327 12.3251 9.85253C12.8564 9.85178 13.3676 10.0557 13.7526 10.422C13.7526 10.422 15.3586 11.6573 15.3792 11.6773ZM14.4626 12.6466C14.4626 12.6466 12.8672 11.4186 12.8466 11.3986C12.7092 11.2624 12.5236 11.186 12.3302 11.186C12.1368 11.186 11.9512 11.2624 11.8139 11.3986C11.7959 11.416 10.4512 12.488 10.4512 12.488C10.3606 12.5601 10.2528 12.6074 10.1383 12.6251C10.0239 12.6429 9.90678 12.6305 9.79856 12.5893C8.45417 12.0891 7.23304 11.3057 6.21795 10.2922C5.20286 9.27877 4.41754 8.05888 3.91522 6.71529C3.87069 6.60559 3.85617 6.48602 3.87316 6.36885C3.89015 6.25168 3.93803 6.14115 4.01189 6.04862C4.01189 6.04862 5.08389 4.70596 5.10189 4.68862C5.23807 4.55128 5.31448 4.3657 5.31448 4.17229C5.31448 3.97888 5.23807 3.7933 5.10189 3.65596C5.08189 3.63596 3.85389 2.03929 3.85389 2.03929C3.71449 1.9143 3.53256 1.84735 3.34539 1.85219C3.15822 1.85702 2.97998 1.93327 2.84722 2.06529L2.08056 2.73196C-1.68078 7.25396 9.83389 18.13 13.7959 14.3873L14.4039 13.6866C14.5472 13.5551 14.6336 13.3728 14.6445 13.1785C14.6555 12.9843 14.5902 12.7935 14.4626 12.6466Z"
+                            fill="#44B64B" />
+                        </svg>
+                      </span>
+                    <span class="font-medium">811111111</span>
+                  </a>
+                </li>
+                <li class="flex items-center">
+                  <a class="flex items-center text-body2 text-black hover:text-Green transition-colors"
+                     href="mailto:info@consumerguard.com">
+                      <span class="w-5 h-5 min-w-5 mr-2 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                          <path
+                            d="M14.25 0.5H3.75C2.7558 0.501155 1.80267 0.884641 1.09966 1.56634C0.396661 2.24804 0.00119089 3.17229 0 4.13636L0 12.8636C0.00119089 13.8277 0.396661 14.752 1.09966 15.4337C1.80267 16.1154 2.7558 16.4988 3.75 16.5H14.25C15.2442 16.4988 16.1973 16.1154 16.9003 15.4337C17.6033 14.752 17.9988 13.8277 18 12.8636V4.13636C17.9988 3.17229 17.6033 2.24804 16.9003 1.56634C16.1973 0.884641 15.2442 0.501155 14.25 0.5ZM3.75 1.95455H14.25C14.6991 1.9554 15.1376 2.08656 15.5092 2.33113C15.8808 2.5757 16.1684 2.92251 16.335 3.32691L10.5915 8.89709C10.1688 9.30532 9.59656 9.53452 9 9.53452C8.40344 9.53452 7.83118 9.30532 7.4085 8.89709L1.665 3.32691C1.83161 2.92251 2.11921 2.5757 2.49079 2.33113C2.86236 2.08656 3.30091 1.9554 3.75 1.95455ZM14.25 15.0455H3.75C3.15326 15.0455 2.58097 14.8156 2.15901 14.4064C1.73705 13.9972 1.5 13.4423 1.5 12.8636V5.22727L6.348 9.92546C7.05197 10.6064 8.00569 10.9888 9 10.9888C9.99431 10.9888 10.948 10.6064 11.652 9.92546L16.5 5.22727V12.8636C16.5 13.4423 16.2629 13.9972 15.841 14.4064C15.419 14.8156 14.8467 15.0455 14.25 15.0455Z"
+                            fill="#44B64B" />
+                        </svg>
+                      </span>
+                    <span class="font-medium">info@consumerguard.com</span>
+                  </a>
+                </li>
+              </ul>
+        </div>
+      `;
+
+    const infowindow = new google.maps.InfoWindow({
+      content: contentString,
+    });
+
+    const marker = new google.maps.Marker({
+      position: location,
+      map: map,
+      title: "Ваш бизнес",
+    });
+
+    infowindow.open(map, marker);
+    marker.addListener("click", () => {
+      infowindow.open(map, marker);
+    });
+  }
+</script>
+</body>
+
+</html>
