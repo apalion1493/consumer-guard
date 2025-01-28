@@ -1054,6 +1054,9 @@ html {
 .min-h-screen{
   min-height: 100vh;
 }
+.min-h-full{
+  min-height: 100%;
+}
 .w-10{
   width: 2.5rem;
 }
@@ -1131,6 +1134,12 @@ html {
 }
 .min-w-\[60px\]{
   min-width: 60px;
+}
+.min-w-\[\]{
+  min-width: ;
+}
+.min-w-\[273px\]{
+  min-width: 273px;
 }
 .max-w-\[1096px\]{
   max-width: 1096px;
@@ -1249,6 +1258,9 @@ html {
 .items-center{
   align-items: center;
 }
+.justify-normal{
+  justify-content: normal;
+}
 .justify-end{
   justify-content: flex-end;
 }
@@ -1343,6 +1355,9 @@ html {
 }
 .self-end{
   align-self: flex-end;
+}
+.self-stretch{
+  align-self: stretch;
 }
 .overflow-hidden{
   overflow: hidden;
